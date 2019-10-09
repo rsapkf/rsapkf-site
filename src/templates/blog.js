@@ -21,7 +21,7 @@ const Blog = (props) => {
         <Layout>
           <Head title={props.data.markdownRemark.frontmatter.title}/>
             <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-            <p>{props.data.markdownRemark.frontmatter.date}</p>
+            <i><small>{props.data.markdownRemark.frontmatter.date}</small></i><hr></hr>
             <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
         </Layout>
     )
