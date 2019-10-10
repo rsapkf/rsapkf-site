@@ -8,7 +8,7 @@ const ProjectsPage = () => {
     return (
         <Layout>
             <Head title="Projects"/>
-            <h1>Projects</h1>
+            <h3>Projects</h3>
             <p>See my <a href="https://github.com/rsapkf">GitHub</a> profile for more!</p>
         </Layout>
     )
