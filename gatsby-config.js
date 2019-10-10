@@ -1,9 +1,16 @@
 module.exports = {
     siteMetadata: {
-        title: "rsapkf",
-        author: 'rsapkf'
+        title: 'rsapkf',
+        author: 'rsapkf',
+        description: 'rsapkf-site',
+        siteUrl: 'https://rsapkf.netlify.com/',
+        social: {
+            mastodon: '@SecretAgentRandyBeans',
+        }
     },
+    // pathPrefix: '/',
     plugins: [
+        `gatsby-plugin-feed`,
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sass',
         {
