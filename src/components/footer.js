@@ -37,7 +37,7 @@ const Footer = () => {
                 rss
             </a>
             </div>
-            <p>Copyright © 2019 {data.site.siteMetadata.author}</p>
+            <p>© 2019 {data.site.siteMetadata.author}</p>
         </footer>
     )
 }
