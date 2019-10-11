@@ -3,7 +3,7 @@ module.exports = {
         title: 'rsapkf',
         author: 'rsapkf',
         description: 'rsapkf-site',
-        siteUrl: 'https://rsapkf.netlify.com/',
+        siteUrl: 'https://rsapkf.netlify.com',
         social: {
             mastodon: '@SecretAgentRandyBeans',
         }
