@@ -8,7 +8,7 @@ module.exports = {
             mastodon: '@SecretAgentRandyBeans',
         }
     },
-    // pathPrefix: '/',
+    pathPrefix: '/',
     plugins: [
         {
             resolve: `gatsby-plugin-feed`,
