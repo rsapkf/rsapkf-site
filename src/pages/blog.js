@@ -13,8 +13,9 @@ const BlogPage = () => {
                     node {
                         frontmatter {
                             title
-                            date
+                            date(formatString: "MMMM Do, YYYY")
                         }
+                        timeToRead
                         fields {
                             slug
                         }
@@ -34,7 +35,7 @@ const BlogPage = () => {
                         <li className={blogStyles.post}>
                             <Link to={`/blog/${edge.node.fields.slug}`}>
                                 <h4>{edge.node.frontmatter.title}</h4>
-                                <span>{edge.node.frontmatter.date}</span>
+                                <span><i className="far fa-calendar"></i> {edge.node.frontmatter.date} | <i class="fas fa-stopwatch"></i> {edge.node.timeToRead} min read</span>
                             </Link>
                         </li>
                     )
