@@ -13,7 +13,7 @@ const IndexPage = () => {
             <br></br>
             <p>Please see [<Link to="/technologies">Technologies</Link>] section for more info!</p>
             <hr></hr>
-            <p>Need a developer? <Link to="/contact">Contact me.</Link></p>
+            <p>Need a developer? <Link to="/contact">Contact me</Link>.</p>
         </Layout>
     )
 }
