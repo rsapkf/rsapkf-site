@@ -13,6 +13,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
+    "darkreader": "^4.7.15",
     "gatsby": "^2.15.28",
     "gatsby-plugin-feed": "^2.3.16",
     "gatsby-plugin-react-helmet": "^3.1.10",
