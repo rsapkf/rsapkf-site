@@ -18,6 +18,22 @@ const Footer = () => {
         <footer className={footerStyles.footer}>
             <div style={{ float: 'right' }}>
             <a
+            href="https://keybase.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            keybase
+            </a>{' '}
+            &bull;{' '}
+            <a
+            href="https://news.ycombinator.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            hackernews
+            </a>{' '}
+            &bull;{' '}
+            <a
             href="https://mastodon.social/@SecretAgentRandyBeans"
             target="_blank"
             rel="noopener noreferrer"
