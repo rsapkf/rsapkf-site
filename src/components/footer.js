@@ -52,7 +52,7 @@ const Footer = () => {
             <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
                 rss
             </a>
-            </div>
+            </div><br></br>
             <p>© 2019 {data.site.siteMetadata.author}</p>
         </footer>
     )
