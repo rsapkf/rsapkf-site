@@ -23,7 +23,7 @@ const FormPage = () => {
                         <label for="subject">MESSAGE</label><br></br>
                         <textarea id="subject" name="subject" placeholder="Your Message..." style={{ height: '200px' }}></textarea>
                     </p>
-                    <input type="submit" value="SEND"></input>
+                    <button type="submit">SEND</button>
                 </form>
             </div>
         </Layout>
