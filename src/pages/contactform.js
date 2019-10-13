@@ -10,7 +10,10 @@ const FormPage = () => {
         <Layout>
             <Head title="Contact Form"/>
             <div className={contactformStyles.container}>
-                <form action= "/" name="contact" method="post" data-netlify="true">
+                <form action= "/" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                    <p class="hidden" style={{ visibility:"hidden"}}>
+                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
                     <p>
                         <label for="name">NAME</label><br></br>
                         <input id="text" name="text" type="text" />
