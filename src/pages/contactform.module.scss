@@ -1,0 +1,35 @@
+.container {
+  border-radius: 1px;
+  padding: 20px;
+}
+
+input[type=text] {
+  border: 1.9px solid #080000;
+  border-radius: 1px;
+}
+
+textarea {
+    width: 80%;
+    border: 1.9px solid #080000;
+    border-radius: 1px;
+    box-sizing: border-box;
+    resize: both;
+  }
+
+input[type=submit] {
+  background-color: #262c26;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #209710;
+}
+
+label {
+    font-style: bold;
+    font-size: .9rem;
+}
