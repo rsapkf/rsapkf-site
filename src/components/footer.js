@@ -30,7 +30,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             >
-            hackernews
+            hn
             </a>{' '}
             &bull;{' '}
             <a
@@ -47,6 +47,14 @@ const Footer = () => {
             rel="noopener noreferrer"
             >
             github
+            </a>{' '}
+            &bull;{' '}
+            <a
+            href="mailto:rsapkfff@protonmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            @
             </a>{' '}
             &bull;{' '}
             <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
