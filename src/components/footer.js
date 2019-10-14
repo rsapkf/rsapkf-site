@@ -18,11 +18,11 @@ const Footer = () => {
         <footer className={footerStyles.footer}>
             <div style={{ float: 'right' }}>
             <a
-            href="https://keybase.io"
+            href="https://keybase.io/rsapkf"
             target="_blank"
             rel="noopener noreferrer"
             >
-            keybase<i><i className="fas fa-linux"></i></i>
+            keybase
             </a>{' '}
             &bull;{' '}
             <a
@@ -31,14 +31,6 @@ const Footer = () => {
             rel="noopener noreferrer"
             >
             hn
-            </a>{' '}
-            &bull;{' '}
-            <a
-            href="https://mastodon.social/@SecretAgentRandyBeans"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            mastodon
             </a>{' '}
             &bull;{' '}
             <a
@@ -52,7 +44,7 @@ const Footer = () => {
             <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
                 rss
             </a>
-            </div><br></br>
+            </div>
             <p>© 2019 {data.site.siteMetadata.author}</p>
         </footer>
     )
