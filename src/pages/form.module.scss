@@ -1,20 +1,23 @@
 input[type=text] {
   border: 2px solid #080000;
-  border-radius: 1px;
+  border-radius: 0px;
+  font-family: monospace;
 }
 
 input[type=email] {
     border: 2px solid #080000;
-    border-radius: 1px;
+    border-radius: 0px;
+    font-family: monospace;
   }
 
 textarea {
     width: 80%;
     border: 2px solid #080000;
-    border-radius: 6px;
+    border-radius: 0px;
     box-sizing: border-box;
     resize: both;
     height: 150px;
+    font-family: monospace;
   }
 
 button[type=submit] {
