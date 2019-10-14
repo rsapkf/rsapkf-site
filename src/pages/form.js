@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../components/layout'
+import Head from '../components/head'
 
 import formStyles from './form.module.scss'
 
@@ -34,11 +35,12 @@ export default function Contact() {
 
   return (
     <Layout>
-      <h1>Contact</h1>
+      <Head title="Contact Form"/>
+      <h3>Contact Form</h3>
         <form
           name="contact"
           method="post"
-          action="/"
+          action="/thanks"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           onSubmit={handleSubmit}

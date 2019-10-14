@@ -22,7 +22,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             >
-            keybase
+            keybase<i><i className="fas fa-linux"></i></i>
             </a>{' '}
             &bull;{' '}
             <a
@@ -47,14 +47,6 @@ const Footer = () => {
             rel="noopener noreferrer"
             >
             github
-            </a>{' '}
-            &bull;{' '}
-            <a
-            href="mailto:rsapkfff@protonmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            @
             </a>{' '}
             &bull;{' '}
             <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
