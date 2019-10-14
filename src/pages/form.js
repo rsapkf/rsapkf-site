@@ -35,7 +35,6 @@ export default function Contact() {
   return (
     <Layout>
       <h1>Contact</h1>
-      <div className={formStyles.container}>
         <form
           name="contact"
           method="post"
@@ -76,7 +75,6 @@ export default function Contact() {
             <button type="submit">Send</button>
           </p>
         </form>
-      </div>
     </Layout>
   )
 }
