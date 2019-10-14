@@ -35,7 +35,7 @@ const BlogPage = () => {
                         <li className={blogStyles.post}>
                             <Link to={`/blog/${edge.node.fields.slug}`}>
                                 <h4>{edge.node.frontmatter.title}</h4>
-                                <span><i className="far fa-calendar"></i> {edge.node.frontmatter.date} | <i class="fas fa-stopwatch"></i> {edge.node.timeToRead} min read</span>
+                                <span><small><i className="far fa-calendar"></i> {edge.node.frontmatter.date} | <i class="fas fa-stopwatch"></i> {edge.node.timeToRead} min read</small></span>
                             </Link>
                         </li>
                     )
