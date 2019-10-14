@@ -2,6 +2,8 @@ import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../components/layout'
 
+import formStyles from './form.module.scss'
+
 function encode(data) {
   return Object.keys(data)
     .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -33,46 +35,48 @@ export default function Contact() {
   return (
     <Layout>
       <h1>Contact</h1>
-      <form
-        name="contact"
-        method="post"
-        action="/"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        onSubmit={handleSubmit}
-      >
-        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-        <input type="hidden" name="form-name" value="contact" />
-        <p hidden>
-          <label>
-            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
-          </label>
-        </p>
-        <p>
-          <label>
-            NAME
-            <br />
-            <input type="text" name="name" onChange={handleChange} />
-          </label>
-        </p>
-        <p>
-          <label>
-            EMAIL
-            <br />
-            <input type="email" name="email" onChange={handleChange} />
-          </label>
-        </p>
-        <p>
-          <label>
-            MESSAGE
-            <br />
-            <textarea name="message" onChange={handleChange} />
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+      <div className={formStyles.container}>
+        <form
+          name="contact"
+          method="post"
+          action="/"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          onSubmit={handleSubmit}
+        >
+          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              NAME
+              <br />
+              <input type="text" name="name" onChange={handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              EMAIL
+              <br />
+              <input type="email" name="email" onChange={handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              MESSAGE
+              <br />
+              <textarea name="message" onChange={handleChange} />
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </div>
     </Layout>
   )
 }
