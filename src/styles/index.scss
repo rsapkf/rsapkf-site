@@ -44,6 +44,7 @@ template {
 a {
   background-color: transparent;
   color: green;
+  font-style: bold;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
@@ -73,7 +74,7 @@ mark {
   color: #000;
 }
 small {
-  font-size: 80%;
+  font-size: 75%;
 }
 sub,
 sup {

@@ -13,7 +13,7 @@ const BlogPage = () => {
                     node {
                         frontmatter {
                             title
-                            date(formatString: "MMMM Do, YYYY")
+                            date(formatString: "MMMM DD, YYYY")
                         }
                         timeToRead
                         fields {
