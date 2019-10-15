@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/rsapkf
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://rsapkf.netlify.com
+  * I am rsapkf (https://keybase.io/rsapkf) on keybase.
+  * I have a public key with fingerprint D8CA CD01 F5F1 095F 6455  F79F 00C9 BB09 C8FB C5E9
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01011aedbaadf3657e306dde65a9a2086dab3f9d09440a6a9e9f2b8ad4bb355cfd080a",
+      "fingerprint": "d8cacd01f5f1095f6455f79f00c9bb09c8fbc5e9",
+      "host": "keybase.io",
+      "key_id": "00c9bb09c8fbc5e9",
+      "kid": "01011aedbaadf3657e306dde65a9a2086dab3f9d09440a6a9e9f2b8ad4bb355cfd080a",
+      "uid": "0366e92027806376daa41073f11d7f19",
+      "username": "rsapkf"
+    },
+    "service": {
+      "hostname": "rsapkf.netlify.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1571117129,
+  "expire_in": 157680000,
+  "prev": "ae70856fd48f8410d50cd98e459b44208eaf7ff70eb0e7915296a9e7c7fde1aa",
+  "seqno": 21,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.3
+Comment: https://keybase.io/crypto
+
+yMIlAnicrVJNSFRRFJ7JEp2sXNiPFESvMAqze+f93skK3VTGQERGgTne9+69+hzn
+vXHeG0vMcJGL7AejHwoNqUhrk0JGO9E0RCPIEGthRGIYWBYJCtmi+6wW0ba7Odxz
+zved73ycgRUpvoC/eCScVRHJOe1/3tea9J24d+xAnaDbpFYI1QlRuhhoFaGOG4ma
+RAgJAAIIMSU6xoSJiqxSESiEUEXGCAeBphCsiwwRgCQJYAUjilhQ1zCRdF2UZYMR
+oAEs5ArMtMppIp4wLZfTEs3ABgGQyQwCJDNFkmWmIgaAgXQdIENjuiFTxIEVtuMh
+uDgdOzTPtHmOfyK/5P3b/591J3/RiYpCURAEVQ0oosrRWIJAFRmERGXQm5t0aMLC
+Mcq7Ew6OR5lQnyvwXI1pUM9Wb4+/6nkWdatMVptn2DGOjyds1zbsKl6vcN24E/Lw
+bm3cA5ykeuQ3VUQ3LcK95IgamnBM2xJCkHcarulxQ1mFEKowiHIFeipuJmjEtBbT
+igb48+bQGk6JqQo0WWFE0pjGdyEyMAjSqCQjXZK4QxQzlTEVUB1QFUE5iDyXVENl
+hELsWePQassWQkHIdeJyzumY5RZ2kwkq1D/tLVnq8wd8qcuWeEfmC6Rn/jm9ysY0
+X/NW/D4Fblm3LTpT4fTPre+dm5n+0dug3H1y0j/fNZCx+URL6qXHt8X87qfVB9tT
+zy/fga6XHYpOXp3q+Nw5f2X4lgm+dWvHR98Np00O7R2RCprFkouzw+Nljx7uGSz0
+JytXnx26nDVKNmQrsTUTatqrMbAxf+W16XBgf09719GWojvtWZ/OHAvfR51fSx8f
+2TSWbZfedFfd3zIeU7Kf2XVFa2e++D60obmmote3Ftpog3Xp+43Z9PGmttT1xRvU
+7TtP18audHUs3HgzkbNv91BGuPnFroa3hUdaM+jMufDYy5zMC32DE1OB/o8FKS93
+jhRMm2PwQc/hm5mNd/evPCxIPwEtHkGz
+=We/N
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rsapkf
+
+==================================================================
