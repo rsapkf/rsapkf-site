@@ -63,14 +63,14 @@ export default function Contact() {
             <label>
               EMAIL
               <br />
-              <input type="email" name="email" onChange={handleChange} />
+              <input type="email" name="email" onChange={handleChange} required/>
             </label>
           </p>
           <p>
             <label>
               MESSAGE
               <br />
-              <textarea name="message" onChange={handleChange} />
+              <textarea name="message" onChange={handleChange} required/>
             </label>
           </p>
           <p>
