@@ -9,7 +9,9 @@ const ProjectsPage = () => {
         <Layout>
             <Head title="Projects"/>
             <h3>Projects</h3>
-            <p>See my <a href="https://github.com/rsapkf">GitHub</a> profile for more!</p>
+            I'm working on a few projects that aren't yet ready to be launched. The projects will be open sourced once they are launched. Please follow via <a href="/rss.xml">RSS</a> to get notified.
+            <br /><br />
+            <p>For other smaller projects that I'm working on, see my <a href="https://github.com/rsapkf">GitHub</a> profile.</p>
         </Layout>
     )
 }
