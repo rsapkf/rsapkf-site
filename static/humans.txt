@@ -1,0 +1,10 @@
+/* Created by */
+    Me(keybase.io/rsapkf)
+
+/* Tech Stack */
+    Languages: HTML, CSS(SCSS), JavaScript
+    Frameworks: ReactJS, GatsbyJS
+    Tools: Netlify, VSCode, Neovim, rxvt-unicode
+
+/* Influenced By */
+    Dan Abramov's(github.com/gearson) Blog- (overreacted.io)
