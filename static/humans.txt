@@ -4,7 +4,7 @@
 /* Tech Stack */
     Languages: HTML, CSS(SCSS), JavaScript
     Frameworks: ReactJS, GatsbyJS
-    Tools: Netlify, VSCode, Neovim, rxvt-unicode
+    Tools: Netlify, VSCode, Neovim, Debian 9, rxvt-unicode
 
 /* Influenced By */
     Dan Abramov's(github.com/gearson) Blog- (overreacted.io)

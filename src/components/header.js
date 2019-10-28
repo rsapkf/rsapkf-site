@@ -77,6 +77,15 @@ const Header = () => {
               Recommendations
             </Link>
           </li>
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              activeClassName={headerStyles.activeNavItem}
+              to="/tech"
+            >
+              Technologies
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
