@@ -7,7 +7,7 @@
     margin: 1rem 0;
 
     a {
-        background: #f4f4f4;
+        background: #3b44c2;
         color: #000000;
         display: block;
         padding: 1rem;
@@ -15,7 +15,8 @@
     }
 
     a:hover {
-        background: #e4e4e4;
+        background: #3038a0;
+        color: #000000;
     }
 
     h4 {
@@ -23,8 +24,9 @@
     }
 
     span {
-        color: #777777;
-        font-size: .7rem;
-        font-style: italic;
+        color: #03091f;
+        font-size: .9rem;
+        font-style: bold;
+        font-family: monospace;
     }
 }

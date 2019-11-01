@@ -1,4 +1,6 @@
 @import url('https://use.fontawesome.com/releases/v5.7.0/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
 html {
   font-family: sans-serif;
@@ -43,7 +45,7 @@ template {
 }
 a {
   background-color: transparent;
-  color: green;
+  color: rgb(69, 212, 69);
   font-style: bold;
   -webkit-text-decoration-skip: objects;
 }
@@ -204,9 +206,10 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: Arial, Helvetica, monospace;
-  font-size: .8rem;
+  color: hsla(263, 31%, 89%, 0.8);
+  background: rgb(8, 2, 63);
+  font-family: 'Inconsolata', monospace;
+  font-size: .9rem;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -309,7 +312,7 @@ h5 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
-  line-height: 1.1;
+  line-height: .9;
 }
 h6 {
   margin-left: 0;
@@ -488,7 +491,7 @@ hr {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: calc(1.45rem - 1px);
-  background: hsla(0, 0%, 0%, 0.2);
+  background: hsla(0, 22%, 78%, 0.2);
   border: none;
   height: 1px;
 }
