@@ -36,7 +36,7 @@ export default function Contact() {
   return (
     <Layout>
       <Head title="Contact Form"/>
-      <h3>Contact Form</h3>
+      <u><h3>Contact Form</h3></u>
         <form
           name="contact"
           method="post"
