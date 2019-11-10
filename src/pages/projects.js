@@ -13,8 +13,7 @@ const ProjectsPage = () => {
             <br /><br />
             <p>For other smaller projects that I'm working on, see my <a href="https://github.com/rsapkf">GitHub</a> profile:</p>
             <ul style={{ 
-                fontFamily: 'Yeon Sung',
-                fontSize: '1.0rem',
+                fontFamily: 'Open Sans',
              }}>
                 <li>[rsapkf/goodies]: Collection of GitHub repos, blogs and websites to learn cool things. <br /><object data="https://img.shields.io/github/stars/rsapkf/goodies?label=Star&amp;style=social"></object></li>
                 <li>[rsapkf/dotfiles]: my dev environment <br /><object data="https://img.shields.io/github/stars/rsapkf/dotfiles?label=Star&amp;style=social"></object></li>
