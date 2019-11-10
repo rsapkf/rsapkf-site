@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 html {
   font-family: sans-serif;
@@ -209,7 +210,7 @@ html {
 body {
   color: hsla(263, 31%, 89%, 0.8);
   background: rgb(8, 2, 63);
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Open Sans', monospace;
   font-size: 0.9rem;
   font-weight: normal;
   word-wrap: break-word;
@@ -274,7 +275,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -291,7 +292,7 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -308,7 +309,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -415,6 +416,7 @@ pre {
   line-height: 1.42;
   background: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
+  border-left: 2px solid rgb(16, 16, 180);
   overflow: auto;
   word-wrap: normal;
   padding: 1.45rem;
@@ -507,7 +509,7 @@ address {
   margin-bottom: 1.45rem;
 }
 b {
-  font-family: Inconsolata;
+  font-family: 'Open Sans';
 }
 strong {
   font-weight: bold;
