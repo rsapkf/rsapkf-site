@@ -15,8 +15,8 @@ const ProjectsPage = () => {
             <ul style={{ 
                 fontFamily: 'Open Sans',
              }}>
-                <li>[rsapkf/goodies]: Collection of GitHub repos, blogs and websites to learn cool things. <br /><object data="https://img.shields.io/github/stars/rsapkf/goodies?label=Star&amp;style=social"></object></li>
-                <li>[rsapkf/dotfiles]: my dev environment <br /><object data="https://img.shields.io/github/stars/rsapkf/dotfiles?label=Star&amp;style=social"></object></li>
+                <li>[<a href="https://github.com/rsapkf/goodies"><b>rsapkf/goodies</b></a>]: Collection of GitHub repos, blogs and websites to learn cool things. <br /><object data="https://img.shields.io/github/stars/rsapkf/goodies?label=Star&amp;style=social"></object></li>
+                <li>[<a href="https://github.com/rsapkf/dotfiles"><b>rsapkf/dotfiles</b></a>]: My Dev Environment. <br /><object data="https://img.shields.io/github/stars/rsapkf/dotfiles?label=Star&amp;style=social"></object></li>
             </ul>
         </Layout>
     )
