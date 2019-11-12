@@ -16,8 +16,8 @@ const Footer = () => {
 
     return (
         <footer className={footerStyles.footer}>
-            <div style={{ float: 'right' }}>
-            <a
+            <div style={{ float: 'right', fontFamily: 'Source Code Pro'}}>
+            {/* <a
             href="https://keybase.io/rsapkf"
             target="_blank"
             rel="noopener noreferrer"
@@ -32,7 +32,16 @@ const Footer = () => {
             >
             hn
             </a>{' '}
-            &bull;{' '}
+            &bull;{' '} */}
+            {/* <a
+            href="https://github.com/rsapkf/rsapkf-site"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ pointerEvents: 'none' }}
+            >
+            source
+            </a>{' '}
+            &bull;{' '} */}
             <a
             href="https://github.com/rsapkf"
             target="_blank"
@@ -43,6 +52,15 @@ const Footer = () => {
             &bull;{' '}
             <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
                 rss
+            </a>{' '}
+            &bull;{' '}
+            <a
+            href="https://github.com/rsapkf/rsapkf-site"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ pointerEvents: 'none' }}
+            >
+            source
             </a>
             </div>
             <p>© 2019 {data.site.siteMetadata.author}</p>

@@ -210,6 +210,7 @@ html {
 body {
   color: hsla(263, 31%, 89%, 0.8);
   background: rgb(8, 2, 63);
+  // background: rgb(0, 0, 14);
   font-family: 'Open Sans', monospace;
   font-size: 0.9rem;
   font-weight: normal;
@@ -281,6 +282,18 @@ h3 {
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
   line-height: 1.1;
+
+  .title {
+    font-family: 'Yeon Sung';
+    color: rgb(132, 142, 160);
+    font-size: 1.3rem;
+    padding: 0 0.1rem;
+    // text-decoration: underline;
+    // text-decoration-thickness: 2px;
+    // text-underline-offset: 12px;
+    // text-decoration-skip-ink: none;
+    // text-decoration-color: rgb(130, 139, 136);
+  }
 }
 h4 {
   margin-left: 0;
@@ -416,7 +429,7 @@ pre {
   line-height: 1.42;
   background: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
-  border-left: 2px solid rgb(16, 16, 180);
+  border-left: 3px solid rgb(21, 17, 241);
   overflow: auto;
   word-wrap: normal;
   padding: 1.45rem;
