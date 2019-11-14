@@ -534,7 +534,7 @@ th {
   font-weight: bold;
 }
 li {
-  margin-bottom: calc(1.45rem / 2);
+  margin-bottom: calc(1.45rem / 3);
 }
 ol li {
   padding-left: 0;
@@ -544,13 +544,13 @@ ul li {
 }
 li > ol {
   margin-left: 1.45rem;
-  margin-bottom: calc(1.45rem / 2);
-  margin-top: calc(1.45rem / 2);
+  margin-bottom: calc(1.45rem / 3);
+  margin-top: calc(1.45rem / 3);
 }
 li > ul {
   margin-left: 1.45rem;
-  margin-bottom: calc(1.45rem / 2);
-  margin-top: calc(1.45rem / 2);
+  margin-bottom: calc(1.45rem / 3);
+  margin-top: calc(1.45rem / 3);
 }
 blockquote *:last-child {
   margin-bottom: 0;
@@ -562,7 +562,7 @@ p *:last-child {
   margin-bottom: 0;
 }
 li > p {
-  margin-bottom: calc(1.45rem / 2);
+  margin-bottom: calc(1.45rem / 3);
 }
 code {
   font-size: 0.85rem;

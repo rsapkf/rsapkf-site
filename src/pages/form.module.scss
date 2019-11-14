@@ -1,13 +1,13 @@
 input[type=text] {
   border: 2px solid #080000;
-  background: rgb(106, 127, 196);
+  background: #63636d;
   border-radius: 0px;
   font-family: monospace;
 }
 
 input[type=email] {
     border: 2px solid #080000;
-    background: rgb(106, 127, 196);
+    background: #63636d;
     border-radius: 0px;
     font-family: monospace;
   }
@@ -20,15 +20,15 @@ textarea {
     resize: both;
     height: 150px;
     font-family: monospace;
-    background: rgb(106, 127, 196);
+    background: #63636d;
   }
 
 button[type=submit] {
-  background-color: #3f3da7;
-  color: white;
+  background-color: #63636d;
+  color: #000000;
   padding: 12px 20px;
   border: none;
-  border-radius: 1px;
+  border-radius: 3px;
   cursor: pointer;
 }
 
