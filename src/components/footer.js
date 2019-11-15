@@ -58,7 +58,7 @@ const Footer = () => {
             href="https://github.com/rsapkf/rsapkf-site"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ pointerEvents: 'none' }}
+	    // style={{ pointerEvents: 'none' }}
             >
             source
             </a>
