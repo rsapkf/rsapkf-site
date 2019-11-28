@@ -1,33 +1,33 @@
 .posts {
-    list-style-type: none;
-    margin: 0;
+  list-style-type: none;
+  margin: 0;
 }
 
 .post {
-    margin: 1rem 0;
+  margin: 1rem 0;
 
-    a {
-        background: #63636d;
-        color: #000000;
-        display: block;
-        padding: 1rem;
-        text-decoration: none;
-        border-radius: 5px;
-    }
+  a {
+    background: #63636d;
+    color: #000000;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+  }
 
-    a:hover {
-        background: #343aa5;
-        color: #000000;
-    }
+  a:hover {
+    background: #343aa5;
+    color: #000000;
+  }
 
-    h4 {
-        margin-bottom: 0;
-    }
+  h4 {
+    margin-bottom: 0;
+  }
 
-    span {
-        color: #03091f;
-        font-size: .9rem;
-        font-style: bold;
-        font-family: 'Open Sans';
-    }
+  span {
+    color: #03091f;
+    font-size: 0.9rem;
+    font-style: bold;
+    font-family: "Open Sans";
+  }
 }
