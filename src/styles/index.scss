@@ -1,8 +1,8 @@
-@import url('https://use.fontawesome.com/releases/v5.7.0/css/all.css');
-@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url("https://use.fontawesome.com/releases/v5.7.0/css/all.css");
+@import url("https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 html {
   font-family: sans-serif;
@@ -211,7 +211,7 @@ body {
   color: hsla(263, 31%, 89%, 0.8);
   background: rgb(8, 2, 63);
   // background: rgb(0, 0, 14);
-  font-family: 'Open Sans', monospace;
+  font-family: "Open Sans", monospace;
   font-size: 0.9rem;
   font-weight: normal;
   word-wrap: break-word;
@@ -221,6 +221,12 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+
+::selection {
+  background: rgb(81, 201, 26);
+  color: #000;
+}
+
 img {
   max-width: 100%;
   margin-left: 0;
@@ -276,15 +282,15 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
   line-height: 1.1;
 
   .title {
-    font-family: 'Yeon Sung';
+    font-family: "Yeon Sung";
     color: rgb(132, 142, 160);
     font-size: 1.3rem;
     padding: 0 0.1rem;
@@ -305,8 +311,8 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -322,12 +328,12 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
-  line-height: .9;
+  line-height: 0.9;
 }
 h6 {
   margin-left: 0;
@@ -522,7 +528,7 @@ address {
   margin-bottom: 1.45rem;
 }
 b {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
 }
 strong {
   font-weight: bold;
@@ -645,4 +651,3 @@ pre tt:after {
     font-size: 100%;
   }
 }
-
