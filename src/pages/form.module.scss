@@ -1,30 +1,41 @@
-input[type=text] {
+form {
+  border: 1px solid rgb(182, 162, 162);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+input,
+textarea {
+  color: rgb(2, 3, 24);
+}
+
+input[type="text"] {
   border: 2px solid #080000;
   background: #63636d;
   border-radius: 0px;
   font-family: monospace;
 }
 
-input[type=email] {
-    border: 2px solid #080000;
-    background: #63636d;
-    border-radius: 0px;
-    font-family: monospace;
-  }
+input[type="email"] {
+  border: 2px solid #080000;
+  background: #63636d;
+  border-radius: 0px;
+  font-family: monospace;
+}
 
 textarea {
-    width: 80%;
-    border: 2px solid #080000;
-    border-radius: 0px;
-    box-sizing: border-box;
-    resize: both;
-    height: 150px;
-    font-family: monospace;
-    background: #63636d;
-  }
+  width: 80%;
+  border: 2px solid #080000;
+  border-radius: 0px;
+  box-sizing: border-box;
+  resize: vertical;
+  height: 150px;
+  font-family: monospace;
+  background: #63636d;
+}
 
-button[type=submit] {
-  background-color: #63636d;
+button[type="submit"] {
+  background-color: #6b636d;
   color: #000000;
   padding: 12px 20px;
   border: none;
@@ -32,11 +43,11 @@ button[type=submit] {
   cursor: pointer;
 }
 
-button[type=submit]:hover {
-  background-color: #343aa5;
+button[type="submit"]:hover {
+  background-color: #434346;
 }
 
 label {
-    font-style: bold;
-    font-size: .9rem;
+  font-style: bold;
+  font-size: 0.9rem;
 }
