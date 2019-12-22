@@ -86,7 +86,7 @@ export default function Contact() {
             <br />
             <textarea
               name="message"
-              placeholder="."
+              placeholder=""
               onChange={handleChange}
               required
             />
