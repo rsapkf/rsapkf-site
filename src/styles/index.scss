@@ -47,8 +47,9 @@ template {
 }
 a {
   background-color: transparent;
-  color: rgb(69, 212, 69);
+  color: rgb(65, 184, 65);
   font-style: bold;
+  // text-decoration: none;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
@@ -209,7 +210,7 @@ html {
 }
 body {
   color: hsla(263, 31%, 89%, 0.8);
-  // background: rgb(8, 2, 63);
+  // background: rgb(1, 0, 12);
   background-image: linear-gradient(to bottom right, #040214, #27112b);
   font-family: "Open Sans", monospace;
   font-size: 0.9rem;
@@ -223,8 +224,7 @@ body {
 }
 
 ::selection {
-  background: rgb(81, 201, 26);
-  color: #000;
+  color: rgb(7, 247, 7);
 }
 
 img {
