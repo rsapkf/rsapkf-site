@@ -1,33 +1,34 @@
 .header {
-    padding: 1rem 0 3rem;
+  padding: 1rem 0 3rem;
 }
 
 .title {
-    color: #6b75b4;
-    font-size: 3.5rem;
-    text-decoration: none;
-    font-family: 'Yeon Sung', cursive;
+  color: #6b75b4;
+  font-size: 3.5rem;
+  text-decoration: none;
+  font-family: "Yeon Sung", cursive;
 }
 
 .nav-list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
 }
 
 .nav-item {
-    color: #8e8f8e;
-    font-family: 'Open Sans';
-    font-size: .9rem;
-    margin-right: 1.2rem;
-    text-decoration: none;
+  color: #8e8f8e;
+  font-family: "Open Sans";
+  font-size: 0.9rem;
+  margin-right: 1.2rem;
+  text-decoration: none;
+  position: relative;
 }
 
 .nav-item:hover {
-    color: #666666;
+  color: #666666;
 }
 
 .active-nav-item {
-    color: #989bc5;
+  color: #989bc5;
 }

@@ -1,7 +1,7 @@
 form {
   border: 1px solid rgb(182, 162, 162);
-  padding: 40px;
-  border-radius: 20px;
+  padding: 2rem;
+  border-radius: 5px;
 }
 
 input,
@@ -9,22 +9,20 @@ textarea {
   color: rgb(2, 3, 24);
 }
 
-input[type="text"] {
-  border: 2px solid #080000;
-  background: #63636d;
-  border-radius: 0px;
-  font-family: monospace;
-}
-
+input[type="text"],
 input[type="email"] {
   border: 2px solid #080000;
   background: #63636d;
   border-radius: 0px;
   font-family: monospace;
+
+  &:focus {
+    background-color: #838391;
+  }
 }
 
 textarea {
-  width: 80%;
+  width: 100%;
   border: 2px solid #080000;
   border-radius: 0px;
   box-sizing: border-box;
@@ -32,6 +30,10 @@ textarea {
   height: 150px;
   font-family: monospace;
   background: #63636d;
+
+  &:focus {
+    background-color: #838391;
+  }
 }
 
 button[type="submit"] {
@@ -41,13 +43,15 @@ button[type="submit"] {
   border: none;
   border-radius: 3px;
   cursor: pointer;
-}
 
-button[type="submit"]:hover {
-  background-color: #434346;
+  &:hover {
+    background-color: #434346;
+    color: rgb(163, 154, 154);
+  }
 }
 
 label {
   font-style: bold;
   font-size: 0.9rem;
+  letter-spacing: 2px;
 }
