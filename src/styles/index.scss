@@ -49,13 +49,16 @@ a {
   background-color: transparent;
   color: rgb(65, 184, 65);
   font-style: bold;
+  transition: ease 0.5s;
+  padding: 0.7px 2px;
   // text-decoration: none;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
 a:hover {
   outline-width: 0;
-  color: grey;
+  color: rgb(167, 159, 159);
+  background-color: rgba(141, 125, 125, 0.1);
 }
 abbr[title] {
   border-bottom: none;
