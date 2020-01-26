@@ -70,7 +70,9 @@ const Footer = () => {
           source
         </a>
       </div>
-      <p>© 2020 {data.site.siteMetadata.author}</p>
+      <p style={{ fontFamily: "Source Code Pro" }}>
+        © 2020 {data.site.siteMetadata.author}
+      </p>
     </footer>
   )
 }
