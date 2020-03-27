@@ -27,23 +27,23 @@ const ProjectsPage = () => {
       >
         <li>
           [
-          <a href="https://github.com/rsapkf/goodies">
-            <b>rsapkf/goodies</b>
+          <a href="https://github.com/rsapkf/42">
+            <b>rsapkf/42</b>
           </a>
           ]: Collection of GitHub repos, blogs and websites to learn cool
           things.
           <br />[
-          <a href="https://rsapkf.github.io/goodies">
+          <a href="https://rsapkf.github.io/42/">
             <b>Official Website</b>
           </a>
           (built with Rust and mdBook)]
           <br /> [
-          <a href="https://goodies.gitbook.io/goodies">
+          <a href="https://rsapkff.gitbook.io/42/">
             <b>GitBook</b>
           </a>
           ]
           <br />
-          <object data="https://img.shields.io/github/stars/rsapkf/goodies?label=Star&amp;style=social"></object>
+          <object data="https://img.shields.io/github/stars/rsapkf/42?label=Star&amp;style=social"></object>
         </li>
         <li>
           [
@@ -68,6 +68,20 @@ const ProjectsPage = () => {
           ]: My Dev Environment.
           <br />
           <object data="https://img.shields.io/github/stars/rsapkf/dotfiles?label=Star&amp;style=social"></object>
+        </li>
+        <li>
+          [
+          <a href="https://github.com/rsapkf/notes">
+            <b>rsapkf/notes</b>
+          </a>
+          ]: Personal notes for Vim, tmux, Linux, Python, JavaScript, etc.
+          <br />[
+          <a href="https://rsapkf.github.io/notes/">
+            <b>Website</b>
+          </a>
+          ]
+          <br />
+          <object data="https://img.shields.io/github/stars/rsapkf/notes?label=Star&amp;style=social"></object>
         </li>
       </ul>
     </Layout>
