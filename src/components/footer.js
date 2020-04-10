@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <footer className={footerStyles.footer}>
-      <div style={{ float: "right", fontFamily: "Source Code Pro" }}>
+      <div style={{ float: "right", fontFamily: "Open Sans" }}>
         {/* <a
             href="https://keybase.io/rsapkf"
             target="_blank"
@@ -70,7 +70,7 @@ const Footer = () => {
           source
         </a>
       </div>
-      <p style={{ fontFamily: "Source Code Pro" }}>
+      <p style={{ fontFamily: "Open Sans" }}>
         © 2020 {data.site.siteMetadata.author}
       </p>
     </footer>
