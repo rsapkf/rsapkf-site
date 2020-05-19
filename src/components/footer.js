@@ -71,7 +71,7 @@ const Footer = () => {
         </a>
       </div>
       <p style={{ fontFamily: "Open Sans" }}>
-        © 2020 {data.site.siteMetadata.author}
+        © {new Date().getFullYear()} {data.site.siteMetadata.author}
       </p>
     </footer>
   )

@@ -40,8 +40,9 @@ button[type="submit"] {
   background-color: #6b636d;
   color: #000000;
   padding: 12px 20px;
+  margin-left: 2px;
   border: none;
-  border-radius: 3px;
+  border-radius: 0px;
   cursor: pointer;
 
   &:hover {
