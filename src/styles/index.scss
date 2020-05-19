@@ -213,8 +213,9 @@ html {
 }
 body {
   color: hsla(263, 31%, 89%, 0.8);
-  // background: rgb(1, 0, 12);
-  background-image: linear-gradient(to bottom right, #040214, #27112b);
+  background: rgb(1, 0, 12);
+  // background-image: linear-gradient(to bottom right, #040214, #27112b);
+  height: 100vh;
   font-family: "Open Sans", monospace;
   font-size: 0.9rem;
   font-weight: normal;

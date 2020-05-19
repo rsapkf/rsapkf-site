@@ -31,6 +31,7 @@ const BlogPage = () => {
       <Head title="Blog" />
       <u>
         <h3>Articles</h3>
+        <Link to="/tags">Tags</Link>
       </u>
       <ol className={blogStyles.posts}>
         {data.allMarkdownRemark.edges.map(edge => {
