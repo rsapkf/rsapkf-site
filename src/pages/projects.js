@@ -35,7 +35,7 @@ const ProjectsPage = () => {
           <br />[
           <a href="https://rsapkf.github.io/42/">
             <b>Official Website</b>
-          </a>
+          </a>{' '}
           (built with Rust and mdBook)]
           <br /> [
           <a href="https://rsapkff.gitbook.io/42/">
@@ -44,6 +44,29 @@ const ProjectsPage = () => {
           ]
           <br />
           <object data="https://img.shields.io/github/stars/rsapkf/42?label=Star&amp;style=social"></object>
+        </li>
+        <li>
+          [
+          <a href="https://github.com/rsapkf/notes">
+            <b>rsapkf/notes</b>
+          </a>
+          ]: Personal notes for Vim, tmux, Linux, Python, JavaScript, etc.
+          <br />[
+          <a href="https://rsapkf.github.io/notes/">
+            <b>Website</b>
+          </a>
+          ]
+          <br />
+          <object data="https://img.shields.io/github/stars/rsapkf/notes?label=Star&amp;style=social"></object>
+        </li>
+        <li>
+          [
+          <a href="https://github.com/rsapkf/dotfiles">
+            <b>rsapkf/dotfiles</b>
+          </a>
+          ]: My Dev Environment.
+          <br />
+          <object data="https://img.shields.io/github/stars/rsapkf/dotfiles?label=Star&amp;style=social"></object>
         </li>
         <li>
           [
@@ -60,28 +83,21 @@ const ProjectsPage = () => {
           <br />
           <object data="https://img.shields.io/github/stars/rsapkf/gnureadline-reference?label=Star&amp;style=social"></object>
         </li>
+
         <li>
           [
-          <a href="https://github.com/rsapkf/dotfiles">
-            <b>rsapkf/dotfiles</b>
+          <a href="https://github.com/rsapkf/invidious-playlist-duration">
+            <b>rsapkf/invidious-playlist-duration</b>
           </a>
-          ]: My Dev Environment.
+          ]: Firefox add-on that show total duration of playlists on Invidious.
           <br />
-          <object data="https://img.shields.io/github/stars/rsapkf/dotfiles?label=Star&amp;style=social"></object>
-        </li>
-        <li>
           [
-          <a href="https://github.com/rsapkf/notes">
-            <b>rsapkf/notes</b>
-          </a>
-          ]: Personal notes for Vim, tmux, Linux, Python, JavaScript, etc.
-          <br />[
-          <a href="https://rsapkf.github.io/notes/">
-            <b>Website</b>
+          <a href="https://addons.mozilla.org/en-US/firefox/addon/invidious-playlist-duration/">
+            <b>addons.mozilla.org</b>
           </a>
           ]
           <br />
-          <object data="https://img.shields.io/github/stars/rsapkf/notes?label=Star&amp;style=social"></object>
+          <object data="https://img.shields.io/github/stars/rsapkf/invidious-playlist-duration?label=Star&amp;style=social"></object>
         </li>
       </ul>
     </Layout>
