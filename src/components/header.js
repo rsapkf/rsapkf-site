@@ -29,7 +29,7 @@ const Header = () => {
               activeClassName={headerStyles.activeNavItem}
               to="/"
             >
-              Home
+              ~
             </Link>
           </li>
           <li>
