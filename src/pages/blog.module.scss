@@ -5,6 +5,7 @@
 
 .post {
   margin: 1rem 0;
+  transition: all 0.7s ease-in-out;
 
   a {
     background: #63636d;
@@ -18,6 +19,7 @@
   a:hover {
     background: #434346;
     color: #000000;
+    transform: scale(1.05);
   }
 
   h4 {

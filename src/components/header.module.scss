@@ -1,12 +1,26 @@
+$header-theme-color: #6b75b4;
+
 .header {
   padding: 1rem 0 3rem;
 }
 
 .title {
-  color: #6b75b4;
+  color: $header-theme-color;
   font-size: 3.5rem;
   text-decoration: none;
   font-family: "Yeon Sung", cursive;
+
+  &:hover{
+    background-color: transparent;
+    color: rgb(90, 84, 84);
+  }
+
+  &::after {
+    content: "(fulltime autodidact)";
+    font-family: "Open Sans";
+    font-size: 1rem;
+    color: rgb(49, 47, 47);
+  }
 }
 
 .nav-list {
@@ -14,6 +28,28 @@
   flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
+
+  a {
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      max-width: 200px;
+      height: 1px;
+      bottom: -4px;
+      left: -50%;
+      background-color: $header-theme-color;
+      opacity: 0;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    &:hover:before {
+      opacity: 1;
+      left: 0;
+      transform: scaleX(1);
+    }
+  }
 }
 
 .nav-item {
@@ -23,12 +59,15 @@
   margin-right: 1.2rem;
   text-decoration: none;
   position: relative;
-}
 
-.nav-item:hover {
-  color: #666666;
+  &:hover {
+    color: #666666;
+  }
 }
 
 .active-nav-item {
   color: #989bc5;
+  opacity: 1;
+  left: 0;
+  transform: scaleX(1);
 }

@@ -1,7 +1,7 @@
 import React from "react"
 import { navigate } from "gatsby-link"
-import Layout from "../components/layout"
-import Head from "../components/head"
+import Layout from "../components/Layout"
+import Head from "../components/Head"
 
 import formStyles from "./form.module.scss"
 
@@ -36,9 +36,7 @@ export default function Contact() {
   return (
     <Layout>
       <Head title="Contact Form" />
-      <u>
-        <h3>Contact Form</h3>
-      </u>
+      <h3>Contact Form</h3>
       <form
         name="contact"
         method="post"

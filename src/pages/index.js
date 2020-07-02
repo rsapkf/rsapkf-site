@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import Layout from '../components/layout'
-import Head from '../components/head'
+import Layout from '../components/Layout'
+import Head from '../components/Head'
 
 const IndexPage = () => {
     return (
@@ -11,7 +11,7 @@ const IndexPage = () => {
             <h3><u>Welcome to </u><span className="title">rsapkf</span><u>'s Home Page</u>!</h3>
             <p>I mostly work with [<a href="https://github.com/django/django">Python/Django</a>] and the [<a href="https://www.startpage.com/do/metasearch.pl?query=mern%20stack">MERN Stack</a>]. I also work with [<a href="https://github.com/pallets/flask">Python/Flask</a>], and a few other CSS and JavaScript Frameworks/Libraries and <a href="https://jamstack.org/">JAMstack</a> Technologies.
             </p><br />
-            <p>Please see [<Link to="/tech">Technologies</Link>] section for more info.</p>
+            <p>Please see [<Link to="/technologies">Technologies</Link>] section for more info.</p>
             <hr />
             <p>Need a developer? <Link to="/contact">Contact me</Link>.</p>
         </Layout>

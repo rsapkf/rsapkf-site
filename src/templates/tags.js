@@ -3,14 +3,14 @@ import PropTypes from "prop-types"
 
 // Components
 import { Link, graphql } from "gatsby"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
-  } tagged with "${tag}"`
+    } tagged with "${tag}"`
 
   return (
     <Layout>
@@ -27,10 +27,6 @@ const Tags = ({ pageContext, data }) => {
             )
           })}
         </ul>
-        {/*
-              This links to a page that does not yet exist.
-              You'll come back to it!
-            */}
         <Link to="/tags">All tags</Link>
       </div>
     </Layout>
