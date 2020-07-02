@@ -30,13 +30,13 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           style={{ textDecoration: "none" }}
-          // style={{ pointerEvents: 'none' }}
+        // style={{ pointerEvents: 'none' }}
         >
           source
         </a>
       </div>
       <p style={{ fontFamily: "Open Sans" }}>
-        © {new Date().getFullYear()}{" "}
+        © 2018 - {new Date().getFullYear()}{" "}
         <Link to="/">{data.site.siteMetadata.author}</Link>
       </p>
     </footer>

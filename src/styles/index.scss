@@ -54,7 +54,7 @@ a {
   -webkit-text-decoration-skip: objects;
 
   // target external links
-  &:not([href^="/"]):not([href*="github.com"]):not([href*="youtube.com"]):not([href*="apple.com"]):not([href*="wikipedia.org"]):not([href*="stackoverflow.com"]):not([href*="reddit.com"]):not([href*="goodreads.com"]):not([href^="#"]):not([href^="/"])::after {
+  &:not([href^="/"]):not([href*="github.com"]):not([href*="gitlab.com"]):not([href*="ycombinator.com"]):not([href*="twitter.com"]):not([href*="youtube.com"]):not([href*="apple.com"]):not([href*="wikipedia.org"]):not([href*="stackoverflow.com"]):not([href*="reddit.com"]):not([href*="goodreads.com"]):not([href*="microsoft.com"]):not([href^="#"]):not([href^="/"])::after {
     content: "\f35d";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -74,8 +74,20 @@ a {
     content: "\f09b";
   }
 
+  &[href*="gitlab.com"]::after {
+    content: "\f296";
+  }
+
   &[href*="wikipedia.org"]::after {
     content: "\f266";
+  }
+
+  &[href*="ycombinator.com"]::after {
+    content: "\f3af";
+  }
+
+  &[href*="twitter.com"]::after {
+    content: "\f099";
   }
 
   &[href*="youtube.com"]::after {
@@ -96,6 +108,10 @@ a {
 
   &[href*="apple.com"]::after {
     content: "\f179";
+  }
+
+  &[href*="microsoft.com"]::after {
+    content: "\f3ca";
   }
 }
 
