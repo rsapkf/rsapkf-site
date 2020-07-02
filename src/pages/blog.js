@@ -1,14 +1,16 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import blogStyles from "./blog.module.scss"
-import Head from "../components/head"
+import Head from "../components/Head"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+      ) {
         edges {
           node {
             frontmatter {
@@ -29,10 +31,8 @@ const BlogPage = () => {
   return (
     <Layout>
       <Head title="Blog" />
-      <u>
-        <h3>Articles</h3>
-        <Link to="/tags">Tags</Link>
-      </u>
+      <h3>Articles</h3>
+      <Link to="/tags">Tags</Link>
       <ol className={blogStyles.posts}>
         {data.allMarkdownRemark.edges.map(edge => {
           return (
@@ -43,8 +43,8 @@ const BlogPage = () => {
                   <small>
                     <i className="far fa-calendar"></i>{" "}
                     {edge.node.frontmatter.date} |{" "}
-                    <i class="fas fa-stopwatch"></i> {edge.node.timeToRead} min
-                    read
+                    <i className="fas fa-stopwatch"></i> {edge.node.timeToRead}{" "}
+                    min read
                   </small>
                 </span>
                 <br />

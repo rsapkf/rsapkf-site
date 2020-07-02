@@ -1,0 +1,29 @@
+$icon-color: #6b75b4;
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+// .prev {
+//     &::before {
+//         content: '\f359 ';
+//         font-family: "Font Awesome 5 Free";
+//         font-weight: 900;
+//         color: $icon-color;
+//     }
+// }
+
+// .next {    
+//     &::after {
+//         content: ' \f35a';
+//         font-family: "Font Awesome 5 Free";
+//         font-weight: 900;
+//         color: $icon-color;
+//     }
+// }
+
+.title {
+    font-size: 0.8rem;
+    opacity: 0.6;
+}

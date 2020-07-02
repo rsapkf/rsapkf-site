@@ -72,7 +72,7 @@ const Header = () => {
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
-              to="/tech"
+              to="/technologies"
             >
               Technologies
             </Link>

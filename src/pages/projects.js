@@ -1,16 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Head from "../components/head"
+import Layout from "../components/Layout"
+import Head from "../components/Head"
 
 const ProjectsPage = () => {
   return (
     <Layout>
       <Head title="Projects" />
-      <u>
-        <h3>Projects</h3>
-      </u>
+      <h3>Projects</h3>
       I'm working on a few projects that aren't yet ready to be launched. All
       projects will be open sourced upon release. Please follow via{" "}
       <a href="/rss.xml">RSS</a> to get notified.
@@ -18,7 +16,8 @@ const ProjectsPage = () => {
       <br />
       <p>
         For other smaller projects that I'm working on, see my{" "}
-        <a href="https://github.com/rsapkf">GitHub</a> profile:
+        <a href="https://github.com/rsapkf">GitHub</a> and{" "}
+        <a href="https://gist.github.com/rsapkf">GitHub Gist</a> profile:
       </p>
       <ul
         style={{
@@ -35,7 +34,7 @@ const ProjectsPage = () => {
           <br />[
           <a href="https://rsapkf.github.io/42/">
             <b>Official Website</b>
-          </a>{' '}
+          </a>{" "}
           (built with Rust and mdBook)]
           <br /> [
           <a href="https://rsapkff.gitbook.io/42/">
@@ -89,9 +88,8 @@ const ProjectsPage = () => {
           <a href="https://github.com/rsapkf/invidious-playlist-duration">
             <b>rsapkf/invidious-playlist-duration</b>
           </a>
-          ]: Firefox add-on that show total duration of playlists on Invidious.
-          <br />
-          [
+          ]: Firefox add-on that shows total duration of playlists on Invidious.
+          <br />[
           <a href="https://addons.mozilla.org/en-US/firefox/addon/invidious-playlist-duration/">
             <b>addons.mozilla.org</b>
           </a>
