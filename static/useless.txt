@@ -1,6 +1,6 @@
 Co-ordinates:
 (largest number that is the sum of the digits of its cube) point 766667, 
-(largest n for which 12+22+32+ ... +n2 = 1+2+3+ ... +m has a solution) point 266667
+(largest n for which 1^2+2^2+3^2+ ... +n^2 = 1+2+3+ ... +m has a solution) point 266667
 
 Age:
 \int_{0}^{\pi} \ -1.57411e^x cosx \, dx
