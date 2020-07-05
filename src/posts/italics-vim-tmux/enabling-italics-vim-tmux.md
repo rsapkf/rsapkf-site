@@ -16,14 +16,14 @@ Before jumping right in, I think it's a good idea to learn some basics of what i
 
 - #### Environment Variables
 
-  An environment variable is a named object that contains data used by one or more applications. In simple terms, it is a variable with a name and a value. The value of an environmental variable can for example be the location of all executable files in the file system, the default editor that should be used, or the system locale settings. <i><a href="https://wiki.archlinux.org/index.php/Environment_variables">ArchWiki</a></i>
+  An environment variable is a named object that contains data used by one or more applications. In simple terms, it is a variable with a name and a value. The value of an environmental variable can for example be the location of all executable files in the file system, the default editor that should be used, or the system locale settings. [_ArchWiki_](https://wiki.archlinux.org/index.php/Environment_variables)
 
 - #### TERM
 
   TERM is a common environment variable used by a Linux system that contains the type of the running terminal. It is used by programs running in the terminal that wish to use terminal-specific capabilities. To see the value of TERM environment variable in your system , run `echo $TERM`. In most cases, it will be something like `xterm-256color` if you're using a 256 color terminal.
 
 - #### Terminfo
-  Terminfo is a data base describing terminals, used by screen-oriented programs such as vi, and libraries such as curses. Terminfo describes terminals by giving a set of capabilities which they have, by specifying how to perform screen operations, and by specifying padding requirements and initialization sequences. _[linux.die.net](https://linux.die.net/man/5/terminfo)_.
+  Terminfo is a data base describing terminals, used by screen-oriented programs such as vi, and libraries such as curses. Terminfo describes terminals by giving a set of capabilities which they have, by specifying how to perform screen operations, and by specifying padding requirements and initialization sequences. [_linux.die.net_](https://linux.die.net/man/5/terminfo)
 - #### `infocmp` &nbsp;command
   `infocmp` can be used to compare or print terminfo descriptions.
 - #### `tic` &nbsp;command

@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 import blogNavStyles from './blognav.module.scss'
 
 export default function BlogNav({ prev, next }) {
-    console.log(prev)
     return (
         <div className={blogNavStyles.container}>
             {prev && (
