@@ -30,6 +30,12 @@ $header-theme-color: #6b75b4;
   margin: 0;
 
   a {
+
+    &:hover {
+      background-color: transparent;
+      color: #989bc5;
+    }
+
     &:before {
       content: "";
       position: absolute;
@@ -37,7 +43,7 @@ $header-theme-color: #6b75b4;
       max-width: 200px;
       height: 1px;
       bottom: -4px;
-      left: -50%;
+      // left: -50%;
       background-color: $header-theme-color;
       opacity: 0;
       transform: scaleX(0);

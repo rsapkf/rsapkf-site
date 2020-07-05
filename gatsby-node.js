@@ -46,8 +46,8 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const posts = res.data.allMarkdownRemark.edges;
 
   posts.forEach((edge, i) => {
-    const prev = posts[i - 1];
-    const next = posts[i + 1];
+    const prev = posts[i + 1];
+    const next = posts[i - 1];
     createPage({
       component: blogTemplate,
       path: `/blog/${edge.node.fields.slug}`,
