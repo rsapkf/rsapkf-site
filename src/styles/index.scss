@@ -45,7 +45,6 @@ template {
 }
 
 a {
-  color: rgb(65, 184, 65);
   font-style: bold;
   transition: ease 0.5s;
   padding: 0.7px 2px;
@@ -53,7 +52,7 @@ a {
   -webkit-text-decoration-skip: objects;
 
   // target external links
-  &:not([href^="/"]):not([href*="github.com"]):not([href*="gitlab.com"]):not([href*="ycombinator.com"]):not([href*="twitter.com"]):not([href*="youtube.com"]):not([href*="apple.com"]):not([href*="wikipedia.org"]):not([href*="stackoverflow.com"]):not([href*="reddit.com"]):not([href*="goodreads.com"]):not([href*="microsoft.com"]):not([href^="#"]):not([href^="/"])::after {
+  &:not([href^="/"]):not([href*="mozilla.org"]):not([href*="github.com"]):not([href*="gitlab.com"]):not([href*="ycombinator.com"]):not([href*="twitter.com"]):not([href*="youtube.com"]):not([href*="apple.com"]):not([href*="wikipedia.org"]):not([href*="stackoverflow.com"]):not([href*="reddit.com"]):not([href*="goodreads.com"]):not([href*="microsoft.com"]):not([href*="facebook.com"]):not([href*="instagram.com"]):not([href^="#"]):not([href^="/"])::after {
     content: "\f35d";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -67,6 +66,10 @@ a {
     padding: 0.15rem;
     position: relative;
     bottom: 0.2rem;
+  }
+
+  &[href*="mozilla.org"]::after {
+    content: "\f269";
   }
 
   &[href*="github.com"]::after {
@@ -112,13 +115,19 @@ a {
   &[href*="microsoft.com"]::after {
     content: "\f3ca";
   }
+
+  &[href*="facebook.com"]::after {
+    content: "\f09a";
+  }
+
+  &[href*="instagram.com"]::after {
+    content: "\f09a";
+  }
 }
 
 a:active,
 a:hover {
   outline-width: 0;
-  color: rgb(167, 159, 159);
-  background-color: rgba(141, 125, 125, 0.1);
 }
 abbr[title] {
   border-bottom: none;
@@ -272,9 +281,6 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(263, 31%, 89%, 0.8);
-  background: rgb(1, 0, 12);
-  // background-image: linear-gradient(to bottom right, #040214, #27112b);
   height: 100vh;
   font-family: "Open Sans", monospace;
   font-size: 0.9rem;
@@ -285,10 +291,6 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
-}
-
-::selection {
-  color: rgb(7, 247, 7);
 }
 
 img {
@@ -352,13 +354,6 @@ h3 {
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
   line-height: 1.1;
-
-  .title {
-    font-family: "Yeon Sung";
-    color: rgb(132, 142, 160);
-    font-size: 1.3rem;
-    padding: 0 0.1rem;
-  }
 }
 h4 {
   margin-left: 0;

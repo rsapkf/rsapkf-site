@@ -1,3 +1,18 @@
+body {
+  color: hsla(263, 31%, 89%, 0.8);
+  background: rgb(1, 0, 12);
+}
+
+a {
+  color: rgb(65, 184, 65);
+
+  &:active,
+  &:hover {
+    color: rgb(167, 159, 159);
+    background-color: rgba(141, 125, 125, 0.1);
+  }
+}
+
 .container {
   margin: 0 auto;
   max-width: 800px;
@@ -6,6 +21,11 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  line-height: 1.5rem;
+
+  ::selection {
+    color: rgb(7, 247, 7);
+  }
 }
 
 .content {
