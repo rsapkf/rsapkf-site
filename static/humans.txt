@@ -7,4 +7,4 @@
     Tools: Netlify, Neovim, Debian 9, rxvt-unicode, Git, GitHub, Firefox Developer Edition, Chromium, VSCode...
 
 /* Influenced By */
-    Dan Abramov's(github.com/gearson) Blog- (https://overreacted.io)
+    Dan Abramov's (github.com/gearson) blog- (https://overreacted.io)

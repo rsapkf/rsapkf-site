@@ -28,34 +28,6 @@ $header-theme-color: #6b75b4;
   flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
-
-  a {
-
-    &:hover {
-      background-color: transparent;
-      color: #989bc5;
-    }
-
-    &:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      max-width: 200px;
-      height: 1px;
-      bottom: -4px;
-      // left: -50%;
-      background-color: $header-theme-color;
-      opacity: 0;
-      transform: scaleX(0);
-      transition: all 0.3s ease-in-out 0s;
-    }
-
-    &:hover:before {
-      opacity: 1;
-      left: 0;
-      transform: scaleX(1);
-    }
-  }
 }
 
 .nav-item {
@@ -67,7 +39,29 @@ $header-theme-color: #6b75b4;
   position: relative;
 
   &:hover {
-    color: #666666;
+    background-color: transparent;
+    color: #989bc5;
+  }
+
+  // animated underline on hover
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    max-width: 200px;
+    height: 1px;
+    bottom: -4px;
+    // left: -50%;
+    background-color: #989bc5;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  &:hover:before {
+    opacity: 1;
+    left: 0;
+    transform: scaleX(1);
   }
 }
 
