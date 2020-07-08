@@ -51,6 +51,16 @@ a {
   text-decoration: none;
   -webkit-text-decoration-skip: objects;
 
+  // target links with target attribute
+  &[target]:hover::after {
+    content: "\f360";
+    position: relative;
+    bottom: 0.5rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    transition: ease 0.1s;
+  }
+
   // target external links
   &:not([href^="/"]):not([href*="mozilla.org"]):not([href*="github.com"]):not([href*="gitlab.com"]):not([href*="ycombinator.com"]):not([href*="twitter.com"]):not([href*="youtube.com"]):not([href*="apple.com"]):not([href*="wikipedia.org"]):not([href*="stackoverflow.com"]):not([href*="reddit.com"]):not([href*="goodreads.com"]):not([href*="microsoft.com"]):not([href*="facebook.com"]):not([href*="instagram.com"]):not([href^="#"]):not([href^="/"])::after {
     content: "\f35d";
