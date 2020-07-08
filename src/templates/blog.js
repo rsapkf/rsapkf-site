@@ -12,6 +12,7 @@ export const query = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         lastupdated(formatString: "MMMM DD, YYYY")
+        tags
       }
       html
       timeToRead
@@ -20,30 +21,32 @@ export const query = graphql`
 `
 
 const Blog = (props) => {
+  const metadata = props.data.markdownRemark.frontmatter
+
   return (
     <Layout>
-      <Head title={props.data.markdownRemark.frontmatter.title} />
-      <h3>{props.data.markdownRemark.frontmatter.title}</h3>
-      <i>
-        <small>
-          <i className="far fa-calendar"></i>{" "}
-          {props.data.markdownRemark.frontmatter.date} |{" "}
-          <i className="fas fa-stopwatch"></i>{" "}
-          {props.data.markdownRemark.timeToRead} min read
-        </small>
-      </i>
+      <Head title={metadata.title} />
+      <h3>{metadata.title}</h3>
+      <small>
+        <i className="far fa-calendar"></i>{" "}
+        {metadata.date} | {" "}
+        <i className="fas fa-stopwatch"></i>{" "}
+        {props.data.markdownRemark.timeToRead} min read | {" "}
+        <i className="fas fa-tags"></i>{" "}
+        {metadata.tags.map((tag, i) => metadata.tags[i + 1] ? <span><Link to={`/tags/${tag}`}>#{tag}</Link>, </span> : <Link to={`/tags/${tag}`}>#{tag}</Link>)}
+      </small>
       <hr />
       <div
         dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
       ></div>
       <small>
-        <i>Last Updated: {props.data.markdownRemark.frontmatter.lastupdated}</i>
+        <i>Last Updated: {metadata.lastupdated}</i>
       </small>
       <hr />
       <BlogNav prev={props.pageContext.prev} next={props.pageContext.next} />
       <br />
-      Got suggestions or feedback? <Link to="/contact">Contact</Link> me!
-    </Layout>
+      Got suggestions or feedback ? <Link to="/contact">Contact</Link> me!
+    </Layout >
   )
 }
 

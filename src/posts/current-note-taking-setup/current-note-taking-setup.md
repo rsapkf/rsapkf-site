@@ -2,7 +2,7 @@
 title: "A Privacy Focused Note-Taking and PKM Setup"
 date: "2020-06-17"
 lastupdated: "2020-06-17"
-spoiler: "PKM stands for Personal Knowledge Management."
+spoiler: "PKM = Personal Knowledge Management."
 tags: ["note-taking", "vim", "knowledge-base", "privacy"]
 ---
 
@@ -42,10 +42,10 @@ Secondly, here are the features I'm looking for in my workflow:
 
     I have always been a [Firefox](https://www.mozilla.org/en-US/firefox/new/) user. I use [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/) as my primary browser. For links that I'd rather not share with the world, I use [Firefox Sync](https://support.mozilla.org/en-US/products/firefox/sync). There are multiple folders and hierarchies with weird names that I personally use to sort my bookmarks. For example, I use it to store:
 
-    - YouTube Playlists + custom Playlists (as opposed to YouTube's Save to Library feature),
+    - YouTube Playlists + custom Playlists (as opposed to YouTube's "Save to Library" and "Liked videos" feature),
     - Reddit threads/memes (as apposed to Reddit's "save" feature,
-    - IMDb links instead of IMDb's "Lists",
-    - Twitter posts instead of Twitter's "Likes",
+    - IMDb links (instead of IMDb's "Lists"),
+    - Twitter posts (instead of Twitter's "Likes"),
     - Bookmarklets,
     - interesting Instagram profiles (e.g. [@electricpants](https://www.instagram.com/electricpants/)),
     - Spotify / YouTube Music links (I gotta admit this is boring and painful.)
@@ -60,7 +60,7 @@ Secondly, here are the features I'm looking for in my workflow:
 
     But what about links that I want to check out later on my laptop while I'm browsing let's say, HN on my phone? I can use Firefox Sync for this as well but the experience isn't so good. I try to minimize my use of my phone for tasks that I'd like to do on my computer but for such use cases, I use a "Read It Later" service called [Pocket](https://getpocket.com) (This isn't open source, but it's owned by Mozilla and these folks seem to be more trustworthy than most other companies). I am thinking of eventually switching to a self-hosted alternative like [wallabag](https://github.com/wallabag/wallabag) but I'm not in a position to do so right now. I use tags to manage links in Pocket.
 
-    I also use Pocket as an alternative to YouTube's "Watch later" and IMDb's "Watchlist" features.
+    I also use Pocket as an alternative to YouTube's "Watch Later" and IMDb's "Watchlist" features.
 
     __Aside__: I do use Twitter, not for microblogging but to follow interesting accounts (with a VPN). Their recommendation system is pretty good for this sort of thing. As for Spotify, I hate the fact that it is so closely tied to Facebook. They log all search queries even after deleting your search history. I have deleted all my Spotify Playlists (I can't delete them permanently) and exported the data to Firefox (using [Exportify](https://github.com/watsonbox/exportify)). I need to find a better solution for Music (I'm trying out [this service](https://audiomack.com/).).
 
@@ -101,7 +101,7 @@ I use Standard Notes for these as well. A better solution for todos would be som
 This is something I'd like to do in the future (my apologies) but I am currently limited by costs (indicated by $$$). 
 
 ### <a href="#summary" id="summary">#</a> Summary
-In a nutshell, most of my notes are stored in [Markdown](https://daringfireball.net/projects/markdown/syntax) files inside folders on my hard drive. I use [Neovim](https://github.com/neovim/neovim) and [Gedit](https://gitlab.gnome.org/GNOME/gedit) to edit these notes. I share [some](https://github.com/rsapkf/42/) [of](https://github.com/rsapkf/dotfiles) [them](https://github.com/rsapkf/notes) with the world, and for private notes, I use end-to-end encrypted services, [Firefox Sync](https://support.mozilla.org/en-US/products/firefox/sync), [Standard Notes](https://github.com/standardnotes/) and [Bitwarden](https://github.com/bitwarden). I use [Pocket](https://getpocket.com) to save and sync links that I would want to read later.
+In a nutshell, most of my notes are stored in [Markdown](https://daringfireball.net/projects/markdown/syntax) files inside folders on my hard drive. I use [Neovim](https://github.com/neovim/neovim) and [Gedit](https://gitlab.gnome.org/GNOME/gedit) to edit these notes amd [Git](https://git-scm.com/) for version control and sync. I share [some](https://github.com/rsapkf/42/) [of](https://github.com/rsapkf/dotfiles) [them](https://github.com/rsapkf/notes) with the world, and for private notes, I use end-to-end encrypted services: [Firefox Sync](https://support.mozilla.org/en-US/products/firefox/sync), [Standard Notes](https://github.com/standardnotes/) and [Bitwarden](https://github.com/bitwarden). I use [Pocket](https://getpocket.com) to save and sync links that I want to read later.
 
 By the way, I still carry a notepad and pen with me for cases when I don't have access to my phone or the Internet.
 

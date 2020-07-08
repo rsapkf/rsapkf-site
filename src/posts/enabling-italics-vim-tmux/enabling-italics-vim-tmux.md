@@ -3,7 +3,7 @@ title: Enabling Italics in Vim and tmux
 date: "2020-03-17"
 lastupdated: "2020-04-07"
 spoiler: "Trust me, this will save you a ton of your time."
-tags: ["linux", "vim"]
+tags: ["linux", "vim", "tmux"]
 ---
 
 If you're like me, you fiddle around with your development setup and dotfiles frequently tweaking and breaking things and learning along the way. I only recently found out that you could have comments on Vim appear in _Italics_. All you need to do is add `highlight Comment cterm=italic` to your `.vimrc`. Except, it's usually not that straighforward! I spent 3.5 hours researching how to properly enable Italics in Vim and then, in Vim inside [tmux](https://github.com/tmux/tmux) and found out some genuine and a few stupid reasons things might not work as expected on your system.
@@ -23,10 +23,15 @@ Before jumping right in, I think it's a good idea to learn some basics of what i
   TERM is a common environment variable used by a Linux system that contains the type of the running terminal. It is used by programs running in the terminal that wish to use terminal-specific capabilities. To see the value of TERM environment variable in your system , run `echo $TERM`. In most cases, it will be something like `xterm-256color` if you're using a 256 color terminal.
 
 - #### Terminfo
+
   Terminfo is a data base describing terminals, used by screen-oriented programs such as vi, and libraries such as curses. Terminfo describes terminals by giving a set of capabilities which they have, by specifying how to perform screen operations, and by specifying padding requirements and initialization sequences. [_linux.die.net_](https://linux.die.net/man/5/terminfo)
-- #### `infocmp` &nbsp;command
+- 
+#### `infocmp` &nbsp;command
+
   `infocmp` can be used to compare or print terminfo descriptions.
+
 - #### `tic` &nbsp;command
+
   `tic` is the terminfo entry-description compiler. This command translates the terminfo files from source format into compiled format.
 
 And now we can begin. To have Italics enabled in terminal Vim/Neovim, you need to have a terminal emulator that supports Italics. To check this for your terminal, type the following:

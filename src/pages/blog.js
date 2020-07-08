@@ -17,6 +17,7 @@ const BlogPage = () => {
               title
               date(formatString: "MMMM DD, YYYY")
               spoiler
+              tags
             }
             timeToRead
             fields {
@@ -35,21 +36,25 @@ const BlogPage = () => {
       <Link to="/tags">Tags</Link>
       <ol className={blogStyles.posts}>
         {data.allMarkdownRemark.edges.map(edge => {
+          const metadata = edge.node.frontmatter
+
           return (
             <li className={blogStyles.post}>
               <Link to={`/blog/${edge.node.fields.slug}`}>
-                <h4>{edge.node.frontmatter.title}</h4>
+                <h4>{metadata.title}</h4>
                 <span>
                   <small>
                     <i className="far fa-calendar"></i>{" "}
-                    {edge.node.frontmatter.date} |{" "}
-                    <i className="fas fa-stopwatch"></i> {edge.node.timeToRead}{" "}
-                    min read
+                    {metadata.date} |{" "}
+                    <i className="fas fa-stopwatch"></i>{" "}
+                    {edge.node.timeToRead}{" "} min read |{" "}
+                    <i className="fas fa-tags"></i>{" "}
+                    {metadata.tags.map((tag, i) => metadata.tags[i + 1] ? `#${tag}, ` : `#${tag}`)}
                   </small>
                 </span>
                 <br />
                 <small>
-                  <b>{edge.node.frontmatter.spoiler}</b>
+                  <b>{metadata.spoiler}</b>
                 </small>
               </Link>
             </li>
