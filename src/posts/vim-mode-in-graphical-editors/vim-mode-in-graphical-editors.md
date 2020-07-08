@@ -6,7 +6,7 @@ spoiler: "PS. Not advocating for VSCode or anything."
 tags: ["vim", "programming"]
 ---
 
-Make no mistake, I am a giant Vim/Emacs/Terminal advocate. But if you really need to use full-featured graphical text editors or IDEs for development, there are ways to get around the problem. Almost all major graphical text editors/IDEs with a plugin ecosystem today allow you to enable/install vim emulation. Here are some plugins for the major ones. Installation is fairly trivial.
+Make no mistake- I am a giant Vim/Emacs/Terminal advocate. But if you really need to use full-featured graphical text editors or IDEs for development, there are ways to get around the problem. Almost all major graphical text editors/IDEs with a plugin ecosystem today allow you to enable/install vim emulation. Here are some plugins for the major ones. Installation is fairly trivial.
 
 #### 1. VSCode
 
@@ -14,7 +14,7 @@ Install [vscodevim](https://marketplace.visualstudio.com/items?itemName=vscodevi
 
 #### 2. Sublime Text
 
-Go to user settings(Settings > Preferences) and remove `"Vintage"` from `"ignored_packages"` array.
+Go to user settings (Settings > Preferences) and remove `"Vintage"` from `"ignored_packages"` array.
 Details can be found in the [Official Sublime Text Docs](https://www.sublimetext.com/docs/3/vintage.html).
 
 #### 3. Atom
