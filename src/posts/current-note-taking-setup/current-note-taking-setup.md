@@ -8,7 +8,9 @@ tags: ["note-taking", "vim", "knowledge-base", "privacy"]
 
 With an overwhelmingly increasing number of productivity tools and note-taking applications on the market, it is becoming more and more difficult to settle on one particular application / workflow for taking notes. Over the years, I've tried many many setups for this: from pen and paper (which still beats everything in my opinion) to completely offline solutions like txt files, [VimWiki](https://github.com/vimwiki/vimwiki), [Zettlr](https://github.com/zettlr/zettlr) and [MarkText](https://github.com/marktext/marktext), [Joplin](https://github.com/laurent22/joplin) and SaaS products like [this one](https://roamresearch.com/) and methods like [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) (this didn't work for my programming notes), I've tried a plethora of apps that are out there. For the past few months however, I've settled on a simple workflow that I'll explain below.
 
-__Disclaimer__: I am not a researcher who has to read multiple academic papers everyday and annotate things for later use. I'm just a kid who still have a lot to learn and this is my __current__ note-taking setup that works for me. For suggestions and feedback, please comment on discussions or email me.
+[TL;DR](#summary)
+
+__Disclaimer__: I am not a researcher who has to read multiple academic papers everyday and annotate things for later use. I'm just a kid who still has a lot to learn and this is my __current__ note-taking setup that works for me.
 
 First, let's look at the high level overview of what my notes consist of (yet). There are typically 3 kinds of notes that I take:
 
@@ -98,6 +100,7 @@ I use Standard Notes for these as well. A better solution for todos would be som
 
 This is something I'd like to do in the future (my apologies) but I am currently limited by costs (indicated by $$$). 
 
+### <a href="#summary" id="summary">#</a> Summary
 In a nutshell, most of my notes are stored in [Markdown](https://daringfireball.net/projects/markdown/syntax) files inside folders on my hard drive. I use [Neovim](https://github.com/neovim/neovim) and [Gedit](https://gitlab.gnome.org/GNOME/gedit) to edit these notes. I share [some](https://github.com/rsapkf/42/) [of](https://github.com/rsapkf/dotfiles) [them](https://github.com/rsapkf/notes) with the world, and for private notes, I use end-to-end encrypted services, [Firefox Sync](https://support.mozilla.org/en-US/products/firefox/sync), [Standard Notes](https://github.com/standardnotes/) and [Bitwarden](https://github.com/bitwarden). I use [Pocket](https://getpocket.com) to save and sync links that I would want to read later.
 
 By the way, I still carry a notepad and pen with me for cases when I don't have access to my phone or the Internet.
