@@ -83,7 +83,7 @@ const Header = () => {
               activeClassName={headerStyles.activeNavItem}
               to="/other"
             >
-              Other/
+              other/
             </Link>
           </li>
         </ul>
