@@ -32,7 +32,7 @@ Secondly, here are the features I'm looking for in my workflow:
 
     I have a compulsive urge to collect any new website that I come across that sparks my curiosity and meets a few standards. As of now, there are more than 3000 websites in [my collection](https://github.com/rsapkf/42/). For this, I have a bunch of markdown files in a folder with filenames matching the top level category that each website goes into. Inside each of those files, there are sub-categories and nested hierarchies of lists with more and more specific criteria for categorization. I use [Neovim](https://github.com/neovim/neovim) / [Gedit](https://gitlab.gnome.org/GNOME/gedit) for writing Markdown because these editors don't auto-format my markdown files on save like [VSCode](https://github.com/Microsoft/vscode) does by default. This is a digital version of my collection from my notebook way back.
     
-    This isn't an attempt to create another [alternativeTo.net](https://alternativeto.net). Just a personal thing.
+    This isn't an attempt to create another [alternativeTo.net](https://alternativeto.net) or one of those [awesome lists](https://github.com/topics/awesome). Just a personal thing.
 
     Anyway, This repo consists of what I like to call my "public" bookmarks. I put this on GitHub for everyone to take advantage of and explore what the internet has to offer. So, if you're interested, go check it out.
 

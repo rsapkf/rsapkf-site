@@ -21,7 +21,7 @@ Details can be found in the [Official Sublime Text Docs](https://www.sublimetext
 
 Install the [atom-vim-mode-plus](https://atom.io/packages/vim-mode-plus) ([GitHub](https://github.com/t9md/atom-vim-mode-plus)) plugin.
 
-#### 4. PyCharm/IntelliJ IDEA
+#### 4. PyCharm / IntelliJ IDEA
 
 Install [IdeaVim](https://www.jetbrains.com/help/pycharm/using-product-as-the-vim-editor.html) ([GitHub](https://github.com/JetBrains/ideavim)) plugin from the Marketplace.
 
