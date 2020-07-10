@@ -37,7 +37,7 @@ There are multiple plugins I use for various functionalities in this site. Most 
 ```
 - Powered by: GatsbyJS (React and GraphQL)
 - Hosting: Netlify
-- Form handling: Netlify's Form Handling
+- Form Handling: Netlify's Form Handling
 - Gatsby Plugins: [
     "gatsby-source-filesystem",
     "gatsby-transformer-remark",
