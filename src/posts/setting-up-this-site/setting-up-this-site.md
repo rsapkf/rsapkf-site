@@ -8,7 +8,7 @@ tags: ["gatsbyjs", "netlify", "github"]
 
 → [Summary](#summary)
 
-This site is powered by [GatsbyJS](https://github.com/gatsbyjs/gatsby), an open source static site generator built on top of [React](https://github.com/facebook/react) and [GraphQL](https://github.com/graphql/graphql-spec), two of the most popular modern web technolgies. It is hosted on [Netlify](https://www.netlify.com/). For form submissions, I use [Netlify's Form Handling](https://docs.netlify.com/forms/setup/).
+This site is powered by [GatsbyJS](https://github.com/gatsbyjs/gatsby), an open source static site generator built on top of [React](https://github.com/facebook/react) and [GraphQL](https://github.com/graphql/graphql-spec), two of the most popular modern web technologies. It is hosted on [Netlify](https://www.netlify.com/). For form submissions, I use [Netlify's Form Handling](https://docs.netlify.com/forms/setup/).
  The source code is available on my [Github](https://github.com/rsapkf/rsapkf-site).
 
 I recommend you follow the official [Gatsby Tutorial](https://www.gatsbyjs.org/tutorial/) to learn Gatsby. Little knowledge of React and GraphQL will make it a lot easier.
@@ -21,7 +21,7 @@ There are multiple plugins I use for various functionalities in this site. Most 
 
 - [gatsby-plugin-feed](https://www.gatsbyjs.org/packages/gatsby-plugin-feed/): Creates an RSS feed (or multiple feeds) for Gatsby sites.
 
-- [gatsby-remark-prismjs](https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/): Adds syntax highlighting to code blocks in markdown files using [PrismJS](https://github.com/PrismJS/prism).
+- [gatsby-remark-prismjs](https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/): Adds syntax highlighting to code blocks in markdown files using [PrismJS](https://github.com/PrismJS/prism). Requires [prismjs](https://github.com/PrismJS/prism).
 
 - [gatsby-plugin-mdx](https://www.gatsbyjs.org/packages/gatsby-plugin-mdx/): [MDX](https://github.com/mdx-js/mdx) lets you write JSX embedded inside markdown. You can write, for example, `# heading` for the little things and JSX for more advanced components.
 
