@@ -1,10 +1,10 @@
 import React from 'react';
 
-const LastUpdatedPages = (props) => {
+const LastUpdatedPages = ({ date }) => {
     return (
         <div>
             <small>
-                <i>Last Updated: {props.date}</i>
+                <i>Last Updated: {date}</i>
             </small>
             <hr />
         </div>

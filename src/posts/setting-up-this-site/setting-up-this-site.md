@@ -17,17 +17,17 @@ There are multiple plugins I use for various functionalities in this site. Most 
 
 - [gatsby-source-filesystem](https://www.gatsbyjs.org/packages/gatsby-source-filesystem/): Sources data into your Gatsby application from your local filesystem.
 
+- [gatsby-transformer-remark](https://www.gatsbyjs.org/packages/gatsby-transformer-remark/): Parses Markdown files using [RemarkJS](https://github.com/remarkjs/remark).
+
 - [gatsby-plugin-react-helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/): Provides drop-in support for server rendering data added with [React Helmet](https://github.com/nfl/react-helmet). With this plugin, attributes you add in their component, e.g. title, meta attributes, etc. will get added to the static HTML pages Gatsby builds.
 
 - [gatsby-plugin-feed](https://www.gatsbyjs.org/packages/gatsby-plugin-feed/): Creates an RSS feed (or multiple feeds) for Gatsby sites.
-
-- [gatsby-remark-prismjs](https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/): Adds syntax highlighting to code blocks in markdown files using [PrismJS](https://github.com/PrismJS/prism). Requires [prismjs](https://github.com/PrismJS/prism).
 
 - [gatsby-plugin-mdx](https://www.gatsbyjs.org/packages/gatsby-plugin-mdx/): [MDX](https://github.com/mdx-js/mdx) lets you write JSX embedded inside markdown. You can write, for example, `# heading` for the little things and JSX for more advanced components.
 
 - [gatsby-plugin-sass](https://www.gatsbyjs.org/packages/gatsby-plugin-sass/): Handles [SCSS/Sass](https://sass-lang.com/) files. Requires [node-sass](https://github.com/sass/node-sass).
 
-- [gatsby-transformer-remark](https://www.gatsbyjs.org/packages/gatsby-transformer-remark/): Parses Markdown files using [RemarkJS](https://github.com/remarkjs/remark).
+- [gatsby-remark-prismjs](https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/): Adds syntax highlighting to code blocks in markdown files using [PrismJS](https://github.com/PrismJS/prism). Requires [prismjs](https://github.com/PrismJS/prism).
 
 - [gatsby-plugin-google-analytics](https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/): This one is self-explanatory. I will eventually switch to a more privacy focused analytics system like [Plausible](https://www.gatsbyjs.org/packages/gatsby-plugin-plausible/) or [GoatCounter](https://www.gatsbyjs.org/packages/gatsby-plugin-goatcounter/) but this is what I'm using as of now.
 
@@ -41,9 +41,9 @@ There are multiple plugins I use for various functionalities in this site. Most 
 - Gatsby Plugins: [
     "gatsby-source-filesystem",
     "gatsby-transformer-remark",
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-feed",
     "gatsby-plugin-mdx",
-    "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass" (requires "node-sass"),
     "gatsby-remark-prismjs" (requires "prismjs"),
     "gatsby-plugin-google-analytics",

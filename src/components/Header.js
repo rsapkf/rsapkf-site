@@ -77,18 +77,26 @@ const Header = () => {
               Technologies
             </Link>
           </li>
-          <li>
+          <li className={headerStyles.dropdown}>
             <Link
-              className={headerStyles.navItem}
+              className={`${headerStyles.navItem} ${headerStyles.dropdownButton}`}
               activeClassName={headerStyles.activeNavItem}
-              to="/other"
+              to="#"
             >
-              other/
+              other pages/
             </Link>
+            <div className={headerStyles.dropdownContent}>
+              <Link to="/now">Now</Link>
+              <Link to="/books">Books</Link>
+              <Link to="/recommendations">Recommendations</Link>
+              <Link to="/wishlist">Wishlist</Link>
+              <Link to="/linklog">Linklog</Link>
+              <Link to="/microblog">Microblog</Link>
+            </div>
           </li>
         </ul>
       </nav>
-    </header>
+    </header >
   )
 }
 
