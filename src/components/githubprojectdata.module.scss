@@ -7,4 +7,9 @@
     padding: 10px 20px;
     margin-right: 10px;
     background-color: rgba(24, 22, 22, 0.432);
+
+    @media(max-width: 450px) {
+        padding: 3px 6px;
+        margin-right: 3px;
+    }
 }

@@ -81,7 +81,7 @@ const Header = () => {
             <Link
               className={`${headerStyles.navItem} ${headerStyles.dropdownButton}`}
               activeClassName={headerStyles.activeNavItem}
-              to="#"
+              to='#'
             >
               other pages/
             </Link>
@@ -96,7 +96,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-    </header >
+    </header>
   )
 }
 
