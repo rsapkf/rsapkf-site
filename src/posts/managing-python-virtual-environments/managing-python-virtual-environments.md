@@ -92,6 +92,6 @@ $ (venv) which python3
 
 ##### Learn More:
 
-<a href="https://docs.python.org/3/library/venv.html">Official Python documentation on venv module</a>.<br />
-<a href="https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe">Stack Overflow discussion on the topic</a>.<br />
-<a href="https://snarky.ca/why-you-should-use-python-m-pip/">Why you should use python -m pip</a>.
+[Official Python documentation on venv module](https://docs.python.org/3/library/venv.html).  
+[Stack Overflow discussion on the topic](https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe).  
+[Why you should use python -m pip](https://snarky.ca/why-you-should-use-python-m-pip/).

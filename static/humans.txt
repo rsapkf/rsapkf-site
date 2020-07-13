@@ -1,10 +1,13 @@
 /* Created by */
-    Me(keybase.io/rsapkf)
+    (keybase.io/rsapkf)
 
 /* Tech Stack */
-    Languages: HTML, CSS(SCSS), JavaScript, Markdown
-    Frameworks: ReactJS, GatsbyJS, GraphQL
-    Tools: Netlify, Neovim, Debian 9, rxvt-unicode, Git, GitHub, Firefox Developer Edition, Chromium, VSCode...
+    Languages: HTML, CSS (SCSS), JavaScript, Markdown
+    Frameworks: ReactJS, GraphQL, GatsbyJS
+    Tools: Netlify, Neovim, Debian 9, rxvt-unicode, st, Git, GitHub, Firefox Developer Edition, Chromium, VSCode...
+    Loading SVG: https://github.com/SamHerbert/SVG-Loaders
 
-/* Influenced By */
-    Dan Abramov's (github.com/gearson) blog- (https://overreacted.io)
+/* Inspired By */
+    Dan Abramov (github.com/gearson) - (https://overreacted.io)
+    Wes Bos (github.com/wesbos) - (https://wesbos.com)
+
