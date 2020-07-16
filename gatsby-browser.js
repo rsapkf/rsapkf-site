@@ -1,4 +1,4 @@
-// Prismjs Themes
+// PrismJS Themes
 
 // require("prismjs/themes/prism.css")
 // require("prismjs/themes/prism-dark.css")
@@ -9,5 +9,6 @@
 // require("prismjs/themes/prism-solarizedlight.css")
 require("prismjs/themes/prism-tomorrow.css")
 
+// PrismJS Plugins
 require("prismjs/plugins/command-line/prism-command-line.css")
 require("prismjs/plugins/line-numbers/prism-line-numbers.css")

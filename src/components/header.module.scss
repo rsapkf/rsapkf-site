@@ -10,7 +10,7 @@ $header-theme-color: #6b75b4;
   text-decoration: none;
   font-family: "Yeon Sung", cursive;
 
-  &:hover{
+  &:hover {
     background-color: transparent;
     color: rgb(90, 84, 84);
   }
@@ -72,8 +72,9 @@ $header-theme-color: #6b75b4;
 }
 
 // Dropdown
- .dropdownButton {
-   font-family: monospace;
+.dropdownButton {
+  // font-family: monospace;
+  padding: 0 0 20px 0;
 
   // &::after {
   //    content: ' \f107';
@@ -82,15 +83,16 @@ $header-theme-color: #6b75b4;
   //  }
 
   &:hover:before {
-     opacity: 0;
-   }
+    opacity: 0;
+  }
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
     .dropdownContent {
       display: block;
       z-index: 1;
@@ -103,8 +105,9 @@ $header-theme-color: #6b75b4;
   position: absolute;
   background-color: rgb(1, 0, 12);
   border: 0.2px solid rgb(150, 145, 145);
-  padding: 5px;
+  margin-top: 17px;
   border-radius: 3px;
+  box-shadow: 1px 1px 3px 3px rgb(26, 25, 25);
 
   li {
     list-style: none;
@@ -112,8 +115,8 @@ $header-theme-color: #6b75b4;
 
   a {
     display: block;
-    padding: 3px 10px;
-    font-family: monospace;
+    padding: 4px 15px;
+    // font-family: monospace;
     color: #8e8f8e;
   }
 }
