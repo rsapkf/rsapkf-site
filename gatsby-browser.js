@@ -1,5 +1,12 @@
-// PrismJS Themes
+import React from "react"
 
+import { ThemeProvider } from "./src/context/ThemeContext"
+
+export const wrapRootElement = ({ element }) => (
+  <ThemeProvider>{element}</ThemeProvider>
+)
+
+// PrismJS Themes
 // require("prismjs/themes/prism.css")
 // require("prismjs/themes/prism-dark.css")
 // require("prismjs/themes/prism-funky.css")

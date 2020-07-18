@@ -2,11 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  color: hsla(263, 31%, 89%, 0.8);
-  background: rgb(1, 0, 12);
-}
-
 a {
   color: rgb(65, 184, 65);
 
@@ -34,4 +29,28 @@ a {
 
 .content {
   flex-grow: 1;
+}
+
+.dark {
+  transition: all 0.6s ease;
+  color: hsla(263, 31%, 89%, 0.8);
+  background-color: rgb(1, 0, 12);
+}
+
+/* Light mode styles */
+.light {
+  transition: all 0.6s ease;
+  background-color: #faf4fa;
+  color: black;
+
+  a {
+    color: #9f2ba5;
+  }
+
+  * {
+    &::selection {
+      color: rgb(32, 32, 32);
+      background-color: rgb(125, 192, 201);
+    }
+  }
 }

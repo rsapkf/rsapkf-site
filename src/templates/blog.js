@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import Head from "../components/Head"
-import BlogNav from '../components/BlogNav'
+import BlogNav from "../components/BlogNav"
 
 export const query = graphql`
   query($slug: String!) {
@@ -20,7 +20,7 @@ export const query = graphql`
   }
 `
 
-const Blog = (props) => {
+const Blog = props => {
   const metadata = props.data.markdownRemark.frontmatter
 
   return (
@@ -28,12 +28,19 @@ const Blog = (props) => {
       <Head title={metadata.title} />
       <h3>{metadata.title}</h3>
       <small>
-        <i className="far fa-calendar"></i>{" "}
-        {metadata.date} | {" "}
+        <i className="far fa-calendar"></i> {metadata.date} |{" "}
         <i className="fas fa-stopwatch"></i>{" "}
-        {props.data.markdownRemark.timeToRead} min read | {" "}
+        {props.data.markdownRemark.timeToRead} min read |{" "}
         <i className="fas fa-tags"></i>{" "}
-        {metadata.tags.map((tag, i) => metadata.tags[i + 1] ? <span><Link to={`/tags/${tag}`}>#{tag}</Link>, </span> : <Link to={`/tags/${tag}`}>#{tag}</Link>)}
+        {metadata.tags.map((tag, i) =>
+          metadata.tags[i + 1] ? (
+            <span>
+              <Link to={`/tags/${tag}`}>#{tag}</Link>,{" "}
+            </span>
+          ) : (
+            <Link to={`/tags/${tag}`}>#{tag}</Link>
+          )
+        )}
       </small>
       <hr />
       <div
@@ -45,8 +52,10 @@ const Blog = (props) => {
       <hr />
       <BlogNav prev={props.pageContext.prev} next={props.pageContext.next} />
       <br />
-      Got suggestions or feedback ? <Link to="/contact">Contact</Link> me!
-    </Layout >
+      <span style={{ marginTop: "20px" }}>
+        Got suggestions or feedback ? <Link to="/contact">Contact</Link> me!
+      </span>
+    </Layout>
   )
 }
 

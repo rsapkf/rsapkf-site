@@ -7,6 +7,7 @@ $header-theme-color: #6b75b4;
 .title {
   color: $header-theme-color;
   font-size: 3.5rem;
+  font-weight: 500;
   text-decoration: none;
   font-family: "Yeon Sung", cursive;
 
@@ -19,7 +20,7 @@ $header-theme-color: #6b75b4;
     content: "(fulltime autodidact)";
     font-family: "Open Sans";
     font-size: 1rem;
-    color: rgb(49, 47, 47);
+    color: rgb(94, 90, 90);
   }
 }
 
@@ -40,7 +41,7 @@ $header-theme-color: #6b75b4;
 
   &:hover {
     background-color: transparent;
-    color: #989bc5;
+    color: #6f6f75;
   }
 
   // animated underline on hover
@@ -72,19 +73,28 @@ $header-theme-color: #6b75b4;
 }
 
 // Dropdown
-.dropdownButton {
+.dropdown-button {
   // font-family: monospace;
   padding: 0 0 20px 0;
 
-  // &::after {
-  //    content: ' \f107';
-  //    font-family: "Font Awesome 5 Free";
-  //    font-weight: 900;
-  //  }
+  &::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: relative;
+    top: 0;
+    left: 4px;
+  }
 
   &:hover:before {
     opacity: 0;
   }
+
+  // &:hover::after {
+  //   content: "\f106";
+  //   font-family: "Font Awesome 5 Free";
+  //   font-weight: 900;
+  // }
 }
 
 .dropdown {
@@ -93,30 +103,37 @@ $header-theme-color: #6b75b4;
 
   &:hover,
   &:active {
-    .dropdownContent {
+    .dropdown-content {
       display: block;
       z-index: 1;
     }
   }
 }
 
-.dropdownContent {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: rgb(1, 0, 12);
   border: 0.2px solid rgb(150, 145, 145);
   margin-top: 17px;
   border-radius: 3px;
-  box-shadow: 1px 1px 3px 3px rgb(26, 25, 25);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
 
   li {
     list-style: none;
   }
 
   a {
+    // font-family: monospace;
     display: block;
     padding: 4px 15px;
-    // font-family: monospace;
     color: #8e8f8e;
   }
+}
+
+// Light mode Toggle
+.dark-switcher {
+  cursor: pointer;
+  float: right;
+  width: 20px;
 }
