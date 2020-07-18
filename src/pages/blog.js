@@ -8,9 +8,7 @@ import Head from "../components/Head"
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-      ) {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
         edges {
           node {
             frontmatter {
@@ -44,12 +42,12 @@ const BlogPage = () => {
                 <h4>{metadata.title}</h4>
                 <span>
                   <small>
-                    <i className="far fa-calendar"></i>{" "}
-                    {metadata.date} |{" "}
-                    <i className="fas fa-stopwatch"></i>{" "}
-                    {edge.node.timeToRead}{" "} min read |{" "}
-                    <i className="fas fa-tags"></i>{" "}
-                    {metadata.tags.map((tag, i) => metadata.tags[i + 1] ? `#${tag}, ` : `#${tag}`)}
+                    <i className="far fa-calendar"></i> {metadata.date} |{" "}
+                    <i className="fas fa-stopwatch"></i> {edge.node.timeToRead}{" "}
+                    min read | <i className="fas fa-tags"></i>{" "}
+                    {metadata.tags.map((tag, i) =>
+                      metadata.tags[i + 1] ? `#${tag}, ` : `#${tag}`
+                    )}
                   </small>
                 </span>
                 <br />

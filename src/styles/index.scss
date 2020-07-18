@@ -11,7 +11,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-} 
+}
 article,
 aside,
 details,
@@ -720,7 +720,7 @@ pre tt:after {
  * Add back the container background-color, border-radius, padding, margin
  * and overflow that we removed from <pre>.
  */
- .gatsby-highlight {
+.gatsby-highlight {
   background-color: #3a2f3b;
   border-radius: 0.3em;
   margin: 0.5em 0;
