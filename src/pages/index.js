@@ -28,8 +28,8 @@ const IndexPage = () => {
       </p>
       <br />
       <p>
-        Please see [<Link to="/technologies">Technologies</Link>] page for more
-        info.
+        Please see [<Link to="/technologies">Technologies</Link>] page for
+        details.
       </p>
       <hr />
       <p>
