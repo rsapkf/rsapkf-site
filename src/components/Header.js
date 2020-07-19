@@ -40,11 +40,7 @@ const Header = () => {
           <nav>
             <ul className={headerStyles.navList}>
               <li>
-                <Link
-                  className={headerStyles.navItem}
-                  activeClassName={headerStyles.activeNavItem}
-                  to="/"
-                >
+                <Link className={headerStyles.navItem} to="/">
                   ~
                 </Link>
               </li>
