@@ -26,11 +26,9 @@ Before jumping right in, I think it's a good idea to learn some basics of what i
 
   Terminfo is a data base describing terminals, used by screen-oriented programs such as vi, and libraries such as curses. Terminfo describes terminals by giving a set of capabilities which they have, by specifying how to perform screen operations, and by specifying padding requirements and initialization sequences. [_linux.die.net_](https://linux.die.net/man/5/terminfo)
 
--
+- #### `infocmp` &nbsp;command
 
-#### `infocmp` &nbsp;command
-
-`infocmp` can be used to compare or print terminfo descriptions.
+  `infocmp` can be used to compare or print terminfo descriptions.
 
 - #### `tic` &nbsp;command
 
