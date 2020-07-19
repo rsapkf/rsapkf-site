@@ -1,15 +1,14 @@
 .metrics {
-    line-height: 3rem;
-    font-family: "Ubuntu Mono", monospace;
+  line-height: 3rem;
+  font-family: "Ubuntu Mono", monospace;
 }
 
-.metric, .metricCount {
-    padding: 10px 20px;
-    margin-right: 10px;
-    background-color: rgba(24, 22, 22, 0.432);
+.metric,
+.metricCount {
+  padding: 10px 10px;
 
-    @media(max-width: 450px) {
-        padding: 3px 6px;
-        margin-right: 3px;
-    }
+  @media (max-width: 450px) {
+    padding: 3px 6px;
+    margin-right: 3px;
+  }
 }

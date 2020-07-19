@@ -9,7 +9,6 @@ const Spinner = () => {
       {theme => (
         <div>
           <img
-            className
             src={spinner}
             style={{
               width: "35px",

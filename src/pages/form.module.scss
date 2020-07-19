@@ -37,13 +37,18 @@ textarea {
 }
 
 button[type="submit"] {
-  background-color: #6b636d;
-  color: #000000;
+  // background-color: #6b636d;
+  // color: #000000;
   padding: 12px 20px;
   margin-left: 2px;
-  border: none;
-  border-radius: 2px;
+  // border: none;
+  // border-radius: 2px;
   cursor: pointer;
+
+  border: 2px solid #080000;
+  background: #63636d;
+  border-radius: 0px;
+  font-family: monospace;
 
   &:hover {
     background-color: #434346;
