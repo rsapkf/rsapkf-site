@@ -5,7 +5,35 @@ import Layout from "../components/Layout"
 import Head from "../components/Head"
 import GitHubProjectData from "../components/GitHubProjectData"
 
-const projectsBackup = [
+const softwareProjects = [
+  {
+    name: "gnureadline-reference",
+    description:
+      "Comprehensive GNU Readline Shortcuts Guide for VI + Emacs Editing Modes.",
+    homepage: "https://gnureadline-reference.herokuapp.com/",
+    stargazers_count: 2,
+    forks_count: 0,
+  },
+  {
+    name: "invidious-playlist-duration",
+    description:
+      "Firefox add-on to view total duration of playlists on Invidio.us.",
+    homepage:
+      "https://addons.mozilla.org/en-US/firefox/addon/invidious-playlist-duration/",
+    stargazers_count: 0,
+    forks_count: 0,
+  },
+  {
+    name: "tzinfo",
+    description:
+      "Tiny application to check and compare local times of major cities of the world.",
+    homepage: "https://tzinfo.netlify.com/",
+    stargazers_count: 0,
+    forks_count: 0,
+  },
+]
+
+const personalProjects = [
   {
     name: "42",
     description:
@@ -29,19 +57,8 @@ const projectsBackup = [
     forks_count: 0,
   },
   {
-    name: "gnureadline-reference",
-    description:
-      "Comprehensive GNU Readline Shortcuts Guide for VI + Emacs Editing Modes.",
-    homepage: "https://gnureadline-reference.herokuapp.com/",
-    stargazers_count: 2,
-    forks_count: 0,
-  },
-  {
-    name: "invidious-playlist-duration",
-    description:
-      "Firefox add-on to view total duration of playlists on Invidio.us.",
-    homepage:
-      "https://addons.mozilla.org/en-US/firefox/addon/invidious-playlist-duration/",
+    name: "wallpapers",
+    description: "Pesonal Wallpaper Collection.",
     stargazers_count: 0,
     forks_count: 0,
   },
@@ -63,11 +80,26 @@ const ProjectsPage = () => {
         <a href="https://gist.github.com/rsapkf">GitHub Gist</a> profile:
       </p>
       <ul>
-        {projectsBackup.map((project, idx) => (
-          <li key={idx}>
-            <GitHubProjectData project={project} />
-          </li>
-        ))}
+        <li>
+          <h4>Personal:</h4>
+          <ul>
+            {personalProjects.map((project, idx) => (
+              <li key={idx}>
+                <GitHubProjectData project={project} />
+              </li>
+            ))}
+          </ul>
+        </li>
+        <li>
+          <h4>Software:</h4>
+          <ul>
+            {softwareProjects.map((project, idx) => (
+              <li key={idx}>
+                <GitHubProjectData project={project} />
+              </li>
+            ))}
+          </ul>
+        </li>
       </ul>
     </Layout>
   )

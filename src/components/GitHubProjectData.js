@@ -8,7 +8,7 @@ const GitHubProjectData = ({ project }) => {
   const [starsCount, setStarsCount] = useState(0)
   const [forksCount, setForksCount] = useState(0)
   const [description, setDescription] = useState("")
-  const [projectWebsite, setProjectWebsite] = useState("")
+  const [projectHomepage, setProjectHomepage] = useState("")
 
   const starsgazersURL = `https://github.com/${GITHUB_USERNAME}/${project.name}/stargazers`
   const forksURL = `https://github.com/${GITHUB_USERNAME}/${project.name}/network/members`
@@ -21,14 +21,14 @@ const GitHubProjectData = ({ project }) => {
           setStarsCount(result.data.stargazers_count)
           setForksCount(result.data.forks_count)
           setDescription(result.data.description)
-          setProjectWebsite(result.data.homepage)
+          setProjectHomepage(result.data.homepage)
         })
         .catch(error => {
-          // uses data from projectsBackup (../pages/projects) array if API is down
+          // uses data from backup arrays (../pages/projects) if API is down
           setStarsCount(project.stargazers_count)
           setForksCount(project.forks_count)
           setDescription(project.description)
-          setProjectWebsite(project.homepage)
+          setProjectHomepage(project.homepage)
         })
     }
 
@@ -43,9 +43,9 @@ const GitHubProjectData = ({ project }) => {
       </a>
       ]: {description}
       <br />
-      {projectWebsite && [
+      {projectHomepage && [
         <>
-          Homepage: <a href={projectWebsite}>{projectWebsite}</a>
+          Homepage: <a href={projectHomepage}>{projectHomepage}</a>
           <br />
         </>,
       ]}

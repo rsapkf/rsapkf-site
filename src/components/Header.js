@@ -80,22 +80,13 @@ const Header = () => {
                   Contact
                 </Link>
               </li>
-              {/* <li>
-                <Link
-                  className={headerStyles.navItem}
-                  activeClassName={headerStyles.activeNavItem}
-                  to="/technologies"
-                >
-                  Technologies
-                </Link>
-              </li> */}
               <li className={headerStyles.dropdown}>
                 <Link
                   className={`${headerStyles.navItem} ${headerStyles.dropdownButton}`}
                   activeClassName={headerStyles.activeNavItem}
                   to="#"
                 >
-                  other pages
+                  pages
                 </Link>
                 <div
                   className={headerStyles.dropdownContent}
@@ -110,6 +101,48 @@ const Header = () => {
                   <Link to="/microblog">Microblog</Link>
                   <Link to="/now">/now</Link>
                   <Link to="/uses">/uses</Link>
+                </div>
+              </li>
+              <li className={headerStyles.dropdown}>
+                <Link
+                  className={`${headerStyles.navItem} ${headerStyles.dropdownButton}`}
+                  activeClassName={headerStyles.activeNavItem}
+                  to="#"
+                >
+                  links
+                </Link>
+                <div
+                  className={headerStyles.dropdownContent}
+                  style={theme.dark ? {} : { backgroundColor: "#faf4fa" }}
+                >
+                  <a
+                    href="https://github.com/rsapkf/42/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    42
+                  </a>
+                  <a
+                    href="https://github.com/rsapkf/notes/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    notes
+                  </a>
+                  <a
+                    href="https://github.com/rsapkf/dotfiles/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    dotfiles
+                  </a>
+                  <a
+                    href="https://github.com/rsapkf/wallpapers/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    wallpapers
+                  </a>
                 </div>
               </li>
             </ul>
