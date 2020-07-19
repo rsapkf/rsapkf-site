@@ -61,7 +61,7 @@ a {
   }
 
   // target external links
-  &:not([href^="/"]):not([href*="mozilla.org"]):not([href*="github.com"]):not([href*="gitlab.com"]):not([href*="ycombinator.com"]):not([href*="twitter.com"]):not([href*="youtube.com"]):not([href*="apple.com"]):not([href*="wikipedia.org"]):not([href*="stackoverflow.com"]):not([href*="reddit.com"]):not([href*="goodreads.com"]):not([href*="microsoft.com"]):not([href*="facebook.com"]):not([href*="instagram.com"]):not([href^="#"]):not([href^="/"])::after {
+  &:not([href^="/"]):not([href*="mozilla.org"]):not([href*="github.com"]):not([href*="gitlab.com"]):not([href*="ycombinator.com"]):not([href*="twitter.com"]):not([href*="youtube.com"]):not([href*="apple.com"]):not([href*="wikipedia.org"]):not([href*="stackoverflow.com"]):not([href*="reddit.com"]):not([href*="goodreads.com"]):not([href*="microsoft.com"]):not([href*="imdb.com"]):not([href*="facebook.com"]):not([href*="instagram.com"]):not([href^="#"]):not([href^="/"])::after {
     content: "\f35d";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -123,6 +123,10 @@ a {
 
   &[href*="microsoft.com"]::after {
     content: "\f3ca";
+  }
+
+  &[href*="imdb.com"]::after {
+    content: "\f270";
   }
 
   &[href*="facebook.com"]::after {
