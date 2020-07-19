@@ -25,16 +25,18 @@ Before jumping right in, I think it's a good idea to learn some basics of what i
 - #### Terminfo
 
   Terminfo is a data base describing terminals, used by screen-oriented programs such as vi, and libraries such as curses. Terminfo describes terminals by giving a set of capabilities which they have, by specifying how to perform screen operations, and by specifying padding requirements and initialization sequences. [_linux.die.net_](https://linux.die.net/man/5/terminfo)
-- 
+
+-
+
 #### `infocmp` &nbsp;command
 
-  `infocmp` can be used to compare or print terminfo descriptions.
+`infocmp` can be used to compare or print terminfo descriptions.
 
 - #### `tic` &nbsp;command
 
   `tic` is the terminfo entry-description compiler. This command translates the terminfo files from source format into compiled format.
 
-And now we can begin. To have Italics enabled in terminal Vim/Neovim, you need to have a terminal emulator that supports Italics. To check this for your terminal, type the following:
+And now we can begin. To have Italics enabled in terminal Vim / Neovim, you need to have a terminal emulator that supports Italics. To check this for your terminal, type the following:
 
 ```bash
 echo -e "\e[3m foo \e[23m"
