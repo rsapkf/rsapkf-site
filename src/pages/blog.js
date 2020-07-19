@@ -31,7 +31,9 @@ const BlogPage = () => {
     <Layout>
       <Head title="Blog" />
       <h3>Articles</h3>
-      <Link to="/tags">Tags</Link>
+      <span>
+        <Link to="/tags">Tags</Link>
+      </span>
       <ol className={blogStyles.posts}>
         {data.allMarkdownRemark.edges.map(edge => {
           const metadata = edge.node.frontmatter

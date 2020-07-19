@@ -67,7 +67,7 @@ export default function Contact() {
         </p>
         <p>
           <label>
-            EMAIL
+            EMAIL *
             <br />
             <input
               type="email"
@@ -80,7 +80,7 @@ export default function Contact() {
         </p>
         <p>
           <label>
-            MESSAGE
+            MESSAGE *
             <br />
             <textarea
               name="message"

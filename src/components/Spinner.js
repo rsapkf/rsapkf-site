@@ -1,5 +1,5 @@
 import React from "react"
-import spinner from "../img/grid.svg"
+import spinner from "../assets/grid.svg"
 
 import ThemeContext from "../context/ThemeContext"
 
