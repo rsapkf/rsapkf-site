@@ -3,6 +3,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/Layout"
 import Head from "../components/Head"
+
 import blogStyles from "./blog.module.scss"
 
 const BlogPage = () => {
@@ -35,28 +36,28 @@ const BlogPage = () => {
         <Link to="/tags">Tags</Link>
       </span>
       <ol className={blogStyles.posts}>
-        {data.allMarkdownRemark.edges.map(edge => {
-          const metadata = edge.node.frontmatter
+        {data.allMarkdownRemark.edges.map((edge, idx) => {
+          const { title, date, spoiler, tags } = edge.node.frontmatter
 
           return (
-            <li className={blogStyles.post}>
+            <li className={blogStyles.post} key={idx}>
               <Link to={`/blog/${edge.node.fields.slug}`}>
-                <h4>{metadata.title}</h4>
-                <span>
-                  <small>
-                    <i className="far fa-calendar"></i> {metadata.date} |{" "}
-                    <i className="fas fa-stopwatch"></i> {edge.node.timeToRead}{" "}
-                    min read | <i className="fas fa-tags"></i>{" "}
-                    {metadata.tags.map((tag, i) =>
-                      metadata.tags[i + 1] ? `#${tag}, ` : `#${tag}`
-                    )}
-                  </small>
-                </span>
-                <br />
-                <small>
-                  <b>{metadata.spoiler}</b>
-                </small>
+                <span>{title}</span>
               </Link>
+              <br />
+              <span className={blogStyles.description}>
+                <small>
+                  <i className="far fa-calendar"></i> {date} |{" "}
+                  <i className="fas fa-stopwatch"></i> {edge.node.timeToRead}{" "}
+                  min read | <i className="fas fa-tags"></i>{" "}
+                  {tags.map((tag, i) =>
+                    tags[i + 1] ? `#${tag}, ` : `#${tag}`
+                  )}
+                  <br />
+                  {spoiler}
+                </small>
+              </span>
+              <hr />
             </li>
           )
         })}

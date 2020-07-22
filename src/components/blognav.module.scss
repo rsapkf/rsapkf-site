@@ -1,10 +1,5 @@
 // $icon-color: #6b75b4;
 
-.container {
-    display: flex;
-    justify-content: space-between;
-}
-
 // .prev {
 //     &::before {
 //         content: '\f359 ';
@@ -14,7 +9,7 @@
 //     }
 // }
 
-// .next {    
+// .next {
 //     &::after {
 //         content: ' \f35a';
 //         font-family: "Font Awesome 5 Free";
@@ -24,6 +19,7 @@
 // }
 
 .title {
-    font-size: 0.8rem;
-    opacity: 0.6;
+  font-size: 0.8rem;
+  opacity: 0.6;
+  font-style: italic;
 }

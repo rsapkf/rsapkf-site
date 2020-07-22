@@ -9,7 +9,7 @@ tags: ["gatsbyjs", "netlify", "github"]
 → [Summary](#summary)
 
 This site is powered by [GatsbyJS](https://github.com/gatsbyjs/gatsby), an open source static site generator built on top of [React](https://github.com/facebook/react) and [GraphQL](https://github.com/graphql/graphql-spec), two of the most popular modern web technologies. It is hosted on [Netlify](https://www.netlify.com/). For form submissions, I use [Netlify's Form Handling](https://docs.netlify.com/forms/setup/).
- The source code is available on my [Github](https://github.com/rsapkf/rsapkf-site).
+The source code is available on my [Github](https://github.com/rsapkf/rsapkf-site).
 
 I recommend you follow the official [Gatsby Tutorial](https://www.gatsbyjs.org/tutorial/) to learn Gatsby. Little knowledge of React and GraphQL will make it a lot easier.
 
@@ -34,6 +34,7 @@ There are multiple plugins I use for various functionalities in this site. Most 
 ---
 
 #### <a href="#summary" id="summary">#</a> Summary
+
 ```
 - Powered by: GatsbyJS (React and GraphQL)
 - Hosting: Netlify
@@ -52,20 +53,6 @@ There are multiple plugins I use for various functionalities in this site. Most 
 - Source Code: https://github.com/rsapkf/rsapkf-site
 ```
 
+---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+If you have further questions about how I implemented a particular feature on this site, [hit me up](/contact)!

@@ -4,11 +4,15 @@ html {
 
 a {
   color: rgb(65, 184, 65);
+  border-bottom: 1px solid rgba(52, 73, 94, 0.4);
+  font-weight: 500;
+  transition: all 0.6s;
 
   &:active,
   &:hover {
     color: rgb(167, 159, 159);
-    background-color: rgba(141, 125, 125, 0.1);
+    border-color: rgba(52, 73, 94, 0);
+    background-color: rgba(79, 84, 90, 0.15);
   }
 }
 
@@ -33,7 +37,7 @@ a {
 
 .dark {
   transition: all 0.6s ease;
-  color: hsla(263, 31%, 89%, 0.8);
+  color: #e1daeccc;
   background-color: rgb(1, 0, 12);
 }
 
@@ -45,6 +49,10 @@ a {
 
   a {
     color: #9f2ba5;
+
+    &:hover {
+      background-color: rgba(52, 73, 94, 0.1);
+    }
   }
 
   * {

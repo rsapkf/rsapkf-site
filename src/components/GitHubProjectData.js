@@ -39,7 +39,7 @@ const GitHubProjectData = ({ project }) => {
     <>
       [
       <a href={`https://github.com/${GITHUB_USERNAME}/${project.name}`}>
-        <b>{`${GITHUB_USERNAME}/${project.name}`}</b>
+        {`${GITHUB_USERNAME}/${project.name}`}
       </a>
       ]: {description}
       <br />
