@@ -90,6 +90,7 @@ const ProjectsPage = () => {
             ))}
           </ul>
         </li>
+        <br />
         <hr />
         <li>
           <h4>Software:</h4>
