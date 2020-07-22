@@ -14,7 +14,6 @@ body {
 }
 article,
 aside,
-details,
 figcaption,
 figure,
 footer,
@@ -22,8 +21,7 @@ header,
 main,
 menu,
 nav,
-section,
-summary {
+section {
   display: block;
 }
 audio,
@@ -142,6 +140,21 @@ a:active,
 a:hover {
   outline-width: 0;
 }
+
+details {
+  margin-bottom: 20px;
+}
+
+summary {
+  font-weight: bold;
+  font-size: 1rem;
+  // display: block;
+
+  & + ul {
+    margin-top: 20px;
+  }
+}
+
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;

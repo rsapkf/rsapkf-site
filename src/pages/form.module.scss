@@ -11,7 +11,7 @@ textarea {
 
 input[type="text"],
 input[type="email"] {
-  border: 2px solid #080000;
+  border: none;
   background: #63636d;
   border-radius: 0px;
   font-family: monospace;
@@ -23,7 +23,7 @@ input[type="email"] {
 
 textarea {
   width: 100%;
-  border: 2px solid #080000;
+  border: none;
   border-radius: 0px;
   box-sizing: border-box;
   resize: vertical;
@@ -37,22 +37,16 @@ textarea {
 }
 
 button[type="submit"] {
-  // background-color: #6b636d;
-  // color: #000000;
   padding: 12px 20px;
   margin-left: 2px;
-  // border: none;
-  // border-radius: 2px;
   cursor: pointer;
 
-  border: 2px solid #080000;
+  border: none;
   background: #63636d;
   border-radius: 0px;
-  font-family: monospace;
 
   &:hover {
-    background-color: #434346;
-    color: #000000;
+    background-color: #838391;
   }
 }
 

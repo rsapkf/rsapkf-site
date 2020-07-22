@@ -72,7 +72,7 @@ const ProjectsPage = () => {
       <p>
         I'm working on a few projects that aren't yet ready to be launched. All
         projects will be open sourced upon release. Please follow via{" "}
-        <Link to="/rss.xml">RSS</Link>to get notified.
+        <Link to="/rss.xml">RSS</Link> to get notified.
       </p>
       <p>
         For other smaller projects that I'm working on, see my{" "}
@@ -90,6 +90,7 @@ const ProjectsPage = () => {
             ))}
           </ul>
         </li>
+        <hr />
         <li>
           <h4>Software:</h4>
           <ul>

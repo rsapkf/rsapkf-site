@@ -4,31 +4,9 @@
 }
 
 .post {
-  margin: 1rem 0;
-  transition: all 0.7s ease-in-out;
+  margin: 1.3rem 0 1.3rem 1rem;
 
-  a {
-    background-color: rgb(134, 130, 130);
-    color: #000000;
-    display: block;
-    padding: 1rem;
-    text-decoration: none;
-    border-radius: 2px;
-  }
-
-  a:hover {
-    color: #000000;
-    transform: scale(1.1);
-  }
-
-  h4 {
-    margin-bottom: 0;
-  }
-
-  span {
-    color: #03091f;
-    font-size: 0.9rem;
-    font-style: bold;
-    font-family: "Open Sans";
+  .description {
+    opacity: 0.8;
   }
 }

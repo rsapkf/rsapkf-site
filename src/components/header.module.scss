@@ -10,9 +10,10 @@ $header-theme-color: #6b75b4;
   font-weight: 500;
   text-decoration: none;
   font-family: "Yeon Sung", cursive;
+  border-bottom: unset;
 
   &:hover {
-    background-color: transparent;
+    background-color: transparent !important;
     color: rgb(90, 84, 84);
   }
 
@@ -38,9 +39,10 @@ $header-theme-color: #6b75b4;
   margin-right: 1.2rem;
   text-decoration: none;
   position: relative;
+  border-bottom: unset;
 
   &:hover {
-    background-color: transparent;
+    background-color: transparent !important;
   }
 
   // animated underline on hover
@@ -97,6 +99,10 @@ $header-theme-color: #6b75b4;
   &:hover:before {
     opacity: 0;
   }
+
+  &:hover {
+    transition: all 1s;
+  }
 }
 
 .dropdown {
@@ -120,6 +126,7 @@ $header-theme-color: #6b75b4;
   margin-top: 15px;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+  transition: all 1s;
 
   li {
     list-style: none;
@@ -130,6 +137,7 @@ $header-theme-color: #6b75b4;
     display: block;
     padding: 4px 15px;
     color: #8e8f8e;
+    border-bottom: unset;
   }
 }
 

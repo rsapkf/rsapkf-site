@@ -32,9 +32,17 @@ const Header = () => {
             onClick={theme.toggleDark}
           >
             {theme.dark ? (
-              <img src={sun} alt="Sun" />
+              // <img src={sun} alt="Sun" />
+              <i
+                className="fas fa-sun"
+                style={{ color: "#e1daeccc", fontSize: "1.1rem" }}
+              ></i>
             ) : (
-              <img src={moon} alt="Moon" />
+              // <img src={moon} alt="Moon" />
+              <i
+                className="fas fa-moon"
+                style={{ color: "#403742", fontSize: "1.1rem" }}
+              ></i>
             )}
           </span>
           <nav>
