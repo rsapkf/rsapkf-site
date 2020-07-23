@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import axios from "axios"
 import githubProjectDataStyles from "./githubprojectdata.module.scss"
+import { fetchData } from "../services/githubAPI"
 
 const GITHUB_USERNAME = "rsapkf"
 
@@ -14,25 +15,16 @@ const GitHubProjectData = ({ project }) => {
   const forksURL = `https://github.com/${GITHUB_USERNAME}/${project.name}/network/members`
 
   useEffect(() => {
-    const fetchData = project => {
-      axios
-        .get(`https://api.github.com/repos/${GITHUB_USERNAME}/${project.name}`)
-        .then(result => {
-          setStarsCount(result.data.stargazers_count)
-          setForksCount(result.data.forks_count)
-          setDescription(result.data.description)
-          setProjectHomepage(result.data.homepage)
-        })
-        .catch(error => {
-          // uses data from backup arrays (../pages/projects) if API is down
-          setStarsCount(project.stargazers_count)
-          setForksCount(project.forks_count)
-          setDescription(project.description)
-          setProjectHomepage(project.homepage)
-        })
+    const fetchGitHubData = async () => {
+      const res = await fetchData(project)
+
+      setDescription(res.description)
+      setProjectHomepage(res.homepage)
+      setStarsCount(res.stargazers_count)
+      setForksCount(res.forks_count)
     }
 
-    fetchData(project)
+    fetchGitHubData(project)
   }, [])
 
   return (
