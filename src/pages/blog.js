@@ -35,12 +35,12 @@ const BlogPage = () => {
       <span>
         <Link to="/tags">Tags</Link>
       </span>
-      <ol className={blogStyles.posts}>
+      <ol className={blogStyles.articles}>
         {data.allMarkdownRemark.edges.map((edge, idx) => {
           const { title, date, spoiler, tags } = edge.node.frontmatter
 
           return (
-            <li className={blogStyles.post} key={idx}>
+            <li className={blogStyles.article} key={idx}>
               <Link to={`/blog/${edge.node.fields.slug}`}>
                 <span>{title}</span>
               </Link>

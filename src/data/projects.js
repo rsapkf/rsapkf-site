@@ -24,13 +24,13 @@ export const personalProjects = [
   },
   {
     name: "dotfiles",
-    description: "My Dev Environment.",
+    description: "My Development Environment.",
     stargazers_count: 0,
     forks_count: 0,
   },
   {
     name: "wallpapers",
-    description: "Pesonal Wallpaper Collection.",
+    description: "Personal Wallpaper Collection.",
     stargazers_count: 0,
     forks_count: 0,
   },
