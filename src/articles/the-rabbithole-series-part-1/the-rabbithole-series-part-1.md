@@ -8,7 +8,7 @@ tags: ["linux"]
 
 I am a simple 18 year old guy deeply interested in programming, unix, open-source and STEM in general. During my learning process, I have been in so many rabbitholes that I thought of doing a 3-part series of blog posts on this very topic. In this first part of the series, I am going to explain a rabbithole that I fell into a while back in very subtle way and it changed my workflow and knowledge about operating systems so much that I don't think I'll ever be will be able to go back to where I was before.
 
-After I switched entirely to Linux last year, I decided to learn C++ by following a Stroustrup's book on C++. As a Sublime Text/Atom guy, I decided to do the exercises in Vim to brush up on my Vim skills.
+After I switched entirely to Linux last year, I decided to learn C++ by following a Stroustrup's book on C++. As a Sublime Text / Atom guy, I decided to do the exercises in Vim to brush up on my Vim skills.
 
 I found myself constantly switching between Vim, terminal, e-book viewer and my browser windows in order to solve the problems. As an Ubuntu Gnome normie, I was using the `alt + tab` key combination to do so. Eventually, I realized I could do the same thing using `super + tab` keys! It was surprising to me because I had always used the former solution since Windows. To see which was more common among other linux users, I did a quick search on the web.
 
