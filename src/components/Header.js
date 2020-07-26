@@ -105,6 +105,7 @@ const Header = () => {
                   <Link to="/recommendations">Recommendations</Link>
                   <Link to="/puzzles">Puzzle List</Link>
                   <Link to="/wishlist">Wishlist</Link>
+                  <Link to="/donate">Donate</Link>
                   <Link to="/linklog">Linklog</Link>
                   <Link to="/microblog">Microblog</Link>
                   <Link to="/now">/now</Link>

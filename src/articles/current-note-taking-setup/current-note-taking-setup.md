@@ -10,7 +10,7 @@ With an overwhelmingly increasing number of productivity tools and note-taking a
 
 → [Summary](#summary)
 
-**Disclaimer**: I am not a researcher who has to read multiple academic papers everyday and annotate things for later use. I'm just a kid who still has a lot to learn and this is my **current** note-taking setup that works for me.
+**Disclaimer**: I am not a researcher who has to read multiple academic papers everyday and annotate things for later use. This is just my **current** note-taking setup that works for me.
 
 First, let's look at the high level overview of what my notes consist of (yet). There are typically 3 kinds of notes that I take:
 
@@ -30,20 +30,26 @@ Secondly, here are the features I'm looking for in my workflow:
 
 - Public Links:
 
-  I have a compulsive urge to collect any new website that I come across that sparks my curiosity and meets a few standards. As of now, there are more than 3000 websites in [my collection](https://github.com/rsapkf/42/). For this, I have a bunch of markdown files in a folder with filenames matching the top level category that each website goes into. Inside each of those files, there are sub-categories and nested hierarchies of lists with more and more specific criteria for categorization. I use [Neovim](https://github.com/neovim/neovim) / [Gedit](https://gitlab.gnome.org/GNOME/gedit) for writing Markdown because these editors don't auto-format my markdown files on save like [VSCode](https://github.com/Microsoft/vscode) does by default. This is a digital version of my collection from my notebook way back.
+  I have a compulsive urge to collect any new website that I come across that sparks my curiosity and meets a few standards. As of now, there are more than 3000 websites in [my collection](https://github.com/rsapkf/42/).
+
+  For this, I have a bunch of markdown files in a folder with filenames matching the top level category that each website goes into. Inside each of those files, there are sub-categories and nested hierarchies of lists with more and more specific criteria for categorization.
+
+  I use [Neovim](https://github.com/neovim/neovim) / [Gedit](https://gitlab.gnome.org/GNOME/gedit) for writing Markdown because these editors don't auto-format my markdown files on save like [VSCode](https://github.com/Microsoft/vscode) does by default. This is a digital version of my collection from my notebook way back.
 
   This isn't an attempt to create another [alternativeTo.net](https://alternativeto.net) or one of those [awesome lists](https://github.com/topics/awesome). Just a personal thing.
 
   Anyway, this repo consists of what I like to call my "public" bookmarks. I put this on GitHub for everyone to take advantage of and explore what the internet has to offer. So, if you're interested, go check it out.
 
-  A question I get asked a lot is isn't this time consuming to categorize and maintain a repo like this? Well, I don't do all the manual work of writing Markdown, and copy pasting links and descriptions for resources, etc. I have a few bookmarklets, vim macros, and scripts that do the formatting for me. I use an internal web extension that recursively exports a specific folder (in my case it's "//--todo-42"") from my bookmarks on Firefox to properly formatted Markdown (aside: I am working on publishing this addon with added functionality) and copy those links into whatever files they should go to. While browsing, I drag any new website to my Bookmarks Toolbar that I think I should add to the collection to that folder and at the end of the week, load the extension and export the data. This takes ~30 minutes per week. Then, I push the updates to GitHub and [Travis](https://travis-ci.org/) does all the work of building the [website](https://rsapkf.github.io/42/) (I use [mdbook](https://github.com/rust-lang/mdBook) for this) and deployment is done via [GitHub Pages](https://pages.github.com).
+  A question I get asked a lot is isn't this time consuming to categorize and maintain a repo like this? Well, I don't do all the manual work of writing Markdown, and copy pasting links and descriptions for resources, etc. I have a few bookmarklets, vim macros, and scripts that do the formatting for me.
+
+  I use an internal web extension that recursively exports a specific folder from my bookmarks on Firefox to properly formatted Markdown (**aside**: I am working on publishing this addon with added functionality) and copy those links into whatever files they should go to. While browsing, I drag new websites to that folder on my Bookmarks Toolbar and at the end of the week, load the extension and export the data. This takes ~30 minutes per week. Then, I push the updates to GitHub and [Travis](https://travis-ci.org/) does all the work of building the [website](https://rsapkf.github.io/42/) (I use [mdbook](https://github.com/rust-lang/mdBook) for this) and deployment is done via [GitHub Pages](https://pages.github.com).
 
 - Personal Links:
 
   I have always been a [Firefox](https://www.mozilla.org/en-US/firefox/new/) user. I use [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/) as my primary browser. For links that I'd rather not share with the world, I use [Firefox Sync](https://support.mozilla.org/en-US/products/firefox/sync). There are multiple folders and hierarchies with weird names that I personally use to sort my bookmarks. For example, I use it to store:
 
   - YouTube Playlists + custom Playlists (as opposed to YouTube's "Save to Library" and "Liked videos" feature),
-  - Reddit threads/memes (as apposed to Reddit's "save" feature,
+  - Reddit threads / memes (as apposed to Reddit's "save" feature,
   - IMDb links (instead of IMDb's "Lists"),
   - Twitter posts (instead of Twitter's "Likes"),
   - Bookmarklets,
@@ -52,7 +58,11 @@ Secondly, here are the features I'm looking for in my workflow:
   - resources that I should check later,
   - other temporary links, tutorials to follow, etc).
 
-  For outsiders, this approach might seem time-consuming and unnecessary but as a privacy conscious person, I find it to be the best solution that aligns with my personal threat model. I use an extension called [Invidition](https://codeberg.org/Booteille/Invidition) that redirects all requests to Twitter, YouTube and Instagram to their privacy friendly alternatives: [Nitter](https://github.com/zedeus/nitter), [Invidious](https://github.com/omarroth/invidious) and [Bibliogram](https://github.com/cloudrac3r/bibliogram), respectively. It also has added benefits like I can store my data in as many nested folders and tags as I can think of. I don't have to log into big corporate websites to view something and I can sync my bookmarks on all my devices in an end-to-end encrypted way in milliseconds. This method helps me decrease the [digital footprint](https://en.wikipedia.org/wiki/Digital_footprint) I leave on the Internet and less amount of data tied to big companies.
+  For outsiders, this approach might seem time-consuming and unnecessary but as a privacy conscious person, I find it to be the best solution that aligns with my personal threat model.
+
+  I use an extension called [Invidition](https://codeberg.org/Booteille/Invidition) that redirects all requests to Twitter, YouTube and Instagram to their privacy friendly alternatives: [Nitter](https://github.com/zedeus/nitter), [Invidious](https://github.com/omarroth/invidious) and [Bibliogram](https://github.com/cloudrac3r/bibliogram), respectively.
+
+  It also has added benefits like I can store my data in as many nested folders and tags as I can think of. I don't have to log into big corporate websites to view something and I can sync my bookmarks on all my devices in an end-to-end encrypted way in milliseconds. This method helps me decrease the [digital footprint](https://en.wikipedia.org/wiki/Digital_footprint) I leave on the Internet and less amount of data tied to big companies.
 
   If I want to export all my bookmarks to Markdown, I can use Firefox's Export Bookmarks to HTML feature and use a tool like [pandoc](https://github.com/jgm/pandoc) to convert HTML to Markdown.
 
@@ -62,7 +72,7 @@ Secondly, here are the features I'm looking for in my workflow:
 
   I also use Pocket as an alternative to YouTube's "Watch Later" and IMDb's "Watchlist" features.
 
-  **Aside**: I do use Twitter, not for microblogging but to follow interesting accounts (with a VPN). Their recommendation system is pretty good for this sort of thing. As for Spotify, I hate the fact that it is so closely tied to Facebook. They log all search queries even after deleting your search history. I have deleted all my Spotify Playlists (I can't delete them permanently) and exported the data to Firefox (using [Exportify](https://github.com/watsonbox/exportify)). I need to find a better solution for Music (I'm trying out [this service](https://audiomack.com/).).
+  **Aside**: I do use Twitter, not for microblogging but to follow interesting accounts. Their recommendation system is pretty good for this sort of thing. As for Spotify, I hate the fact that it is so closely tied to Facebook. They log all search queries even after deleting your search history. I have deleted all my Spotify Playlists (I can't even delete them permanently) and exported the data to Firefox (using [Exportify](https://github.com/watsonbox/exportify)). I need to find a better solution for Music (I'm trying out [this service](https://audiomack.com/).).
 
 ---
 
@@ -72,11 +82,13 @@ These consist of information I extract from reading (non-fiction) books, article
 
 - Public Notes:
 
-  Again, I just have a folder with a bunch of Markdown files that I write my notes in. I currently publish these notes [here](https://rsapkf.github.io/notes) and use [Docusaurus](https://github.com/facebook/Docusaurus) for generating the website and [GitHub Pages](https://pages.github.com) for deployment. These notes consist small snippets of code, shell scripting and programming tips, Linux commands that I frequently use, IRC commands that I tend to forget all the time, etc. Essentially, these are little pieces of random information for personal use that aren't tied to me personally or summaries of books I read and that I think someone will benefit from reading.
+  Again, I just have a folder with a bunch of Markdown files that I write my notes in. I currently publish these notes [here](https://rsapkf.github.io/notes) and use [Docusaurus](https://github.com/facebook/Docusaurus) for generating the website and [GitHub Pages](https://pages.github.com) for deployment.
+
+  These notes consist small snippets of code, shell scripting and programming tips, Linux commands that I frequently use, IRC commands that I tend to forget all the time, etc. Essentially, these are little pieces of random information for personal use that aren't tied to me personally or summaries of books I read and that I think someone will benefit from reading.
 
 - Private Notes:
 
-  This is where my most personal data and notes reside. I use an open-source note-taking service called [Standard Notes](https://github.com/standardnotes/) for this. This provides automatic end-to-end encryption for my notes, free sync across my devices and the "Extended" tier has some amazing features like Code editor, vim mode, spreadsheet, etc. I don't pay for anything I use right now but this is a service (besides a VPN) that I'd happily pay for if I was in a position to do so. They have a [web app](https://github.com/standardnotes/web) that I open in a new browser window when I am reading an information-dense piece on the internet or non-fiction books. And they also have clients for Linux and other OSes. Their free tier has all the core features that I need. It is privacy focused, lightweight, has a simple intuitive interface and is a breeze to write my notes on.
+  This is where my most personal data and notes reside. I use an open-source note-taking service called [Standard Notes](https://github.com/standardnotes/) for this. This provides automatic end-to-end encryption for my notes, free sync across my devices and the "Extended" tier has some amazing features like Code editor, vim mode, spreadsheet, etc. They have a [web app](https://github.com/standardnotes/web) that I open in a new browser window when I am reading an information-dense piece on the internet or non-fiction books. And they also have clients for Linux and other OSes. Their free tier has all the core features that I need. It is privacy focused, lightweight, has a simple intuitive interface and is a breeze to write my notes on.
 
   On my phone, I use Standard Notes for both public and private notes that I can later sort out on my computer.
 

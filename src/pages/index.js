@@ -23,8 +23,8 @@ const IndexPage = () => {
         </a>
         ]. I also work with [
         <a href="https://github.com/pallets/flask">Python / Flask</a>], and a
-        few other CSS and JavaScript Frameworks / Libraries and{" "}
-        <a href="https://jamstack.org/">JAMstack</a> technologies.
+        few other CSS and JavaScript Frameworks / Libraries and the{" "}
+        <a href="https://jamstack.org/">JAMstack</a>.
       </p>
       <br />
       <p>

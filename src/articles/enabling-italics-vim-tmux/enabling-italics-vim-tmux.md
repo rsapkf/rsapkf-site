@@ -6,7 +6,9 @@ spoiler: "Trust me, this will save you a ton of your time."
 tags: ["linux", "vim", "tmux"]
 ---
 
-If you're like me, you fiddle around with your development setup and dotfiles frequently tweaking and breaking things and learning along the way. I only recently found out that you could have comments on Vim appear in _Italics_. All you need to do is add `highlight Comment cterm=italic` to your `.vimrc`. Except, it's usually not that straighforward! I spent 3.5 hours researching how to properly enable Italics in Vim and then, in Vim inside [tmux](https://github.com/tmux/tmux) and found out some genuine and a few stupid reasons things might not work as expected on your system.
+If you're like me, you fiddle around with your development setup and dotfiles frequently tweaking and breaking things and learning along the way.
+
+I only recently found out that you could have comments on Vim appear in _Italics_. All you need to do is add `highlight Comment cterm=italic` to your `.vimrc`. Except, it's usually not that straighforward! I spent 3.5 hours researching how to properly enable Italics in Vim and then, in Vim inside [tmux](https://github.com/tmux/tmux) and found out some genuine and a few stupid reasons things might not work as expected on your system.
 
 Here, I will provide you official instructions to solving this problem and things you should care about if they don't work.
 
@@ -14,7 +16,7 @@ Here, I will provide you official instructions to solving this problem and thing
 
 Before jumping right in, I think it's a good idea to learn some basics of what is actually needed to render Italics in your terminal.
 
-- #### Environment Variables
+- #### Environment Variables:
 
   An environment variable is a named object that contains data used by one or more applications. In simple terms, it is a variable with a name and a value. The value of an environmental variable can for example be the location of all executable files in the file system, the default editor that should be used, or the system locale settings. [_ArchWiki_](https://wiki.archlinux.org/index.php/Environment_variables)
 
@@ -100,6 +102,8 @@ These are special terminal options that enable italics mode and italics end resp
 ```
 let g:jellybeans_use_term_italics = 1
 ```
+
+<br />
 
 ## Italics in Vim inside tmux
 
