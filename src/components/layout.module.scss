@@ -18,7 +18,7 @@ a {
 
 .container {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 920px;
   padding: 1rem;
 
   display: flex;
@@ -58,7 +58,7 @@ a {
   * {
     &::selection {
       color: rgb(32, 32, 32);
-      background-color: rgb(125, 192, 201);
+      background-color: rgb(240, 204, 240);
     }
   }
 }

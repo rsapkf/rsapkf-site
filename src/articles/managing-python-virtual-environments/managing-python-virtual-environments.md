@@ -8,7 +8,7 @@ tags: ["python", "programming"]
 
 <u>**Note**</u>: This article assumes you have python3.3+ and \*NIX system installed. Some commands might not work on Windows out of the box (e.g. tree).
 
-If you are a Python developer (beginner or advanced), you are bound to come across having to manage your dependencies in projects in an efficient manner in order to prevent version conflicts between different packages. And you might already know about some tools built in order to do exactly that. Over the years, I've used a number of those tools to manage my projects- virtualenv, virtualenvwrapper, pipenv, pyvenv, etc. But a few months ago, I discovered a fairly new tool that comes built-in with Python3 itself that can do almost everything that aforementioned tools can do and is much more elegant and easier to use than all of them, IMO.
+If you are a Python developer (beginner or advanced), you are bound to come across having to manage your dependencies in projects in an efficient manner in order to prevent version conflicts between different packages. And you might already know about some tools built in order to do exactly that- virtualenv, virtualenvwrapper, pipenv, pyvenv, etc. But there is a fairly new tool that comes built-in with Python3 itself that can do almost everything that aforementioned tools can do and is much more elegant and easier to use than all of them, IMO.
 
 The tool I'm talking about is the 'venv' module included in the stdlib of Python3.3+. You don't have to install anything on your machine to use it. Just navigate to your project folder and do:
 

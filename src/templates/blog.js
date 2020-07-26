@@ -35,10 +35,15 @@ const Blog = props => {
         {metadata.tags.map((tag, i) =>
           metadata.tags[i + 1] ? (
             <span>
-              <Link to={`/tags/${tag}`}>#{tag}</Link>,{" "}
+              <Link to={`/tags/${tag}`} style={{ borderBottom: "unset" }}>
+                #{tag}
+              </Link>
+              ,{" "}
             </span>
           ) : (
-            <Link to={`/tags/${tag}`}>#{tag}</Link>
+            <Link to={`/tags/${tag}`} style={{ borderBottom: "unset" }}>
+              #{tag}
+            </Link>
           )
         )}
       </small>
