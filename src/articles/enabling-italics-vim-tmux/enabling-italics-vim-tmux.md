@@ -16,7 +16,7 @@ Here, I will provide you official instructions to solving this problem and thing
 
 Before jumping right in, I think it's a good idea to learn some basics of what is actually needed to render Italics in your terminal.
 
-- #### Environment Variables:
+- #### Environment Variables
 
   An environment variable is a named object that contains data used by one or more applications. In simple terms, it is a variable with a name and a value. The value of an environmental variable can for example be the location of all executable files in the file system, the default editor that should be used, or the system locale settings. [_ArchWiki_](https://wiki.archlinux.org/index.php/Environment_variables)
 

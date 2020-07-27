@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-import axios from "axios"
 import githubProjectDataStyles from "./githubprojectdata.module.scss"
 import { fetchData } from "../services/githubAPI"
 
