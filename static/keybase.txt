@@ -4,7 +4,7 @@ https://keybase.io/rsapkf
 
 I hereby claim:
 
-  * I am an admin of https://rsapkf.netlify.com
+  * I am an admin of https://rsapkf.xyz
   * I am rsapkf (https://keybase.io/rsapkf) on keybase.
   * I have a public key with fingerprint D8CA CD01 F5F1 095F 6455  F79F 00C9 BB09 C8FB C5E9
 
@@ -21,43 +21,56 @@ To do so, I am signing this object:
       "uid": "0366e92027806376daa41073f11d7f19",
       "username": "rsapkf"
     },
+    "merkle_root": {
+      "ctime": 1595825890,
+      "hash_meta": "c35e8927d87448c01541b4ba1d1a5a2dab5df73a468897e8ccc1f966075555a0",
+      "seqno": 17097876
+    },
+    "revoke": {
+      "sig_ids": [
+        "852e933b9c21cb8481e5f862c3c71f0b12dd9466679c3ca7d1dbf9beb2cb027a0f"
+      ]
+    },
     "service": {
-      "hostname": "rsapkf.netlify.com",
+      "hostname": "rsapkf.xyz",
       "protocol": "https:"
     },
     "type": "web_service_binding",
     "version": 1
   },
-  "ctime": 1571117129,
+  "ctime": 1595825940,
   "expire_in": 157680000,
-  "prev": "ae70856fd48f8410d50cd98e459b44208eaf7ff70eb0e7915296a9e7c7fde1aa",
-  "seqno": 21,
+  "prev": "38b691324fa643f3a5e2e50453c36c17d9ed08c194fc54b8a608c526f1bddb07",
+  "seqno": 47,
   "tag": "signature"
 }
 
 which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v2.1.3
+Version: Keybase OpenPGP v2.1.13
 Comment: https://keybase.io/crypto
 
-yMIlAnicrVJNSFRRFJ7JEp2sXNiPFESvMAqze+f93skK3VTGQERGgTne9+69+hzn
-vXHeG0vMcJGL7AejHwoNqUhrk0JGO9E0RCPIEGthRGIYWBYJCtmi+6wW0ba7Odxz
-zved73ycgRUpvoC/eCScVRHJOe1/3tea9J24d+xAnaDbpFYI1QlRuhhoFaGOG4ma
-RAgJAAIIMSU6xoSJiqxSESiEUEXGCAeBphCsiwwRgCQJYAUjilhQ1zCRdF2UZYMR
-oAEs5ArMtMppIp4wLZfTEs3ABgGQyQwCJDNFkmWmIgaAgXQdIENjuiFTxIEVtuMh
-uDgdOzTPtHmOfyK/5P3b/591J3/RiYpCURAEVQ0oosrRWIJAFRmERGXQm5t0aMLC
-Mcq7Ew6OR5lQnyvwXI1pUM9Wb4+/6nkWdatMVptn2DGOjyds1zbsKl6vcN24E/Lw
-bm3cA5ykeuQ3VUQ3LcK95IgamnBM2xJCkHcarulxQ1mFEKowiHIFeipuJmjEtBbT
-igb48+bQGk6JqQo0WWFE0pjGdyEyMAjSqCQjXZK4QxQzlTEVUB1QFUE5iDyXVENl
-hELsWePQassWQkHIdeJyzumY5RZ2kwkq1D/tLVnq8wd8qcuWeEfmC6Rn/jm9ysY0
-X/NW/D4Fblm3LTpT4fTPre+dm5n+0dug3H1y0j/fNZCx+URL6qXHt8X87qfVB9tT
-zy/fga6XHYpOXp3q+Nw5f2X4lgm+dWvHR98Np00O7R2RCprFkouzw+Nljx7uGSz0
-JytXnx26nDVKNmQrsTUTatqrMbAxf+W16XBgf09719GWojvtWZ/OHAvfR51fSx8f
-2TSWbZfedFfd3zIeU7Kf2XVFa2e++D60obmmote3Ftpog3Xp+43Z9PGmttT1xRvU
-7TtP18audHUs3HgzkbNv91BGuPnFroa3hUdaM+jMufDYy5zMC32DE1OB/o8FKS93
-jhRMm2PwQc/hm5mNd/evPCxIPwEtHkGz
-=We/N
+yMKyAnicrVNvaFVlHL5r7uJWycIlRlrrEFZg433Pef/epBJaFBVJSyRMTu/f3bN7
+d8/tnLO13TUiUMn+6EYqIcMPUikZUmiRrA1RkYl9EVEzV1+ihETxg2IUZe/RIqSv
+vV8O74/n9zzP7/md9/DtzYW2ppXHn+soh0tebzp2MB0ohPeEHSOejPWwVxrxKub6
+x1S1SbOwEmmv5AEIIBRGSyG0DQimJgBEa0Ow4MIHjGghA8s14AgBQQQ33PqSCY2k
+DDBWVgMGhLfUs1Gt1yT1JKpljlYzJZQG0GILAceWIIwt5RYAxaUEXDErFTbcNZbj
+NO9w5qRITVcUu5q7hDfs/Rf/P/seuEEXEGK4D3zKAAmo6xYIAhpYCDW1MNcdSE1S
+E/3GoZNU1CvWG13q9ZukUjVhEsdZHq3KohwAMcfMx4wDN55Iy2G/yYTrUwE2jPtU
+M4oQUwBiBCWSAmoosPCdZawtDQQijHFqmFIKWk4IoNgdAZyL1Lxai50CBZwySpyF
+xAzGFZOrp1GvSy31Sqs9hn3Dg0By5UMlGWLQYMuIrwJFoQUS+lpzRAih3JUE1VBL
+y6WRvpIuBAGst2Y0V0sGI3WdPF/TTeN3DQ03nKF6EmexiquuXs6yelrKY8mG6znw
+NSPDvylCGdW0+0Vcx6BJ0iiuuSEc8ubEOHKJmaF6lJgwyhGYEgbcyXXMoKMMmCQc
+Bj6ygqDABgIb32CAcKACoiDV3LjNKsiRVRi5hRN3wz6xUGotAf03QkSdT9HrOF1u
+NZENJMYbPXjg5TmFprZCseWW/O0U2lrb/3lRyezcwpcz5QfvXzfUf2rV/m5+J9xQ
+vfvNtYsOeEV58Zu3G3R339k/nt04tuIFs3dF9crpM2OLD31+4vtF58hDHW+tTB8N
+Nx1v//Czqa3fXlk+vmnZtbnbn96zeP4dP8DfHmv4nS0fvLT1112TrePygfXZR9NP
+dG8spsvemFo3+enkL9ueav44O3N+Zmzq2E8zn8jO0/uuNntbNq9q73q30dN3cc/7
+LZuLlfJdj0wMl3aS842Za527t0+MrznCt3y9Vz/53e/Pb7MPz27YcfTx9Ze6/1yA
+5s1fWDy5JEbvNJ5Z2xO3dx3uue/yhdXn9tMvfp5s23l15Md9t875at74qdt2TVfu
+XZj1XXpv4sXWHa9MLz80+xeFF3zb
+=zDn5
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
