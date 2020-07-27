@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: "rsapkf",
     author: "rsapkf",
-    description: "rsapkf-site",
-    siteUrl: "https://rsapkf.netlify.com",
+    description: "rsapkf",
+    siteUrl: "https://rsapkf.xyz",
     social: {
       mastodon: "@rsapkf",
     },
