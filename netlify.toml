@@ -1,4 +1,10 @@
 [[redirects]]
+  from = "https://rsapkf.netlify.app/*"
+  to = "https://rsapkf.xyz/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "https://rsapkf.netlify.app"
   to = "https://rsapkf.xyz"
   status = 301
