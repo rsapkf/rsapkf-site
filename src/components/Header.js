@@ -108,8 +108,8 @@ const Header = () => {
                   <Link to="/donate">Donate</Link>
                   <Link to="/linklog">Linklog</Link>
                   <Link to="/microblog">Microblog</Link>
-                  <Link to="/now">/now</Link>
-                  <Link to="/uses">/uses</Link>
+                  <Link to="/now">Now</Link>
+                  <Link to="/uses">Uses</Link>
                 </div>
               </li>
               <li className={headerStyles.dropdown}>
