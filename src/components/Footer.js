@@ -21,16 +21,16 @@ const Footer = () => {
           github
         </a>{" "}
         &bull;{" "}
-        <a href="/rss.xml" style={{ textDecoration: "none" }}>
+        <Link to="/feeds" style={{ textDecoration: "none" }}>
           rss
-        </a>{" "}
+        </Link>{" "}
         &bull;{" "}
         <a
           href="https://github.com/rsapkf/rsapkf-site"
           target="_blank"
           rel="noopener noreferrer"
           style={{ textDecoration: "none" }}
-        // style={{ pointerEvents: 'none' }}
+          // style={{ pointerEvents: 'none' }}
         >
           source
         </a>

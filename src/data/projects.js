@@ -16,13 +16,6 @@ export const personalProjects = [
     forks_count: 0,
   },
   {
-    name: "rsapkf-site",
-    description: "Source for my personal website. Built using GatsbyJS.",
-    homepage: "https://rsapkf.netlify.com/",
-    stargazers_count: 0,
-    forks_count: 0,
-  },
-  {
     name: "dotfiles",
     description: "My Development Environment.",
     stargazers_count: 0,
@@ -31,6 +24,13 @@ export const personalProjects = [
   {
     name: "wallpapers",
     description: "Personal Wallpaper Collection.",
+    stargazers_count: 0,
+    forks_count: 0,
+  },
+  {
+    name: "rsapkf.xyz",
+    description: "Source for my personal website. Built using GatsbyJS.",
+    homepage: "https://rsapkf.netlify.com/",
     stargazers_count: 0,
     forks_count: 0,
   },
