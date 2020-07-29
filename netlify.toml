@@ -15,3 +15,9 @@
   to = "/blog/rabbithole-series-part-1"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/rss.xml"
+  to = "/blog/rss.xml"
+  status = 301
+  force = true

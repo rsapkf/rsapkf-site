@@ -41,28 +41,9 @@ const BlogPage = () => {
     <Layout>
       <Head title="Blog" />
       <h3>Articles</h3>
-      <span>
-        <Link to="/tags">Tags</Link> | <Link to="/blog/rss.xml">RSS</Link>
-        <details style={{ marginTop: "0.5rem" }}>
-          <summary className={blogStyles.summary}>Discussions</summary>
-          <div>
-            <a href="https://news.ycombinator.com/from?site=rsapkf.xyz">
-              Hacker News
-            </a>
-            ,{" "}
-            <a href="https://news.ycombinator.com/from?site=rsapkf.netlify.com">
-              2
-            </a>
-            ,{" "}
-            <a href="https://news.ycombinator.com/from?site=rsapkf.netlify.app">
-              3
-            </a>
-            <br />
-            <a href="https://reddit.com/domain/rsapkf.xyz">Reddit</a>,{" "}
-            <a href="https://reddit.com/domain/rsapkf.netlify.com">2</a>,{" "}
-            <a href="https://reddit.com/domain/rsapkf.netlify.app">3</a>
-          </div>
-        </details>
+      <span style={{ marginBottom: "1.1rem" }}>
+        <Link to="/tags">Tags</Link> | <Link to="/blog/rss.xml">RSS</Link> |{" "}
+        <Link to="/discussions">Discussions</Link>
       </span>
       <ol className={blogStyles.articles}>
         {data.allMarkdownRemark.edges.map((edge, idx) => {
