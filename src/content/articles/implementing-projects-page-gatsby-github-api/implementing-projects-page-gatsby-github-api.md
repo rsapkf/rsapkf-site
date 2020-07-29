@@ -38,7 +38,7 @@ export const fetchData = async ({ project }) => {
 }
 ```
 
-Here, we'll be using a third-party library called `axios` to make requests to the API. We could use the native `fetch` API for this but axios makes it a lot easier to do advanced stuff like (canceltoken ...). Next, we are assigning required values to variables. Then, we are creating an asynchronous function called `fetchData` that takes in a `project` object as an argument and calls the API, then returns an object with `description`, `homepage`, `stargazers_count`, `forks_count` properties. These are the only values that we need from the data we get in return from the API. Hence, we destructure these values firsthand. If the request fails, the function will return the initial value for `project` that we can use as a fallback.
+Here, we'll be using a third-party library called `axios` to make requests to the API. We could use the native `fetch` API for this but axios makes it a lot easier to do advanced stuff like cancelling requests. Next, we are assigning required values to variables. Then, we are creating an asynchronous function called `fetchData` that takes in a `project` object as an argument and calls the API, then returns an object with `description`, `homepage`, `stargazers_count`, `forks_count` properties. These are the only values that we need from the data we get in return from the API. Hence, we destructure these values firsthand. If the request fails, the function will return the initial value for `project` that we can use as a fallback.
 
 We will be importing the `fetchData` function in our component and call it inside the useEffect hook.
 

@@ -15,20 +15,23 @@ module.exports.onCreateNode = ({ node, actions }) => {
   }
 }
 
-module.exports.createPages = async ({ graphql, actions }) => {
+async function createBlogAndTagsPages({ graphql, actions }) {
   const { createPage } = actions
   const blogTemplate = path.resolve("./src/templates/blog.js")
-  const thoughtsTemplate = path.resolve("./src/templates/thoughts.js")
   const tagTemplate = path.resolve("./src/templates/tags.js")
   const res = await graphql(`
     query {
-      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        filter: { frontmatter: { posttype: { eq: "article" } } }
+      ) {
         edges {
           node {
             fields {
               slug
             }
             frontmatter {
+              title
               posttype
             }
           }
@@ -48,25 +51,15 @@ module.exports.createPages = async ({ graphql, actions }) => {
     const prev = posts[i + 1]
     const next = posts[i - 1]
 
-    if (edge.node.frontmatter.posttype === "thought") {
-      createPage({
-        component: thoughtsTemplate,
-        path: `/thoughts/${edge.node.fields.slug}`,
-        context: {
-          slug: edge.node.fields.slug,
-        },
-      })
-    } else {
-      createPage({
-        component: blogTemplate,
-        path: `/blog/${edge.node.fields.slug}`,
-        context: {
-          slug: edge.node.fields.slug,
-          prev,
-          next,
-        },
-      })
-    }
+    createPage({
+      component: blogTemplate,
+      path: `/blog/${edge.node.fields.slug}`,
+      context: {
+        slug: edge.node.fields.slug,
+        prev,
+        next,
+      },
+    })
   })
 
   // Extract tag data from query
@@ -81,4 +74,53 @@ module.exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+}
+
+async function createThoughtsPages({ graphql, actions }) {
+  const { createPage } = actions
+  const thoughtsTemplate = path.resolve("./src/templates/thoughts.js")
+  const res = await graphql(`
+    query {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        filter: { frontmatter: { posttype: { eq: "thought" } } }
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              posttype
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const posts = res.data.allMarkdownRemark.edges
+
+  posts.forEach((edge, i) => {
+    const prev = posts[i + 1]
+    const next = posts[i - 1]
+
+    createPage({
+      component: thoughtsTemplate,
+      path: `/thoughts/${edge.node.fields.slug}`,
+      context: {
+        slug: edge.node.fields.slug,
+        prev,
+        next,
+      },
+    })
+  })
+}
+
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
+  await Promise.all([
+    createBlogAndTagsPages({ graphql, actions }),
+    createThoughtsPages({ graphql, actions }),
+  ])
 }

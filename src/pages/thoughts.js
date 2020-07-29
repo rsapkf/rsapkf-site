@@ -18,7 +18,6 @@ const ThoughtsPage = () => {
             frontmatter {
               title
               date(formatString: "MMMM DD, YYYY")
-              posttype
             }
             timeToRead
             fields {
@@ -68,7 +67,7 @@ const ThoughtsPage = () => {
       </span>
       <ol className={blogStyles.articles}>
         {data.allMarkdownRemark.edges.map((edge, idx) => {
-          const { title, date, posttype } = edge.node.frontmatter
+          const { title, date } = edge.node.frontmatter
 
           return (
             <li className={blogStyles.article} key={idx}>
