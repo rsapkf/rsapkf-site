@@ -66,7 +66,7 @@ const BlogPage = () => {
       </span>
       <ol className={blogStyles.articles}>
         {data.allMarkdownRemark.edges.map((edge, idx) => {
-          const { title, date, spoiler, tags, posttype } = edge.node.frontmatter
+          const { title, date, spoiler, tags } = edge.node.frontmatter
 
           return (
             <li className={blogStyles.article} key={idx}>
