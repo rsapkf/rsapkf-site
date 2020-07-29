@@ -33,4 +33,4 @@ If you're interested in these things as well, I suggest you to look into window 
 
 ---
 
-**Next in this series**: [The Rabbithole Series, Part 2](/blog/the-rabbithole-series-part-2). Please stay in touch for the next part of this series. Subscribe to my newsletter(**_in-progress_**) or via RSS.
+**Next in this series**: [The Rabbithole Series, Part 2](/blog/rabbithole-series-part-2). Please stay in touch for the next part of this series. Subscribe to my newsletter(**_in-progress_**) or via RSS.

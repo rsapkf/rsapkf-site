@@ -23,19 +23,3 @@
     opacity: 0.8;
   }
 }
-
-.summary {
-  display: block;
-  font-weight: 300;
-  cursor: pointer;
-
-  &:after {
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    position: relative;
-    top: -1px;
-    left: 6px;
-    font-size: 13px;
-  }
-}
