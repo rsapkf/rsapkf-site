@@ -4,6 +4,7 @@ date: "2020-03-17"
 lastupdated: "2020-04-07"
 spoiler: "Trust me, this will save you a ton of your time."
 tags: ["linux", "vim", "tmux"]
+posttype: "article"
 ---
 
 If you're like me, you fiddle around with your development setup and dotfiles frequently tweaking and breaking things and learning along the way.

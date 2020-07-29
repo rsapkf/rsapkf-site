@@ -48,6 +48,9 @@ module.exports = {
                     {
                       allMarkdownRemark(
                         sort: { order: DESC, fields: [frontmatter___date] },
+                        filter: {
+                          frontmatter: { posttype: { eq: "article" } }
+                        }
                       ) {
                         edges {
                           node {
@@ -63,8 +66,52 @@ module.exports = {
                       }
                     }
                   `,
-            output: "/rss.xml",
-            title: "rsapkf's RSS Feed",
+            output: "/blog/rss.xml",
+            title: "rsapkf's RSS Feed Blog",
+          },
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url:
+                    site.siteMetadata.siteUrl +
+                    "/thoughts/" +
+                    edge.node.fields.slug,
+                  guid:
+                    site.siteMetadata.siteUrl +
+                    "/thoughts/" +
+                    edge.node.fields.slug,
+                  custom_elements: [{ "content:encoded": edge.node.html }],
+                })
+              })
+            },
+            query: `
+                    {
+                      allMarkdownRemark(
+                        sort: { order: DESC, fields: [frontmatter___date] },
+                        filter: {
+                          frontmatter: { posttype: { eq: "thought" } }
+                        }
+                      ) {
+                        edges {
+                          node {
+                            excerpt
+                            html
+                            fields { slug }
+                            frontmatter {
+                              title
+                              date
+                              posttype
+                            }
+                          }
+                        }
+                      }
+                    }
+                  `,
+            output: "/thoughts/rss.xml",
+            title: "rsapkf's RSS Feed Thoughts",
           },
         ],
       },

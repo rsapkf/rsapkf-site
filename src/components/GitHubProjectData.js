@@ -32,7 +32,10 @@ const GitHubProjectData = ({ project }) => {
       <a href={`https://github.com/${GITHUB_USERNAME}/${project.name}`}>
         {`${GITHUB_USERNAME}/${project.name}`}
       </a>
-      ]: {description}
+      ]:{" "}
+      {description
+        .replace("@rsapkf's ", "")
+        .replace(/^\w/, c => c.toUpperCase())}
       <br />
       {projectHomepage && [
         <>

@@ -6,20 +6,18 @@ import Head from "../components/Head"
 
 import blogStyles from "./blog.module.scss"
 
-const BlogPage = () => {
+const ThoughtsPage = () => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { frontmatter: { posttype: { eq: "article" } } }
+        filter: { frontmatter: { posttype: { eq: "thought" } } }
       ) {
         edges {
           node {
             frontmatter {
               title
               date(formatString: "MMMM DD, YYYY")
-              spoiler
-              tags
               posttype
             }
             timeToRead
@@ -39,10 +37,14 @@ const BlogPage = () => {
 
   return (
     <Layout>
-      <Head title="Blog" />
-      <h3>Articles</h3>
+      <Head title="Thoughts" />
+      <h3>Thoughts</h3>
+      <p>
+        The ideas / opinions here are my own. These might not be objectively
+        true.
+      </p>
       <span>
-        <Link to="/tags">Tags</Link> | <Link to="/blog/rss.xml">RSS</Link>
+        <Link to="/thoughts/rss.xml">RSS</Link>
         <details style={{ marginTop: "0.5rem" }}>
           <summary className={blogStyles.summary}>Discussions</summary>
           <div>
@@ -66,11 +68,11 @@ const BlogPage = () => {
       </span>
       <ol className={blogStyles.articles}>
         {data.allMarkdownRemark.edges.map((edge, idx) => {
-          const { title, date, spoiler, tags, posttype } = edge.node.frontmatter
+          const { title, date, posttype } = edge.node.frontmatter
 
           return (
             <li className={blogStyles.article} key={idx}>
-              <Link to={`/blog/${edge.node.fields.slug}`}>
+              <Link to={`/thoughts/${edge.node.fields.slug}`}>
                 <span>{title}</span>
               </Link>
               <br />
@@ -78,19 +80,13 @@ const BlogPage = () => {
                 <small>
                   <i className="far fa-calendar"></i> {date} |{" "}
                   <i className="fas fa-stopwatch"></i> {edge.node.timeToRead}{" "}
-                  min read | <i className="fas fa-tags"></i>{" "}
-                  {tags.map((tag, i) =>
-                    tags[i + 1] ? `#${tag}, ` : `#${tag}`
-                  )}
-                  | <i className="fas fa-link"></i>{" "}
+                  min read | <i className="fas fa-link"></i>{" "}
                   <Link
-                    to={`${data.site.siteMetadata.siteUrl}/blog/${edge.node.fields.slug}`}
+                    to={`${data.site.siteMetadata.siteUrl}/thoughts/${edge.node.fields.slug}`}
                     style={{ borderBottom: "unset" }}
                   >
                     permalink
                   </Link>
-                  <br />
-                  {spoiler}
                 </small>
               </span>
               <hr />
@@ -102,4 +98,4 @@ const BlogPage = () => {
   )
 }
 
-export default BlogPage
+export default ThoughtsPage

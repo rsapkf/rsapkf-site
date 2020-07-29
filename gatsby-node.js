@@ -18,19 +18,18 @@ module.exports.onCreateNode = ({ node, actions }) => {
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const blogTemplate = path.resolve("./src/templates/blog.js")
+  const thoughtsTemplate = path.resolve("./src/templates/thoughts.js")
   const tagTemplate = path.resolve("./src/templates/tags.js")
   const res = await graphql(`
     query {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-      ) {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
         edges {
           node {
             fields {
               slug
             }
             frontmatter {
-              title
+              posttype
             }
           }
         }
@@ -43,20 +42,31 @@ module.exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  const posts = res.data.allMarkdownRemark.edges;
+  const posts = res.data.allMarkdownRemark.edges
 
   posts.forEach((edge, i) => {
-    const prev = posts[i + 1];
-    const next = posts[i - 1];
-    createPage({
-      component: blogTemplate,
-      path: `/blog/${edge.node.fields.slug}`,
-      context: {
-        slug: edge.node.fields.slug,
-        prev,
-        next,
-      },
-    })
+    const prev = posts[i + 1]
+    const next = posts[i - 1]
+
+    if (edge.node.frontmatter.posttype === "thought") {
+      createPage({
+        component: thoughtsTemplate,
+        path: `/thoughts/${edge.node.fields.slug}`,
+        context: {
+          slug: edge.node.fields.slug,
+        },
+      })
+    } else {
+      createPage({
+        component: blogTemplate,
+        path: `/blog/${edge.node.fields.slug}`,
+        context: {
+          slug: edge.node.fields.slug,
+          prev,
+          next,
+        },
+      })
+    }
   })
 
   // Extract tag data from query

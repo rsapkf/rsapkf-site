@@ -9,3 +9,9 @@
   to = "https://rsapkf.xyz"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/blog/the-rabbithole-series-part-1"
+  to = "/blog/rabbithole-series-part-1"
+  status = 301
+  force = true

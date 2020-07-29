@@ -13,3 +13,7 @@ https://en.wikipedia.org/wiki/Integration_by_parts
 
 Don't know LaTeX and Calculus?
 https://www.symbolab.com/solver/calculus-calculator/%5Cint_%7B0%7D%5E%7B%5Cpi%7D%20%5Cleft(-1.57411%5Cright)e%5E%7Bx%20%7Dcosx%20dx
+
+---
+
+Last Updated: December 17, 2019

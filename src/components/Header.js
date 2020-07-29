@@ -100,6 +100,7 @@ const Header = () => {
                   className={headerStyles.dropdownContent}
                   style={theme.dark ? {} : { backgroundColor: "#faf4fa" }}
                 >
+                  <Link to="/thoughts">Thoughts</Link>
                   <Link to="/technologies">Technologies</Link>
                   <Link to="/books">Books</Link>
                   <Link to="/recommendations">Recommendations</Link>
@@ -129,28 +130,35 @@ const Header = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    42
+                    Linkroll
                   </a>
                   <a
                     href="https://github.com/rsapkf/notes/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    notes
+                    Notes
                   </a>
                   <a
                     href="https://github.com/rsapkf/dotfiles/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    dotfiles
+                    Dotfiles
                   </a>
                   <a
                     href="https://github.com/rsapkf/wallpapers/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    wallpapers
+                    Wallpapers
+                  </a>
+                  <a
+                    href="https://github.com/rsapkf/rsapkf.xyz/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Source
                   </a>
                 </div>
               </li>
