@@ -1,9 +1,9 @@
 ---
-title: "Implementing /projects page on Gatsby site with GitHub API"
+title: "Implementing /projects Page on Gatsby Site with GitHub API"
 date: "2020-07-12"
 lastupdated: "2020-07-13"
 spoiler: "Basics of useEffect Hook and some ES6."
-tags: ["gatsby", "github", "react"]
+tags: ["gatsby", "github", "react", "programming"]
 type: "article"
 ---
 

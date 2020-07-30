@@ -3,7 +3,7 @@ title: "Setting up this site"
 date: "2020-07-02"
 lastupdated: "2020-07-10"
 spoiler: "GatsbyJS and Plugins + Netlify + GitHub."
-tags: ["gatsby", "netlify", "github"]
+tags: ["gatsby", "netlify", "github", "programming"]
 type: "article"
 ---
 
