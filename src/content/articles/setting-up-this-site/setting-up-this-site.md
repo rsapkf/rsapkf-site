@@ -3,8 +3,8 @@ title: "Setting up this site"
 date: "2020-07-02"
 lastupdated: "2020-07-10"
 spoiler: "GatsbyJS and Plugins + Netlify + GitHub."
-tags: ["gatsbyjs", "netlify", "github"]
-posttype: "article"
+tags: ["gatsby", "netlify", "github"]
+type: "article"
 ---
 
 → [Summary](#summary)

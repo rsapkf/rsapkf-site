@@ -11,7 +11,7 @@ const ThoughtsPage = () => {
     query {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { frontmatter: { posttype: { eq: "thought" } } }
+        filter: { frontmatter: { type: { eq: "thought" } } }
       ) {
         edges {
           node {

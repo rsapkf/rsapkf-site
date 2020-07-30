@@ -4,7 +4,7 @@ date: "2019-05-20"
 lastupdated: "2019-05-25"
 spoiler: "How I got started with Tiling WMs."
 tags: ["linux"]
-posttype: "article"
+type: "article"
 ---
 
 I am a simple 18 year old guy deeply interested in programming, unix, open-source and STEM in general. During my learning process, I have been in so many rabbitholes that I thought of doing a 3-part series of blog posts on this very topic. In this first part of the series, I am going to explain a rabbithole that I fell into a while back in very subtle way and it changed my workflow and knowledge about operating systems so much that I don't think I'll ever be will be able to go back to where I was before.

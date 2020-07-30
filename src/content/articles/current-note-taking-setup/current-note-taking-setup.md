@@ -4,7 +4,7 @@ date: "2020-06-17"
 lastupdated: "2020-06-17"
 spoiler: "PKM = Personal Knowledge Management."
 tags: ["note-taking", "vim", "knowledge-base", "privacy"]
-posttype: "article"
+type: "article"
 ---
 
 With an overwhelmingly increasing number of productivity tools and note-taking applications on the market, it is becoming more and more difficult to settle on one particular application / workflow for taking notes. Over the years, I've tried many many setups for this: from pen and paper (which still beats everything in my opinion) to completely offline solutions like txt files, [VimWiki](https://github.com/vimwiki/vimwiki), [Zettlr](https://github.com/zettlr/zettlr) and [MarkText](https://github.com/marktext/marktext), [Joplin](https://github.com/laurent22/joplin) and SaaS products like [this one](https://roamresearch.com/) and methods like [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) (this didn't work for my programming notes), I've tried a plethora of apps that are out there. For the past few months however, I've settled on a simple workflow that I'll explain below.

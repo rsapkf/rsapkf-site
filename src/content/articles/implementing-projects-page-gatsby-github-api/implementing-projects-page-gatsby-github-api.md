@@ -3,8 +3,8 @@ title: "Implementing /projects page on Gatsby site with GitHub API"
 date: "2020-07-12"
 lastupdated: "2020-07-13"
 spoiler: "Basics of useEffect Hook and some ES6."
-tags: ["gatsbyjs", "github"]
-posttype: "article"
+tags: ["gatsby", "github", "react"]
+type: "article"
 ---
 
 React lifecycle methods and Hooks work the same way in Gatsby as they do in React projects. In this article, we'll be using Hooks to make API calls to GitHub API. Hooks are available with a simple `import` statement.

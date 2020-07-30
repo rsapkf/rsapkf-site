@@ -23,7 +23,7 @@ async function createBlogAndTagsPages({ graphql, actions }) {
     query {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { frontmatter: { posttype: { eq: "article" } } }
+        filter: { frontmatter: { type: { eq: "article" } } }
       ) {
         edges {
           node {
@@ -32,7 +32,7 @@ async function createBlogAndTagsPages({ graphql, actions }) {
             }
             frontmatter {
               title
-              posttype
+              type
             }
           }
         }
@@ -83,7 +83,7 @@ async function createThoughtsPages({ graphql, actions }) {
     query {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { frontmatter: { posttype: { eq: "thought" } } }
+        filter: { frontmatter: { type: { eq: "thought" } } }
       ) {
         edges {
           node {
@@ -91,7 +91,7 @@ async function createThoughtsPages({ graphql, actions }) {
               slug
             }
             frontmatter {
-              posttype
+              type
             }
           }
         }
