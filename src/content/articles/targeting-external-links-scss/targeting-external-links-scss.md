@@ -9,7 +9,7 @@ type: "article"
 
 Here is part of the snippet I use to target external links on this site:
 
-Check out the [source](https://github.com/rsapkf/rsapkf.xyz/blob/5f855300504def283d77d9d5aafd7bb43e6d1bfd/src/styles/index.scss#L62) (feel free to copy the entire thing).
+Check out the [source](https://github.com/rsapkf/rsapkf.xyz/blob/7510a6f93eb85a7627928594c504a95519da4168/src/styles/index.scss#L62) (feel free to copy the entire thing).
 
 ```scss
 a {
