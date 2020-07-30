@@ -11,7 +11,7 @@ const BlogPage = () => {
     query {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { frontmatter: { posttype: { eq: "article" } } }
+        filter: { frontmatter: { type: { eq: "article" } } }
       ) {
         edges {
           node {
@@ -20,7 +20,6 @@ const BlogPage = () => {
               date(formatString: "MMMM DD, YYYY")
               spoiler
               tags
-              posttype
             }
             timeToRead
             fields {
@@ -62,7 +61,7 @@ const BlogPage = () => {
                   min read | <i className="fas fa-tags"></i>{" "}
                   {tags.map((tag, i) =>
                     tags[i + 1] ? `#${tag}, ` : `#${tag}`
-                  )}
+                  )}{" "}
                   | <i className="fas fa-link"></i>{" "}
                   <Link
                     to={`${data.site.siteMetadata.siteUrl}/blog/${edge.node.fields.slug}`}

@@ -49,7 +49,7 @@ module.exports = {
                       allMarkdownRemark(
                         sort: { order: DESC, fields: [frontmatter___date] },
                         filter: {
-                          frontmatter: { posttype: { eq: "article" } }
+                          frontmatter: { type: { eq: "article" } }
                         }
                       ) {
                         edges {
@@ -92,7 +92,7 @@ module.exports = {
                       allMarkdownRemark(
                         sort: { order: DESC, fields: [frontmatter___date] },
                         filter: {
-                          frontmatter: { posttype: { eq: "thought" } }
+                          frontmatter: { type: { eq: "thought" } }
                         }
                       ) {
                         edges {
@@ -103,7 +103,6 @@ module.exports = {
                             frontmatter {
                               title
                               date
-                              posttype
                             }
                           }
                         }

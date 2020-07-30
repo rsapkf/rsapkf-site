@@ -4,7 +4,7 @@ date: "2019-08-07"
 lastupdated: "2019-09-16"
 spoiler: "Make use of the stdlib."
 tags: ["python", "programming"]
-posttype: "article"
+type: "article"
 ---
 
 <u>**Note**</u>: This article assumes you have python3.3+ and \*NIX system installed. Some commands might not work on Windows out of the box (e.g. tree).
