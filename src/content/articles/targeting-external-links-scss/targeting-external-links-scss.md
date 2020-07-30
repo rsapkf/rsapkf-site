@@ -3,7 +3,7 @@ title: "Targeting External Links using SCSS"
 date: "2020-07-21"
 lastupdated: "2020-07-25"
 spoiler: "Snippet."
-tags: ["css", "scss"]
+tags: ["css", "scss", "programming"]
 type: "article"
 ---
 
@@ -11,20 +11,20 @@ Here is part of the snippet I use to target external links on this site:
 
 Check out the [source](https://github.com/rsapkf/rsapkf.xyz/blob/5f855300504def283d77d9d5aafd7bb43e6d1bfd/src/styles/index.scss#L62) (feel free to copy the entire thing).
 
-```css
+```scss
 a {
   // ... link styles
 
   // target external links
   // if you want to indicate websites with specific icons, make sure you add them here
-  &:not([href*="rsapkf.xyz"]):not([href^="/"]):not([href*="mozilla.org"]):not([href*="github.com"]):not([href^="#"]):not([href^="/"])::after {
+  // if using FontAwesome icons, font-family and font-weight need to be set based on whether you are using Brand or Regular icons
+  // https://fontawesome.com/v5.0.13/how-to-use/on-the-web/advanced/css-pseudo-elements
+  &:not([href*="rsapkf.xyz"]):not([href^="/"]):not([href^="#"]):not([href*="mozilla.org"]):not([href*="github.com"])::after {
     content: "\f35d";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
   }
 
-  // if using FontAwesome icons, font-family and font-weight need to be set based on whether you are using Brand or Regular icons
-  // https://fontawesome.com/v5.0.13/how-to-use/on-the-web/advanced/css-pseudo-elements
   &::after {
     font-family: "Font Awesome 5 Brands";
     font-weight: 400;
@@ -48,7 +48,7 @@ a {
 
 You'll also notice some links do that <a href="https://example.org/" target="_blank" rel="noopener noreferrer">bumpy</a> thing on hover. These are links with `target` attribute set to `_blank`. Here is how to do it:
 
-```css
+```scss
 a {
   // ... link styles
 
