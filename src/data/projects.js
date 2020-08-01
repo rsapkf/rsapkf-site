@@ -30,7 +30,7 @@ export const personalProjects = [
   {
     name: "rsapkf.xyz",
     description: "Source for my personal website. Built using GatsbyJS.",
-    homepage: "https://rsapkf.netlify.com/",
+    homepage: "https://rsapkf.xyz",
     stargazers_count: 0,
     forks_count: 0,
   },
@@ -58,7 +58,7 @@ export const softwareProjects = [
     name: "tzinfo",
     description:
       "Tiny application to check and compare local times of major cities of the world.",
-    homepage: "https://tzinfo.netlify.com/",
+    homepage: "https://rsapkf.github.io/tzinfo/",
     stargazers_count: 0,
     forks_count: 0,
   },

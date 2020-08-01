@@ -50,7 +50,7 @@ a {
   -webkit-text-decoration-skip: objects;
 
   // target links with target attribute
-  &[target]:hover::after {
+  &[target^="_blank"]:hover::after {
     content: "\f360";
     position: relative;
     bottom: 0.5rem;

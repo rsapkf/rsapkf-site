@@ -2,14 +2,14 @@
 title: "Targeting External Links using SCSS"
 date: "2020-07-21"
 lastupdated: "2020-07-25"
-spoiler: "Snippet."
+spoiler: ""
 tags: ["css", "scss", "programming"]
 type: "article"
 ---
 
 Here is part of the snippet I use to target external links on this site:
 
-Check out the [source](https://github.com/rsapkf/rsapkf.xyz/blob/7510a6f93eb85a7627928594c504a95519da4168/src/styles/index.scss#L62) (feel free to copy the entire thing).
+Check out the source [here](https://github.com/rsapkf/rsapkf.xyz/blob/7510a6f93eb85a7627928594c504a95519da4168/src/styles/index.scss#L62) (feel free to copy the entire thing).
 
 ```scss
 a {
@@ -46,14 +46,14 @@ a {
 }
 ```
 
-You'll also notice some links do that <a href="https://example.org/" target="_blank" rel="noopener noreferrer">bumpy</a> thing on hover. These are links with `target` attribute set to `_blank`. Here is how to do it:
+You'll also notice some links do a <a href="https://example.org/" target="_blank" rel="noopener noreferrer">bumpy animation</a> thing on hover. These are links with `target` attribute set to `_blank`. Here is how to do it:
 
 ```scss
 a {
   // ... link styles
 
   // target links with target attribute
-  &[target]:hover::after {
+  &[target^="_blank"]:hover::after {
     content: "\f360";
     position: relative;
     bottom: 0.5rem;
