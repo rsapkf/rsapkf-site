@@ -11,7 +11,7 @@ Now that I've got a domain, I thought of moving my project sites from GitHub Pag
 
 This is a simple enough task but I came across some quirks and information that might be useful:
 
-- One of my sites is built using [mdBook](https://github.com/rust-lang/mdBook), a static site generator written in Rust but Netlify doesn't support Rust in its [build image](https://github.com/netlify/build-image) like Node, Python or Ruby. If you use `mdBook build` as build command, you'll get `mdBook : command not found` error in deploy log.
+- One of my sites is built using [mdBook](https://github.com/rust-lang/mdBook), a static site generator written in Rust but Netlify doesn't support Rust in its [build image](https://github.com/netlify/build-image) like Node, Python or Ruby. If you use `mdbook build` as build command, you'll get `mdbook : command not found` error in deploy log.
 
 To solve this problem, use the following build command:
 
