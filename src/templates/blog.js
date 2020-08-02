@@ -5,6 +5,8 @@ import Layout from "../components/Layout"
 import Head from "../components/Head"
 import BlogNav from "../components/BlogNav"
 
+import blogTemplateStyles from "./blogtemplate.module.scss"
+
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -36,7 +38,7 @@ const Blog = props => {
   return (
     <Layout>
       <Head title={`${title} • Blog`} />
-      <h3>{title}</h3>
+      <h3 className={blogTemplateStyles.title}>{title}</h3>
       <small>
         <i className="far fa-calendar"></i> {date} |{" "}
         <i className="fas fa-stopwatch"></i>{" "}
