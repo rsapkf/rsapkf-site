@@ -4,16 +4,18 @@ import PropTypes from "prop-types"
 // Components
 import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout"
+import Head from "../components/Head"
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
-    } tagged with "${tag}"`
+  } tagged with "${tag}"`
 
   return (
     <Layout>
+      <Head title={`#${tag} • Tags • Blog`} />
       <div>
         <h3>{tagHeader}</h3>
         <ul>

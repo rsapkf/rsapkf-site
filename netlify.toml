@@ -4,11 +4,11 @@
   status = 301
   force = true
 
-[[redirects]]
-  from = "https://rsapkf.netlify.app"
-  to = "https://rsapkf.xyz"
-  status = 301
-  force = true
+# [[redirects]]
+#   from = "https://rsapkf.netlify.app"
+#   to = "https://rsapkf.xyz"
+#   status = 301
+#   force = true
 
 [[redirects]]
   from = "/blog/the-rabbithole-series-part-1"

@@ -17,7 +17,7 @@ I found a reddit thread where someone had asked the same question that I had- wh
 
 Now, as a voraciuosly curious person, I _had_ to do a quick search- I had never heard of i3wm before. As some of you might already know, it's a powerful and popular tiling window manager. One look into its documentation, I knew I always needed something like this in order to do things effectively.
 
-I found out that I looks pretty damn ugly out of the box. Not just it's look, but I had to do a number of additions and modifications to its 'config' file(aka its dotfile) to make things work properly.
+I found out that I looks pretty damn ugly out of the box. Not just it's look, but I had to do a number of additions and modifications to its 'config' file (aka its dotfile) to make things work properly.
 
 For example, it isn't very straightforward to set a wallpaper. You have to install and configure a separate little program called '[feh](https://wiki.archlinux.org/index.php/Feh)' in order to do so (mind you, there are [alternatives](https://wiki.archlinux.org/index.php/Nitrogen)). It took me 3 weeks to make it usable for my needs (i3-gaps, i3blocks, touchpad configuration, audio controls, fonts, colors, keybindings, etc) and during that period, I came across the Arch Linux Wiki (archwiki), and that was it, I was well onto the path to becoming a giant terminal junkie and a [ricer](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wiki_rice).
 
