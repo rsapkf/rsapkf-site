@@ -4,6 +4,8 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Head from "../components/Head"
 
+import blogTemplateStyles from "./blogtemplate.module.scss"
+
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -28,8 +30,8 @@ const Thought = props => {
 
   return (
     <Layout>
-      <Head title={`${title} • Thought`} />
-      <h3>{title}</h3>
+      <Head title={`${title} • Thoughts`} />
+      <h3 className={blogTemplateStyles.title}>{title}</h3>
       <small>
         <i className="far fa-calendar"></i> {date} |{" "}
         <i className="fas fa-stopwatch"></i>{" "}

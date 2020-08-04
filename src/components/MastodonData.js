@@ -12,6 +12,20 @@ const MastodonData = ({ tag }) => {
 
   const capitalizedTag = tag.replace(/^\w/, c => c.toUpperCase())
 
+  const formatDate = dateString => {
+    const options = {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: "false",
+    }
+    return new Date(dateString).toLocaleDateString("en-US", options)
+  }
+
   useEffect(() => {
     const fetchMastodonData = async () => {
       const res = await fetchData()
@@ -42,7 +56,7 @@ const MastodonData = ({ tag }) => {
               item.tags[0] &&
               item.tags[0].name.includes(tag) && (
                 <li key={item.id}>
-                  <a href={item.url}>{item.created_at}</a>
+                  <a href={item.url}>{formatDate(item.created_at)}</a>
                   <div
                     dangerouslySetInnerHTML={{
                       __html: item.content.replace(/\<br\ \/\>.*/gi, ""),

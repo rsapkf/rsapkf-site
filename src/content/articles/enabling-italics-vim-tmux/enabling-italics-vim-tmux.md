@@ -137,11 +137,11 @@ If you still don't see italics in tmux, <u>**make sure**</u> that you don't have
 
 Also, make sure you have an italics capable font enabled. I have tested this on rxvt-unicode with [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) and on Alacritty with [Mononoki Nerd Font](https://github.com/ryanoasis/nerd-fonts).
 
+<small>_Italics in Vim + tmux + Alacritty + Mononoki Nerd Font_ :</small>
 ![italics in Vim+tmux+urxvt](vim-tmux-italics-alacritty-mononoki-nerd.png)
-<small>_Italics in Vim + tmux + Alacritty + Mononoki Nerd Font_</small>
 
+<small>_Italics in Vim + tmux + urxvt + Source Code Pro Font_ :</small>
 ![italics in Vim+tmux+Alacritty](vim-tmux-italics-urxvt-source-code-pro.png)
-<small>_Italics in Vim + tmux + urxvt + Source Code Pro Font_</small>
 
 ---
 
