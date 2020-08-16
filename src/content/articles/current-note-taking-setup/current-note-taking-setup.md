@@ -27,6 +27,8 @@ Secondly, here are the features I'm looking for in my workflow:
 - I should be able to sync and edit all my data across devices.
 - My private notes must be end-to-end encrypted if on cloud.
 
+---
+
 ### 1. Links
 
 - Public Links:

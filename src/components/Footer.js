@@ -26,7 +26,7 @@ const Footer = () => {
         </Link>{" "}
         &bull;{" "}
         <a
-          href="https://github.com/rsapkf/rsapkf-site"
+          href="https://github.com/rsapkf/rsapkf.xyz/"
           target="_blank"
           rel="noopener noreferrer"
           style={{ textDecoration: "none" }}
