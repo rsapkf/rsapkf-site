@@ -100,15 +100,37 @@ const Header = () => {
                   className={headerStyles.dropdownContent}
                   style={theme.dark ? {} : { backgroundColor: "#faf4fa" }}
                 >
-                  <Link to="/thoughts">Thoughts</Link>
+                  <Link to="/thoughts">
+                    <i className="far fa-lightbulb"></i> Thoughts
+                  </Link>
                   <Link to="/technologies">Technologies</Link>
-                  <Link to="/books">Books</Link>
+                  <Link
+                    to="/puzzles"
+                    style={{ borderBottom: "1px solid gray" }}
+                  >
+                    Puzzle List
+                  </Link>
                   <Link to="/recommendations">Recommendations</Link>
-                  <Link to="/puzzles">Puzzle List</Link>
+                  <Link to="/books">
+                    <i className="fas fa-book"></i> Books
+                  </Link>
+                  <Link
+                    to="/movies-tv"
+                    style={{ borderBottom: "1px solid gray" }}
+                  >
+                    Movies and Shows
+                  </Link>
                   <Link to="/wishlist">Wishlist</Link>
-                  <Link to="/donate">Donate</Link>
+                  <Link to="/donate" style={{ borderBottom: "1px solid gray" }}>
+                    <i className="fas fa-donate"></i> Donate
+                  </Link>
                   <Link to="/linklog">Linklog</Link>
-                  <Link to="/microblog">Microblog</Link>
+                  <Link
+                    to="/microblog"
+                    style={{ borderBottom: "1px solid gray" }}
+                  >
+                    Microblog
+                  </Link>
                   <Link to="/now">Now</Link>
                   <Link to="/uses">Uses</Link>
                 </div>
@@ -144,7 +166,7 @@ const Header = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Dotfiles
+                    <i className="fab fa-linux"></i> Dotfiles
                   </a>
                   <a
                     href="https://github.com/rsapkf/wallpapers/"

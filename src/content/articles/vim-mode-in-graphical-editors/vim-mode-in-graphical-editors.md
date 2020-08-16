@@ -2,12 +2,12 @@
 title: "Enabling Vim Mode In All Major Graphical Text Editors"
 date: "2019-10-19"
 lastupdated: "2019-10-19"
-spoiler: "PS. Not advocating for VSCode or anything."
+spoiler: ""
 tags: ["vim", "programming"]
 type: "article"
 ---
 
-Make no mistake- I am a giant Vim / Emacs / Terminal advocate. But if you really need to use full-featured graphical text editors or IDEs for development, there are ways to get around the problem. Almost all major graphical text editors / IDEs with a plugin ecosystem today allow you to enable / install vim emulation. Here are some plugins for the major ones. Installation is fairly trivial.
+Make no mistake- I am normally a Vim / Emacs / Terminal advocate. But if you need to use full-featured graphical text editors or IDEs for development, there are ways around it. Almost all major editors with a plugin ecosystem today allow you to enable or install vim emulation. Here are some plugins for the major ones. Installation is fairly trivial.
 
 #### 1. VSCode
 

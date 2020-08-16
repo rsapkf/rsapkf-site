@@ -39,8 +39,10 @@ const ThoughtsPage = () => {
       <Head title="Thoughts" />
       <h3>Thoughts</h3>
       <p>
-        The ideas / opinions here are my own. These might not be objectively
-        true.
+        This section is for personal views and ideas that might not be
+        objectively correct or will likely change over time whereas most of the
+        information on my blog is well researched and is oriented towards
+        programming and technical topics.
       </p>
       <span style={{ marginBottom: "1.1rem", marginTop: "-1rem" }}>
         <Link to="/thoughts/rss.xml">RSS</Link> |{" "}

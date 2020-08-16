@@ -2,7 +2,7 @@
 title: Managing Python Virtual Environments with venv Module
 date: "2019-08-07"
 lastupdated: "2019-09-16"
-spoiler: "Make use of the stdlib."
+spoiler: ""
 tags: ["python", "programming"]
 type: "article"
 ---
