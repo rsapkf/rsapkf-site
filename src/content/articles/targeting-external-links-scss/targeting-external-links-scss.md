@@ -1,7 +1,7 @@
 ---
 title: "Targeting External Links using SCSS"
 date: "2020-07-21"
-lastupdated: "2020-07-25"
+lastupdated: "2020-08-17"
 spoiler: ""
 tags: ["css", "scss", "programming"]
 type: "article"
@@ -20,7 +20,7 @@ a {
   // if using FontAwesome icons, font-family and font-weight need to be set based on whether you are using Brand or Regular icons
   // https://fontawesome.com/v5.0.13/how-to-use/on-the-web/advanced/css-pseudo-elements
   &:not([href*="rsapkf.xyz"]):not([href^="/"]):not([href^="#"]):not([href*="mozilla.org"]):not([href*="github.com"])::after {
-    content: "\f35d";
+    content: "\f35d"; // or url(/img/external-link.svg) ...
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
   }
