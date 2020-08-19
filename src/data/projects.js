@@ -4,7 +4,7 @@ export const personalProjects = [
     description:
       "Collection of GitHub repos, blogs and websites to learn cool things.",
     homepage: "https://rsapkf.github.io/42/",
-    stargazers_count: 1874,
+    stargazers_count: 1880,
     forks_count: 125,
   },
   {

@@ -2,7 +2,7 @@
 title: "Implementing /projects Page on Gatsby Site with GitHub API"
 date: "2020-07-12"
 lastupdated: "2020-07-13"
-spoiler: "Basics of useEffect Hook and some ES6."
+spoiler: ""
 tags: ["gatsby", "github", "react", "programming"]
 type: "article"
 ---
