@@ -9,27 +9,31 @@ const IndexPage = () => {
   return (
     <Layout>
       <Head title="Home" />
-      <h3>
-        <u>Welcome to </u>
-        <span className={indexStyles.title}>rsapkf</span>
-        <u>'s Home Page</u>!
+      <h3 className={indexStyles.intro}>
+        Welcome to <span className={indexStyles.title}>rsapkf</span>
+        's Home Page !
       </h3>
       <p>
-        I mostly work with [
-        <a href="https://github.com/django/django">Python / Django</a>] and the
-        [
-        <a href="https://www.startpage.com/do/metasearch.pl?query=mern%20stack">
+        I specialize in making full stack web applications with modern{" "}
+        <Link to="https://developer.mozilla.org/en-US/">
+          HTML5 + CSS3 + ES6
+        </Link>{" "}
+        , <Link to="https://github.com/django/django">Django</Link> ,{" "}
+        <Link to="https://www.startpage.com/do/metasearch.pl?query=mern%20stack">
           MERN Stack
-        </a>
-        ]. I also work with [
-        <a href="https://github.com/pallets/flask">Python / Flask</a>], and a
-        few other CSS and JavaScript Frameworks / Libraries and the{" "}
-        <a href="https://jamstack.org/">JAMstack</a>.
-      </p>
-      <br />
-      <p>
-        Please see [<Link to="/technologies">Technologies</Link>] page for
+        </Link>{" "}
+        , the <a href="https://jamstack.org/">JAMstack</a>.
+        <br /> Please see <Link to="/technologies">Technologies</Link> page for
         details.
+        <br />
+        <br />
+        Read my <Link to="/blog">Blog</Link> for programming articles.
+        <br />
+        <br />
+        Check out <Link to="/thoughts">Thoughts</Link> page for personal ideas,
+        book and movie reviews. <br />
+        Learn what I'm upto <Link to="/now">right now</Link>.
+        <br />
       </p>
       <hr />
       <p>

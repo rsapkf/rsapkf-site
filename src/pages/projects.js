@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
 import Head from "../components/Head"
@@ -12,16 +11,10 @@ const ProjectsPage = () => {
     <Layout>
       <Head title="Projects" />
       <h3>Projects</h3>
-      <p>
-        I'm working on a few projects that aren't yet ready to be launched. All
-        projects will be open sourced upon release. Please follow via{" "}
-        <Link to="/rss.xml">RSS</Link> to get notified.
-      </p>
-      <p>
-        For other smaller projects that I'm working on, see my{" "}
-        <a href="https://github.com/rsapkf">GitHub</a> and{" "}
-        <a href="https://gist.github.com/rsapkf">GitHub Gist</a> profile:
-      </p>
+      <div style={{ marginBottom: "25px" }}>
+        <a href="https://github.com/rsapkf">GitHub</a> &bull;{" "}
+        <a href="https://gist.github.com/rsapkf">Gists</a>
+      </div>
       <ul>
         <li>
           <h4>Personal:</h4>

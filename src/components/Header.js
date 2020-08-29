@@ -148,14 +148,14 @@ const Header = () => {
                   style={theme.dark ? {} : { backgroundColor: "#faf4fa" }}
                 >
                   <a
-                    href="https://github.com/rsapkf/42/"
+                    href="https://links.rsapkf.xyz/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Linkroll
                   </a>
                   <a
-                    href="https://github.com/rsapkf/notes/"
+                    href="https://notes.rsapkf.xyz/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -174,13 +174,6 @@ const Header = () => {
                     rel="noopener noreferrer"
                   >
                     Wallpapers
-                  </a>
-                  <a
-                    href="https://github.com/rsapkf/rsapkf.xyz/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Source
                   </a>
                 </div>
               </li>

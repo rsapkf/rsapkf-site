@@ -6,25 +6,22 @@ import kebabCase from "lodash/kebabCase"
 
 // Components
 import { Link, graphql } from "gatsby"
-import Layout from "../components/Layout"
-import Head from "../components/Head"
+import Layout from "../../components/Layout"
+import Head from "../../components/Head"
 
 const TagsPage = ({
   data: {
     allMarkdownRemark: { group },
-    site: {
-      siteMetadata: { title },
-    },
   },
 }) => (
   <Layout>
-    <Head title="Tags • Blog" />
+    <Head title="Tags • Thoughts" />
     <div>
-      <h3>Tags</h3>
+      <h3>Thoughts &gt;&gt; Tags</h3>
       <ul>
         {group.map(tag => (
           <li key={tag.fieldValue}>
-            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+            <Link to={`/thoughts/tags/${kebabCase(tag.fieldValue)}/`}>
               {tag.fieldValue} ({tag.totalCount})
             </Link>
           </li>
@@ -61,7 +58,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(limit: 2000) {
+    allMarkdownRemark(
+      limit: 2000
+      filter: { frontmatter: { type: { eq: "thought" } } }
+    ) {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount

@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
-import Layout from "../components/Layout"
-import Head from "../components/Head"
+import Layout from "../../components/Layout"
+import Head from "../../components/Head"
 
-import blogStyles from "./blog.module.scss"
+import blogStyles from "../blog.module.scss"
 
 const ThoughtsPage = () => {
   const data = useStaticQuery(graphql`
@@ -37,14 +37,9 @@ const ThoughtsPage = () => {
   return (
     <Layout>
       <Head title="Thoughts" />
-      <h3>Thoughts</h3>
-      <p>
-        This section is for personal views and ideas that might not be
-        objectively correct or will likely change over time whereas most of the
-        information on my blog is well researched and is oriented towards
-        programming and technical topics.
-      </p>
-      <span style={{ marginBottom: "1.1rem", marginTop: "-1rem" }}>
+      <h3>Thoughts and Ideas</h3>
+      <span style={{ marginBottom: "1.1rem" }}>
+        <Link to="/thoughts/tags">Tags</Link> |{" "}
         <Link to="/thoughts/rss.xml">RSS</Link> |{" "}
         <Link to="/discussions">Discussions</Link>
       </span>
