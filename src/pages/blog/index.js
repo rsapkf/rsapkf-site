@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
-import Layout from "../components/Layout"
-import Head from "../components/Head"
+import Layout from "../../components/Layout"
+import Head from "../../components/Head"
 
-import blogStyles from "./blog.module.scss"
+import blogStyles from "../blog.module.scss"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -41,8 +41,8 @@ const BlogPage = () => {
       <Head title="Blog" />
       <h3>Articles</h3>
       <span style={{ marginBottom: "1.1rem" }}>
-        <Link to="/tags">Tags</Link> | <Link to="/blog/rss.xml">RSS</Link> |{" "}
-        <Link to="/discussions">Discussions</Link>
+        <Link to="/blog/tags">Tags</Link> | <Link to="/blog/rss.xml">RSS</Link>{" "}
+        | <Link to="/discussions">Discussions</Link>
       </span>
       <ol className={blogStyles.articles}>
         {data.allMarkdownRemark.edges.map((edge, idx) => {

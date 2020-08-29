@@ -3,3 +3,21 @@
   font-size: 1.3rem;
   padding: 0 0.1rem;
 }
+
+.intro {
+  position: relative;
+
+  &:after {
+    content: "";
+    background: rgb(109, 107, 107);
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 5%;
+    width: 32%;
+
+    @media (max-width: 400px) {
+      background: unset;
+    }
+  }
+}

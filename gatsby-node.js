@@ -15,10 +15,10 @@ module.exports.onCreateNode = ({ node, actions }) => {
   }
 }
 
-async function createBlogAndTagsPages({ graphql, actions }) {
+async function createBlogPages({ graphql, actions }) {
   const { createPage } = actions
   const blogTemplate = path.resolve("./src/templates/blog.js")
-  const tagTemplate = path.resolve("./src/templates/tags.js")
+  const tagTemplate = path.resolve("./src/templates/blog-tags.js")
   const res = await graphql(`
     query {
       allMarkdownRemark(
@@ -37,7 +37,10 @@ async function createBlogAndTagsPages({ graphql, actions }) {
           }
         }
       }
-      tagsGroup: allMarkdownRemark(limit: 2000) {
+      tagsGroup: allMarkdownRemark(
+        limit: 2000
+        filter: { frontmatter: { type: { eq: "article" } } }
+      ) {
         group(field: frontmatter___tags) {
           fieldValue
         }
@@ -53,7 +56,7 @@ async function createBlogAndTagsPages({ graphql, actions }) {
 
     createPage({
       component: blogTemplate,
-      path: `/blog/${edge.node.fields.slug}`,
+      path: "/blog/" + edge.node.fields.slug,
       context: {
         slug: edge.node.fields.slug,
         prev,
@@ -62,12 +65,11 @@ async function createBlogAndTagsPages({ graphql, actions }) {
     })
   })
 
-  // Extract tag data from query
+  // Blog Tags
   const tags = res.data.tagsGroup.group
-  // Make tag pages
   tags.forEach(tag => {
     createPage({
-      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+      path: "/blog" + "/tags/" + _.kebabCase(tag.fieldValue),
       component: tagTemplate,
       context: {
         tag: tag.fieldValue,
@@ -79,6 +81,7 @@ async function createBlogAndTagsPages({ graphql, actions }) {
 async function createThoughtsPages({ graphql, actions }) {
   const { createPage } = actions
   const thoughtsTemplate = path.resolve("./src/templates/thoughts.js")
+  const tagTemplate = path.resolve("./src/templates/thoughts-tags.js")
   const res = await graphql(`
     query {
       allMarkdownRemark(
@@ -94,6 +97,14 @@ async function createThoughtsPages({ graphql, actions }) {
               type
             }
           }
+        }
+      }
+      tagsGroup: allMarkdownRemark(
+        limit: 2000
+        filter: { frontmatter: { type: { eq: "thought" } } }
+      ) {
+        group(field: frontmatter___tags) {
+          fieldValue
         }
       }
     }
@@ -115,12 +126,24 @@ async function createThoughtsPages({ graphql, actions }) {
       },
     })
   })
+
+  // Thoughts Tags
+  const tags = res.data.tagsGroup.group
+  tags.forEach(tag => {
+    createPage({
+      path: "/thoughts" + "/tags/" + _.kebabCase(tag.fieldValue),
+      component: tagTemplate,
+      context: {
+        tag: tag.fieldValue,
+      },
+    })
+  })
 }
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   await Promise.all([
-    createBlogAndTagsPages({ graphql, actions }),
+    createBlogPages({ graphql, actions }),
     createThoughtsPages({ graphql, actions }),
   ])
 }

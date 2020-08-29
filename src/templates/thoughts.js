@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Head from "../components/Head"
 
-import blogTemplateStyles from "./blogtemplate.module.scss"
+import blogTemplateStyles from "./post.module.scss"
 
 export const query = graphql`
   query($slug: String!) {

@@ -9,7 +9,7 @@ import Head from "../components/Head"
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} post${
+  const tagHeader = `${totalCount} article${
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`
 
@@ -24,12 +24,12 @@ const Tags = ({ pageContext, data }) => {
             const { title } = node.frontmatter
             return (
               <li key={slug}>
-                <Link to={"/blog/" + slug}>{title}</Link>
+                <Link to={`/blog/${slug}`}>{title}</Link>
               </li>
             )
           })}
         </ul>
-        <Link to="/tags">All tags</Link>
+        <Link to={`/blog/tags`}>All tags</Link>
       </div>
     </Layout>
   )
@@ -75,6 +75,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            type
           }
         }
       }

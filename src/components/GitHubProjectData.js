@@ -24,7 +24,7 @@ const GitHubProjectData = ({ project }) => {
     }
 
     fetchGitHubData(project)
-  }, [])
+  })
 
   return (
     <>
