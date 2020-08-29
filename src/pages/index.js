@@ -22,7 +22,7 @@ const IndexPage = () => {
         <Link to="https://www.startpage.com/do/metasearch.pl?query=mern%20stack">
           MERN Stack
         </Link>{" "}
-        , the <a href="https://jamstack.org/">JAMstack</a>.
+        and the <a href="https://jamstack.org/">JAMstack</a>.
         <br /> Please see <Link to="/technologies">Technologies</Link> page for
         details.
         <br />
