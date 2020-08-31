@@ -47,13 +47,13 @@ const Blog = props => {
         {tags.map((tag, i) =>
           tags[i + 1] ? (
             <span>
-              <Link to={`/tags/${tag}`} style={{ borderBottom: "unset" }}>
+              <Link to={`/blog/tags/${tag}`} style={{ borderBottom: "unset" }}>
                 #{tag}
               </Link>
               ,{" "}
             </span>
           ) : (
-            <Link to={`/tags/${tag}`} style={{ borderBottom: "unset" }}>
+            <Link to={`/blog/tags/${tag}`} style={{ borderBottom: "unset" }}>
               #{tag}
             </Link>
           )
