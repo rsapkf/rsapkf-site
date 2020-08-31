@@ -42,11 +42,12 @@ button[type="submit"] {
   cursor: pointer;
 
   border: none;
-  background: #63636d;
+  background: #838391;
+  color: rgb(31, 28, 28);
   border-radius: 0px;
 
   &:hover {
-    background-color: #838391;
+    background-color: #74747c;
   }
 }
 
