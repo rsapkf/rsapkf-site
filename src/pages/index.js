@@ -11,7 +11,7 @@ const IndexPage = () => {
       <Head title="Home" />
       <h3 className={indexStyles.intro}>
         Welcome to <span className={indexStyles.title}>rsapkf</span>
-        's Home Page !
+        's Home Page!
       </h3>
       <p>
         I specialize in making full stack web applications with modern{" "}
