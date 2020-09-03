@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 import Head from "../components/Head"
 import PostNav from "../components/PostNav"
 
-import postTemplateStyles from "./post.module.scss"
+import postTemplateStyles from "./posttemplate.module.scss"
 
 export const query = graphql`
   query($slug: String!) {
