@@ -63,12 +63,12 @@ const BlogPage = () => {
                     tags[i + 1] ? `#${tag}, ` : `#${tag}`
                   )}{" "}
                   | <i className="fas fa-link"></i>{" "}
-                  <Link
-                    to={`${data.site.siteMetadata.siteUrl}/blog/${edge.node.fields.slug}`}
+                  <a
+                    href={`${data.site.siteMetadata.siteUrl}/blog/${edge.node.fields.slug}`}
                     style={{ borderBottom: "unset" }}
                   >
                     permalink
-                  </Link>
+                  </a>
                   <br />
                   {spoiler}
                 </small>

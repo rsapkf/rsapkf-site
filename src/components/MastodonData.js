@@ -59,7 +59,7 @@ const MastodonData = ({ tag }) => {
                   <a href={item.url}>{formatDate(item.created_at)}</a>
                   <div
                     dangerouslySetInnerHTML={{
-                      __html: item.content.replace(/\<br\ \/\>.*/gi, ""),
+                      __html: item.content.replace(/<br \/>.*/gi, ""),
                     }}
                   />
                 </li>

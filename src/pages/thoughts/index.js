@@ -38,10 +38,16 @@ const ThoughtsPage = () => {
     <Layout>
       <Head title="Thoughts" />
       <h3>Thoughts and Ideas</h3>
-      <span style={{ marginBottom: "1.1rem" }}>
+      <span style={{ marginBottom: "0.5rem" }}>
         <Link to="/thoughts/tags">Tags</Link> |{" "}
         <Link to="/thoughts/rss.xml">RSS</Link> |{" "}
         <Link to="/discussions">Discussions</Link>
+      </span>
+      <span style={{ marginBottom: "1.1rem" }}>
+        Filter: <Link to="/thoughts/tags/essay">Essays</Link> |{" "}
+        <Link to="/thoughts/tags/book">Book Reviews</Link> |{" "}
+        <Link to="/thoughts/tags/movie">Movie Reviews</Link> |{" "}
+        <Link to="/thoughts/tags/tv-show">TV Show Reviews</Link>
       </span>
       <ol className={blogStyles.articles}>
         {data.allMarkdownRemark.edges.map((edge, idx) => {
@@ -58,12 +64,12 @@ const ThoughtsPage = () => {
                   <i className="far fa-calendar"></i> {date} |{" "}
                   <i className="fas fa-stopwatch"></i> {edge.node.timeToRead}{" "}
                   min read | <i className="fas fa-link"></i>{" "}
-                  <Link
-                    to={`${data.site.siteMetadata.siteUrl}/thoughts/${edge.node.fields.slug}`}
+                  <a
+                    href={`${data.site.siteMetadata.siteUrl}/thoughts/${edge.node.fields.slug}`}
                     style={{ borderBottom: "unset" }}
                   >
                     permalink
-                  </Link>
+                  </a>
                 </small>
               </span>
               <hr />
