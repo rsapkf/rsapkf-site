@@ -52,7 +52,7 @@ const Header = () => {
                   ~
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
@@ -60,6 +60,26 @@ const Header = () => {
                 >
                   Blog
                 </Link>
+              </li> */}
+              <li className={headerStyles.dropdown}>
+                <Link
+                  className={`${headerStyles.navItem} ${headerStyles.dropdownButton}`}
+                  activeClassName={headerStyles.activeNavItem}
+                  to="#"
+                >
+                  Writing
+                </Link>
+                <div
+                  className={headerStyles.dropdownContent}
+                  style={theme.dark ? {} : { backgroundColor: "#faf4fa" }}
+                >
+                  <Link to="/blog">
+                    <i className="fas fa-code-branch"></i> Blog
+                  </Link>
+                  <Link to="/thoughts">
+                    <i className="far fa-lightbulb"></i> Thoughts
+                  </Link>
+                </div>
               </li>
               <li>
                 <Link
@@ -100,9 +120,6 @@ const Header = () => {
                   className={headerStyles.dropdownContent}
                   style={theme.dark ? {} : { backgroundColor: "#faf4fa" }}
                 >
-                  <Link to="/thoughts">
-                    <i className="far fa-lightbulb"></i> Thoughts
-                  </Link>
                   <Link to="/technologies">Technologies</Link>
                   <Link
                     to="/puzzles"
@@ -147,20 +164,8 @@ const Header = () => {
                   className={headerStyles.dropdownContent}
                   style={theme.dark ? {} : { backgroundColor: "#faf4fa" }}
                 >
-                  <a
-                    href="https://links.rsapkf.xyz/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Linkroll
-                  </a>
-                  <a
-                    href="https://notes.rsapkf.xyz/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Notes
-                  </a>
+                  <a href="https://links.rsapkf.xyz/">Linkroll</a>
+                  <a href="https://notes.rsapkf.xyz/">Notes</a>
                   <a
                     href="https://github.com/rsapkf/dotfiles/"
                     target="_blank"

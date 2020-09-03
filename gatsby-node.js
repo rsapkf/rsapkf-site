@@ -51,16 +51,16 @@ async function createBlogPages({ graphql, actions }) {
   const posts = res.data.allMarkdownRemark.edges
 
   posts.forEach((edge, i) => {
-    const prev = posts[i + 1]
-    const next = posts[i - 1]
+    const prevArticle = posts[i + 1]
+    const nextArticle = posts[i - 1]
 
     createPage({
       component: blogTemplate,
       path: "/blog/" + edge.node.fields.slug,
       context: {
         slug: edge.node.fields.slug,
-        prev,
-        next,
+        prevArticle,
+        nextArticle,
       },
     })
   })
@@ -94,6 +94,7 @@ async function createThoughtsPages({ graphql, actions }) {
               slug
             }
             frontmatter {
+              title
               type
             }
           }
@@ -113,16 +114,16 @@ async function createThoughtsPages({ graphql, actions }) {
   const posts = res.data.allMarkdownRemark.edges
 
   posts.forEach((edge, i) => {
-    const prev = posts[i + 1]
-    const next = posts[i - 1]
+    const prevThought = posts[i + 1]
+    const nextThought = posts[i - 1]
 
     createPage({
       component: thoughtsTemplate,
       path: `/thoughts/${edge.node.fields.slug}`,
       context: {
         slug: edge.node.fields.slug,
-        prev,
-        next,
+        prevThought,
+        nextThought,
       },
     })
   })

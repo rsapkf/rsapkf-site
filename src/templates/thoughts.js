@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import Head from "../components/Head"
+import PostNav from "../components/PostNav"
 
 import blogTemplateStyles from "./post.module.scss"
 
@@ -52,6 +53,11 @@ const Thought = props => {
         <i>Last Updated: {lastupdated}</i>
       </small>
       <hr />
+      <PostNav
+        prev={props.pageContext.prevThought}
+        next={props.pageContext.nextThought}
+        posttype="thoughts"
+      />
       <br />
       <span style={{ marginTop: "20px" }}>
         Got suggestions or feedback ? <Link to="/contact">Contact</Link> me!

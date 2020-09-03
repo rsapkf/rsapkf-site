@@ -15,13 +15,11 @@ const IndexPage = () => {
       </h3>
       <p>
         I specialize in making full stack web applications with modern{" "}
-        <Link to="https://developer.mozilla.org/en-US/">
-          HTML5 + CSS3 + ES6
-        </Link>{" "}
-        , <Link to="https://github.com/django/django">Django</Link> ,{" "}
-        <Link to="https://www.startpage.com/do/metasearch.pl?query=mern%20stack">
+        <a href="https://developer.mozilla.org/en-US/">HTML5 + CSS3 + ES6</a> ,{" "}
+        <a href="https://github.com/django/django">Django</a> ,{" "}
+        <a href="https://www.startpage.com/do/metasearch.pl?query=mern%20stack">
           MERN Stack
-        </Link>{" "}
+        </a>{" "}
         and the <a href="https://jamstack.org/">JAMstack</a>.
         <br /> Please see <Link to="/technologies">Technologies</Link> page for
         details.

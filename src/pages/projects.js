@@ -20,7 +20,7 @@ const ProjectsPage = () => {
           <h4>Personal:</h4>
           <ul>
             {personalProjects.map((project, idx) => (
-              <li key={idx}>
+              <li key={`personal-${idx}`}>
                 <GitHubProjectData project={project} />
               </li>
             ))}
@@ -32,7 +32,7 @@ const ProjectsPage = () => {
           <h4>Software:</h4>
           <ul>
             {softwareProjects.map((project, idx) => (
-              <li key={idx}>
+              <li key={`software-${idx}`}>
                 <GitHubProjectData project={project} />
               </li>
             ))}
