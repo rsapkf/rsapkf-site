@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 import Head from "../components/Head"
 import PostNav from "../components/PostNav"
 
-import blogTemplateStyles from "./post.module.scss"
+import postTemplateStyles from "./post.module.scss"
 
 export const query = graphql`
   query($slug: String!) {
@@ -38,7 +38,7 @@ const Blog = props => {
   return (
     <Layout>
       <Head title={`${title} • Blog`} />
-      <h3 className={blogTemplateStyles.title}>{title}</h3>
+      <h3 className={postTemplateStyles.title}>{title}</h3>
       <small>
         <i className="far fa-calendar"></i> {date} |{" "}
         <i className="fas fa-stopwatch"></i>{" "}
