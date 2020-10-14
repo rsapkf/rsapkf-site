@@ -1,7 +1,7 @@
 import React from "react"
 
 const defaultState = {
-  dark: true,
+  dark: false,
   toggleDark: () => {},
 }
 
@@ -9,7 +9,7 @@ const ThemeContext = React.createContext(defaultState)
 
 class ThemeProvider extends React.Component {
   state = {
-    dark: true,
+    dark: false,
   }
 
   toggleDark = () => {
