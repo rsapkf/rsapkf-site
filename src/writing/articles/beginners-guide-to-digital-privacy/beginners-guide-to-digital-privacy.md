@@ -58,7 +58,11 @@ _\* Slightly advanced tips_
 
   - Amazon, Adobe (require contacting support)
   - TED (no delete account option in account settings)
-  - Shopify (You must have a premium subsciption to close your store/account even if your trial period is over)
+  - Shopify (you must have a premium subsciption to close your store/account even if wish to close your store after your trial is over)
+
+- Make use of [Email Aliases](https://protonmail.com/support/knowledge-base/addresses-and-aliases/) or Email forwarding services:
+  - [AnonAddy](https://github.com/anonaddy/anonaddy)
+  - [SimpleLogin](https://github.com/simple-login/app)
 
 - Use disposable email addresses for temporary signups:
   - [Temp Mail](https://temp-mail.org/)
@@ -88,10 +92,6 @@ _\* Slightly advanced tips_
 - Use E2E-encrypted email services:
   - [Tutanota](https://tutanota.com/)
   - [Protonmail](https://protonmail.com/)
-
-- Make use of [Email Aliases](https://protonmail.com/support/knowledge-base/addresses-and-aliases/) or Email forwarding services:
-  - [AnonAddy](https://github.com/anonaddy/anonaddy)
-  - [SimpleLogin](https://github.com/simple-login/app)
 
 - Use E2E-encrypted note-taking apps:
   - [Standard Notes](https://standardnotes.org/)
