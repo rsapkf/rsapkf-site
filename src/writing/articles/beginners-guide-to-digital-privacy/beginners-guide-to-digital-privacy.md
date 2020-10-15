@@ -45,9 +45,24 @@ _\* Slightly advanced tips_
   These companies are great for security of your data, they hire top engineers from around the world but are worse for your privacy, esp. if they rely on advertisement for their revenue. If you have to use Google, go to your account settings and turn off all the [activity controls](https://myactivity.google.com/activitycontrols) and [ads personalization](https://adssettings.google.com/). Go through similar settings on your dashboard for other accounts- Apple, Microsoft, etc.
 
 - **Always** choose "Sign up with Email" while signing up on websites.
-  - I cannot stress this enough. Please do not ever, unless mandatory, choose "Sign up with Google/Microsoft/Facebook/Apple/Amazon, etc". If you are required to continue with social signup, take care of what scopes and information you are permitting the service to use.
+  
+  I cannot stress this enough. Please **do not** ever, unless mandatory, choose "Sign up with Google/Microsoft/Twitter/Facebook/Apple/Amazon, etc".
+  
+  If you are required to continue with social signup, take care of what scopes and information you are permitting the service to use. Platforms usually provide a way to manage this info from your account settings:
+  - [Facebook Apps and Websites](https://www.facebook.com/settings?tab=applications)
+  - [Apps with access to your Google account](https://myaccount.google.com/permissions)
 
-- Research beforehand if the service you're signing up for allows for an (easy) way to delete your account. You might regret later when you find out you can't delete your account. Some websites that have difficult account deletion procedure: Amazon (requires contacting support), Adobe, TED, Shopify, etc.
+- Create separate email accounts/aliases for signups, newsletters, communication, banking, music, etc.
+
+- Research beforehand if the service you're signing up for allows for an (easy) way to delete your account. You might regret later when you find out you can't delete your account. Some websites have tricky account deletion procedure:
+
+  - Amazon, Adobe (require contacting support)
+  - TED (no delete account option in account settings)
+  - Shopify (You must have a premium subsciption to close your store/account even if your trial period is over)
+
+- Use disposable email addresses for temporary signups:
+  - [Temp Mail](https://temp-mail.org/)
+  - [10 Minute Mail](https://10minutemail.com/)
   
 - Use alternative frontends for platforms like Twitter, YouTube and Instagram:
   - [Invidio.us](https://invidio.us/)
@@ -90,8 +105,6 @@ _\* Slightly advanced tips_
   - [VeraCrypt](https://veracrypt.fr/)
   - [Cryptomator](https://cryptomator.org/)
 
-- Create separate email accounts/aliases for signups, newsletters, communication, banking, music, etc.
-
 - Use a reliable VPN:
   - [ProtonVPN](https://protonvpn.com/)
   - [Mullvad VPN](https://mullvad.net/)
@@ -114,8 +127,12 @@ _\* Slightly advanced tips_
 - *Self-host software on your own server by renting a VPS.
 
 ### Bonus security tips:
-- Use an open source password manager like [Bitwarden](https://bitwarden.com/) or [Keepass](https://keepass.info/).
-- Enable multi-factor authentication on as many accounts as you can. Use an authenticator app like [FreeOTP](https://github.com/freeotp/) or [Authy](https://authy.com/) instead of giving out your phone number to services (**Don't forget to set/backup necessary recovery options/codes for important accounts!**).
+- Use an open source password manager:
+  - [Bitwarden](https://bitwarden.com/)
+  - [Keepass](https://keepass.info/)
+
+- Enable [multi-factor authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication) on as many accounts as you can. Use an authenticator app like [FreeOTP](https://github.com/freeotp/) or [Authy](https://authy.com/) instead of giving out your phone number to services (**Don't forget to set necessary recovery options and backup 2FA recovery codes for important accounts!**).
+
 - Monitor if you’ve been part of an online data breach:
   - [Firefox Monitor](https://monitor.firefox.com/)
   - [Have I Been Pwned](https://haveibeenpwned.com/)
@@ -123,13 +140,13 @@ _\* Slightly advanced tips_
 ---
 
 #### Further Reading:
-This is just a list of the most popular and reliable options for privacy on your internet activities. There are comprehensive guides, articles, books and websites for more advanced tips:
+This is just a list of the most popular and reliable options for getting started on digital privacy. There are comprehensive guides, articles, books and websites for more advanced tips:
 - [Digital Privacy](https://en.wikipedia.org/wiki/Digital_privacy)
 - [Awesome-Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) -  Free Software network services and web applications which can be hosted locally.
 - [Two Factor Auth](https://twofactorauth.org/) - List of websites and whether or not they support 2FA.
 - [Mozilla Blog](https://blog.mozilla.org/)
 - [privacytools.io](https://privacytools.io/)
 - [r/privacy](https://old.reddit.com/r/privacy/)
-- [The Social Dilemma- Netflix Documentary](https://en.wikipedia.org/wiki/The_Social_Dilemma)
+- [The Social Dilemma - Netflix Documentary](https://en.wikipedia.org/wiki/The_Social_Dilemma)
 
-Make sure to research every option thoroughly to determine which option is best for you. Let me know if you found a mistake or want to add another service to this list.
+Make sure to research every option thoroughly to determine what works best for you. Let me know if you found a mistake or want to add another service to this list.
