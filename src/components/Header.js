@@ -52,15 +52,6 @@ const Header = () => {
                   ~
                 </Link>
               </li>
-              {/* <li>
-                <Link
-                  className={headerStyles.navItem}
-                  activeClassName={headerStyles.activeNavItem}
-                  to="/blog"
-                >
-                  Blog
-                </Link>
-              </li> */}
               <li className={headerStyles.dropdown}>
                 <Link
                   className={`${headerStyles.navItem} ${headerStyles.dropdownButton}`}
