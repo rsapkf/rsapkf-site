@@ -3,7 +3,7 @@ title: "The Rabbithole Series, Part 1"
 date: "2019-05-20"
 lastupdated: "2019-05-25"
 spoiler: "How I got started with Tiling WMs."
-tags: ["linux"]
+tags: ["linux", "window-manager", "i3wm", "dwm"]
 type: "article"
 ---
 
@@ -13,7 +13,7 @@ After I switched entirely to Linux last year, I decided to learn C++ by followin
 
 I found myself constantly switching between Vim, terminal, e-book viewer and my browser windows in order to solve the problems. As an Ubuntu Gnome normie, I was using the `alt + tab` key combination to do so. Eventually, I realized I could do the same thing using `super + tab` keys! It was surprising to me because I had always used the former solution since Windows. To see which was more common among other linux users, I did a quick search on the web.
 
-I found a reddit thread where someone had asked the same question that I had- which of the solutions was more common. The first comment on the thread said, "`alt + tab` because I didn't know `super` could do that as well." Okay. But what was the beginning of the biggest distraction of my life ever, was the second comment with literally 7 upvotes. It said, "Neither, because I use i3wm. :)"
+I found a reddit thread where someone had asked the same question. The first comment on the thread said, "`alt + tab` because I didn't know `super` could do that as well." Okay. But what was the beginning of the biggest distraction of my life ever, was the second comment with literally 7 upvotes. It said, "Neither, because I use i3wm. :)"
 
 Now, as a voraciuosly curious person, I _had_ to do a quick search- I had never heard of i3wm before. As some of you might already know, it's a powerful and popular tiling window manager. One look into its documentation, I knew I always needed something like this in order to do things effectively.
 
