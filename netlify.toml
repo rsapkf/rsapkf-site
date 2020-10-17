@@ -5,13 +5,13 @@
   force = true
 
 [[redirects]]
-  from = "/blog/the-rabbithole-series-part-1"
-  to = "/blog/rabbithole-series-part-1"
+  from = "/rss.xml"
+  to = "/blog/rss.xml"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/rss.xml"
-  to = "/blog/rss.xml"
+  from = "/blog/the-rabbithole-series-part-1"
+  to = "/blog/rabbithole-series-part-1"
   status = 301
   force = true
