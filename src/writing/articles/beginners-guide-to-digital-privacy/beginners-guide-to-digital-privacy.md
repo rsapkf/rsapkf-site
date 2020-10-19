@@ -36,11 +36,13 @@ _\* Slightly advanced tips_
 
 - Use a search engine that doesn't log your search queries:
   - [DuckDuckGo](https://duckduckgo.com/)
-  - [searx.me](https://searx.me/)
+  - [Startpage](https://www.startpage.com/)
+  - [Searx](https://searx.me/)
+  - [Qwant](https://qwant.com/)
 
 - Disable Tracking, Fingerprinting, Cryptominers and Telemetry from browser preferences. Clear cookies frequently, disable location access to sites and cover your webcam unless necessary.
 
-- Quit using Google, Microsoft, Apple, Facebook products for personal/sensitive use cases.
+- Quit using Google, Microsoft, Apple, Facebook products for **personal/sensitive use cases**.
   
   These companies are great for security of your data, they hire top engineers from around the world but are worse for your privacy, esp. if they rely on advertisement for their revenue. If you have to use Google, go to your account settings and turn off all the [activity controls](https://myactivity.google.com/activitycontrols) and [ads personalization](https://adssettings.google.com/). Go through similar settings on your dashboard for other accounts- Apple, Microsoft, etc.
 
@@ -98,6 +100,7 @@ _\* Slightly advanced tips_
   - [Joplin](https://joplin.org/)
 
 - Use E2E-encrypted cloud storage solutions:
+  - [Tresorit](https://tresorit.com/)
   - [pCloud Cypto](https://pcloud.com/)
   - [Sync.com](https://sync.com/)
 
