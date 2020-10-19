@@ -81,7 +81,7 @@ const MastodonData = ({ tag }) => {
               fontFamily: "monospace",
             }}
           >
-            {response}
+            {response}. Guru Meditation.
           </p>
           <p>
             Oops. There seems to be a problem loading resources. If you're still
