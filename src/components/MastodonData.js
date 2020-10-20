@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { Link } from "gatsby"
 
 import Layout from "./Layout"
 import Head from "./Head"
@@ -92,7 +93,7 @@ const MastodonData = ({ tag }) => {
             <li>My code broke.</li>
           </ul>
           <p>
-            <a href="/contact">Help me fix this?</a>
+            <Link to="/consstact">Help me fix this?</Link>
           </p>
         </div>
       )}
