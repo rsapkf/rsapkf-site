@@ -51,6 +51,7 @@ _\* Slightly advanced tips_
   I cannot stress this enough. Please **do not** ever, unless mandatory, choose "Sign up with Google/Microsoft/Twitter/Facebook/Apple/Amazon, etc".
   
   If you are required to continue with social signup, take care of what scopes and information you are permitting the service to use. Platforms usually provide a way to manage this info from your account settings:
+  - [Twitter Connected Apps](https://twitter.com/settings/connected_apps)
   - [Facebook Apps and Websites](https://www.facebook.com/settings?tab=applications)
   - [Apps with access to your Google account](https://myaccount.google.com/permissions)
 
