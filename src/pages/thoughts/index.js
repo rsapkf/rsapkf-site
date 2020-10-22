@@ -45,9 +45,9 @@ const ThoughtsPage = () => {
       </span>
       <span style={{ marginBottom: "1.1rem" }}>
         Filter: <Link to="/thoughts/tags/essay">Essays</Link> |{" "}
-        <Link to="/thoughts/tags/book">Book Reviews</Link> |{" "}
-        <Link to="/thoughts/tags/movie">Movie Reviews</Link> |{" "}
-        <Link to="/thoughts/tags/tv-show">TV Show Reviews</Link>
+        <Link to="/thoughts/tags/book">Books</Link> |{" "}
+        <Link to="/thoughts/tags/movie">Movies</Link> |{" "}
+        <Link to="/thoughts/tags/tv-show">TV Shows</Link>
       </span>
       <ol className={blogStyles.articles}>
         {data.allMarkdownRemark.edges.map((edge, idx) => {
