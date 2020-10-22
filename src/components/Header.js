@@ -132,15 +132,14 @@ const Header = () => {
                   <Link to="/donate" style={{ borderBottom: "1px solid gray" }}>
                     <i className="fas fa-donate"></i> Donate
                   </Link>
+                  <Link to="/now">Now</Link>
+                  <Link to="/uses" style={{ borderBottom: "1px solid gray" }}>Uses</Link>
                   <Link to="/linklog">Linklog</Link>
                   <Link
                     to="/microblog"
-                    style={{ borderBottom: "1px solid gray" }}
                   >
                     Microblog
                   </Link>
-                  <Link to="/now">Now</Link>
-                  <Link to="/uses">Uses</Link>
                 </div>
               </li>
               <li className={headerStyles.dropdown}>

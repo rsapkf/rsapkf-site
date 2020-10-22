@@ -74,7 +74,7 @@ _\* Slightly advanced tips_
 - Use alternative frontends for platforms like Twitter, YouTube and Instagram:
   - [Invidio.us](https://invidio.us/)
   - [Nitter.net](https://nitter.net/)
-  - [Bibliogram](https://bibliogram.net/)
+  - [Bibliogram](https://bibliogram.art/)
 
 - Don't like/comment on anything on Facebook, YouTube and social platforms. Use E2E-encrypted bookmark service like [Firefox Sync](https://www.mozilla.com/en-US/firefox/sync/).
 
