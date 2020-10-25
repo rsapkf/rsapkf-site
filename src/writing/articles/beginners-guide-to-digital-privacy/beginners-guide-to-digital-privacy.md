@@ -54,6 +54,8 @@ _\* Slightly advanced tips_
   - [Twitter Connected Apps](https://twitter.com/settings/connected_apps)
   - [Facebook Apps and Websites](https://www.facebook.com/settings?tab=applications)
   - [Apps with access to your Google account](https://myaccount.google.com/permissions)
+  - [Apps and services with access to your Microsoft account](https://go.microsoft.com/fwlink/p/?LinkId=829203)
+  - [Manage Login with Amazon](https://www.amazon.com/ap/adam)
 
 - Create separate email accounts/aliases for signups, newsletters, communication, banking, music, etc.
 
@@ -78,7 +80,7 @@ _\* Slightly advanced tips_
 
 - Don't like/comment on anything on Facebook, YouTube and social platforms. Use E2E-encrypted bookmark service like [Firefox Sync](https://www.mozilla.com/en-US/firefox/sync/).
 
-  Platforms these days track everything from what your see, what you click on, share or comment on, and even how long you looked at a particular item on your feed. Reduce your digital footprint as much as you can. Export your personal data from Facebook, Google from your account settings and work on deleting all of it.
+  Platforms these days track everything from what your see, what you click on, share or comment on, and even [how long you looked at](https://www.theverge.com/2015/6/13/8775587/facebook-news-feed-uses-time-read-to-promote-posts) a particular item on your feed. Reduce your digital footprint as much as you can. Export your personal data from Facebook, Google from your account settings and work on deleting all of it.
   - [Download your Facebook Information](https://facebook.com/dyi)
   - [Google Takeout](https://takeout.google.com)
 
