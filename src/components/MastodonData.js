@@ -41,6 +41,15 @@ const MastodonData = ({ tag }) => {
     <Layout>
       <Head title={capitalizedTag} />
       <h3>{capitalizedTag}</h3>
+      <p
+        style={{
+          color: "#d6133d",
+          fontSize: "1rem",
+          fontFamily: "monospace",
+        }}
+      >
+        This is an experimental page.
+      </p>
       <p>
         These {tag} items are sourced from my{" "}
         <a href="https://mastodon.social/@rsapkf">Mastodon toots</a> (tagged
