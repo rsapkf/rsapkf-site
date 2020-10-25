@@ -61,7 +61,7 @@ a {
   }
 
   // target external links
-  &:not([href*="rsapkf.xyz"]):not([href^="/"]):not([href^="#"]):not([href*="mozilla.org"]):not([href*="github.com"]):not([href*="gitlab.com"]):not([href*="mastodon.social"]):not([href*="ycombinator.com"]):not([href*="twitter.com"]):not([href*="youtube.com"]):not([href*="apple.com"]):not([href*="wikipedia.org"]):not([href*="google.com"]):not([href*="stackoverflow.com"]):not([href*="reddit.com"]):not([href*="goodreads.com"]):not([href*="microsoft.com"]):not([href*="imdb.com"]):not([href*="facebook.com"]):not([href*="instagram.com"])::after {
+  &:not([href*="rsapkf.xyz"]):not([href^="/"]):not([href^="#"]):not([href*="mozilla.org"]):not([href*="github.com"]):not([href*="gitlab.com"]):not([href*="mastodon.social"]):not([href*="ycombinator.com"]):not([href*="twitter.com"]):not([href*="youtube.com"]):not([href*="apple.com"]):not([href*="wikipedia.org"]):not([href*="google.com"]):not([href*="stackoverflow.com"]):not([href*="reddit.com"]):not([href*="goodreads.com"]):not([href*="microsoft.com"]):not([href*="amazon.com"]):not([href*="imdb.com"]):not([href*="facebook.com"]):not([href*="instagram.com"])::after {
     content: "\f35d";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -131,6 +131,10 @@ a {
 
   &[href*="microsoft.com"]::after {
     content: "\f3ca";
+  }
+
+  &[href*="amazon.com"]::after {
+    content: "\f270";
   }
 
   &[href*="imdb.com"]::after {
