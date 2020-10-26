@@ -41,7 +41,7 @@ export const softwareProjects = [
     name: "gnureadline-reference",
     description:
       "Comprehensive GNU Readline Shortcuts Guide for VI + Emacs Editing Modes.",
-    homepage: "https://gnureadline-reference.herokuapp.com/",
+    homepage: "https://rsapkf.github.io/gnureadline-reference/",
     stargazers_count: 2,
     forks_count: 0,
   },

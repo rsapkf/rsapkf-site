@@ -102,7 +102,7 @@ const MastodonData = ({ tag }) => {
             <li>My code broke.</li>
           </ul>
           <p>
-            <Link to="/consstact">Help me fix this?</Link>
+            <Link to="/contact">Help me fix this?</Link>
           </p>
         </div>
       )}
