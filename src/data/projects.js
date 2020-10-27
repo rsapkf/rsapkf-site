@@ -3,7 +3,7 @@ export const personalProjects = [
     name: "42",
     description:
       "Collection of GitHub repos, blogs and websites to learn cool things.",
-    homepage: "https://rsapkf.github.io/42/",
+    homepage: "https://links.rsapkf.xyz/",
     stargazers_count: 1880,
     forks_count: 125,
   },
@@ -11,7 +11,7 @@ export const personalProjects = [
     name: "notes",
     description:
       "Personal notes for Vim, tmux, GNU Bash, zsh, Linux, Programming...",
-    homepage: "https://rsapkf.github.io/notes/",
+    homepage: "https://notes.rsapkf.xyz/",
     stargazers_count: 4,
     forks_count: 0,
   },
@@ -46,11 +46,11 @@ export const softwareProjects = [
     forks_count: 0,
   },
   {
-    name: "invidious-playlist-duration",
+    name: "inviduration",
     description:
-      "Firefox add-on to view total duration of playlists on Invidio.us.",
+      "Firefox add-on to view total duration of playlists on Invidio.us instances.",
     homepage:
-      "https://addons.mozilla.org/en-US/firefox/addon/invidious-playlist-duration/",
+      "https://addons.mozilla.org/en-US/firefox/addon/inviduration/",
     stargazers_count: 0,
     forks_count: 0,
   },
