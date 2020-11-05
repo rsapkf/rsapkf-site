@@ -64,7 +64,9 @@ _\* Slightly advanced tips_
   - [Apps and services with access to your Microsoft account](https://go.microsoft.com/fwlink/p/?LinkId=829203)
   - [Manage Login with Amazon](https://www.amazon.com/ap/adam)
 
-- Create separate email accounts/aliases for signups, newsletters, communication, banking, music, etc.
+- Create separate email accounts/aliases for signups, newsletters, communication, banking, music, gaming, etc.
+
+  Many email providers like ProtonMail and Google allow for unlimited aliases by adding a dot(.) in your email username. For example, `funnypanda@protonmail.com` and `funny.panda@protonmail.com` or `fun.nypand.a@protonmail.com` are essentially the same addresses. The messages sent to either of these address will arrive at the same inbox. **This tip won't work for Tutanota**. These services also allow for creating aliases by appending a plus(+) and anything after. For example, `john.doe@gmail.com` or `john.doe+firstalias@gmail.com` are the same. You can use these tricks to create aliases for signing up on different sites without putting your main address everywhere.
 
 - Research beforehand if the service you're signing up for allows for an (easy) way to delete your account. You might regret later when you find out you can't delete your account. Some websites have tricky account deletion procedure:
 
