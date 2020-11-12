@@ -39,6 +39,8 @@ _\* Slightly advanced tips_
   - [Firefox Multi-Account Containers](https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/)
   - [ClearURLs](https://gitlab.com/KevinRoebert/ClearUrls), etc.
 
+  See also [recommended privacy addons](https://addons.mozilla.org/en-US/firefox/search/?category=privacy-security&sort=recommended%2Cusers&type=extension) for Firefox.
+
 - Use a search engine that doesn't log your search queries:
 
   - [DuckDuckGo](https://duckduckgo.com/)
@@ -68,6 +70,8 @@ _\* Slightly advanced tips_
 
   Many email providers like ProtonMail and Google allow for unlimited aliases by adding a dot(.) in your email username. For example, `funnypanda@protonmail.com` and `funny.panda@protonmail.com` or `fun.nypand.a@protonmail.com` are essentially the same addresses. The messages sent to either of these address will arrive at the same inbox. **This tip won't work for Tutanota**. These services also allow for creating aliases by appending a plus(+) and anything after. For example, `john.doe@gmail.com` or `john.doe+firstalias@gmail.com` are the same. You can use these tricks to create aliases for signing up on different sites without putting your main address everywhere.
 
+- Avoid using the same username across multiple platforms and websites. Your first priority should be using a long, unique and random password for every site but having different usernames is also [important](https://nordpass.com/blog/unique-username-importance/). Tools like [sherlock](https://github.com/sherlock-project/sherlock) can be used to hunt down your identities across sites within seconds. Use a random [username](https://www.lastpass.com/username-generator/) [generator](https://nordpass.com/username-generator). For random passwords, I use [this](https://duckduckgo.com/?q=password+40+strong&t=brave&ia=answer) DuckDuckGo query and my [password manager](https://bitwarden.com/password-generator/). There are tons of [strong](https://www.lastpass.com/password-generator) [password/pass-phrase](https://1password.com/password-generator/) [generators](https://www.dashlane.com/features/password-generator) that you can use. Ideally, you should also use randomly generated strings as answers to your security questions for sites that require them and save them on your password manager using custom fields.
+
 - Research beforehand if the service you're signing up for allows for an (easy) way to delete your account. You might regret later when you find out you can't delete your account. Some websites have tricky account deletion procedure:
 
   - Amazon, Adobe (require contacting support)
@@ -86,11 +90,11 @@ _\* Slightly advanced tips_
 
 - Use alternative frontends for platforms like Twitter, YouTube and Instagram:
 
-  - [Invidio.us](https://invidio.us/)
+  - [Invidio.us](https://invidio.us/) (See also [NewPipe](https://newpipe.schabi.org) for Android.)
   - [Nitter.net](https://nitter.net/)
   - [Bibliogram](https://bibliogram.art/)
 
-  Use [Privacy Redirect](https://addons.mozilla.org/en-US/firefox/addon/privacy-redirect/) addon that redirects redirects Twitter, YouTube, Instagram & Google Maps requests to privacy friendly alternatives. For a long time, I used [Invidition](https://addons.mozilla.org/en-US/firefox/addon/invidition/) but it is now deprecated and Privacy Redirect is recommended.
+  Use [Privacy Redirect](https://addons.mozilla.org/en-US/firefox/addon/privacy-redirect/) addon that redirects Twitter, YouTube, Instagram & Google Maps requests to privacy friendly alternatives. For a long time, I used [Invidition](https://addons.mozilla.org/en-US/firefox/addon/invidition/) but it is now deprecated and Privacy Redirect is recommended.
 
 - Don't like/comment on anything on Facebook, YouTube and social platforms. Use end-to-end encrypted bookmark service like [Firefox Sync](https://www.mozilla.com/en-US/firefox/sync/).
 
@@ -124,7 +128,7 @@ _\* Slightly advanced tips_
 - Use E2E-encrypted cloud storage solutions:
 
   - [Tresorit](https://tresorit.com/)
-  - [pCloud Cypto](https://pcloud.com/)
+  - [pCloud Crypto](https://pcloud.com/)
   - [Sync.com](https://sync.com/)
 
 - Encrypt your files before uploading them to Dropbox, Google Drive or Microsoft OneDrive:
@@ -157,6 +161,8 @@ _\* Slightly advanced tips_
 
 - \*Self-host software on your own server by renting a VPS.
 
+- \*Use [PGP](https://www.openpgp.org/) for encrypted communication.
+
 ### Bonus security tips:
 
 - Use an open source password manager:
@@ -180,6 +186,8 @@ This is just a list of the most popular and reliable options for getting started
 - [Awesome-Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) - Free Software network services and web applications which can be hosted locally.
 - [Two Factor Auth](https://twofactorauth.org/) - List of websites and whether or not they support 2FA.
 - [Mozilla Blog](https://blog.mozilla.org/)
+- [Electronic Frontier Foundation](https://eff.org/)
+- [Prism ⚡ Break](https://prism-break.org/) - Opt out of global data surveillance programs like PRISM, XKeyscore and Tempora.
 - [privacytools.io](https://privacytools.io/)
 - [r/privacy](https://old.reddit.com/r/privacy/)
 - [The Social Dilemma - Netflix Documentary](https://en.wikipedia.org/wiki/The_Social_Dilemma)
