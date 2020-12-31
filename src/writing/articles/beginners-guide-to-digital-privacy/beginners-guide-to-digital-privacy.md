@@ -1,7 +1,7 @@
 ---
 title: "Beginner's Guide to Digital Privacy"
 date: "2020-09-12"
-lastupdated: "2020-10-06"
+lastupdated: "2020-12-03"
 spoiler: ""
 tags: ["privacy"]
 type: "article"
@@ -58,7 +58,7 @@ _\* Slightly advanced tips_
 
   I cannot stress this enough. Please **do not** ever, unless mandatory, choose "Sign up with Google/Microsoft/Twitter/Facebook/Apple/Amazon, etc".
 
-  If you are required to continue with social signup, take care of what scopes and information you are permitting the service to use. Platforms usually provide a way to manage this info from your account settings:
+  If you are required to continue with social signup ([OAuth](https://en.wikipedia.org/wiki/OAuth)), take care of what scopes and information you are permitting the service to use. Platforms usually provide a way to manage this info from your account settings:
 
   - [Twitter Connected Apps](https://twitter.com/settings/connected_apps)
   - [Facebook Apps and Websites](https://www.facebook.com/settings?tab=applications)
@@ -193,3 +193,9 @@ This is just a list of the most popular and reliable options for getting started
 - [The Social Dilemma - Netflix Documentary](https://en.wikipedia.org/wiki/The_Social_Dilemma)
 
 Make sure to research every option thoroughly to determine what works best for you. Let me know if you found a mistake or want to add another service to this list.
+
+---
+
+#### Updates:
+
+- On November 30th, 2020, **u/olvivichy** posted on [r/privacy](https://www.reddit.com/r/privacy/comments/k2m9v2/alternative_reddit_frontend/) about a project of them called [**teddit**](https://teddit.net/), an alternative Reddit frontend that doesn't use any client-side JavaScript and ads. Since this a fairly new project, I recommend you explore the site and [the source code](https://codeberg.org/teddit/teddit) yourself to see if this works for you.
