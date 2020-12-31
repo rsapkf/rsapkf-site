@@ -75,7 +75,7 @@ Secondly, here are the features I'm looking for in my workflow:
 
   I also use Pocket as an alternative to YouTube's "Watch Later" and IMDb's "Watchlist" features.
 
-  **Aside**: I do use Twitter, not for microblogging but to follow interesting accounts. Their recommendation system is pretty good for this sort of thing. As for Spotify, I hate the fact that it is so closely tied to Facebook. They log all search queries even after deleting your search history. I have deleted all my Spotify Playlists (I can't even delete them permanently) and exported the data to Firefox (using [Exportify](https://github.com/watsonbox/exportify)). I need to find a better solution for Music (I'm trying out [this service](https://audiomack.com/).).
+  **Aside**: I do use Twitter, not for microblogging but to follow interesting accounts. Their recommendation system is pretty good for this sort of thing. As for Spotify, I hate the fact that it is so closely tied to Facebook ([this](https://youtube.com/watch?v=eAagtcAup0o&t=1072) just proves it). They log your streaming history with no easy way to delete it. I have deleted all my Spotify Playlists and exported the data to Firefox (using [Exportify](https://github.com/watsonbox/exportify)). I need to find a better solution for Music (I'm trying out [this service](https://audiomack.com/).).
 
 ---
 
