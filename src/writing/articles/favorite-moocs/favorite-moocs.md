@@ -31,7 +31,7 @@ _\* Some resources/books are not free_
 
   This is MIT's classic introductory CS and electrical engineering course taught using [Scheme](<https://en.wikipedia.org/wiki/Scheme_(programming_language)>) that was later replaced by 6.0001 using Python.
 
-- [CS 61A: Structure and Interpretation of Computer Programs](http://inst.eecs.berkeley.edu/~cs61a) - UC Berkeley. ([ Composing Programs](http://composingprograms.com/))
+- [CS 61A: Structure and Interpretation of Computer Programs](http://inst.eecs.berkeley.edu/~cs61a) - Prof. John DeNero, UC Berkeley. ([ Composing Programs](http://composingprograms.com/))
 
   This is UC Berkeley's introductory course on programming initially taught using Scheme but updated to use Python since 2011.
 
@@ -82,6 +82,10 @@ _\* Some resources/books are not free_
   - [Differential Equations: Fourier Series and Partial Differential Equations](https://www.edx.org/course/differential-equations-fourier-series-and-partial)
 
   - [Transfer Functions and the Laplace Transform](https://www.edx.org/course/transfer-functions-and-the-laplace-transform)
+
+#### Machine Learning:
+
+- [Machine Learning - Coursera](https://www.coursera.org/learn/machine-learning) - Andrew Ng, Stanford University.
 
 #### Physics:
 
