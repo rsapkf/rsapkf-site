@@ -1,23 +1,13 @@
-.title {
-  font-family: "Yeon Sung";
-  font-size: 1.3rem;
-  padding: 0 0.1rem;
-}
-
 .intro {
-  position: relative;
+  font-size: 3.5rem;
+  font-weight: 200;
+  line-height: 4.5rem;
+  font-family: "Ubuntu", monospace;
+  margin-left: -4px;
+  margin-bottom: 2rem;
 
-  &:after {
-    content: "";
-    background: rgb(109, 107, 107);
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    height: 5%;
-    width: 32%;
-
-    @media (max-width: 400px) {
-      background: unset;
-    }
+  @media (max-width: 660px) {
+    font-size: 2rem;
+    line-height: 3rem;
   }
 }

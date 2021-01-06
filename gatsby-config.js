@@ -67,7 +67,7 @@ module.exports = {
                     }
                   `,
             output: "/blog/rss.xml",
-            title: "rsapkf's Blog Feed",
+            title: "rsapkf.xyz/blog Feed",
           },
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
@@ -110,7 +110,7 @@ module.exports = {
                     }
                   `,
             output: "/thoughts/rss.xml",
-            title: "rsapkf's Thoughts Feed",
+            title: "rsapkf.xyz/thoughts Feed",
           },
         ],
       },

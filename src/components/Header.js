@@ -24,7 +24,7 @@ const Header = () => {
         <header className={headerStyles.header}>
           <h1>
             <Link className={headerStyles.title} to="/">
-              {data.site.siteMetadata.title}
+              ~rsapkf
             </Link>
           </h1>
           <span
@@ -47,11 +47,6 @@ const Header = () => {
           </span>
           <nav>
             <ul className={headerStyles.navList}>
-              <li>
-                <Link className={headerStyles.navItem} to="/">
-                  ~
-                </Link>
-              </li>
               <li className={headerStyles.dropdown}>
                 <Link
                   className={`${headerStyles.navItem} ${headerStyles.dropdownButton}`}

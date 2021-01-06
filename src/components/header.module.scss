@@ -6,7 +6,7 @@ $header-theme-color: #6b75b4;
 
 .title {
   color: $header-theme-color;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 500;
   text-decoration: none;
   font-family: "Yeon Sung", cursive;
@@ -16,6 +16,10 @@ $header-theme-color: #6b75b4;
   &:hover {
     background-color: transparent !important;
     color: rgb(90, 84, 84);
+  }
+
+  @media (max-width: 400px) {
+    font-size: 2rem;
   }
 }
 

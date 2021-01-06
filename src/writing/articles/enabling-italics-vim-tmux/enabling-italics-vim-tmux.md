@@ -9,7 +9,7 @@ type: "article"
 
 If you're like me, you fiddle around with your development setup and dotfiles frequently tweaking and breaking things and learning along the way.
 
-I only recently found out that you could have comments on Vim appear in _Italics_. All you need to do is add `highlight Comment cterm=italic` to your `.vimrc`. Except, it's usually not that straighforward! I spent 3.5 hours researching how to properly enable Italics in Vim and then, in Vim inside [tmux](https://github.com/tmux/tmux) and found out some genuine and a few stupid reasons things might not work as expected on your system.
+I only recently found out that you could have comments on Vim appear in _Italics_. All you need to do is add `highlight Comment cterm=italic` to your `.vimrc`. Except, it's usually not that straightforward! I spent 3.5 hours researching how to properly enable Italics in Vim and then, in Vim inside [tmux](https://github.com/tmux/tmux) and found out some genuine and a few stupid reasons things might not work as expected on your system.
 
 Here, I will provide you official instructions to solving this problem and things you should care about if they don't work.
 

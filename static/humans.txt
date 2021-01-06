@@ -5,6 +5,8 @@
     Languages: HTML, CSS (SCSS), JavaScript, Markdown
     Frameworks: ReactJS, GraphQL, GatsbyJS
     Tools: Netlify, Neovim, Debian 9, rxvt-unicode, st, Git, GitHub, Firefox Developer Edition, Chromium, VSCode...
+    Icons: Font Awesome
+    Fonts: Google Fonts
     Loading SVG: https://github.com/SamHerbert/SVG-Loaders
 
 /* Inspired By */

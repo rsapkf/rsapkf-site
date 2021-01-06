@@ -7,11 +7,11 @@ tags: ["note-taking", "vim", "knowledge-base", "privacy"]
 type: "article"
 ---
 
-With an overwhelmingly increasing number of productivity tools and note-taking applications on the market, it is becoming more and more difficult to settle on one particular application / workflow for taking notes. Over the years, I've tried many many setups for this: from pen and paper (which still beats everything in my opinion) to completely offline solutions like txt files, [VimWiki](https://github.com/vimwiki/vimwiki), [Zettlr](https://github.com/zettlr/zettlr) and [MarkText](https://github.com/marktext/marktext), [Joplin](https://github.com/laurent22/joplin) and SaaS products like [this one](https://roamresearch.com/) and methods like [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) (this didn't work for my programming notes), I've tried a plethora of apps that are out there. For the past few months however, I've settled on a simple workflow that I'll explain below.
+With an overwhelmingly increasing number of productivity tools and note-taking applications on the market, it is becoming more and more difficult to settle on one particular application / workflow for taking notes. Over the years, I've tried many many setups for this: from pen and paper (which still beats everything in my opinion) to completely offline solutions like txt files, [VimWiki](https://github.com/vimwiki/vimwiki), [Zettlr](https://github.com/zettlr/zettlr) and [MarkText](https://github.com/marktext/marktext), [Joplin](https://github.com/laurent22/joplin) and SaaS products like [this one](https://roamresearch.com/) and methods like [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) (this didn't work for my programming notes), I've tried a plethora of apps that are out there. For the past few months, however, I've settled on a simple workflow that I'll explain below.
 
 → [Summary](#summary)
 
-**Disclaimer**: I am not a researcher who has to read multiple academic papers everyday and annotate things for later use. This is just my **current** note-taking setup that works for me.
+**Disclaimer**: I am not a researcher who has to read multiple academic papers every day and annotate things for later use. This is just my **current** note-taking setup that works for me.
 
 First, let's look at the high level overview of what my notes consist of (yet). There are typically 3 kinds of notes that I take:
 
@@ -19,7 +19,7 @@ First, let's look at the high level overview of what my notes consist of (yet). 
 - snippets of code or information [notes from books: programming mostly + non-fiction, courses, MOOCs, Mathematics, pieces of objective information]
 - temporary stuff [project ideas, short term todos, grocery list, scratchpad, etc]
 
-The first two kinds of notes are kind of permanent notes that I'd like to persist for as long as possible. The last kind consists of temporary information and tasks. For all types of notes, I like a simple and lightweight markup language, namely Markdown. Markdown is supported by all major static site generators (in case I want to turn my notes into websites for other folks to use) and learning Markdown takes virtually no time.
+The first two kinds of notes are kind of permanent notes that I'd like to persist for as long as possible. The last kind consists of temporary information and tasks. For all types of notes, I like a simple and lightweight markup language, namely Markdown. Markdown is supported by all major static site generators (in case I want to turn my notes into websites) and learning Markdown takes virtually no time.
 
 Secondly, here are the features I'm looking for in my workflow:
 

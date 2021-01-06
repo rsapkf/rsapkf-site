@@ -10,19 +10,23 @@ const IndexPage = () => {
     <Layout>
       <Head title="Home" />
       <h3 className={indexStyles.intro}>
-        Welcome to <span className={indexStyles.title}>rsapkf</span>
-        's Home Page!
+        Developer, open source advocate & GNU/Linux afficionado.
       </h3>
+      <hr />
       <p>
-        I specialize in making full stack web applications with modern{" "}
+        Hi! I'm <Link to="/about">Rey</Link>. You’ve reached my homepage on the
+        World Wide Web.
+      </p>
+      <p>
+        I make full-stack web applications with modern{" "}
         <a href="https://developer.mozilla.org/en-US/">HTML5 + CSS3 + ES6</a> ,{" "}
         <a href="https://github.com/django/django">Django</a> ,{" "}
         <a href="https://www.startpage.com/do/metasearch.pl?query=mern%20stack">
           MERN Stack
-        </a>{" "}
-        and the <a href="https://jamstack.org/">JAMstack</a>.
+        </a>
+        , and the <a href="https://jamstack.org/">JAMstack</a>.
         <br /> Please see <Link to="/technologies">Technologies</Link> page for
-        details.
+        details of my technical skills.
         <br />
         <br />
         Read my <Link to="/blog">Blog</Link> for programming articles.

@@ -37,7 +37,7 @@ const Footer = () => {
       </div>
       <p style={{ fontFamily: "Open Sans" }}>
         © 2018 - {new Date().getFullYear()}{" "}
-        <Link to="/">{data.site.siteMetadata.author}</Link>
+        <Link to="/">{data.site.siteMetadata.author}.xyz</Link>
       </p>
     </footer>
   )
