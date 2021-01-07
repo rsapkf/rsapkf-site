@@ -76,24 +76,6 @@ const Header = () => {
                   Projects
                 </Link>
               </li>
-              <li>
-                <Link
-                  className={headerStyles.navItem}
-                  activeClassName={headerStyles.activeNavItem}
-                  to="/about"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className={headerStyles.navItem}
-                  activeClassName={headerStyles.activeNavItem}
-                  to="/contact"
-                >
-                  Contact
-                </Link>
-              </li>
               <li className={headerStyles.dropdown}>
                 <Link
                   className={`${headerStyles.navItem} ${headerStyles.dropdownButton}`}
@@ -106,6 +88,13 @@ const Header = () => {
                   className={headerStyles.dropdownContent}
                   style={theme.dark ? {} : { backgroundColor: "#faf4fa" }}
                 >
+                  <Link to="/about">About</Link>
+                  <Link
+                    to="/contact"
+                    style={{ borderBottom: "1px solid gray" }}
+                  >
+                    Contact
+                  </Link>
                   <Link to="/technologies">Technologies</Link>
                   <Link
                     to="/puzzles"
