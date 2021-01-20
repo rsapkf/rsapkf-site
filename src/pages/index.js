@@ -10,7 +10,7 @@ const IndexPage = () => {
     <Layout>
       <Head title="Home" />
       <h3 className={indexStyles.intro}>
-        Developer, open source advocate & GNU/Linux afficionado.
+        Developer, Autodidact, open source advocate & GNU/Linux afficionado.
       </h3>
       <hr />
       <p>
