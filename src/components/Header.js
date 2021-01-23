@@ -65,6 +65,9 @@ const Header = () => {
                   <Link to="/thoughts">
                     <i className="far fa-lightbulb"></i> Thoughts
                   </Link>
+                  <Link to="/hobbies">
+                    <i className="fas fa-puzzle-piece"></i> Hobbies
+                  </Link>
                 </div>
               </li>
               <li>

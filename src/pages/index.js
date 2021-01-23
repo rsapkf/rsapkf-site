@@ -33,7 +33,12 @@ const IndexPage = () => {
         <br />
         <br />
         Check out <Link to="/thoughts">Thoughts</Link> page for personal ideas,
-        book and movie reviews. <br />
+        book and movie reviews.
+        <br />
+        <br />
+        The <Link to="/hobbies">Hobbies</Link> page is where I write about my
+        interest in topics like speedcubing and recreational mathematics.
+        <br />
         Learn what I'm upto <Link to="/now">right now</Link>.
         <br />
       </p>

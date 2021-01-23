@@ -15,6 +15,7 @@ module.exports.onCreateNode = ({ node, actions }) => {
   }
 }
 
+// Blog
 async function createBlogPages({ graphql, actions }) {
   const { createPage } = actions
   const blogTemplate = path.resolve("./src/templates/blog.js")
@@ -78,6 +79,7 @@ async function createBlogPages({ graphql, actions }) {
   })
 }
 
+// Thoughts
 async function createThoughtsPages({ graphql, actions }) {
   const { createPage } = actions
   const thoughtsTemplate = path.resolve("./src/templates/thoughts.js")
@@ -141,10 +143,75 @@ async function createThoughtsPages({ graphql, actions }) {
   })
 }
 
+// Hobbies
+async function createHobbiesPages({ graphql, actions }) {
+  const { createPage } = actions
+  const hobbiesTemplate = path.resolve("./src/templates/hobbies.js")
+  const tagTemplate = path.resolve("./src/templates/hobbies-tags.js")
+  const res = await graphql(`
+    query {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        filter: { frontmatter: { type: { eq: "hobby" } } }
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              type
+            }
+          }
+        }
+      }
+      tagsGroup: allMarkdownRemark(
+        limit: 2000
+        filter: { frontmatter: { type: { eq: "hobby" } } }
+      ) {
+        group(field: frontmatter___tags) {
+          fieldValue
+        }
+      }
+    }
+  `)
+
+  const posts = res.data.allMarkdownRemark.edges
+
+  posts.forEach((edge, i) => {
+    const prevHobby = posts[i + 1]
+    const nextHobby = posts[i - 1]
+
+    createPage({
+      component: hobbiesTemplate,
+      path: `/hobbies/${edge.node.fields.slug}`,
+      context: {
+        slug: edge.node.fields.slug,
+        prevHobby,
+        nextHobby,
+      },
+    })
+  })
+
+  // Hobbies Tags
+  const tags = res.data.tagsGroup.group
+  tags.forEach(tag => {
+    createPage({
+      path: "/hobbies" + "/tags/" + _.kebabCase(tag.fieldValue),
+      component: tagTemplate,
+      context: {
+        tag: tag.fieldValue,
+      },
+    })
+  })
+}
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   await Promise.all([
     createBlogPages({ graphql, actions }),
     createThoughtsPages({ graphql, actions }),
+    createHobbiesPages({ graphql, actions }),
   ])
 }
