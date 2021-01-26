@@ -74,7 +74,7 @@ Just like 2-look OLL, "**2-look**" PLL solves the corners first and edges separa
   - Print out [this](https://www.cubeskills.com/tutorials/oll-algorithms) set of OLL algs from [Feliks Zemdegs' CubeSkills site](https://cubeskills.com/).
   - [2-look OLL - JPerm](https://www.youtube.com/watch?v=GhmYBgLoQQg).
   - [2-look OLL - More intuitive algorithms that I personally use](https://notes.rsapkf.xyz/docs/mathematics/rubiks-cube#2-look-oll).
-- Learn 2-look PLL first. It is recommended to learn the entire PLL as soon as possible since there are on 21 algs on the set.
+- Learn 2-look PLL first. It is recommended to learn the entire PLL as soon as possible since there are only 21 algs on the set.
 
   - Print out [this](https://www.cubeskills.com/tutorials/pll-algorithms) set of PLL algs from CubeSkills.
   - [2-look PLL - JPerm](https://www.youtube.com/watch?v=f_Yor-ydZjs).
