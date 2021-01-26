@@ -2,11 +2,11 @@
 title: "An Overview of Speedcubing (+Awesome Learning Resources)"
 date: "2020-08-02"
 lastupdated: "2020-08-07"
-tags: ["cubing", "puzzles", "cfop", "speedsolving", "rubiks-cube"]
+tags: ["cubing", "puzzles", "cfop", "speedsolving", "rubiks-cube", "3x3"]
 type: "hobby"
 ---
 
-When I first learned to solve the Rubik's cube back in 2014, it took me less than 2 days to learn the beginner's solution. But I quickly got bored - I was pulled into the deep rabbithole of speedcubing - an exercise where people try to solve the cube in the fastest time possible. The current world record average is 5.53 seconds by Australian speedcuber **Feliks Zemdegs** set in 2019.
+When I first learned to solve the Rubik's cube back in 2014, it took me less than 2 hours to learn the beginner's solution. But I quickly got bored - I was pulled into the deep rabbithole of speedcubing - an exercise where people try to solve the cube in the fastest time possible. The current world record average is 5.53 seconds held by Australian speedcuber **Feliks Zemdegs** set in 2019.
 
 This guide won't give you the algorithms but a thorough introduction to what speedcubing is and a collection of the best resources online that you can use to achieve a sub 30 result in the fastest time possible.
 
@@ -29,7 +29,7 @@ There are 4 steps in this method:
 
 ![Cross](https://www.speedsolving.com/wiki/images/thumb/3/3f/Cross_2.jpg/120px-Cross_2.jpg)
 
-The first step involves making a cross on one side by solving all edges of a given face and aligning the edges with the second-layer centers. Most speedcubers usually solve the cross on the bottom to avoid cube rotations and to get an overall better view of the important pieces needed for the next step. This is called '**look ahead**'. In speedcubing competitions, cubers take their 15 second inspection time to plan required moves for a cross (in many cases, the first F2L pair as well!) to save time. In all cases, the cross can be done in less than 8 moves. Most speedcubers are color-neutral, meaning they can start with any colored face without slowing down.
+The first step involves making a cross on one side by solving all edges of a given face and aligning the edges with the second-layer centers. Most speedcubers usually solve the cross on the bottom to avoid cube rotations and to get an overall better view of the important pieces needed for the next step. This is called '**Lookahead**'. In speedcubing competitions, cubers take their 15 second inspection time to plan required moves for a cross (in many cases, the first F2L pair as well!) to save time. In all cases, the cross can be done in less than 8 moves. Most speedcubers are color-neutral, meaning they can start with any colored face without slowing down.
 
 ## 2. F2L
 
@@ -74,10 +74,13 @@ Just like 2-look OLL, "**2-look**" PLL solves the corners first and edges separa
   - Print out [this](https://www.cubeskills.com/tutorials/oll-algorithms) set of OLL algs from [Feliks Zemdegs' CubeSkills site](https://cubeskills.com/).
   - [2-look OLL - JPerm](https://www.youtube.com/watch?v=GhmYBgLoQQg).
   - [2-look OLL - More intuitive algorithms that I personally use](https://notes.rsapkf.xyz/docs/mathematics/rubiks-cube#2-look-oll).
-- Learn 2-look PLL first.
+- Learn 2-look PLL first. It is recommended to learn the entire PLL as soon as possible since there are on 21 algs on the set.
+
   - Print out [this](https://www.cubeskills.com/tutorials/pll-algorithms) set of PLL algs from CubeSkills.
   - [2-look PLL - JPerm](https://www.youtube.com/watch?v=f_Yor-ydZjs).
   - [2-look PLL - More intuitive algorithms that I personally use](https://notes.rsapkf.xyz/docs/mathematics/rubiks-cube#2-look-pll).
+
+- Practice Color Neutrality right away. In beginning stages, OLL and PLL may seem to be overwhelming but as you learn the algorithms, that will get easier. But once you settle on a color, for e.g. white on bottom, it will be significantly harder to develop color neutrality afterwards because your brain will be wired to filter out the white sticker during solves. Consequently, improving your Cross and F2L will be much harder. Color Neutrality cannot be developed through algorithms like the Last Layer.
 
 ---
 
@@ -106,13 +109,13 @@ There are some very common moves and terms in speedcubing that you should know.
 
 ### Becoming sub 20
 
-Intuitive F2L, 2-look OLL and 2-look PLL can get you to sub 30 but full OLL and full PLL can definitely help you achieve better results. You will need to practice your cross and F2L so that your muscle memory can solve F2L cases without thinking about the current pair and look ahead to the next pair while inserting the current one.
+Intuitive F2L, 2-look OLL and 2-look PLL can get you to sub 30 but full OLL and full PLL can definitely help you achieve better results. You will need to practice your cross and F2L so that your muscle memory can solve F2L cases without thinking about the current pair and look ahead to the next pair while inserting the current one. Advanced F2L techniques like [Keyhole](https://www.youtube.com/watch?v=mXEOPX42FJg) and [Multislotting](https://www.youtube.com/watch?v=IjDYoNxDa6U) may be required.
 
 ---
 
 ### Becoming sub 10 or better
 
-The key here is to reduce cube rotations as much as you can, increasing your TPS, reducing regrips, advanced fingertricks, advanced look ahead and developing color neutrality. Learning new sets of algorithms(COLL/OLLCP, Winter Variation, BLE, etc) to be able to recognize cases where OLL/PLL can be skipped or that lead to an easier PLL will also help. You should probably also learn multiple algorithms for the same case in order to be able to solve a case from other angles saving you a turn , AUF or a cube rotation.
+The key here is to reduce cube rotations as much as you can, increasing your TPS, reducing regrips, advanced fingertricks, advanced lookahead and developing color neutrality. Learning new sets of algorithms(COLL/OLLCP, Winter Variation, BLE, etc) to be able to recognize cases where OLL/PLL can be skipped or that lead to an easier PLL will also help. You should probably also learn multiple algorithms for the same case in order to be able to solve a case from other angles saving you a turn, the AUF or a cube rotation.
 
 ---
 
@@ -120,26 +123,30 @@ The key here is to reduce cube rotations as much as you can, increasing your TPS
 
 Getting even better times requires learning a few new sets of algorithms. These sets are often used in other speedsolving methods and can be used in combination with CFOP to get faster times. You don't need to learn every algorithm in these sets to be able to use them since there are thousands - just the most common ones. Here are some of the most popular algorithms:
 
-#### COLL (Corners of Last Layer)
+- #### COLL (Corners of Last Layer)
 
-If the last edges after F2L are already oriented, you can use a different set of 42 algorithms called COLL to get either **U**(8/12 chance), **H**(2/12 chance) or **Z**(1/12 chance) perms which are relatively easier to do or a PLL skip. COLL increases your chances of getting a PLL skip from 1/72 to 1/12 which greatly helps reduce the overall time during your solves and reduces the number of AUFs you'll need to do.
+If the last edges after F2L are already oriented, you can use a different set of 42 algorithms called COLL that solve all corners of the top layer to get either **U**(8/12 chance), **H**(2/12 chance) or **Z**(1/12 chance) perms which are relatively easier to do or a PLL skip. COLL increases your chances of getting a PLL skip from 1/72 to 1/12 which greatly helps reduce the overall time during your solves and reduces the number of AUFs you'll need to do.
 
-#### OLLCP (Orientation of Last Layer and Corner Permutation)
+- #### OLLCP (Orientation of Last Layer and Corner Permutation)
 
 OLLCP is the superset of COLL with 300+ algorithms than can solve the corners with a single algorithm even if not all the last edges are solved after F2L.
 
-#### OLS (Orientation of the Last Slot)
+- #### OLS (Orientation of the Last Slot)
 
 OLS is a last slot method used to skip any OLL case while simultaneously solving the last F2L pair. OLS is mainly split into two groups: **VLS (Valk Last Slot)** and **HLS (Hessler Last Slot)**. These two groups are split into 8 subsets, each, that are based on edge misorientation. The most significent subsets under these groups are **WV (Winter Variation)** and **SV (Summer Variation)** respectively. Each of these subsets has 54 algorithms, including mirrors. It is usually recommended to first learn WV, then SV, followed by the rest of VLS, and finally the rest of HLS.
 
 This technique has a very high algorithm count, however - there are a total of at least 864 algorithms, including mirrors. That means, if one learned 2 algs per day, it would take them more than a year to learn all of them!
 
+- #### ZBLS (Zborowski-Bruchem Last Slot) and ZBLL (Zborowski-Bruchem Last Layer)
+
+After solving the F2L minus one corner-edge pair, ZBLS (a.k.a. ZBF2L) can be used to finish F2L while simultaneously orienting the edges of the last layer, and ZBLL, to finish the last layer in one algorithm. These sets have a total of 795 (302+493) algorithms. Many speedcubers learn a small subset of ZBLL and ZBLS is rarely used.
+
 ---
 
 ### Recommended Resources and Further Reading
 
+- [Feliks Zemdegs](https://www.youtube.com/channel/UCQ7ASM-o1ELUbScXCKYwovA) ([CubeSkills](https://cubeskills.com/) | [YouTube](https://www.youtube.com/channel/UCPftX98kFgj-fPk3pombPIg)): CubeSkills has an extremely organized library of speedsolving tutorials and example walkthroughs from Feliks Zemdegs.
 - [J Perm](https://www.youtube.com/channel/UCqTVfT9JQqhA6_Hi_h_h97Q) (See [featured channels](https://www.youtube.com/c/JPerm/channels))
-- [Feliks Zemdegs](https://www.youtube.com/channel/UCQ7ASM-o1ELUbScXCKYwovA) ([CubeSkills](https://cubeskills.com/))
 - [Lucas Garron](https://garron.net/)
 - [Andy Klise's Rubik's Cube Guides](http://www.kungfoomanchu.com/)
 - [Speedsolving Wiki](https://www.speedsolving.com/wiki/index.php/Main_Page)
@@ -148,6 +155,7 @@ This technique has a very high algorithm count, however - there are a total of a
 - [The Speed Cubers - Netflix Documentary](https://www.netflix.com/title/81092143)
 - [Why We Cube - A Speedcubing Documentary](https://www.youtube.com/watch?v=1oZY2e25VUw)
 - [r/Cubers Wiki](https://www.reddit.com/r/Cubers/wiki/index)
+- [csTimer - Professional Rubik's Cube Speedsolving/Training Timer](https://cstimer.net/) ([Source](https://github.com/cs0x7f/cstimer))
 
 I have compiled my favorite **_YouCubers_** and resources for algorithms, walkthroughs and tutorials on Rubik's Cube and other puzzles [here](https://links.rsapkf.xyz/docs/cubing-puzzles-and-magic.html).
 

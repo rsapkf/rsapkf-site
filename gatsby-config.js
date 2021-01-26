@@ -112,6 +112,49 @@ module.exports = {
             output: "/thoughts/rss.xml",
             title: "rsapkf.xyz/thoughts Feed",
           },
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url:
+                    site.siteMetadata.siteUrl +
+                    "/hobbies/" +
+                    edge.node.fields.slug,
+                  guid:
+                    site.siteMetadata.siteUrl +
+                    "/hobbies/" +
+                    edge.node.fields.slug,
+                  custom_elements: [{ "content:encoded": edge.node.html }],
+                })
+              })
+            },
+            query: `
+                  {
+                    allMarkdownRemark(
+                      sort: { order: DESC, fields: [frontmatter___date] },
+                      filter: {
+                        frontmatter: { type: { eq: "hobby" } }
+                      }
+                    ) {
+                      edges {
+                        node {
+                          excerpt
+                          html
+                          fields { slug }
+                          frontmatter {
+                            title
+                            date
+                          }
+                        }
+                      }
+                    }
+                  }
+                `,
+            output: "/hobbies/rss.xml",
+            title: "rsapkf.xyz/hobbies Feed",
+          },
         ],
       },
     },
