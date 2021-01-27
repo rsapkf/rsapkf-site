@@ -6,7 +6,7 @@
 
 [[redirects]]
   from = "/rss.xml"
-  to = "/blog/rss.xml"
+  to = "/writing/rss.xml"
   status = 301
   force = true
 

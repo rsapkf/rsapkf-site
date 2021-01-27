@@ -26,6 +26,7 @@ module.exports = {
                 }
               `,
         feeds: [
+          // /blog Feed
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map(edge => {
@@ -69,6 +70,7 @@ module.exports = {
             output: "/blog/rss.xml",
             title: "rsapkf.xyz/blog Feed",
           },
+          // /thoughts Feed
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map(edge => {
@@ -112,6 +114,7 @@ module.exports = {
             output: "/thoughts/rss.xml",
             title: "rsapkf.xyz/thoughts Feed",
           },
+          // /hobbies Feed
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map(edge => {
@@ -154,6 +157,41 @@ module.exports = {
                 `,
             output: "/hobbies/rss.xml",
             title: "rsapkf.xyz/hobbies Feed",
+          },
+          // All
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + "/" + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + "/" + edge.node.fields.slug,
+                  custom_elements: [{ "content:encoded": edge.node.html }],
+                })
+              })
+            },
+            query: `
+                  {
+                    allMarkdownRemark(
+                      sort: { order: DESC, fields: [frontmatter___date] }
+                    ) {
+                      edges {
+                        node {
+                          excerpt
+                          html
+                          fields { slug }
+                          frontmatter {
+                            title
+                            date
+                          }
+                        }
+                      }
+                    }
+                  }
+                `,
+            output: "/writing/rss.xml",
+            title: "rsapkf.xyz Feed",
           },
         ],
       },
