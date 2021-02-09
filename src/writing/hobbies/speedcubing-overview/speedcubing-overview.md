@@ -55,6 +55,29 @@ Just like 2-look OLL, "**2-look**" PLL solves the corners first and edges separa
 
 ---
 
+### Terminologies
+
+There are some very common moves and terms in speedcubing that you should know.
+
+- Triggers
+
+  These are 3 or 4 sequence moves that commonly appear in multiple algorithms making them easier to memorise.
+
+  - Sexy: `R U R' U'`
+  - Sledgehammer: `R' F R F'`
+  - HedgeSlammer / Reverse Sledgehammer: `F R' F' R`
+  - Sune / Anti-chair: `R U R' U R U2 R'` and [variants](https://www.speedsolving.com/wiki/index.php/Sune#Variants).
+  - Antisune / Chair: `R U2 R' U' R U' R'`
+
+  For example: In [T OLLs](https://www.speedsolving.com/wiki/index.php/OLL#.22T.22_shapes), instead of saying the full alg like `F (R U R' U') F'`, you could instead memorise it like `F Sexy F'` or instead of memorising `(R U R' U') (R' F R F')`, you could just remember the alg as `Sexy Sledgehammer`.
+
+- [Acronyms](https://www.speedsolving.com/wiki/index.php/Category:Acronyms)
+  - TPS - Turns Per Second
+  - AUF - Adjust U Face
+- [Notation](https://www.speedsolving.com/wiki/index.php/NxNxN_Notation)
+
+---
+
 ### Recommendations:
 
 - Learn to use the inspection time in practice solves.
@@ -84,44 +107,21 @@ Just like 2-look OLL, "**2-look**" PLL solves the corners first and edges separa
 
 ---
 
-### Terminologies
-
-There are some very common moves and terms in speedcubing that you should know.
-
-- Triggers
-
-  These are 3 or 4 sequence moves that commonly appear in multiple algorithms making them easier to memorise.
-
-  - Sexy: `R U R' U'`
-  - Sledgehammer: `R' F R F'`
-  - HedgeSlammer / Reverse Sledgehammer: `F R' F' R`
-  - Sune / Anti-chair: `R U R' U R U2 R'` and [variants](https://www.speedsolving.com/wiki/index.php/Sune#Variants).
-  - Antisune / Chair: `R U2 R' U' R U' R'`
-
-  For example: In [T OLLs](https://www.speedsolving.com/wiki/index.php/OLL#.22T.22_shapes), instead of saying the full alg like `F (R U R' U') F'`, you could instead memorise it like `F Sexy F'` or instead of memorising `(R U R' U') (R' F R F')`, you could just remember the alg as `Sexy Sledgehammer`.
-
-- [Acronyms](https://www.speedsolving.com/wiki/index.php/Category:Acronyms)
-  - TPS - Turns Per Second
-  - AUF - Adjust U Face
-- [Notation](https://www.speedsolving.com/wiki/index.php/NxNxN_Notation)
-
----
-
 ### Becoming sub 20
 
-Intuitive F2L, 2-look OLL and 2-look PLL can get you to sub 30 but full OLL and full PLL can definitely help you achieve better results. You will need to practice your cross and F2L so that your muscle memory can solve F2L cases without thinking about the current pair and look ahead to the next pair while inserting the current one. Advanced F2L techniques like [Keyhole](https://www.youtube.com/watch?v=mXEOPX42FJg) and [Multislotting](https://www.youtube.com/watch?v=IjDYoNxDa6U) may be required.
+Intuitive F2L, 2-look OLL and 2-look PLL can get you to sub 30 but full OLL and full PLL can definitely help you achieve better results. You will need to practice your cross and F2L so that your muscle memory can solve F2L cases without thinking about the current pair and look ahead to the next pair while inserting the current one. Advanced F2L techniques may be required.
 
 ---
 
 ### Becoming sub 10 or better
 
-The key here is to reduce cube rotations as much as you can, increasing your TPS, reducing regrips, advanced fingertricks, advanced lookahead and developing color neutrality. Learning new sets of algorithms(COLL/OLLCP, Winter Variation, BLE, etc) to be able to recognize cases where OLL/PLL can be skipped or that lead to an easier PLL will also help. You should probably also learn multiple algorithms for the same case in order to be able to solve a case from other angles saving you a turn, the AUF or a cube rotation.
+The key here is to reduce cube rotations as much as you can, increasing your TPS, reducing regrips, advanced fingertricks, advanced lookahead and developing color neutrality. Learning new sets of algorithms(COLL/OLLCP, Winter Variation, BLE, etc) to be able to recognize cases where OLL/PLL can be skipped or that lead to an easier PLL will also help. You should probably also learn multiple algorithms for the same case in order to be able to solve a case from other angles saving you a turn, the AUF or a cube rotation. Many speedcubers also use advanced techniques like [Keyhole](https://www.youtube.com/watch?v=mXEOPX42FJg), [Pseudoslotting](https://www.youtube.com/watch?v=TWffMVBqj1w), [Multislotting](https://www.youtube.com/watch?v=IjDYoNxDa6U) and [Double/Triple X-Cross](https://www.youtube.com/watch?v=pTUy0oi4Nco).
 
 ---
 
-### Advanced algorithms
+### Advanced Algorithms
 
-Getting even better times requires learning a few new sets of algorithms. These sets are often used in other speedsolving methods and can be used in combination with CFOP to get faster times. You don't need to learn every algorithm in these sets to be able to use them since there are thousands - just the most common ones. Here are some of the most popular algorithms:
+Getting even better times requires learning a few new sets of algorithms. These sets are often used in other speedsolving methods and can be used in combination with CFOP to get faster times. You don't need to learn every algorithm in these sets to be able to use them since there are thousands - just the more common ones. Here are some of the most popular algorithms sets:
 
 - #### COLL (Corners of Last Layer)
 
@@ -145,8 +145,9 @@ After solving the F2L minus one corner-edge pair, ZBLS (a.k.a. ZBF2L) can be use
 
 ### Recommended Resources and Further Reading
 
-- [Feliks Zemdegs](https://www.youtube.com/channel/UCQ7ASM-o1ELUbScXCKYwovA) ([CubeSkills](https://cubeskills.com/) | [YouTube](https://www.youtube.com/channel/UCPftX98kFgj-fPk3pombPIg)): CubeSkills has an extremely organized library of speedsolving tutorials and example walkthroughs from Feliks Zemdegs.
+- [Feliks Zemdegs](https://www.youtube.com/channel/UCQ7ASM-o1ELUbScXCKYwovA) ([CubeSkills](https://cubeskills.com/) | [YouTube](https://www.youtube.com/channel/UCPftX98kFgj-fPk3pombPIg)): CubeSkills has an extremely organized library of speedsolving tutorials and example walkthroughs from Feliks.
 - [J Perm](https://www.youtube.com/channel/UCqTVfT9JQqhA6_Hi_h_h97Q) (See [featured channels](https://www.youtube.com/c/JPerm/channels))
+- [badmephisto](https://www.youtube.com/channel/UCqgMq1Um_xnD45wTLPlvW7A)
 - [Lucas Garron](https://garron.net/)
 - [Andy Klise's Rubik's Cube Guides](http://www.kungfoomanchu.com/)
 - [Speedsolving Wiki](https://www.speedsolving.com/wiki/index.php/Main_Page)
@@ -161,6 +162,7 @@ I have compiled my favorite **_YouCubers_** and resources for algorithms, walkth
 
 If you are more curious to learn about the mathematics of the Rubik's Cube, here are some resources that you might find interesting:
 
+- [Mathematics of the Rubik’s cube - 1996 - W. D. Joyner](http://www.permutationpuzzles.org/rubik/webnotes/rubik.pdf)
 - [The Mathematics of the Rubik's Cube: Introduction to Group Theory and Permutation Puzzles - 2009 - MIT](https://web.mit.edu/sp.268/www/rubik.pdf)
 - [The Mathematics of the Rubik's Cube - 2011 - UC Berkeley](https://math.berkeley.edu/~hutching/rubik.pdf)
 - [Optimal solutions for Rubik's Cube](https://en.wikipedia.org/wiki/Optimal_solutions_for_Rubik%27s_Cube)

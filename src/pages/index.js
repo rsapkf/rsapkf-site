@@ -14,8 +14,10 @@ const IndexPage = () => {
       </h3>
       <hr />
       <p>
-        Hi! I'm <Link to="/about">Rey</Link>. You’ve reached my homepage on the
-        World Wide Web.
+        <span style={{ "font-size": "1.2rem" }}>
+          Hey, I'm <Link to="/about">Rey</Link>.
+        </span>{" "}
+        You’ve reached my homepage on the World Wide Web.
       </p>
       <p>
         I make full-stack web applications with modern{" "}
@@ -32,12 +34,10 @@ const IndexPage = () => {
         Read my <Link to="/blog">Blog</Link> for programming articles.
         <br />
         <br />
-        Check out <Link to="/thoughts">Thoughts</Link> page for personal ideas,
-        book and movie reviews.
+        Check out <Link to="/thoughts">Thoughts</Link> page for opinions.
         <br />
-        <br />
-        The <Link to="/hobbies">Hobbies</Link> page is where I write about my
-        interest in topics like speedcubing and recreational mathematics.
+        <br />I occasionally write about speedcubing and recreational
+        mathematics on the <Link to="/hobbies">Hobbies</Link> page.
         <br />
         Learn what I'm upto <Link to="/now">right now</Link>.
         <br />

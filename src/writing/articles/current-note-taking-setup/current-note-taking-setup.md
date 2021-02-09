@@ -107,7 +107,7 @@ For this blog, I use [GatsbyJS](https://github.com/gatsbyjs/gatsby) along with [
 
 ### 3. Temporary Todos and Tasks
 
-I use Standard Notes for these as well. A better solution for todos would be something like [Tasks.org](https://github.com/tasks/tasks) but this just adds one more application to my setup and phone. For temporary grocery list and stuff, I use the default Notes app that comes with my phone (in offline mode) and for long-term todos, I use Standard Notes and special tags. I append special characters to the start of each todo. For example, here's is an entry from one of those notes:
+I use Standard Notes for these as well. A better solution for more ephemeral notes and todos would be something like [Tasks.org](https://github.com/tasks/tasks) but this just adds one more application to my setup and phone. For temporary grocery list and stuff, I use the default Notes app that comes with my phone (in offline mode) and for long-term todos, I use Standard Notes and special tags. I append special characters to the start of each todo. For example, here's is an entry from one of those notes:
 
 ```
 - $$$ add Plausible/Goatcounter analytics for website, remove Google Analytics.
