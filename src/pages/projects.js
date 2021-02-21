@@ -4,7 +4,11 @@ import Layout from "../components/Layout"
 import Head from "../components/Head"
 import GitHubProjectData from "../components/GitHubProjectData"
 
-import { personalProjects, softwareProjects } from "../data/projects"
+import {
+  personalProjects,
+  softwareProjects,
+  miscProjects,
+} from "../data/projects"
 
 const ProjectsPage = () => {
   return (
@@ -33,6 +37,18 @@ const ProjectsPage = () => {
           <ul>
             {softwareProjects.map((project, idx) => (
               <li key={`software-${idx}`}>
+                <GitHubProjectData project={project} />
+              </li>
+            ))}
+          </ul>
+        </li>
+        <br />
+        <hr />
+        <li>
+          <h4>Miscellaneous:</h4>
+          <ul>
+            {miscProjects.map((project, idx) => (
+              <li key={`misc-${idx}`}>
                 <GitHubProjectData project={project} />
               </li>
             ))}

@@ -28,12 +28,6 @@ export const personalProjects = [
     stargazers_count: 2,
     forks_count: 0,
   },
-  {
-    name: "wallpapers",
-    description: "Personal Wallpaper Collection.",
-    stargazers_count: 0,
-    forks_count: 0,
-  },
 ]
 
 export const softwareProjects = [
@@ -59,6 +53,21 @@ export const softwareProjects = [
       "Tiny application to check and compare local times of major cities of the world.",
     homepage: "https://rsapkf.github.io/tzinfo/",
     stargazers_count: 1,
+    forks_count: 0,
+  },
+]
+
+export const miscProjects = [
+  {
+    name: "rupiks",
+    description: "SVG and PNG visualizations for Rubik's Cube Algs.",
+    stargazers_count: 0,
+    forks_count: 0,
+  },
+  {
+    name: "wallpapers",
+    description: "Personal Wallpaper Collection.",
+    stargazers_count: 0,
     forks_count: 0,
   },
 ]

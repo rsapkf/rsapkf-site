@@ -148,13 +148,6 @@ const Header = () => {
                   >
                     <i className="fab fa-linux"></i> Dotfiles
                   </a>
-                  <a
-                    href="https://github.com/rsapkf/wallpapers/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Wallpapers
-                  </a>
                 </div>
               </li>
             </ul>

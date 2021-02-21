@@ -1,5 +1,5 @@
 ---
-title: "How to beat 2048"
+title: "Beating 2048"
 date: "2020-06-01"
 lastupdated: "2020-06-02"
 tags: ["puzzles", "2048"]
@@ -14,7 +14,7 @@ type: "hobby"
 
 - Only move your highest corner tile when forced to, then immediately return it.
 
-  Now, there will be cases when the corner will be replaced with a small tile but that doesn't mean it's the end of the game. It will just make your position a little weaker and decrease your chances of getting a very high score. Nevertheless, getting a 2048 should not be a problem if your follow the above steps.
+  Now, there will be cases when the corner will be replaced with a small tile but that doesn't mean it's the end of the game. It will just make your position a little weaker and decrease your chances of getting a very high score. Nevertheless, getting a 2048 should not be a problem if you follow the above steps.
 
 ### Bonus
 

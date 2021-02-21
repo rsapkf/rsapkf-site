@@ -15,9 +15,9 @@ const IndexPage = () => {
       <hr />
       <p>
         <span style={{ "font-size": "1.2rem" }}>
-          Hey, I'm <Link to="/about">Rey</Link>.
-        </span>{" "}
-        You’ve reached my homepage on the World Wide Web.
+          Hey, I'm <Link to="/about">Rey</Link>. You’ve reached my homepage on
+          the World Wide Web.
+        </span>
       </p>
       <p>
         I make full-stack web applications with modern{" "}
