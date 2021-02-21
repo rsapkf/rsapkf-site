@@ -69,7 +69,7 @@ There are some very common moves and terms in speedcubing that you should know.
   - Sune / Anti-chair: `R U R' U R U2 R'` and [variants](https://www.speedsolving.com/wiki/index.php/Sune#Variants).
   - Antisune / Chair: `R U2 R' U' R U' R'`
 
-  For example: In [T OLLs](https://www.speedsolving.com/wiki/index.php/OLL#.22T.22_shapes), instead of saying the full alg like `F (R U R' U') F'`, you could instead memorise it like `F Sexy F'` or instead of memorising `(R U R' U') (R' F R F')`, you could just remember the alg as `Sexy Sledgehammer`.
+  For example: In [T OLLs](https://www.speedsolving.com/wiki/index.php/OLL#.22T.22_shapes), instead of saying the full alg like `F (R U R' U') F'`, you could memorise it like `F Sexy F'` or instead of memorising `(R U R' U') (R' F R F')`, you could just remember the alg as `Sexy Sledgehammer`.
 
 - [Acronyms](https://www.speedsolving.com/wiki/index.php/Category:Acronyms)
   - TPS - Turns Per Second

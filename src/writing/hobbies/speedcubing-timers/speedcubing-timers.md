@@ -31,7 +31,7 @@ It's really important to start timing your solves if you want to improve your sp
   - Supports Import/Export
   - Includes OLL and PLL Trainer and Algorithms Reference In-App
   - Supports Inspection
-  - Ability to enable Hints for Cross/Extended Cross on 3x3.
+  - Ability to enable Hints for Cross/Extended Cross on 3x3
   - Scramble Image
 
 - [ChaoTimer](https://apps.apple.com/us/app/chaotimer-professional-cube-timer/id537516001) (iOS)

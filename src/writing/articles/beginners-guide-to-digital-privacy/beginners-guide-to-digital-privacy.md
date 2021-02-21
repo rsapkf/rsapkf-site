@@ -78,6 +78,8 @@ _\* Slightly advanced tips_
   - TED (no delete account option in account settings)
   - Shopify (you must have a premium subsciption to close your store/account)
 
+  Read this post on Hacker News: [Before buying a NYT subscription, here's what it'll take to cancel it](https://news.ycombinator.com/item?id=26174269)
+
 - Make use of [Email Aliases](https://protonmail.com/support/knowledge-base/addresses-and-aliases/) or Email forwarding services:
 
   - [AnonAddy](https://github.com/anonaddy/anonaddy)
