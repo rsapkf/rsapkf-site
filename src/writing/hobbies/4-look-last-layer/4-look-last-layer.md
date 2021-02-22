@@ -38,7 +38,7 @@ After F2L, there are 3 cases (excluding the one where all 4 edges are already or
 
 - I shape (2 opposite edges oriented)
 - L shape (2 adjacent edges oriented)
-- Dot (No corners oriented)
+- Dot (No edges oriented)
 
 | Cases                                                                      | Algs                                                                                             | Remarks  |
 | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | -------- |
@@ -46,12 +46,12 @@ After F2L, there are 3 cases (excluding the one where all 4 edges are already or
 | ![44](https://raw.githubusercontent.com/rsapkf/rupiks/main/oll/svg/44.svg) | <ul><li>f (R U R' U') f'</li><li>y2 F (U R U' R') F'</li></ul>                                   | P/OLL 44 |
 | ![2](https://raw.githubusercontent.com/rsapkf/rupiks/main/oll/svg/2.svg)   | <ul><li>F (R U R' U') F' f (R U R' U') f'</li><li>F (R U R' U') F' U2 F (U R U' R') F'</li></ul> | OLL 2    |
 
-After the edges are correctly oriented, you can get one of the following 7 cases:
+After the edges are correctly oriented, you can get one of the following 7 cases. I recommend learnng alternative algs for more common cases like Sune and Antisune.
 
 | Cases                                                                      | Algs                                                                         | Remarks                  |
 | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ------------------------ |
 | ![27](https://raw.githubusercontent.com/rsapkf/rupiks/main/oll/svg/27.svg) | <ul><li>(R U R' U R U2 R')</li><li>y' R' U2 R U R' U R</li></ul>             | Sune/OLL 27              |
-| ![26](https://raw.githubusercontent.com/rsapkf/rupiks/main/oll/svg/26.svg) | <ul><li>(R U2 R' U' R U' R')</li><li>y R' U' R U' R' U2 R</li></ul>          | Antisune/OLL 26          |
+| ![26](https://raw.githubusercontent.com/rsapkf/rupiks/main/oll/svg/26.svg) | <ul><li>(R U2 R' U' R U' R')</li><li>y' R' U' R U' R' U2 R</li></ul>         | Antisune/OLL 26          |
 | ![23](https://raw.githubusercontent.com/rsapkf/rupiks/main/oll/svg/23.svg) | <ul><li>R2 D (R' U2 R) D' (R' U2 R')</li></ul>                               | U/OLL 23                 |
 | ![24](https://raw.githubusercontent.com/rsapkf/rupiks/main/oll/svg/24.svg) | <ul><li>(r U R' U') (r' F R F')</li></ul>                                    | T/OLL 24                 |
 | ![25](https://raw.githubusercontent.com/rsapkf/rupiks/main/oll/svg/25.svg) | <ul><li>y F' (r U R' U') r' F R</li></ul>                                    | L/OLL 25                 |
@@ -91,7 +91,7 @@ After permuting the corners, apply one of these 4 algs to finally solve the cube
 | ![H](https://raw.githubusercontent.com/rsapkf/rupiks/main/pll/svg/H.svg)   | <ul><li>(M2 U M2) U2 (M2 U M2)</li></ul>                                                                                          | H Perm  |
 | ![Z](https://raw.githubusercontent.com/rsapkf/rupiks/main/pll/svg/Z.svg)   | <ul><li>(M2 U M2 U) (M' U2) (M2 U2 M')</li><li>y/y' (M2 U' M2 U') (M' U2) (M2 U2 M')</li></ul>                                    | Z Perm  |
 
-Grok these algs and with good fingertricks, better hardware and decent lookahead during F2L, it's actually possible to be sub 30 on the 3x3 (Speaking from experience).
+Grok these algs and with good fingertricks, better hardware and decent lookahead during F2L, it's actually possible to be sub 30 on the 3x3 (speaking from experience).
 
 ---
 

@@ -63,4 +63,4 @@ It's really important to start timing your solves if you want to improve your sp
   - Scramble Image + Graph
   - Supports Inspection
 
-There are tons of timers out there but I think theses options are pretty great of any use case that you might have. Enjoy!
+There are tons of timers out there but I think these options are pretty great for any use case that you might have. Enjoy!

@@ -34,9 +34,7 @@ const Thought = props => {
       <Head title={`${title} • Thoughts`} />
       <h3 className={postTemplateStyles.title}>{title}</h3>
       <small>
-        <i className="far fa-calendar"></i> {date} |{" "}
-        <i className="fas fa-stopwatch"></i>{" "}
-        {props.data.markdownRemark.timeToRead} min read |{" "}
+        {date} &bull; {props.data.markdownRemark.timeToRead} min read &bull;{" "}
         <i className="fas fa-link"></i>{" "}
         <Link
           to={`${props.data.site.siteMetadata.siteUrl}${props.location.pathname}`}

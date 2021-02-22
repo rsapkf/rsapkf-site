@@ -148,6 +148,13 @@ const Header = () => {
                   >
                     <i className="fab fa-linux"></i> Dotfiles
                   </a>
+                  <a
+                    href="https://github.com/rsapkf/rupiks/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fas fa-cube"></i> CFOP Algs
+                  </a>
                 </div>
               </li>
             </ul>

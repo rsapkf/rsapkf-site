@@ -11,33 +11,28 @@ form {
 input,
 textarea {
   color: rgb(2, 3, 24);
+  font-family: "Open Sans";
+  background: #63636d;
+  border: none;
+  width: 23%;
+
+  &:focus {
+    background-color: #838391;
+  }
 }
 
 input[type="text"],
 input[type="email"] {
-  border: none;
-  background: #63636d;
-  border-radius: 0px;
-  font-family: monospace;
-
-  &:focus {
-    background-color: #838391;
-  }
+  padding: 0.1rem;
 }
 
 textarea {
   width: 100%;
-  border: none;
-  border-radius: 0px;
   box-sizing: border-box;
   resize: vertical;
-  height: 150px;
-  font-family: monospace;
-  background: #63636d;
-
-  &:focus {
-    background-color: #838391;
-  }
+  min-height: 200px;
+  max-height: 500px;
+  padding: 0.3rem;
 }
 
 button[type="submit"] {
@@ -57,6 +52,6 @@ button[type="submit"] {
 
 label {
   font-style: bold;
-  font-size: 0.9rem;
+  font-size: 1rem;
   letter-spacing: 2px;
 }

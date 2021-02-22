@@ -59,9 +59,8 @@ const HobbiesPage = () => {
               <br />
               <span className={blogStyles.description}>
                 <small>
-                  <i className="far fa-calendar"></i> {date} |{" "}
-                  <i className="fas fa-stopwatch"></i> {edge.node.timeToRead}{" "}
-                  min read | <i className="fas fa-link"></i>{" "}
+                  {date} &bull; {edge.node.timeToRead} min read &bull;{" "}
+                  <i className="fas fa-link"></i>
                   <a
                     href={`${data.site.siteMetadata.siteUrl}/hobbies/${edge.node.fields.slug}`}
                     style={{ borderBottom: "unset" }}
@@ -70,7 +69,6 @@ const HobbiesPage = () => {
                   </a>
                 </small>
               </span>
-              <hr />
             </li>
           )
         })}

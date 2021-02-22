@@ -4,20 +4,14 @@
 }
 
 .article {
-  margin: 0.5rem 0 1.3rem 0.5rem;
-  padding-left: 1rem;
-  position: relative;
+  margin: auto auto 1rem auto;
+  padding: 0.75rem;
+  border: 1px solid rgba(128, 128, 128, 0.404);
+  border-radius: 5px;
 
-  &:before {
-    content: "";
-    background: rgba(52, 73, 94, 0.4);
-    position: absolute;
-    bottom: 50%;
-    left: 0;
-    height: 50%;
-    width: 1px;
+  &:hover {
+    background-color: rgba(49, 47, 47, 0.1);
   }
-
   .description {
     opacity: 0.8;
   }

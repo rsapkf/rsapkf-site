@@ -14,7 +14,7 @@ const IndexPage = () => {
       </h3>
       <hr />
       <p>
-        <span style={{ "font-size": "1.2rem" }}>
+        <span>
           Hey, I'm <Link to="/about">Rey</Link>. You’ve reached my homepage on
           the World Wide Web.
         </span>
