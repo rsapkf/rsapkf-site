@@ -6,7 +6,7 @@ import footerStyles from "./footer.module.scss"
 const Footer = () => {
   return (
     <footer className={footerStyles.footer}>
-      <div style={{ float: "right", fontFamily: "Open Sans" }}>
+      <div style={{ float: "right" }}>
         <Link to="/feeds" style={{ textDecoration: "none" }}>
           rss
         </Link>{" "}
@@ -21,7 +21,7 @@ const Footer = () => {
           source
         </a>
       </div>
-      <p style={{ fontFamily: "Open Sans" }}>
+      <p>
         © 2018 - {new Date().getFullYear()} <Link to="/">rsapkf.xyz</Link>
       </p>
     </footer>
