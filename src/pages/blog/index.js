@@ -40,9 +40,14 @@ const BlogPage = () => {
     <Layout>
       <Head title="Blog" />
       <h3>Articles</h3>
-      <span style={{ marginBottom: "1.1rem" }}>
+      <span style={{ marginBottom: "0.5rem" }}>
         <Link to="/blog/tags">Tags</Link> | <Link to="/blog/rss.xml">RSS</Link>{" "}
         | <Link to="/discussions">Discussions</Link>
+      </span>
+      <span style={{ marginBottom: "1.1rem" }}>
+        Filter: <Link to="/blog/tags/programming">Programming</Link> |{" "}
+        <Link to="/blog/tags/linux">Linux</Link> |{" "}
+        <Link to="/blog/tags/privacy">Privacy</Link>
       </span>
       <ol className={blogStyles.articles}>
         {data.allMarkdownRemark.edges.map((edge, idx) => {

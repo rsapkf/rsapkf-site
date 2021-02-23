@@ -16,16 +16,16 @@ export const personalProjects = [
     forks_count: 0,
   },
   {
-    name: "dotfiles",
-    description: "My Development Environment.",
-    stargazers_count: 1,
-    forks_count: 0,
-  },
-  {
     name: "rsapkf.xyz",
     description: "Source for my personal website. Built using GatsbyJS.",
     homepage: "https://rsapkf.xyz",
     stargazers_count: 2,
+    forks_count: 0,
+  },
+  {
+    name: "dotfiles",
+    description: "My Development Environment.",
+    stargazers_count: 1,
     forks_count: 0,
   },
 ]

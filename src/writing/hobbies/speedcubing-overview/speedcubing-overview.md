@@ -59,9 +59,11 @@ Just like 2-look OLL, "**2-look**" PLL solves the corners first and edges separa
 
 There are some very common moves and terms in speedcubing that you should know.
 
+- [Notation](https://www.speedsolving.com/wiki/index.php/NxNxN_Notation)
+
 - Triggers
 
-  These are 3 or 4 sequence moves that commonly appear in multiple algorithms making them easier to memorise.
+  These are 3 or 4 move sequences that commonly appear in multiple algorithms making them easier to memorise.
 
   - Sexy: `R U R' U'`
   - Sledgehammer: `R' F R F'`
@@ -74,7 +76,6 @@ There are some very common moves and terms in speedcubing that you should know.
 - [Acronyms](https://www.speedsolving.com/wiki/index.php/Category:Acronyms)
   - TPS - Turns Per Second
   - AUF - Adjust U Face
-- [Notation](https://www.speedsolving.com/wiki/index.php/NxNxN_Notation)
 
 ---
 
@@ -125,7 +126,7 @@ Getting even better times requires learning a few new sets of algorithms. These 
 
 - #### COLL (Corners of Last Layer)
 
-If the last edges after F2L are already oriented, you can use a different set of 42 algorithms called COLL that solve all corners of the top layer to get either **U**(8/12 chance), **H**(2/12 chance) or **Z**(1/12 chance) perms which are relatively easier to do or a PLL skip. COLL increases your chances of getting a PLL skip from 1/72 to 1/12 which greatly helps reduce the overall time during your solves and reduces the number of AUFs you'll need to do.
+If the last edges after F2L are already oriented, you can use a different set of 42 algorithms called COLL that solve all corners of the top layer to get either **U**(8/12 chance), **H**(2/12 chance) or **Z**(1/12 chance) perms which are relatively easier to do or a PLL skip. COLL increases your chances of getting a PLL skip from 1/72 to 1/12 which greatly helps reduce the overall time during your solves.
 
 - #### OLLCP (Orientation of Last Layer and Corner Permutation)
 
