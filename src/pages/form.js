@@ -79,6 +79,20 @@ export default function Contact() {
           </label>
         </p>
         <p>
+          <label for="subject">SUBJECT *</label>
+          <br />
+          <select name="subject" id="subject" required>
+            <option value="feedback" selected>
+              Feedback
+            </option>
+            <option value="bug-report">Bug Report</option>
+            <option value="business">Business</option>
+            <option value="open-source">Open Source</option>
+            <option value="puzzles">Cubing</option>
+            <option value="hi">Say Hi</option>
+          </select>
+        </p>
+        <p>
           <label>
             MESSAGE *
             <br />
@@ -91,7 +105,7 @@ export default function Contact() {
           </label>
         </p>
         <p>
-          <button type="submit">Send</button>
+          <button type="submit">SEND</button>
         </p>
       </form>
     </Layout>

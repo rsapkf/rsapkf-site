@@ -1,5 +1,9 @@
+$field-background: #838391;
+$focus-background: #838387;
+$border-color: rgb(182, 162, 162);
+
 form {
-  border: 1px solid rgb(182, 162, 162);
+  border: 1px solid $border-color;
   padding: 2rem;
   border-radius: 5px;
 
@@ -9,24 +13,42 @@ form {
 }
 
 input,
+select,
 textarea {
   color: rgb(2, 3, 24);
-  background: #63636d;
+  background: $field-background;
   border: none;
-  width: 23%;
+  border-radius: 1px;
+  width: 25%;
+  font-family: "Fira Code";
+
+  &::selection {
+    color: rgb(170, 165, 165) !important;
+    background-color: rgb(49, 49, 47);
+  }
 
   &:focus {
-    background-color: #838391;
+    background-color: $focus-background;
+    outline: none;
   }
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+select {
   padding: 0.1rem;
 
-  @media (max-width: 800px) {
+  @media (max-width: 950px) {
     width: 50%;
   }
+}
+
+select {
+  appearance: none;
+  background: $field-background
+    url("data:image/svg+xml;utf8,<svg viewBox='0 0 140 140' width='15' height='15' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' fill='black'/></g></svg>")
+    no-repeat;
+  background-position: right 10px top 50%;
 }
 
 textarea {
@@ -40,20 +62,19 @@ textarea {
 
 button[type="submit"] {
   padding: 12px 20px;
-  margin-left: 2px;
   cursor: pointer;
-
-  border: none;
-  background: #838391;
-  color: rgb(31, 28, 28);
-  border-radius: 0px;
+  border: 1px solid $border-color;
+  background: transparent;
+  color: rgb(175, 168, 168);
+  border-radius: 3px;
 
   &:hover {
-    background-color: #74747c;
+    background-color: #66656917;
   }
 }
 
-label {
+label,
+button {
   font-style: bold;
   font-size: 1rem;
   letter-spacing: 2px;
