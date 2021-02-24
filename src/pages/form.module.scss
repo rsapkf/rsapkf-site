@@ -23,6 +23,10 @@ textarea {
 input[type="text"],
 input[type="email"] {
   padding: 0.1rem;
+
+  @media (max-width: 800px) {
+    width: 50%;
+  }
 }
 
 textarea {

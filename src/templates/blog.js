@@ -42,20 +42,13 @@ const Blog = props => {
       <small>
         {date} &bull; {props.data.markdownRemark.timeToRead} min read &bull;{" "}
         <i className="fas fa-tags"></i>{" "}
-        {tags.map((tag, i) =>
-          tags[i + 1] ? (
-            <span>
-              <Link to={`/blog/tags/${tag}`} style={{ borderBottom: "unset" }}>
-                #{tag}
-              </Link>
-              ,{" "}
-            </span>
-          ) : (
+        {tags.slice(0, 4).map((tag, i) => (
+          <span>
             <Link to={`/blog/tags/${tag}`} style={{ borderBottom: "unset" }}>
               #{tag}
-            </Link>
-          )
-        )}
+            </Link>{" "}
+          </span>
+        ))}
         &bull; <i className="fas fa-link"></i>{" "}
         <Link
           to={`${props.data.site.siteMetadata.siteUrl}${props.location.pathname}`}

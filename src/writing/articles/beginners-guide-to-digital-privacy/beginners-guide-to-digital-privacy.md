@@ -17,7 +17,7 @@ _\* Slightly advanced tips_
 
   - [privacytools.io](https://privacytools.io/)
   - [r/privacy wiki](https://old.reddit.com/r/privacy/wiki)
-  - [Permanent Record- Edward Snowden](<https://en.wikipedia.org/wiki/Permanent_Record_(autobiography)>)
+  - [Permanent Record - Edward Snowden](<https://en.wikipedia.org/wiki/Permanent_Record_(autobiography)>)
 
 - Always look for well known open source alternatives to services that you use:
 
@@ -72,7 +72,7 @@ _\* Slightly advanced tips_
 
 - Avoid using the same username across multiple platforms and websites. Your first priority should be using a long, unique and random password for every site but having different usernames is also [important](https://nordpass.com/blog/unique-username-importance/). Tools like [sherlock](https://github.com/sherlock-project/sherlock) can be used to hunt down your identities across sites within seconds. Use a random [username](https://www.lastpass.com/username-generator/) [generator](https://nordpass.com/username-generator). For random passwords, I use [this](https://duckduckgo.com/?q=password+40+strong&t=brave&ia=answer) DuckDuckGo query and my [password manager](https://bitwarden.com/password-generator/). There are tons of [strong](https://www.lastpass.com/password-generator) [password/pass-phrase](https://1password.com/password-generator/) [generators](https://www.dashlane.com/features/password-generator) that you can use. Ideally, you should also use randomly generated strings as answers to your security questions for sites that require them and save them on your password manager using custom fields.
 
-- Research beforehand if the service you're signing up for allows for an (easy) way to delete your account. You might regret later when you find out you can't delete your account. Some websites have tricky account deletion procedure:
+- Research beforehand if the service you're signing up for allows for an (easy) way to delete your account. You might regret later when you find out you can't delete your account/subscription. Some websites have tricky account deletion procedure:
 
   - Amazon, Adobe (require contacting support)
   - TED (no delete account option in account settings)

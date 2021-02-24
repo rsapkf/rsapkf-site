@@ -14,6 +14,7 @@ export const query = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         lastupdated(formatString: "MMMM DD, YYYY")
+        tags
       }
       html
       timeToRead
@@ -27,7 +28,12 @@ export const query = graphql`
 `
 
 const Hobby = props => {
-  const { title, date, lastupdated } = props.data.markdownRemark.frontmatter
+  const {
+    title,
+    date,
+    lastupdated,
+    tags,
+  } = props.data.markdownRemark.frontmatter
 
   return (
     <Layout>
@@ -35,7 +41,15 @@ const Hobby = props => {
       <h3 className={postTemplateStyles.title}>{title}</h3>
       <small>
         {date} &bull; {props.data.markdownRemark.timeToRead} min read &bull;{" "}
-        <i className="fas fa-link"></i>
+        <i className="fas fa-tags"></i>{" "}
+        {tags.slice(0, 4).map((tag, i) => (
+          <span>
+            <Link to={`/hobbies/tags/${tag}`} style={{ borderBottom: "unset" }}>
+              #{tag}
+            </Link>{" "}
+          </span>
+        ))}{" "}
+        &bull; <i className="fas fa-link"></i>
         <Link
           to={`${props.data.site.siteMetadata.siteUrl}${props.location.pathname}`}
           style={{ borderBottom: "unset" }}
