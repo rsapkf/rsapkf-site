@@ -79,18 +79,20 @@ export default function Contact() {
           </label>
         </p>
         <p>
-          <label for="subject">SUBJECT *</label>
-          <br />
-          <select name="subject" id="subject" required>
-            <option value="feedback" selected>
-              Feedback
-            </option>
-            <option value="bug-report">Bug Report</option>
-            <option value="business">Business</option>
-            <option value="open-source">Open Source</option>
-            <option value="puzzles">Cubing</option>
-            <option value="hi">Say Hi</option>
-          </select>
+          <label>
+            SUBJECT *
+            <br />
+            <select name="subject" id="subject" required>
+              <option value="feedback" selected>
+                Feedback
+              </option>
+              <option value="bug-report">Bug Report</option>
+              <option value="business">Business</option>
+              <option value="open-source">Open Source</option>
+              <option value="puzzles">Cubing</option>
+              <option value="hi">Say Hi</option>
+            </select>
+          </label>
         </p>
         <p>
           <label>
