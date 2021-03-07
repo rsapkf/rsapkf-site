@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import postNavStyles from "./postnav.module.scss"
+import postNavStyles from "./PostNav.module.scss"
 
 export default function PostNav({ prev, next, posttype }) {
   return (

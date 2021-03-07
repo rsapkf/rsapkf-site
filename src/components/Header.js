@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
-import headerStyles from "./header.module.scss"
+import headerStyles from "./Header.module.scss"
 // import sun from "../assets/sun.png"
 // import moon from "../assets/moon.png"
 

@@ -7,7 +7,7 @@ import Head from "./Head"
 import LastUpdatedPages from "./LastUpdatedPages"
 
 import "../styles/index.scss"
-import layoutStyles from "./layout.module.scss"
+import layoutStyles from "./Layout.module.scss"
 
 import ThemeContext from "../context/ThemeContext"
 import { MDXProvider } from "@mdx-js/react"

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import githubProjectDataStyles from "./githubprojectdata.module.scss"
+import githubProjectDataStyles from "./GithubProjectData.module.scss"
 import { fetchData } from "../services/githubAPI"
 
 const GITHUB_USERNAME = "rsapkf"
