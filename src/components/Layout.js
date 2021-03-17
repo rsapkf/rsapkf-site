@@ -6,7 +6,7 @@ import Footer from "./Footer"
 import Head from "./Head"
 import LastUpdatedPages from "./LastUpdatedPages"
 
-import "../styles/index.scss"
+import "../styles/global.scss"
 import layoutStyles from "./Layout.module.scss"
 
 import ThemeContext from "../context/ThemeContext"

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 
 import headerStyles from "./Header.module.scss"
 // import sun from "../assets/sun.png"
