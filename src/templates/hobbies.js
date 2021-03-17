@@ -42,20 +42,20 @@ const Hobby = props => {
       <small>
         {date} &bull; {props.data.markdownRemark.timeToRead} min read &bull;{" "}
         <i className="fas fa-tags"></i>{" "}
-        {tags.slice(0, 4).map((tag, i) => (
-          <span>
+        {tags.slice(0, 4).map((tag, idx) => (
+          <span key={idx}>
             <Link to={`/hobbies/tags/${tag}`} style={{ borderBottom: "unset" }}>
               #{tag}
             </Link>{" "}
           </span>
         ))}{" "}
         &bull; <i className="fas fa-link"></i>
-        <Link
-          to={`${props.data.site.siteMetadata.siteUrl}${props.location.pathname}`}
+        <a
+          href={`${props.data.site.siteMetadata.siteUrl}${props.location.pathname}`}
           style={{ borderBottom: "unset" }}
         >
           permalink
-        </Link>
+        </a>
       </small>
       <hr />
       <div

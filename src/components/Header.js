@@ -8,16 +8,6 @@ import headerStyles from "./Header.module.scss"
 import ThemeContext from "../context/ThemeContext"
 
 const Header = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <ThemeContext.Consumer>
       {theme => (

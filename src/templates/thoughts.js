@@ -36,12 +36,12 @@ const Thought = props => {
       <small>
         {date} &bull; {props.data.markdownRemark.timeToRead} min read &bull;{" "}
         <i className="fas fa-link"></i>{" "}
-        <Link
-          to={`${props.data.site.siteMetadata.siteUrl}${props.location.pathname}`}
+        <a
+          href={`${props.data.site.siteMetadata.siteUrl}${props.location.pathname}`}
           style={{ borderBottom: "unset" }}
         >
           permalink
-        </Link>
+        </a>
       </small>
       <hr />
       <div
