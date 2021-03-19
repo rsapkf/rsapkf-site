@@ -86,6 +86,7 @@ export default function Contact() {
               name="subject"
               id="subject"
               defaultValue="feedback"
+              onChange={handleChange}
               required
             >
               <option value="feedback">Feedback</option>
