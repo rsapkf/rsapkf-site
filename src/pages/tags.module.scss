@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px
+}
+
+.tag {
+  padding: 5px 20px;
+  border: 1px solid rgba(52, 73, 94, 0.3);
+  border-radius: 4px;
+}

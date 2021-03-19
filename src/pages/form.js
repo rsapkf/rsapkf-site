@@ -3,7 +3,7 @@ import { navigate } from "gatsby-link"
 import Layout from "../components/Layout"
 import Head from "../components/Head"
 
-import formStyles from "./form.module.scss"
+import "./form.module.scss"
 
 function encode(data) {
   return Object.keys(data)
@@ -82,10 +82,13 @@ export default function Contact() {
           <label>
             SUBJECT *
             <br />
-            <select name="subject" id="subject" required>
-              <option value="feedback" selected>
-                Feedback
-              </option>
+            <select
+              name="subject"
+              id="subject"
+              defaultValue="feedback"
+              required
+            >
+              <option value="feedback">Feedback</option>
               <option value="bug-report">Bug Report</option>
               <option value="business">Business</option>
               <option value="open-source">Open Source</option>

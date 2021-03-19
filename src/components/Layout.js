@@ -11,6 +11,7 @@ import layoutStyles from "./Layout.module.scss"
 
 import ThemeContext from "../context/ThemeContext"
 import { MDXProvider } from "@mdx-js/react"
+import "./FontAwesome"
 
 const shortcodes = { Link, Head, LastUpdatedPages }
 

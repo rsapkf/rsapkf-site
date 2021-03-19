@@ -29,7 +29,7 @@ const Tags = ({ pageContext, data }) => {
             )
           })}
         </ul>
-        <Link to={`/blog/tags`}>All tags</Link>
+        <Link to={`/blog/tags`}>Blog &gt;&gt; Tags</Link>
       </div>
     </Layout>
   )

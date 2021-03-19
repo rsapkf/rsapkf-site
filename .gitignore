@@ -72,5 +72,5 @@ yarn-error.log
 # VSCode Settings
 .vscode
 
-# personal
+.netlify
 TODO.txt

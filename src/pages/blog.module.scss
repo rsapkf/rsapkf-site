@@ -10,7 +10,8 @@
   border-radius: 5px;
 
   &:hover {
-    background-color: rgba(49, 47, 47, 0.1);
+    background-color: rgba(49, 47, 47, 0.02);
+    border-color: rgba(52, 73, 94, 0.9);
   }
   .description {
     opacity: 0.8;

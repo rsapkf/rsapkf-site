@@ -60,7 +60,6 @@ const HobbiesPage = () => {
               <span className={blogStyles.description}>
                 <small>
                   {date} &bull; {edge.node.timeToRead} min read &bull;{" "}
-                  <i className="fas fa-link"></i>
                   <a
                     href={`${data.site.siteMetadata.siteUrl}/hobbies/${edge.node.fields.slug}`}
                     style={{ borderBottom: "unset" }}

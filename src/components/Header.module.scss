@@ -139,6 +139,7 @@ $header-theme-color: rgb(65, 184, 65);
 
 // Light mode Toggle
 .dark-switcher {
+  all: unset;
   cursor: pointer;
   float: right;
   width: 20px;

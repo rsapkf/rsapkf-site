@@ -38,10 +38,9 @@ const Hobby = props => {
   return (
     <Layout>
       <Head title={`${title} • Hobbies`} />
-      <h3 className={postTemplateStyles.title}>{title}</h3>
+      <h2 className={postTemplateStyles.title}>{title}</h2>
       <small>
         {date} &bull; {props.data.markdownRemark.timeToRead} min read &bull;{" "}
-        <i className="fas fa-tags"></i>{" "}
         {tags.slice(0, 4).map((tag, idx) => (
           <span key={idx}>
             <Link to={`/hobbies/tags/${tag}`} style={{ borderBottom: "unset" }}>
@@ -49,7 +48,7 @@ const Hobby = props => {
             </Link>{" "}
           </span>
         ))}{" "}
-        &bull; <i className="fas fa-link"></i>
+        &bull;
         <a
           href={`${props.data.site.siteMetadata.siteUrl}${props.location.pathname}`}
           style={{ borderBottom: "unset" }}

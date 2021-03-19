@@ -80,7 +80,7 @@ const MastodonData = ({ tag }) => {
         <div
           style={{
             border: "1px solid #d6133d",
-            borderRadius: "20px",
+            borderRadius: "5px",
             padding: "20px",
           }}
         >

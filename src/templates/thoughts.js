@@ -32,10 +32,9 @@ const Thought = props => {
   return (
     <Layout>
       <Head title={`${title} • Thoughts`} />
-      <h3 className={postTemplateStyles.title}>{title}</h3>
+      <h2 className={postTemplateStyles.title}>{title}</h2>
       <small>
         {date} &bull; {props.data.markdownRemark.timeToRead} min read &bull;{" "}
-        <i className="fas fa-link"></i>{" "}
         <a
           href={`${props.data.site.siteMetadata.siteUrl}${props.location.pathname}`}
           style={{ borderBottom: "unset" }}

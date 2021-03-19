@@ -6,6 +6,7 @@ import headerStyles from "./Header.module.scss"
 // import moon from "../assets/moon.png"
 
 import ThemeContext from "../context/ThemeContext"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Header = () => {
   return (
@@ -17,30 +18,29 @@ const Header = () => {
               ~rsapkf
             </Link>
           </h1>
-          <span
+          <button
             className={headerStyles.darkSwitcher}
             onClick={theme.toggleDark}
           >
             {theme.dark ? (
               // <img src={sun} alt="Sun" />
-              <i
-                className="fas fa-sun"
+              <FontAwesomeIcon
+                icon={["fas", "sun"]}
                 style={{ color: "#e1daeccc", fontSize: "1.1rem" }}
-              ></i>
+              />
             ) : (
               // <img src={moon} alt="Moon" />
-              <i
-                className="fas fa-moon"
+              <FontAwesomeIcon
+                icon={["fas", "moon"]}
                 style={{ color: "#403742", fontSize: "1.1rem" }}
-              ></i>
+              />
             )}
-          </span>
+          </button>
           <nav>
             <ul className={headerStyles.navList}>
               <li className={headerStyles.dropdown}>
                 <Link
                   className={`${headerStyles.navItem} ${headerStyles.dropdownButton}`}
-                  activeClassName={headerStyles.activeNavItem}
                   to="#"
                 >
                   Writing
@@ -50,13 +50,13 @@ const Header = () => {
                   style={theme.dark ? {} : { backgroundColor: "#faf4fa" }}
                 >
                   <Link to="/blog">
-                    <i className="fas fa-code-branch"></i> Blog
+                    <FontAwesomeIcon icon={["fas", "code-branch"]} /> Blog
                   </Link>
                   <Link to="/thoughts">
-                    <i className="far fa-lightbulb"></i> Thoughts
+                    <FontAwesomeIcon icon={["far", "lightbulb"]} /> Thoughts
                   </Link>
                   <Link to="/hobbies">
-                    <i className="fas fa-puzzle-piece"></i> Hobbies
+                    <FontAwesomeIcon icon={["fas", "puzzle-piece"]} /> Hobbies
                   </Link>
                 </div>
               </li>
@@ -72,7 +72,6 @@ const Header = () => {
               <li className={headerStyles.dropdown}>
                 <Link
                   className={`${headerStyles.navItem} ${headerStyles.dropdownButton}`}
-                  activeClassName={headerStyles.activeNavItem}
                   to="#"
                 >
                   pages
@@ -97,7 +96,7 @@ const Header = () => {
                   </Link>
                   <Link to="/recommendations">Recommendations</Link>
                   <Link to="/books">
-                    <i className="fas fa-book"></i> Books
+                    <FontAwesomeIcon icon={["fas", "book"]} /> Books
                   </Link>
                   <Link
                     to="/movies-tv"
@@ -107,7 +106,7 @@ const Header = () => {
                   </Link>
                   <Link to="/wishlist">Wishlist</Link>
                   <Link to="/donate" style={{ borderBottom: "1px solid gray" }}>
-                    <i className="fas fa-donate"></i> Donate
+                    <FontAwesomeIcon icon={["fas", "donate"]} /> Donate
                   </Link>
                   <Link to="/now">Now</Link>
                   <Link to="/uses" style={{ borderBottom: "1px solid gray" }}>
@@ -120,7 +119,6 @@ const Header = () => {
               <li className={headerStyles.dropdown}>
                 <Link
                   className={`${headerStyles.navItem} ${headerStyles.dropdownButton}`}
-                  activeClassName={headerStyles.activeNavItem}
                   to="#"
                 >
                   links
@@ -136,14 +134,14 @@ const Header = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fab fa-linux"></i> Dotfiles
+                    <FontAwesomeIcon icon={["fab", "linux"]} /> Dotfiles
                   </a>
                   <a
                     href="https://github.com/rsapkf/rupiks/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fas fa-cube"></i> CFOP Algs
+                    <FontAwesomeIcon icon={["fas", "cube"]} /> CFOP Algs
                   </a>
                 </div>
               </li>

@@ -2,21 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-a {
-  color: rgb(65, 184, 65);
-  background-color: rgba(79, 84, 90, 0.1);
-  border-bottom: 1px solid rgba(52, 73, 94, 0.3);
-  font-weight: 500;
-  transition: all 0.6s;
-
-  &:active,
-  &:hover {
-    color: rgb(167, 159, 159);
-    border-color: rgba(52, 73, 94, 0.9);
-    background-color: rgba(79, 84, 90, 0.15);
-  }
-}
-
 .container {
   margin: 0 auto;
   max-width: 1300px;
@@ -26,45 +11,61 @@ a {
   flex-direction: column;
   min-height: 100vh;
   line-height: 1.7rem;
+}
 
-  ::selection {
-    color: rgb(7, 247, 7);
+a {
+  font-weight: 500;
+  transition: all 0.6s ease;
+}
+
+/* Dark mode styles */
+.dark {
+  transition: all 0.6s ease;
+  color: rgba(225, 218, 236, 0.8);
+  background-color: rgb(1, 0, 14);
+}
+
+a {
+  color: rgb(65, 184, 65);
+  background-color: rgba(79, 84, 90, 0.1);
+  border-bottom: 1px solid rgba(52, 73, 94, 0.3);
+
+  &:active,
+  &:hover {
+    color: rgb(167, 159, 159);
+    border-color: rgba(52, 73, 94, 0.9);
+    background-color: rgba(79, 84, 90, 0.15);
   }
 }
 
-.content {
-  flex-grow: 1;
-}
-
-.dark {
-  transition: all 0.6s ease;
-  color: #e1daeccc;
-  background-color: rgb(1, 0, 14);
+::selection {
+  color: rgb(7, 247, 7);
 }
 
 /* Light mode styles */
 .light {
   transition: all 0.6s ease;
-  color: black;
-  background-color: #faf4fa;
+  color: rgb(0, 0, 0);
+  background-color: rgb(250, 244, 250);
 
   a {
-    color: #9f2ba5;
+    color: rgb(159, 43, 165);
     background-color: rgba(186, 198, 209, 0.1);
 
+    &:active,
     &:hover {
       background-color: rgba(52, 73, 94, 0.1);
     }
   }
 
   * {
-    &::selection {
+    ::selection {
       color: rgb(32, 32, 32);
       background-color: rgb(240, 204, 240);
-    }
   }
+   }
 
   button[type="submit"] {
-    color: black;
+    color: rgb(0, 0, 0);
   }
 }

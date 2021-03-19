@@ -9,7 +9,7 @@ type: "article"
 
 → [Summary](#summary)
 
-This site is powered by [GatsbyJS](https://github.com/gatsbyjs/gatsby), an open source static site generator built on top of [React](https://github.com/facebook/react) and [GraphQL](https://github.com/graphql/graphql-spec), two of the most popular modern web technologies. It is hosted on [Netlify](https://www.netlify.com/). For form submissions, I use [Netlify's Form Handling](https://docs.netlify.com/forms/setup/).
+This site is powered by [GatsbyJS](https://github.com/gatsbyjs/gatsby), an open source static site generator built on top of [React](https://github.com/facebook/react) and [GraphQL](https://github.com/graphql/graphql-spec), two of the most popular modern web technologies. It is hosted on [Netlify](https://www.netlify.com/). For form submissions, I use [Netlify's Form Handling](https://docs.netlify.com/forms/setup/). For styling, I use SCSS modules.
 The source code is available on my [GitHub](https://github.com/rsapkf/rsapkf.xyz).
 
 I recommend you follow the official [Gatsby Tutorial](https://www.gatsbyjs.org/tutorial/) to learn Gatsby. Little knowledge of React and GraphQL will make it a lot easier.
@@ -40,6 +40,7 @@ There are multiple plugins I use for various functionalities in this site. Most 
 - Powered by: GatsbyJS (React and GraphQL)
 - Hosting: Netlify
 - Form Handling: Netlify's Form Handling
+- Styling: CSS Modules + SCSS
 - Gatsby Plugins: [
     "gatsby-source-filesystem",
     "gatsby-transformer-remark",

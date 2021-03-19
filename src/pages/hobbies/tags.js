@@ -9,7 +9,9 @@ import { Link, graphql } from "gatsby"
 import Layout from "../../components/Layout"
 import Head from "../../components/Head"
 
-const TagsPage = ({
+import tagsStyles from "../tags.module.scss"
+
+const HobbiesTagsPage = ({
   data: {
     allMarkdownRemark: { group },
   },
@@ -18,20 +20,22 @@ const TagsPage = ({
     <Head title="Tags • Hobbies" />
     <div>
       <h3>Hobbies &gt;&gt; Tags</h3>
-      <ul>
+      <span className={tagsStyles.container}>
         {group.map(tag => (
-          <li key={tag.fieldValue}>
-            <Link to={`/hobbies/tags/${kebabCase(tag.fieldValue)}/`}>
-              {tag.fieldValue} ({tag.totalCount})
-            </Link>
-          </li>
+          <Link
+            to={`/hobbies/tags/${kebabCase(tag.fieldValue)}/`}
+            key={tag.fieldValue}
+            className={tagsStyles.tag}
+          >
+            {tag.fieldValue} ({tag.totalCount})
+          </Link>
         ))}
-      </ul>
+      </span>
     </div>
   </Layout>
 )
 
-TagsPage.propTypes = {
+HobbiesTagsPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       group: PropTypes.arrayOf(
@@ -49,7 +53,7 @@ TagsPage.propTypes = {
   }),
 }
 
-export default TagsPage
+export default HobbiesTagsPage
 
 export const pageQuery = graphql`
   query {

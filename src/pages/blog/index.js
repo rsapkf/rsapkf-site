@@ -62,9 +62,7 @@ const BlogPage = () => {
               <span className={blogStyles.description}>
                 <small>
                   {date} &bull; {edge.node.timeToRead} min read &bull;{" "}
-                  <i className="fas fa-tags"></i>{" "}
                   {tags.slice(0, 4).map(tag => `#${tag} `)} &bull;{" "}
-                  <i className="fas fa-link"></i>{" "}
                   <a
                     href={`${data.site.siteMetadata.siteUrl}/blog/${edge.node.fields.slug}`}
                     style={{ borderBottom: "unset" }}
