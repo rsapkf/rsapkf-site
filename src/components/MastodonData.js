@@ -6,26 +6,14 @@ import Head from "./Head"
 import Spinner from "./Spinner"
 
 import { fetchData } from "../services/mastodonAPI"
+import { formatDate } from "../utils/formatDate"
+import { capitalizeString } from "../utils/capitalizeString"
 
 const MastodonData = ({ tag }) => {
   const [response, setResponse] = useState([])
   const [isLoading, setIsLoading] = useState(true)
 
-  const capitalizedTag = tag.replace(/^\w/, c => c.toUpperCase())
-
-  const formatDate = dateString => {
-    const options = {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      day: "2-digit",
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-      hour12: "false",
-    }
-    return new Date(dateString).toLocaleDateString("en-US", options)
-  }
+  const capitalizedTag = capitalizeString(tag)
 
   useEffect(() => {
     const fetchMastodonData = async () => {
