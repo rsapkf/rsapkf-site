@@ -1,5 +1,5 @@
 $dark-primary:rgba(225, 218, 236, 0.8);
-$dark-selction: rgb(7, 247, 7);
+$dark-selection: rgb(7, 247, 7);
 $dark-bg:rgb(1, 0, 14);
 $dark-link: rgb(65, 184, 65);
 $dark-link-bg:rgba(79, 84, 90, 0.1);
@@ -53,7 +53,7 @@ a {
 }
 
 ::selection {
-  color: $dark-selction;
+  color: $dark-selection;
 }
 
 /* Light mode styles */

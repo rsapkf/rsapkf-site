@@ -82,7 +82,7 @@ export default function Contact() {
           <label>
             SUBJECT *
             <br />
-            {/* TODO: eslint-disable-next-line jsx-a11y/no-onchange */}
+            {/* TODO: eslint-disable-next-line jsx-a11y/no-onchange (onBlur) */}
             <select
               name="subject"
               id="subject"

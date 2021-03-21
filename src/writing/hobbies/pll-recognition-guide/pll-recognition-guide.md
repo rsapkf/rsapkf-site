@@ -129,7 +129,7 @@ This is just a beginner's guide to PLL recognition. There are advanced technique
 #### Further reading and credits:
 
 - [badmephisto - Recognizing the PLLs (2009)](https://www.youtube.com/watch?v=qBYycb7hR4Y/)
-- [CubeSkills - PLL Algs [PDF]](https://www.cubeskills.com/uploads/pdf/tutorials/pll-algorithms.pdf)
+- [CubeSkills - PLL Algs](https://www.cubeskills.com/uploads/pdf/tutorials/pll-algorithms.pdf)
 - [CubeSkills - PLL Recognition Trainer](https://www.cubeskills.com/tools/pll-recognition-trainer) - 2 side PLL recognition trainer.
 - [AlgDb.net - PLL](http://algdb.net/puzzle/333/pll/)
 - [JPerm.net - PLL Trainer](http://jperm.net/algs/pll)

@@ -47,8 +47,8 @@ const Hobby = props => {
               #{tag}
             </Link>{" "}
           </span>
-        ))}{" "}
-        &bull;
+        ))}
+        &bull;{" "}
         <a
           href={`${props.data.site.siteMetadata.siteUrl}${props.location.pathname}`}
           style={{ borderBottom: "unset" }}
