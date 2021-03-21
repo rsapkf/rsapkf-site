@@ -50,7 +50,7 @@ module.exports = {
                       allMarkdownRemark(
                         sort: { order: DESC, fields: [frontmatter___date] },
                         filter: {
-                          frontmatter: { type: { eq: "article" } }
+                          frontmatter: { type: { eq: "blog" } }
                         }
                       ) {
                         edges {
@@ -94,7 +94,7 @@ module.exports = {
                       allMarkdownRemark(
                         sort: { order: DESC, fields: [frontmatter___date] },
                         filter: {
-                          frontmatter: { type: { eq: "thought" } }
+                          frontmatter: { type: { eq: "thoughts" } }
                         }
                       ) {
                         edges {
@@ -138,7 +138,7 @@ module.exports = {
                     allMarkdownRemark(
                       sort: { order: DESC, fields: [frontmatter___date] },
                       filter: {
-                        frontmatter: { type: { eq: "hobby" } }
+                        frontmatter: { type: { eq: "hobbies" } }
                       }
                     ) {
                       edges {

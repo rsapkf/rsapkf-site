@@ -3,7 +3,7 @@ title: "PLL Recognition Guide"
 date: "2021-01-04"
 lastupdated: "2021-01-07"
 tags: ["cubing", "puzzles", "cfop", "pll", "rubiks-cube", "3x3"]
-type: "hobby"
+type: "hobbies"
 ---
 
 _This page is not optimized for mobile._

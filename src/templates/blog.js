@@ -65,8 +65,8 @@ const Blog = props => {
       </small>
       <hr />
       <PostNav
-        prev={props.pageContext.prevArticle}
-        next={props.pageContext.nextArticle}
+        prev={props.pageContext.prevPost}
+        next={props.pageContext.nextPost}
         posttype="blog"
       />
       <br />

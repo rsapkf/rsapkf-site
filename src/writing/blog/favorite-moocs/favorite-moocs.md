@@ -4,7 +4,7 @@ date: "2020-12-15"
 lastupdated: "2020-12-17"
 spoiler: ""
 tags: ["cs", "programming", "mathematics", "physics"]
-type: "article"
+type: "blog"
 ---
 
 Learning to code from YouTube is nice but I prefer to follow a nicely structured MOOC online along with a textbook (with exercises). This not only allows me to fully grasp the key concepts while focusing on the fundamentals but also to gradually build up from those first principles. Moreover, this kind of approach is vastly important in learning mathematics.

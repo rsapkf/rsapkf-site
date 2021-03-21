@@ -11,7 +11,7 @@ const BlogPage = () => {
     query {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { frontmatter: { type: { eq: "article" } } }
+        filter: { frontmatter: { type: { eq: "blog" } } }
       ) {
         edges {
           node {

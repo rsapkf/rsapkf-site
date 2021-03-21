@@ -4,7 +4,7 @@ date: "2020-07-12"
 lastupdated: "2020-07-13"
 spoiler: ""
 tags: ["gatsby", "github", "react", "programming"]
-type: "article"
+type: "blog"
 ---
 
 React lifecycle methods and Hooks work the same way in Gatsby as they do in React projects. In this article, we'll be using Hooks to make API calls to GitHub API. Hooks are available with a simple `import` statement.

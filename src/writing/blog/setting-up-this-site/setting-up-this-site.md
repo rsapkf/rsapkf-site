@@ -4,7 +4,7 @@ date: "2020-07-02"
 lastupdated: "2020-07-10"
 spoiler: ""
 tags: ["gatsby", "netlify", "github", "programming"]
-type: "article"
+type: "blog"
 ---
 
 → [Summary](#summary)

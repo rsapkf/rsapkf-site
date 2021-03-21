@@ -11,7 +11,7 @@ const HobbiesPage = () => {
     query {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { frontmatter: { type: { eq: "hobby" } } }
+        filter: { frontmatter: { type: { eq: "hobbies" } } }
       ) {
         edges {
           node {

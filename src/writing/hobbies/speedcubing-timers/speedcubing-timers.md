@@ -3,7 +3,7 @@ title: "You Don't Need a Stackmat Timer"
 date: "2021-01-28"
 lastupdated: "2021-02-03"
 tags: ["cubing", "puzzles", "cfop", "speedsolving", "rubiks-cube"]
-type: "hobby"
+type: "hobbies"
 ---
 
 It's really important to start timing your solves if you want to improve your speeds. Even though Stackmat timer is the official choice, you don't have to have one in order to time your solves. Here are a few pretty neat online timers that you can use on your computer or phone.

@@ -65,8 +65,8 @@ const Hobby = props => {
       </small>
       <hr />
       <PostNav
-        prev={props.pageContext.prevHobby}
-        next={props.pageContext.nextHobby}
+        prev={props.pageContext.prevPost}
+        next={props.pageContext.nextPost}
         posttype="hobbies"
       />
       <br />

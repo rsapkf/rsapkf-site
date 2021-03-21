@@ -64,7 +64,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       limit: 2000
-      filter: { frontmatter: { type: { eq: "thought" } } }
+      filter: { frontmatter: { type: { eq: "thoughts" } } }
     ) {
       group(field: frontmatter___tags) {
         fieldValue

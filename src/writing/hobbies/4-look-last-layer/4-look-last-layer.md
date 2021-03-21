@@ -13,7 +13,7 @@ tags:
     "rubiks-cube",
     "3x3",
   ]
-type: "hobby"
+type: "hobbies"
 ---
 
 I think it's a good idea to learn 4-look last layer (2-look OLL and 2-look PLL) before starting to learn the full set of algorithms. In this guide, I will explain how this works and provide the best algs and recommendations that will help to learn the full set later down the road.

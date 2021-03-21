@@ -15,16 +15,16 @@ module.exports.onCreateNode = ({ node, actions }) => {
   }
 }
 
-// Blog
-async function createBlogPages({ graphql, actions }) {
+// Posts
+async function createPostPages({ graphql, actions }, posttype) {
   const { createPage } = actions
-  const blogTemplate = path.resolve("./src/templates/blog.js")
-  const tagTemplate = path.resolve("./src/templates/blog-tags.js")
+  const postTemplate = path.resolve(`./src/templates/${posttype}.js`)
+  const tagTemplate = path.resolve(`./src/templates/${posttype}-tags.js`)
   const res = await graphql(`
     query {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { frontmatter: { type: { eq: "article" } } }
+        filter: { frontmatter: { type: { eq: "${posttype}" } } }
       ) {
         edges {
           node {
@@ -40,7 +40,7 @@ async function createBlogPages({ graphql, actions }) {
       }
       tagsGroup: allMarkdownRemark(
         limit: 2000
-        filter: { frontmatter: { type: { eq: "article" } } }
+        filter: { frontmatter: { type: { eq: "${posttype}" } } }
       ) {
         group(field: frontmatter___tags) {
           fieldValue
@@ -52,153 +52,25 @@ async function createBlogPages({ graphql, actions }) {
   const posts = res.data.allMarkdownRemark.edges
 
   posts.forEach((edge, i) => {
-    const prevArticle = posts[i + 1]
-    const nextArticle = posts[i - 1]
+    const prevPost = posts[i + 1]
+    const nextPost = posts[i - 1]
 
     createPage({
-      component: blogTemplate,
-      path: "/blog/" + edge.node.fields.slug,
+      component: postTemplate,
+      path: `/${posttype}/` + edge.node.fields.slug,
       context: {
         slug: edge.node.fields.slug,
-        prevArticle,
-        nextArticle,
+        prevPost,
+        nextPost,
       },
     })
   })
 
-  // Blog Tags
+  // Tags
   const tags = res.data.tagsGroup.group
   tags.forEach(tag => {
     createPage({
-      path: "/blog" + "/tags/" + _.kebabCase(tag.fieldValue),
-      component: tagTemplate,
-      context: {
-        tag: tag.fieldValue,
-      },
-    })
-  })
-}
-
-// Thoughts
-async function createThoughtsPages({ graphql, actions }) {
-  const { createPage } = actions
-  const thoughtsTemplate = path.resolve("./src/templates/thoughts.js")
-  const tagTemplate = path.resolve("./src/templates/thoughts-tags.js")
-  const res = await graphql(`
-    query {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { frontmatter: { type: { eq: "thought" } } }
-      ) {
-        edges {
-          node {
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              type
-            }
-          }
-        }
-      }
-      tagsGroup: allMarkdownRemark(
-        limit: 2000
-        filter: { frontmatter: { type: { eq: "thought" } } }
-      ) {
-        group(field: frontmatter___tags) {
-          fieldValue
-        }
-      }
-    }
-  `)
-
-  const posts = res.data.allMarkdownRemark.edges
-
-  posts.forEach((edge, i) => {
-    const prevThought = posts[i + 1]
-    const nextThought = posts[i - 1]
-
-    createPage({
-      component: thoughtsTemplate,
-      path: `/thoughts/${edge.node.fields.slug}`,
-      context: {
-        slug: edge.node.fields.slug,
-        prevThought,
-        nextThought,
-      },
-    })
-  })
-
-  // Thoughts Tags
-  const tags = res.data.tagsGroup.group
-  tags.forEach(tag => {
-    createPage({
-      path: "/thoughts" + "/tags/" + _.kebabCase(tag.fieldValue),
-      component: tagTemplate,
-      context: {
-        tag: tag.fieldValue,
-      },
-    })
-  })
-}
-
-// Hobbies
-async function createHobbiesPages({ graphql, actions }) {
-  const { createPage } = actions
-  const hobbiesTemplate = path.resolve("./src/templates/hobbies.js")
-  const tagTemplate = path.resolve("./src/templates/hobbies-tags.js")
-  const res = await graphql(`
-    query {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { frontmatter: { type: { eq: "hobby" } } }
-      ) {
-        edges {
-          node {
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              type
-            }
-          }
-        }
-      }
-      tagsGroup: allMarkdownRemark(
-        limit: 2000
-        filter: { frontmatter: { type: { eq: "hobby" } } }
-      ) {
-        group(field: frontmatter___tags) {
-          fieldValue
-        }
-      }
-    }
-  `)
-
-  const posts = res.data.allMarkdownRemark.edges
-
-  posts.forEach((edge, i) => {
-    const prevHobby = posts[i + 1]
-    const nextHobby = posts[i - 1]
-
-    createPage({
-      component: hobbiesTemplate,
-      path: `/hobbies/${edge.node.fields.slug}`,
-      context: {
-        slug: edge.node.fields.slug,
-        prevHobby,
-        nextHobby,
-      },
-    })
-  })
-
-  // Hobbies Tags
-  const tags = res.data.tagsGroup.group
-  tags.forEach(tag => {
-    createPage({
-      path: "/hobbies" + "/tags/" + _.kebabCase(tag.fieldValue),
+      path: `/${posttype}/` + "tags/" + _.kebabCase(tag.fieldValue),
       component: tagTemplate,
       context: {
         tag: tag.fieldValue,
@@ -208,10 +80,9 @@ async function createHobbiesPages({ graphql, actions }) {
 }
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
   await Promise.all([
-    createBlogPages({ graphql, actions }),
-    createThoughtsPages({ graphql, actions }),
-    createHobbiesPages({ graphql, actions }),
+    createPostPages({ graphql, actions }, "blog"),
+    createPostPages({ graphql, actions }, "thoughts"),
+    createPostPages({ graphql, actions }, "hobbies"),
   ])
 }

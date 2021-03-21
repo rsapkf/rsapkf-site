@@ -3,7 +3,7 @@ title: "Beating 2048"
 date: "2020-06-01"
 lastupdated: "2020-06-02"
 tags: ["puzzles", "2048"]
-type: "hobby"
+type: "hobbies"
 ---
 
 ### The only strategies you need to learn

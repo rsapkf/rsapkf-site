@@ -51,8 +51,8 @@ const Thought = props => {
       </small>
       <hr />
       <PostNav
-        prev={props.pageContext.prevThought}
-        next={props.pageContext.nextThought}
+        prev={props.pageContext.prevPost}
+        next={props.pageContext.nextPost}
         posttype="thoughts"
       />
       <br />

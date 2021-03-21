@@ -4,7 +4,7 @@ date: "2020-07-21"
 lastupdated: "2020-08-17"
 spoiler: ""
 tags: ["css", "scss", "programming"]
-type: "article"
+type: "blog"
 ---
 
 Here is part of the snippet I use to target external links on this site:
