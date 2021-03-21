@@ -99,4 +99,4 @@ Grok these algs and with good fingertricks, better hardware and decent lookahead
 
 #### Further reading
 
-- [CubeSkills - 4 Look Last Layer Algorithms [PDF]](https://www.cubeskills.com/uploads/pdf/tutorials/4-look-last-layer.pdf)
+- [CubeSkills - 4 Look Last Layer Algorithms](https://www.cubeskills.com/uploads/pdf/tutorials/4-look-last-layer.pdf)

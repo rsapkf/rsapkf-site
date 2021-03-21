@@ -21,12 +21,12 @@ const IndexPage = () => {
       </p>
       <p>
         I make full-stack web applications with modern{" "}
-        <a href="https://developer.mozilla.org/en-US/">HTML5 + CSS3 + ES6</a> ,{" "}
-        <a href="https://github.com/django/django">Django</a> ,{" "}
+        <a href="https://developer.mozilla.org/en-US/">ES6</a> ,{" "}
         <a href="https://www.startpage.com/do/metasearch.pl?query=mern%20stack">
           MERN Stack
         </a>
-        , and the <a href="https://jamstack.org/">JAMstack</a>.
+        , <a href="https://github.com/django/django">Django</a>, and the{" "}
+        <a href="https://jamstack.org/">JAMstack</a>.
         <br /> Please see <Link to="/technologies">Technologies</Link> page for
         details of my technical skills.
         <br />

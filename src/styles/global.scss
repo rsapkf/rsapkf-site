@@ -49,7 +49,7 @@ a {
 
   // target links with target attribute
   &[target^="_blank"]:hover::after {
-    content: "\f360";
+    content: "\f360"; // external-link-square-alt
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     position: relative;
@@ -58,8 +58,9 @@ a {
   }
 
   // target external links
-  &:not([href*="rsapkf.xyz"]):not([href^="/"]):not([href^="#"]):not([href*="mozilla.org"]):not([href*="github.com"]):not([href*="gitlab.com"]):not([href*="mastodon.social"]):not([href*="ycombinator.com"]):not([href*="twitter.com"]):not([href*="youtube.com"]):not([href*="apple.com"]):not([href*="wikipedia.org"]):not([href*="google.com"]):not([href*="stackoverflow.com"]):not([href*="reddit.com"]):not([href*="goodreads.com"]):not([href*="microsoft.com"]):not([href*="amazon.com"]):not([href*="imdb.com"]):not([href*="facebook.com"]):not([href*="instagram.com"])::after {
-    content: "\f35d";
+  // TODO: Find a way to do this using FontAwesome Library without importing all.css
+  &:not([href*="rsapkf.xyz"]):not([href^="/"]):not([href^="#"]):not([href$=".pdf"]):not([href*="mozilla.org"]):not([href*="github.com"]):not([href*="gitlab.com"]):not([href*="mastodon.social"]):not([href*="wikipedia.org"]):not([href*="google.com"]):not([href*="ycombinator.com"]):not([href*="twitter.com"]):not([href*="youtube.com"]):not([href*="stackoverflow.com"]):not([href*="reddit.com"]):not([href*="goodreads.com"]):not([href*="apple.com"]):not([href*="microsoft.com"]):not([href*="amazon.com"]):not([href*="imdb.com"]):not([href*="facebook.com"]):not([href*="instagram.com"])::after {
+    content: "\f35d"; // external-link-alt
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
   }
@@ -74,76 +75,82 @@ a {
     bottom: 0.2rem;
   }
 
+  &[href$=".pdf"]::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f1c1"; // file-pdf
+  }
+
   &[href*="mozilla.org"]::after {
-    content: "\f269";
+    content: "\f269"; // firefox
   }
 
   &[href*="github.com"]::after {
-    content: "\f09b";
+    content: "\f09b"; // github
   }
 
   &[href*="gitlab.com"]::after {
-    content: "\f296";
+    content: "\f296"; // gitlab
   }
 
   &[href*="mastodon.social"]::after {
-    content: "\f4f6";
+    content: "\f4f6"; // mastodon
   }
 
   &[href*="wikipedia.org"]::after {
-    content: "\f266";
+    content: "\f266"; // wikipedia-w
   }
 
   &[href*="google.com"]::after {
-    content: "\f1a0";
+    content: "\f1a0"; // google
   }
 
   &[href*="ycombinator.com"]::after {
-    content: "\f3af";
+    content: "\f3af"; // hacker-news-square
   }
 
   &[href*="twitter.com"]::after {
-    content: "\f099";
+    content: "\f099"; // twitter
   }
 
   &[href*="youtube.com"]::after {
-    content: "\f167";
+    content: "\f167"; // youtube
   }
 
   &[href*="stackoverflow.com"]::after {
-    content: "\f16c";
+    content: "\f16c"; // stack-overflow
   }
 
   &[href*="reddit.com"]::after {
-    content: "\f281";
+    content: "\f281"; // reddit-alien
   }
 
   &[href*="goodreads.com"]::after {
-    content: "\f3a8";
+    content: "\f3a8"; // goodreads
   }
 
   &[href*="apple.com"]::after {
-    content: "\f179";
+    content: "\f179"; // apple
   }
 
   &[href*="microsoft.com"]::after {
-    content: "\f3ca";
+    content: "\f3ca"; // microsoft
   }
 
   &[href*="amazon.com"]::after {
-    content: "\f270";
+    content: "\f270"; // amazon
   }
 
   &[href*="imdb.com"]::after {
-    content: "\f270";
+    content: "\f270"; // amazon
   }
 
   &[href*="facebook.com"]::after {
-    content: "\f09a";
+    content: "\f09a"; // facebook
   }
 
   &[href*="instagram.com"]::after {
-    content: "\f09a";
+    content: "\f09a"; // facebook
   }
 }
 

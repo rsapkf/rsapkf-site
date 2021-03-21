@@ -37,112 +37,173 @@ const Header = () => {
             )}
           </button>
           <nav>
-            <ul className={headerStyles.navList}>
+            <ul
+              className={headerStyles.navList}
+              style={{
+                color: theme.dark ? "rgb(142, 143, 142)" : "rgb(159, 43, 165)",
+              }}
+            >
               <li className={headerStyles.dropdown}>
-                <Link
+                <button
                   className={`${headerStyles.navItem} ${headerStyles.dropdownButton}`}
-                  to="#"
                 >
                   Writing
-                </Link>
+                </button>
                 <div
                   className={headerStyles.dropdownContent}
-                  style={theme.dark ? {} : { backgroundColor: "#faf4fa" }}
+                  style={{
+                    backgroundColor: theme.dark ? "#01000e" : "#faf4fa",
+                  }}
                 >
-                  <Link to="/blog">
-                    <FontAwesomeIcon icon={["fas", "code-branch"]} /> Blog
-                  </Link>
-                  <Link to="/thoughts">
-                    <FontAwesomeIcon icon={["far", "lightbulb"]} /> Thoughts
-                  </Link>
-                  <Link to="/hobbies">
-                    <FontAwesomeIcon icon={["fas", "puzzle-piece"]} /> Hobbies
-                  </Link>
+                  <ul>
+                    <li>
+                      <Link to="/blog">
+                        <FontAwesomeIcon icon={["fas", "code-branch"]} /> Blog
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/thoughts">
+                        <FontAwesomeIcon icon={["far", "lightbulb"]} /> Thoughts
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/hobbies">
+                        <FontAwesomeIcon icon={["fas", "puzzle-piece"]} />{" "}
+                        Hobbies
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
               </li>
               <li>
                 <Link
+                  to="/projects"
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
-                  to="/projects"
                 >
                   Projects
                 </Link>
               </li>
               <li className={headerStyles.dropdown}>
-                <Link
+                <button
                   className={`${headerStyles.navItem} ${headerStyles.dropdownButton}`}
-                  to="#"
                 >
                   pages
-                </Link>
+                </button>
                 <div
                   className={headerStyles.dropdownContent}
-                  style={theme.dark ? {} : { backgroundColor: "#faf4fa" }}
+                  style={{
+                    backgroundColor: theme.dark ? "#01000e" : "#faf4fa",
+                  }}
                 >
-                  <Link to="/about">About</Link>
-                  <Link
-                    to="/contact"
-                    style={{ borderBottom: "1px solid gray" }}
-                  >
-                    Contact
-                  </Link>
-                  <Link to="/technologies">Technologies</Link>
-                  <Link
-                    to="/puzzles"
-                    style={{ borderBottom: "1px solid gray" }}
-                  >
-                    Puzzle List
-                  </Link>
-                  <Link to="/recommendations">Recommendations</Link>
-                  <Link to="/books">
-                    <FontAwesomeIcon icon={["fas", "book"]} /> Books
-                  </Link>
-                  <Link
-                    to="/movies-tv"
-                    style={{ borderBottom: "1px solid gray" }}
-                  >
-                    Movies and Shows
-                  </Link>
-                  <Link to="/wishlist">Wishlist</Link>
-                  <Link to="/donate" style={{ borderBottom: "1px solid gray" }}>
-                    <FontAwesomeIcon icon={["fas", "donate"]} /> Donate
-                  </Link>
-                  <Link to="/now">Now</Link>
-                  <Link to="/uses" style={{ borderBottom: "1px solid gray" }}>
-                    Uses
-                  </Link>
-                  <Link to="/linklog">Linklog *</Link>
-                  <Link to="/microblog">Microblog *</Link>
+                  <ul>
+                    <li>
+                      <Link to="/about">About</Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/contact"
+                        style={{ borderBottom: "1px solid gray" }}
+                      >
+                        Contact
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/technologies">Technologies</Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/puzzles"
+                        style={{ borderBottom: "1px solid gray" }}
+                      >
+                        Puzzle List
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/recommendations">Recommendations</Link>
+                    </li>
+                    <li>
+                      <Link to="/books">
+                        <FontAwesomeIcon icon={["fas", "book"]} /> Books
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/movies-tv"
+                        style={{ borderBottom: "1px solid gray" }}
+                      >
+                        Movies and Shows
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/wishlist">Wishlist</Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/donate"
+                        style={{ borderBottom: "1px solid gray" }}
+                      >
+                        <FontAwesomeIcon icon={["fas", "donate"]} /> Donate
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/now">Now</Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/uses"
+                        style={{ borderBottom: "1px solid gray" }}
+                      >
+                        Uses
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/linklog">Linklog *</Link>
+                    </li>
+                    <li>
+                      <Link to="/microblog">Microblog *</Link>
+                    </li>
+                  </ul>
                 </div>
               </li>
               <li className={headerStyles.dropdown}>
-                <Link
+                <button
                   className={`${headerStyles.navItem} ${headerStyles.dropdownButton}`}
-                  to="#"
                 >
                   links
-                </Link>
+                </button>
                 <div
                   className={headerStyles.dropdownContent}
-                  style={theme.dark ? {} : { backgroundColor: "#faf4fa" }}
+                  style={{
+                    backgroundColor: theme.dark ? "#01000e" : "#faf4fa",
+                  }}
                 >
-                  <a href="https://links.rsapkf.xyz/">Linkroll</a>
-                  <a href="https://notes.rsapkf.xyz/">Notes</a>
-                  <a
-                    href="https://github.com/rsapkf/dotfiles/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon icon={["fab", "linux"]} /> Dotfiles
-                  </a>
-                  <a
-                    href="https://github.com/rsapkf/rupiks/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon icon={["fas", "cube"]} /> CFOP Algs
-                  </a>
+                  <ul>
+                    <li>
+                      <a href="https://links.rsapkf.xyz/">Linkroll</a>
+                    </li>
+                    <li>
+                      <a href="https://notes.rsapkf.xyz/">Notes</a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/rsapkf/dotfiles/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FontAwesomeIcon icon={["fab", "linux"]} /> Dotfiles
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/rsapkf/rupiks/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FontAwesomeIcon icon={["fas", "cube"]} /> CFOP Algs
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </li>
             </ul>

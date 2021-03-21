@@ -1,3 +1,17 @@
+$dark-primary:rgba(225, 218, 236, 0.8);
+$dark-selction: rgb(7, 247, 7);
+$dark-bg:rgb(1, 0, 14);
+$dark-link: rgb(65, 184, 65);
+$dark-link-bg:rgba(79, 84, 90, 0.1);
+$dark-link-active-bg: rgba(79, 84, 90, 0.15);
+$light-primary:rgb(0, 0, 0);
+$light-selection: rgb(32, 32, 32);
+$light-selection-bg: rgb(240, 204, 240);
+$light-bg:rgb(250, 244, 250);
+$light-link: rgb(159, 43, 165);
+$light-link-bg:rgba(186, 198, 209, 0.1);
+$light-link-active-bg: rgba(186, 198, 209, 0.25);
+
 html {
   scroll-behavior: smooth;
 }
@@ -21,51 +35,66 @@ a {
 /* Dark mode styles */
 .dark {
   transition: all 0.6s ease;
-  color: rgba(225, 218, 236, 0.8);
-  background-color: rgb(1, 0, 14);
+  color: $dark-primary;
+  background-color: $dark-bg;
 }
 
 a {
-  color: rgb(65, 184, 65);
-  background-color: rgba(79, 84, 90, 0.1);
+  color: $dark-link;
+  background-color: $dark-link-bg;
   border-bottom: 1px solid rgba(52, 73, 94, 0.3);
 
   &:active,
   &:hover {
     color: rgb(167, 159, 159);
     border-color: rgba(52, 73, 94, 0.9);
-    background-color: rgba(79, 84, 90, 0.15);
+    background-color: $dark-link-active-bg;
   }
 }
 
 ::selection {
-  color: rgb(7, 247, 7);
+  color: $dark-selction;
 }
 
 /* Light mode styles */
 .light {
   transition: all 0.6s ease;
-  color: rgb(0, 0, 0);
-  background-color: rgb(250, 244, 250);
+  color: $light-primary;
+  background-color: $light-bg;
 
   a {
-    color: rgb(159, 43, 165);
-    background-color: rgba(186, 198, 209, 0.1);
+    color: $light-link;
+    background-color: $light-link-bg;
 
     &:active,
     &:hover {
-      background-color: rgba(52, 73, 94, 0.1);
+      background-color: $light-link-active-bg;
     }
   }
 
   * {
     ::selection {
-      color: rgb(32, 32, 32);
-      background-color: rgb(240, 204, 240);
+      color: $light-selection;
+      background-color: $light-selection-bg;
   }
    }
 
+  // form styles for light mode
   button[type="submit"] {
+    color: $light-primary;
+    background-color: $light-link-bg;
+  }
+
+  input,
+  select,
+  textarea {
     color: rgb(0, 0, 0);
+    background-color: $light-link-bg;
+    outline: 1px solid rgba(23, 23, 24, 0.3);
+
+    &:focus {
+      background-color: transparent;
+      outline: 2px solid rgba(52, 73, 94, 0.3);
+    }
   }
 }

@@ -82,6 +82,7 @@ export default function Contact() {
           <label>
             SUBJECT *
             <br />
+            {/* TODO: eslint-disable-next-line jsx-a11y/no-onchange */}
             <select
               name="subject"
               id="subject"
@@ -93,7 +94,7 @@ export default function Contact() {
               <option value="bug-report">Bug Report</option>
               <option value="business">Business</option>
               <option value="open-source">Open Source</option>
-              <option value="puzzles">Cubing</option>
+              <option value="cubing">Cubing</option>
               <option value="hi">Say Hi</option>
             </select>
           </label>
