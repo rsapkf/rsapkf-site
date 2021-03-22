@@ -41,7 +41,7 @@ const Posts = props => {
     lastUpdated,
     tags,
   } = props.data.markdownRemark.frontmatter
-  const permalink = `${props.data.site.siteMetadata.siteUrl}/blog/${props.data.markdownRemark.fields.slug}`
+  const permalink = `${props.data.site.siteMetadata.siteUrl}/${postType}/${props.data.markdownRemark.fields.slug}`
 
   return (
     <Layout>
@@ -53,7 +53,7 @@ const Posts = props => {
           ? tags.slice(0, 4).map((tag, idx) => (
               <span key={idx}>
                 <Link
-                  to={`/blog/tags/${tag}`}
+                  to={`/${postType}/tags/${tag}`}
                   style={{ borderBottom: "unset" }}
                 >
                   #{tag}
