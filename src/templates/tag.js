@@ -11,7 +11,7 @@ import { capitalizeString } from "../utils/capitalizeString"
 const Tags = ({ pageContext, data }) => {
   const { tag, postType } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} posts${
+  const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`
 
