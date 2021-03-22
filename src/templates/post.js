@@ -6,7 +6,9 @@ import Head from "../components/Head"
 import PostNav from "../components/PostNav"
 
 import { CopyToClipboard } from "../components/CopyToClipboard"
-import postTemplateStyles from "./posttemplate.module.scss"
+import postStyles from "./post.module.scss"
+
+import { capitalizeString } from "../utils/capitalizeString"
 
 export const query = graphql`
   query($slug: String!) {
@@ -14,7 +16,8 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        lastupdated(formatString: "MMMM DD, YYYY")
+        lastUpdated(formatString: "MMMM DD, YYYY")
+        tags
       }
       html
       timeToRead
@@ -30,16 +33,34 @@ export const query = graphql`
   }
 `
 
-const Thought = props => {
-  const { title, date, lastupdated } = props.data.markdownRemark.frontmatter
+const Posts = props => {
+  const postType = props.pageContext.postType
+  const {
+    title,
+    date,
+    lastUpdated,
+    tags,
+  } = props.data.markdownRemark.frontmatter
   const permalink = `${props.data.site.siteMetadata.siteUrl}/blog/${props.data.markdownRemark.fields.slug}`
 
   return (
     <Layout>
-      <Head title={`${title} • Thoughts`} />
-      <h2 className={postTemplateStyles.title}>{title}</h2>
+      <Head title={`${title} • ${capitalizeString(postType)}`} />
+      <h2 className={postStyles.title}>{title}</h2>
       <small>
-        {date} &bull; {props.data.markdownRemark.timeToRead} min read{" "}
+        {date} &bull; {props.data.markdownRemark.timeToRead} min read &bull;{" "}
+        {postType === "blog" || postType === "hobbies"
+          ? tags.slice(0, 4).map((tag, idx) => (
+              <span key={idx}>
+                <Link
+                  to={`/blog/tags/${tag}`}
+                  style={{ borderBottom: "unset" }}
+                >
+                  #{tag}
+                </Link>{" "}
+              </span>
+            ))
+          : ""}
         <CopyToClipboard link={permalink} />
       </small>
       <hr />
@@ -47,13 +68,13 @@ const Thought = props => {
         dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
       ></div>
       <small>
-        <i>Last Updated: {lastupdated}</i>
+        <i>Last Updated: {lastUpdated}</i>
       </small>
       <hr />
       <PostNav
         prev={props.pageContext.prevPost}
         next={props.pageContext.nextPost}
-        posttype="thoughts"
+        postType={`${postType}`}
       />
       <br />
       <span style={{ marginTop: "20px" }}>
@@ -63,4 +84,4 @@ const Thought = props => {
   )
 }
 
-export default Thought
+export default Posts

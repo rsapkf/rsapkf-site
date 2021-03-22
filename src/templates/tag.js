@@ -6,16 +6,18 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Head from "../components/Head"
 
+import { capitalizeString } from "../utils/capitalizeString"
+
 const Tags = ({ pageContext, data }) => {
-  const { tag } = pageContext
+  const { tag, postType } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} thought${
+  const tagHeader = `${totalCount} posts${
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`
 
   return (
     <Layout>
-      <Head title={`#${tag} • Tags • Thoughts`} />
+      <Head title={`#${tag} • Tags • ${capitalizeString(postType)}`} />
       <div>
         <h3>{tagHeader}</h3>
         <ul>
@@ -24,12 +26,14 @@ const Tags = ({ pageContext, data }) => {
             const { title } = node.frontmatter
             return (
               <li key={slug}>
-                <Link to={`/thoughts/${slug}`}>{title}</Link>
+                <Link to={`/${postType}/${slug}`}>{title}</Link>
               </li>
             )
           })}
         </ul>
-        <Link to={`/thoughts/tags`}>Thoughts &gt;&gt; Tags</Link>
+        <Link to={`/${postType}/tags`}>
+          {capitalizeString(postType)} &gt;&gt; Tags
+        </Link>
       </div>
     </Layout>
   )

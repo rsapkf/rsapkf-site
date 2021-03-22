@@ -1,7 +1,7 @@
 ---
 title: Managing Python Virtual Environments with venv Module
 date: "2019-08-07"
-lastupdated: "2019-09-16"
+lastUpdated: "2019-09-16"
 spoiler: ""
 tags: ["python", "programming"]
 type: "blog"

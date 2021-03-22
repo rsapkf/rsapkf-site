@@ -1,7 +1,7 @@
 ---
 title: "An Overview of Speedcubing (+Awesome Learning Resources)"
 date: "2020-08-02"
-lastupdated: "2020-08-07"
+lastUpdated: "2020-08-07"
 tags: ["cubing", "puzzles", "cfop", "speedsolving", "rubiks-cube", "3x3"]
 type: "hobbies"
 ---

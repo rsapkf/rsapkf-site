@@ -1,7 +1,7 @@
 ---
 title: "Deploying mdBook Site on Netlify"
 date: "2020-07-29"
-lastupdated: "2020-07-31"
+lastUpdated: "2020-07-31"
 spoiler: "Simple enough but Rust's not JavaScript."
 tags: ["mdbook", "rust", "netlify"]
 type: "blog"

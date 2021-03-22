@@ -1,7 +1,7 @@
 ---
 title: "My Favorite MOOCs for CS and Math"
 date: "2020-12-15"
-lastupdated: "2020-12-17"
+lastUpdated: "2020-12-17"
 spoiler: ""
 tags: ["cs", "programming", "mathematics", "physics"]
 type: "blog"

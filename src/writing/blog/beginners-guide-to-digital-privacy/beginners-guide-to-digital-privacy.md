@@ -1,7 +1,7 @@
 ---
 title: "Beginner's Guide to Digital Privacy"
 date: "2020-09-12"
-lastupdated: "2020-12-03"
+lastUpdated: "2020-12-03"
 spoiler: ""
 tags: ["privacy"]
 type: "blog"

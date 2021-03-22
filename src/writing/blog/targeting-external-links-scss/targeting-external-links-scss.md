@@ -1,7 +1,7 @@
 ---
 title: "Targeting External Links using SCSS"
 date: "2020-07-21"
-lastupdated: "2020-08-17"
+lastUpdated: "2020-08-17"
 spoiler: ""
 tags: ["css", "scss", "programming"]
 type: "blog"

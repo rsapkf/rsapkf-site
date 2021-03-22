@@ -1,7 +1,7 @@
 ---
 title: "A Definitive Guide to 4-Look Last Layer (CFOP)"
 date: "2021-02-07"
-lastupdated: "2021-02-21"
+lastUpdated: "2021-02-21"
 tags:
   [
     "cubing",

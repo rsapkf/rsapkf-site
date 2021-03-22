@@ -1,7 +1,7 @@
 ---
 title: "Enabling Vim Mode In All Major Graphical Text Editors"
 date: "2019-10-19"
-lastupdated: "2019-10-19"
+lastUpdated: "2019-10-19"
 spoiler: ""
 tags: ["vim", "programming"]
 type: "blog"

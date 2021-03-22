@@ -1,7 +1,7 @@
 ---
 title: "The Rabbithole Series, Part 1"
 date: "2019-05-20"
-lastupdated: "2019-05-25"
+lastUpdated: "2019-05-25"
 spoiler: "How I got started with Tiling WMs."
 tags: ["linux", "window-manager", "i3wm", "dwm"]
 type: "blog"

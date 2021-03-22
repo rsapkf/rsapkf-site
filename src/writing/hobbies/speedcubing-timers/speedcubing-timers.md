@@ -1,7 +1,7 @@
 ---
 title: "You Don't Need a Stackmat Timer"
 date: "2021-01-28"
-lastupdated: "2021-02-03"
+lastUpdated: "2021-02-03"
 tags: ["cubing", "puzzles", "cfop", "speedsolving", "rubiks-cube"]
 type: "hobbies"
 ---

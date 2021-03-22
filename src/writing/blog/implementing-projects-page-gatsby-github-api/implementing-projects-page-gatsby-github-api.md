@@ -1,7 +1,7 @@
 ---
 title: "Implementing /projects Page on Gatsby Site with GitHub API"
 date: "2020-07-12"
-lastupdated: "2020-07-13"
+lastUpdated: "2020-07-13"
 spoiler: ""
 tags: ["gatsby", "github", "react", "programming"]
 type: "blog"

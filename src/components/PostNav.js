@@ -2,12 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 import postNavStyles from "./PostNav.module.scss"
 
-export default function PostNav({ prev, next, posttype }) {
+export default function PostNav({ prev, next, postType }) {
   return (
     <div className={postNavStyles.container}>
       {prev && (
         <div>
-          <Link to={`/${posttype}/${prev.node.fields.slug}`}>
+          <Link to={`/${postType}/${prev.node.fields.slug}`}>
             <span className={postNavStyles.prev}>← Previous</span>
             <br />
           </Link>
@@ -18,7 +18,7 @@ export default function PostNav({ prev, next, posttype }) {
       )}
       {next && (
         <div style={{ float: "right" }}>
-          <Link to={`/${posttype}/${next.node.fields.slug}`}>
+          <Link to={`/${postType}/${next.node.fields.slug}`}>
             <span className={postNavStyles.next}>Next →</span>
             <br />
           </Link>
