@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import Head from "../components/Head"
 import PostNav from "../components/PostNav"
 
+import { CopyToClipboard } from "../components/CopyToClipboard"
 import postTemplateStyles from "./posttemplate.module.scss"
 
 export const query = graphql`
@@ -18,6 +19,9 @@ export const query = graphql`
       }
       html
       timeToRead
+      fields {
+        slug
+      }
     }
     site {
       siteMetadata {
@@ -34,6 +38,7 @@ const Blog = props => {
     lastupdated,
     tags,
   } = props.data.markdownRemark.frontmatter
+  const permalink = `${props.data.site.siteMetadata.siteUrl}/blog/${props.data.markdownRemark.fields.slug}`
 
   return (
     <Layout>
@@ -48,13 +53,7 @@ const Blog = props => {
             </Link>{" "}
           </span>
         ))}
-        &bull;{" "}
-        <a
-          href={`${props.data.site.siteMetadata.siteUrl}${props.location.pathname}`}
-          style={{ borderBottom: "unset" }}
-        >
-          permalink
-        </a>
+        <CopyToClipboard link={permalink} />
       </small>
       <hr />
       <div

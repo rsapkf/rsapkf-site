@@ -82,12 +82,11 @@ export default function Contact() {
           <label>
             SUBJECT *
             <br />
-            {/* TODO: eslint-disable-next-line jsx-a11y/no-onchange (onBlur) */}
             <select
               name="subject"
               id="subject"
               defaultValue="feedback"
-              onChange={handleChange}
+              onBlur={handleChange}
               required
             >
               <option value="feedback">Feedback</option>

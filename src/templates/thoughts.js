@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import Head from "../components/Head"
 import PostNav from "../components/PostNav"
 
+import { CopyToClipboard } from "../components/CopyToClipboard"
 import postTemplateStyles from "./posttemplate.module.scss"
 
 export const query = graphql`
@@ -17,6 +18,9 @@ export const query = graphql`
       }
       html
       timeToRead
+      fields {
+        slug
+      }
     }
     site {
       siteMetadata {
@@ -28,19 +32,15 @@ export const query = graphql`
 
 const Thought = props => {
   const { title, date, lastupdated } = props.data.markdownRemark.frontmatter
+  const permalink = `${props.data.site.siteMetadata.siteUrl}/blog/${props.data.markdownRemark.fields.slug}`
 
   return (
     <Layout>
       <Head title={`${title} • Thoughts`} />
       <h2 className={postTemplateStyles.title}>{title}</h2>
       <small>
-        {date} &bull; {props.data.markdownRemark.timeToRead} min read &bull;{" "}
-        <a
-          href={`${props.data.site.siteMetadata.siteUrl}${props.location.pathname}`}
-          style={{ borderBottom: "unset" }}
-        >
-          permalink
-        </a>
+        {date} &bull; {props.data.markdownRemark.timeToRead} min read{" "}
+        <CopyToClipboard link={permalink} />
       </small>
       <hr />
       <div

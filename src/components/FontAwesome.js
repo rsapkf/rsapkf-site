@@ -9,8 +9,9 @@ import {
   faSun,
   faMoon,
   faAngleDown,
+  faCheck,
 } from "@fortawesome/free-solid-svg-icons"
-import { faLightbulb } from "@fortawesome/free-regular-svg-icons"
+import { faLightbulb, faClipboard } from "@fortawesome/free-regular-svg-icons"
 
 library.add(
   fab,
@@ -22,5 +23,7 @@ library.add(
   faSun,
   faMoon,
   faAngleDown,
-  faLightbulb
+  faLightbulb,
+  faClipboard,
+  faCheck
 )

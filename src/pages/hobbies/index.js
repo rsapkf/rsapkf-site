@@ -5,6 +5,10 @@ import Layout from "../../components/Layout"
 import Head from "../../components/Head"
 
 import blogStyles from "../blog.module.scss"
+import {
+  CopyToClipboard,
+  CopyToClipboardIcon,
+} from "../../components/CopyToClipboard"
 
 const HobbiesPage = () => {
   const data = useStaticQuery(graphql`
@@ -50,6 +54,7 @@ const HobbiesPage = () => {
       <ol className={blogStyles.articles}>
         {data.allMarkdownRemark.edges.map((edge, idx) => {
           const { title, date } = edge.node.frontmatter
+          const permalink = `${data.site.siteMetadata.siteUrl}/hobbies/${edge.node.fields.slug}`
 
           return (
             <li className={blogStyles.article} key={idx}>
@@ -59,14 +64,14 @@ const HobbiesPage = () => {
               <br />
               <span className={blogStyles.description}>
                 <small>
-                  {date} &bull; {edge.node.timeToRead} min read &bull;{" "}
-                  <a
-                    href={`${data.site.siteMetadata.siteUrl}/hobbies/${edge.node.fields.slug}`}
-                    style={{ borderBottom: "unset" }}
-                  >
-                    permalink
-                  </a>
+                  {date} &bull; {edge.node.timeToRead} min read{" "}
+                  <span className={blogStyles.clipboardSpan}>
+                    <CopyToClipboard link={permalink} />
+                  </span>
                 </small>
+              </span>
+              <span className={blogStyles.clipboardIcon}>
+                <CopyToClipboardIcon link={permalink} />
               </span>
             </li>
           )

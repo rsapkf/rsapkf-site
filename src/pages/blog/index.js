@@ -4,6 +4,10 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import Layout from "../../components/Layout"
 import Head from "../../components/Head"
 
+import {
+  CopyToClipboard,
+  CopyToClipboardIcon,
+} from "../../components/CopyToClipboard"
 import blogStyles from "../blog.module.scss"
 
 const BlogPage = () => {
@@ -52,6 +56,7 @@ const BlogPage = () => {
       <ol className={blogStyles.articles}>
         {data.allMarkdownRemark.edges.map((edge, idx) => {
           const { title, date, spoiler, tags } = edge.node.frontmatter
+          const permalink = `${data.site.siteMetadata.siteUrl}/blog/${edge.node.fields.slug}`
 
           return (
             <li className={blogStyles.article} key={idx}>
@@ -62,16 +67,16 @@ const BlogPage = () => {
               <span className={blogStyles.description}>
                 <small>
                   {date} &bull; {edge.node.timeToRead} min read &bull;{" "}
-                  {tags.slice(0, 4).map(tag => `#${tag} `)} &bull;{" "}
-                  <a
-                    href={`${data.site.siteMetadata.siteUrl}/blog/${edge.node.fields.slug}`}
-                    style={{ borderBottom: "unset" }}
-                  >
-                    permalink
-                  </a>
+                  {tags.slice(0, 4).map(tag => `#${tag} `)}
+                  <span className={blogStyles.clipboardSpan}>
+                    <CopyToClipboard link={permalink} />
+                  </span>
                   <br />
                   {spoiler}
                 </small>
+              </span>
+              <span className={blogStyles.clipboardIcon}>
+                <CopyToClipboardIcon link={permalink} />
               </span>
             </li>
           )
