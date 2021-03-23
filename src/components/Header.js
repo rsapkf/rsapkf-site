@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import headerStyles from "./Header.module.scss"
+import styles from "./Header.module.scss"
 // import sun from "../assets/sun.png"
 // import moon from "../assets/moon.png"
 
@@ -12,16 +12,11 @@ const Header = () => {
   return (
     <ThemeContext.Consumer>
       {theme => (
-        <header className={headerStyles.header}>
-          <h1>
-            <Link className={headerStyles.title} to="/">
-              ~rsapkf
-            </Link>
-          </h1>
-          <button
-            className={headerStyles.darkSwitcher}
-            onClick={theme.toggleDark}
-          >
+        <header className={styles.header}>
+          <Link className={styles.title} to="/">
+            ~rsapkf
+          </Link>
+          <button className={styles.darkSwitcher} onClick={theme.toggleDark}>
             {theme.dark ? (
               // <img src={sun} alt="Sun" />
               <FontAwesomeIcon
@@ -38,19 +33,19 @@ const Header = () => {
           </button>
           <nav>
             <ul
-              className={headerStyles.navList}
+              className={styles.navList}
               style={{
                 color: theme.dark ? "rgb(142, 143, 142)" : "rgb(159, 43, 165)",
               }}
             >
-              <li className={headerStyles.dropdown}>
+              <li className={styles.dropdown}>
                 <button
-                  className={`${headerStyles.navItem} ${headerStyles.dropdownButton}`}
+                  className={`${styles.navItem} ${styles.dropdownButton}`}
                 >
                   Writing
                 </button>
                 <div
-                  className={headerStyles.dropdownContent}
+                  className={styles.dropdownContent}
                   style={{
                     backgroundColor: theme.dark ? "#01000e" : "#faf4fa",
                   }}
@@ -78,20 +73,20 @@ const Header = () => {
               <li>
                 <Link
                   to="/projects"
-                  className={headerStyles.navItem}
-                  activeClassName={headerStyles.activeNavItem}
+                  className={styles.navItem}
+                  activeClassName={styles.activeNavItem}
                 >
                   Projects
                 </Link>
               </li>
-              <li className={headerStyles.dropdown}>
+              <li className={styles.dropdown}>
                 <button
-                  className={`${headerStyles.navItem} ${headerStyles.dropdownButton}`}
+                  className={`${styles.navItem} ${styles.dropdownButton}`}
                 >
                   pages
                 </button>
                 <div
-                  className={headerStyles.dropdownContent}
+                  className={styles.dropdownContent}
                   style={{
                     backgroundColor: theme.dark ? "#01000e" : "#faf4fa",
                   }}
@@ -166,14 +161,14 @@ const Header = () => {
                   </ul>
                 </div>
               </li>
-              <li className={headerStyles.dropdown}>
+              <li className={styles.dropdown}>
                 <button
-                  className={`${headerStyles.navItem} ${headerStyles.dropdownButton}`}
+                  className={`${styles.navItem} ${styles.dropdownButton}`}
                 >
                   links
                 </button>
                 <div
-                  className={headerStyles.dropdownContent}
+                  className={styles.dropdownContent}
                   style={{
                     backgroundColor: theme.dark ? "#01000e" : "#faf4fa",
                   }}

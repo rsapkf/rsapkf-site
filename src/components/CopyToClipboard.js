@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
-import { copyToClipboard } from "../utils/copyToClipboard"
-import CopyToClipboardStyles from "./CopyToClipboard.module.scss"
+import { copyToClipboard } from "../utils/copy-to-clipboard"
+import styles from "./CopyToClipboard.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const CopyToClipboard = ({ link }) => {
@@ -10,7 +10,7 @@ export const CopyToClipboard = ({ link }) => {
   )
   return (
     <button
-      className={CopyToClipboardStyles.clipboardSpan}
+      className={styles.clipboardSpan}
       onClick={() => {
         copyToClipboard(link)
         setPermalinkButtonText("Copied")
@@ -29,7 +29,7 @@ export const CopyToClipboardIcon = ({ link }) => {
   ])
   return (
     <button
-      className={CopyToClipboardStyles.clipboardIcon}
+      className={styles.clipboardIcon}
       title={"Copy permalink to clipboard"}
       onClick={() => {
         copyToClipboard(link)

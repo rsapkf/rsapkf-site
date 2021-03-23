@@ -1,6 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
 .articles {
   list-style-type: none;
   margin: 0;
+  min-width: 60%;
 }
 
 .article {

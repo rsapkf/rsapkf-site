@@ -5,9 +5,9 @@ import Layout from "./Layout"
 import Head from "./Head"
 import Spinner from "./Spinner"
 
-import { fetchData } from "../services/mastodonAPI"
-import { formatDate } from "../utils/formatDate"
-import { capitalizeString } from "../utils/capitalizeString"
+import { fetchData } from "../services/mastodon-api"
+import { formatDate } from "../utils/format-date"
+import { capitalizeString } from "../utils/capitalize-string"
 
 const MastodonData = ({ tag }) => {
   const [response, setResponse] = useState([])

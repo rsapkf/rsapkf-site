@@ -9,7 +9,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../../components/Layout"
 import Head from "../../components/Head"
 
-import tagsStyles from "../tags.module.scss"
+import styles from "../tags.module.scss"
 
 const HobbiesTagsPage = ({
   data: {
@@ -20,12 +20,12 @@ const HobbiesTagsPage = ({
     <Head title="Tags • Hobbies" />
     <div>
       <h3>Hobbies &gt;&gt; Tags</h3>
-      <span className={tagsStyles.container}>
+      <span className={styles.container}>
         {group.map(tag => (
           <Link
             to={`/hobbies/tags/${kebabCase(tag.fieldValue)}/`}
             key={tag.fieldValue}
-            className={tagsStyles.tag}
+            className={styles.tag}
           >
             {tag.fieldValue} ({tag.totalCount})
           </Link>

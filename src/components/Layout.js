@@ -7,7 +7,7 @@ import Head from "./Head"
 import LastUpdatedPages from "./LastUpdatedPages"
 
 import "../styles/global.scss"
-import layoutStyles from "./Layout.module.scss"
+import styles from "./Layout.module.scss"
 
 import ThemeContext from "../context/ThemeContext"
 import { MDXProvider } from "@mdx-js/react"
@@ -20,8 +20,8 @@ const Layout = ({ children }) => {
     <MDXProvider components={shortcodes}>
       <ThemeContext.Consumer>
         {theme => (
-          <div className={theme.dark ? layoutStyles.dark : layoutStyles.light}>
-            <div className={layoutStyles.container}>
+          <div className={theme.dark ? styles.dark : styles.light}>
+            <div className={styles.container}>
               <Header />
               {children}
               <Footer />

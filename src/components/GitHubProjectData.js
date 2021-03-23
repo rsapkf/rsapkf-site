@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
-import githubProjectDataStyles from "./GithubProjectData.module.scss"
-import { fetchData } from "../services/githubAPI"
+import styles from "./GithubProjectData.module.scss"
+import { fetchData } from "../services/github-api"
 
 const GITHUB_USERNAME = "rsapkf"
 
@@ -44,17 +44,14 @@ const GitHubProjectData = ({ project }) => {
         </>,
       ]}
       {starsCount > 0 && (
-        <div className={githubProjectDataStyles.metrics}>
-          <span className={githubProjectDataStyles.metric}>Stars</span>:{" "}
-          <a
-            href={starsgazersURL}
-            className={githubProjectDataStyles.metricCount}
-          >
+        <div className={styles.metrics}>
+          <span className={styles.metric}>Stars</span>:{" "}
+          <a href={starsgazersURL} className={styles.metricCount}>
             {" "}
             {starsCount}
           </a>{" "}
-          • <span className={githubProjectDataStyles.metric}>Forks</span>:{" "}
-          <a href={forksURL} className={githubProjectDataStyles.metricCount}>
+          • <span className={styles.metric}>Forks</span>:{" "}
+          <a href={forksURL} className={styles.metricCount}>
             {" "}
             {forksCount}
           </a>

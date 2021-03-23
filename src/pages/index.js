@@ -3,13 +3,13 @@ import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
 import Head from "../components/Head"
-import indexStyles from "./index.module.scss"
+import styles from "./index.module.scss"
 
 const IndexPage = () => {
   return (
     <Layout>
       <Head title="Home" />
-      <h3 className={indexStyles.intro}>
+      <h3 className={styles.intro}>
         Developer, Autodidact, Open Source Advocate & GNU/Linux Aficionado.
       </h3>
       <hr />

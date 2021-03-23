@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import footerStyles from "./Footer.module.scss"
+import styles from "./Footer.module.scss"
 
 const Footer = () => {
   return (
-    <footer className={footerStyles.footer}>
+    <footer className={styles.footer}>
       <div style={{ float: "right" }}>
         <Link to="/feeds" style={{ textDecoration: "none" }}>
           rss

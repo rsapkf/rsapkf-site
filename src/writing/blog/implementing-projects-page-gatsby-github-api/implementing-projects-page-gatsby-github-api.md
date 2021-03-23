@@ -13,7 +13,7 @@ On this site, I have three pages where I need to fetch data from APIs as of now-
 
 We'll be using functional components and as such React's `useEffect` and `useState` Hooks in this tutorial. Some other things you should be familiar with are `async / await`, template strings, destructuring and `try / catch`.
 
-First, create a file named `githubAPI.js` in `src/services` directory and copy the following code into the file:
+First, create a file named `github-api.js` in `src/services` directory and copy the following code into the file:
 
 ```javascript
 import axios from "axios"
@@ -46,7 +46,7 @@ Now, create a component in `src/components` called `GitHubStats.js` and put the 
 
 ```javascript
 import React, { useState, useEffect } from "react"
-import { fetchData } from "../services/githubAPI"
+import { fetchData } from "../services/github-api"
 
 const GITHUB_USERNAME = "<YOUR_GITHUB_USERNAME>"
 

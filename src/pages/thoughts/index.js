@@ -4,7 +4,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import Layout from "../../components/Layout"
 import Head from "../../components/Head"
 
-import blogStyles from "../blog.module.scss"
+import styles from "../blog.module.scss"
 import {
   CopyToClipboard,
   CopyToClipboardIcon,
@@ -53,32 +53,34 @@ const ThoughtsPage = () => {
         <Link to="/thoughts/tags/movie">Movies</Link> |{" "}
         <Link to="/thoughts/tags/tv-show">TV Shows</Link>
       </span>
-      <ol className={blogStyles.articles}>
-        {data.allMarkdownRemark.edges.map((edge, idx) => {
-          const { title, date } = edge.node.frontmatter
-          const permalink = `${data.site.siteMetadata.siteUrl}/thoughts/${edge.node.fields.slug}`
+      <div className={styles.container}>
+        <ol className={styles.articles}>
+          {data.allMarkdownRemark.edges.map((edge, idx) => {
+            const { title, date } = edge.node.frontmatter
+            const permalink = `${data.site.siteMetadata.siteUrl}/thoughts/${edge.node.fields.slug}`
 
-          return (
-            <li className={blogStyles.article} key={idx}>
-              <Link to={`/thoughts/${edge.node.fields.slug}`}>
-                <span>{title}</span>
-              </Link>
-              <br />
-              <span className={blogStyles.description}>
-                <small>
-                  {date} &bull; {edge.node.timeToRead} min read{" "}
-                  <span className={blogStyles.clipboardSpan}>
-                    <CopyToClipboard link={permalink} />
-                  </span>
-                </small>
-              </span>
-              <span className={blogStyles.clipboardIcon}>
-                <CopyToClipboardIcon link={permalink} />
-              </span>
-            </li>
-          )
-        })}
-      </ol>
+            return (
+              <li className={styles.article} key={idx}>
+                <Link to={`/thoughts/${edge.node.fields.slug}`}>
+                  <span>{title}</span>
+                </Link>
+                <br />
+                <span className={styles.description}>
+                  <small>
+                    {date} &bull; {edge.node.timeToRead} min read{" "}
+                    <span className={styles.clipboardSpan}>
+                      <CopyToClipboard link={permalink} />
+                    </span>
+                  </small>
+                </span>
+                <span className={styles.clipboardIcon}>
+                  <CopyToClipboardIcon link={permalink} />
+                </span>
+              </li>
+            )
+          })}
+        </ol>
+      </div>
     </Layout>
   )
 }

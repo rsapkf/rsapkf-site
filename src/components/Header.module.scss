@@ -23,6 +23,10 @@ $header-theme-color: rgb(65, 184, 65);
   }
 }
 
+nav {
+  margin-top: 2rem;
+}
+
 .nav-list {
   display: flex;
   flex-wrap: wrap;
@@ -157,6 +161,6 @@ $header-theme-color: rgb(65, 184, 65);
 .dark-switcher {
   all: unset;
   cursor: pointer;
-  float: right;
+  margin-left: 1rem;
   width: 20px;
 }

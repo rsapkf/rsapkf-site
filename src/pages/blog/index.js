@@ -8,7 +8,7 @@ import {
   CopyToClipboard,
   CopyToClipboardIcon,
 } from "../../components/CopyToClipboard"
-import blogStyles from "../blog.module.scss"
+import styles from "../blog.module.scss"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -53,35 +53,37 @@ const BlogPage = () => {
         <Link to="/blog/tags/linux">Linux</Link> |{" "}
         <Link to="/blog/tags/privacy">Privacy</Link>
       </span>
-      <ol className={blogStyles.articles}>
-        {data.allMarkdownRemark.edges.map((edge, idx) => {
-          const { title, date, spoiler, tags } = edge.node.frontmatter
-          const permalink = `${data.site.siteMetadata.siteUrl}/blog/${edge.node.fields.slug}`
+      <div className={styles.container}>
+        <ol className={styles.articles}>
+          {data.allMarkdownRemark.edges.map((edge, idx) => {
+            const { title, date, spoiler, tags } = edge.node.frontmatter
+            const permalink = `${data.site.siteMetadata.siteUrl}/blog/${edge.node.fields.slug}`
 
-          return (
-            <li className={blogStyles.article} key={idx}>
-              <Link to={`/blog/${edge.node.fields.slug}`}>
-                <span>{title}</span>
-              </Link>
-              <br />
-              <span className={blogStyles.description}>
-                <small>
-                  {date} &bull; {edge.node.timeToRead} min read &bull;{" "}
-                  {tags.slice(0, 4).map(tag => `#${tag} `)}
-                  <span className={blogStyles.clipboardSpan}>
-                    <CopyToClipboard link={permalink} />
-                  </span>
-                  <br />
-                  {spoiler}
-                </small>
-              </span>
-              <span className={blogStyles.clipboardIcon}>
-                <CopyToClipboardIcon link={permalink} />
-              </span>
-            </li>
-          )
-        })}
-      </ol>
+            return (
+              <li className={styles.article} key={idx}>
+                <Link to={`/blog/${edge.node.fields.slug}`}>
+                  <span>{title}</span>
+                </Link>
+                <br />
+                <span className={styles.description}>
+                  <small>
+                    {date} &bull; {edge.node.timeToRead} min read &bull;{" "}
+                    {tags.slice(0, 4).map(tag => `#${tag} `)}
+                    <span className={styles.clipboardSpan}>
+                      <CopyToClipboard link={permalink} />
+                    </span>
+                    <br />
+                    {spoiler}
+                  </small>
+                </span>
+                <span className={styles.clipboardIcon}>
+                  <CopyToClipboardIcon link={permalink} />
+                </span>
+              </li>
+            )
+          })}
+        </ol>
+      </div>
     </Layout>
   )
 }

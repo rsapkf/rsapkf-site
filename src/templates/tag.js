@@ -6,12 +6,12 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Head from "../components/Head"
 
-import { capitalizeString } from "../utils/capitalizeString"
+import { capitalizeString } from "../utils/capitalize-string"
 
 const Tags = ({ pageContext, data }) => {
   const { tag, postType } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} post${
+  const tagHeader = `${totalCount} article${
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`
 

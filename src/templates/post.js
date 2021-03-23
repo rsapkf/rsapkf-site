@@ -8,7 +8,7 @@ import PostNav from "../components/PostNav"
 import { CopyToClipboard } from "../components/CopyToClipboard"
 import postStyles from "./post.module.scss"
 
-import { capitalizeString } from "../utils/capitalizeString"
+import { capitalizeString } from "../utils/capitalize-string"
 
 export const query = graphql`
   query($slug: String!) {
