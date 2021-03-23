@@ -5,9 +5,9 @@ import Layout from "../../components/Layout"
 import Head from "../../components/Head"
 
 import {
-  CopyToClipboard,
-  CopyToClipboardIcon,
-} from "../../components/CopyToClipboard"
+  CopyPermalink,
+  CopyPermalinkIcon,
+} from "../../components/CopyPermalink"
 import styles from "../blog.module.scss"
 
 const BlogPage = () => {
@@ -70,14 +70,14 @@ const BlogPage = () => {
                     {date} &bull; {edge.node.timeToRead} min read &bull;{" "}
                     {tags.slice(0, 4).map(tag => `#${tag} `)}
                     <span className={styles.clipboardSpan}>
-                      <CopyToClipboard link={permalink} />
+                      <CopyPermalink link={permalink} />
                     </span>
                     <br />
                     {spoiler}
                   </small>
                 </span>
                 <span className={styles.clipboardIcon}>
-                  <CopyToClipboardIcon link={permalink} />
+                  <CopyPermalinkIcon link={permalink} />
                 </span>
               </li>
             )

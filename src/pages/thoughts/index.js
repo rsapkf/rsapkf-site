@@ -6,9 +6,9 @@ import Head from "../../components/Head"
 
 import styles from "../blog.module.scss"
 import {
-  CopyToClipboard,
-  CopyToClipboardIcon,
-} from "../../components/CopyToClipboard"
+  CopyPermalink,
+  CopyPermalinkIcon,
+} from "../../components/CopyPermalink"
 
 const ThoughtsPage = () => {
   const data = useStaticQuery(graphql`
@@ -69,12 +69,12 @@ const ThoughtsPage = () => {
                   <small>
                     {date} &bull; {edge.node.timeToRead} min read{" "}
                     <span className={styles.clipboardSpan}>
-                      <CopyToClipboard link={permalink} />
+                      <CopyPermalink link={permalink} />
                     </span>
                   </small>
                 </span>
                 <span className={styles.clipboardIcon}>
-                  <CopyToClipboardIcon link={permalink} />
+                  <CopyPermalinkIcon link={permalink} />
                 </span>
               </li>
             )

@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 import Head from "../components/Head"
 import PostNav from "../components/PostNav"
 
-import { CopyToClipboard } from "../components/CopyToClipboard"
+import { CopyPermalink } from "../components/CopyPermalink"
 import postStyles from "./post.module.scss"
 
 import { capitalizeString } from "../utils/capitalize-string"
@@ -61,7 +61,7 @@ const Posts = props => {
               </span>
             ))
           : ""}
-        <CopyToClipboard link={permalink} />
+        <CopyPermalink link={permalink} />
       </small>
       <hr />
       <div

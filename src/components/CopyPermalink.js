@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 
 import { copyToClipboard } from "../utils/copy-to-clipboard"
-import styles from "./CopyToClipboard.module.scss"
+import styles from "./CopyPermalink.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-export const CopyToClipboard = ({ link }) => {
+export const CopyPermalink = ({ link }) => {
   const [permalinkButtonText, setPermalinkButtonText] = useState(
     "Copy permalink"
   )
@@ -22,7 +22,7 @@ export const CopyToClipboard = ({ link }) => {
   )
 }
 
-export const CopyToClipboardIcon = ({ link }) => {
+export const CopyPermalinkIcon = ({ link }) => {
   const [permalinkButtonIcon, setPermalinkButtonIcon] = useState([
     "far",
     "clipboard",
