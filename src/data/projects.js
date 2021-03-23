@@ -16,7 +16,7 @@ export const personalProjects = [
     forks_count: 0,
   },
   {
-    name: "rsapkf.xyz",
+    name: "www",
     description: "Source for my personal website. Built using GatsbyJS.",
     homepage: "https://rsapkf.xyz",
     stargazers_count: 2,
