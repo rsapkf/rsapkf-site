@@ -60,7 +60,7 @@ nav {
     background-color: rgba(81, 79, 84, 0.8);
     opacity: 0;
     transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
+    transition: transform 0.3s ease-in-out 0s;
   }
 
   &:hover::before {
@@ -136,7 +136,6 @@ nav {
   border: 1px solid rgb(150, 145, 145);
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
-  transition: all 1s;
   font-size: 1rem;
   width: 190px;
 
