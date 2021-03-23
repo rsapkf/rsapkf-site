@@ -1,3 +1,8 @@
+[build]
+  base = "/"
+  command = "gatsby build"
+  publish = "public"
+
 [[redirects]]
   from = "https://rsapkf.netlify.app/*"
   to = "https://rsapkf.xyz/:splat"
