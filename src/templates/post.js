@@ -1,11 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Layout from "../components/Layout"
-import Head from "../components/Head"
-import PostNav from "../components/PostNav"
+import Layout from "../components/layout"
+import Head from "../components/head"
+import PostNav from "../components/post-nav"
 
-import { CopyPermalink } from "../components/CopyPermalink"
+import { CopyPermalink } from "../components/copy-permalink"
 import postStyles from "./post.module.scss"
 
 import { capitalizeString } from "../utils/capitalize-string"

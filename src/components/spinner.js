@@ -1,7 +1,7 @@
 import React from "react"
 import spinner from "../assets/grid.svg"
 
-import ThemeContext from "../context/ThemeContext"
+import ThemeContext from "../context/theme-context"
 
 const Spinner = () => {
   return (

@@ -1,13 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-// Utilities
 import kebabCase from "lodash/kebabCase"
 
-// Components
 import { Link, graphql } from "gatsby"
-import Layout from "../../components/Layout"
-import Head from "../../components/Head"
+import Layout from "../../components/layout"
+import Head from "../../components/head"
 
 import styles from "../tags.module.scss"
 

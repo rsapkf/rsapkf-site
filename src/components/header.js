@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import styles from "./Header.module.scss"
+import styles from "./header.module.scss"
 // import sun from "../assets/sun.png"
 // import moon from "../assets/moon.png"
 
-import ThemeContext from "../context/ThemeContext"
+import ThemeContext from "../context/theme-context"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Header = () => {

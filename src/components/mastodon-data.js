@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 
-import Layout from "./Layout"
-import Head from "./Head"
-import Spinner from "./Spinner"
+import Layout from "./layout"
+import Head from "./head"
+import Spinner from "./spinner"
 
 import { fetchData } from "../services/mastodon-api"
 import { formatDate } from "../utils/format-date"

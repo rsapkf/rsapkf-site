@@ -1,7 +1,7 @@
 import React from "react"
 import { navigate } from "gatsby-link"
-import Layout from "../components/Layout"
-import Head from "../components/Head"
+import Layout from "../components/layout"
+import Head from "../components/head"
 
 import "./form.module.scss"
 

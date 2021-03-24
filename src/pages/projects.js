@@ -1,8 +1,8 @@
 import React from "react"
 
-import Layout from "../components/Layout"
-import Head from "../components/Head"
-import GitHubProjectData from "../components/GitHubProjectData"
+import Layout from "../components/layout"
+import Head from "../components/head"
+import GitHubProjectData from "../components/github-project-data"
 
 import {
   personalProjects,

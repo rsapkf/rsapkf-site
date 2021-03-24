@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 import { copyToClipboard } from "../utils/copy-to-clipboard"
-import styles from "./CopyPermalink.module.scss"
+import styles from "./copy-permalink.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const CopyPermalink = ({ link }) => {

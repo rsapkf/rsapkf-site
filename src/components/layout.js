@@ -1,17 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Header from "./Header"
-import Footer from "./Footer"
-import Head from "./Head"
-import LastUpdatedPages from "./LastUpdatedPages"
+import Header from "./header"
+import Footer from "./footer"
+import Head from "./head"
+import LastUpdatedPages from "./last-updated-pages"
 
 import "../styles/global.scss"
-import styles from "./Layout.module.scss"
+import styles from "./layout.module.scss"
 
-import ThemeContext from "../context/ThemeContext"
+import ThemeContext from "../context/theme-context"
 import { MDXProvider } from "@mdx-js/react"
-import "./FontAwesome"
+import "./font-awesome"
 
 const shortcodes = { Link, Head, LastUpdatedPages }
 

@@ -1,14 +1,15 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
-import Layout from "../../components/Layout"
-import Head from "../../components/Head"
+import Layout from "../../components/layout"
+import Head from "../../components/head"
 
-import styles from "../blog.module.scss"
 import {
   CopyPermalink,
   CopyPermalinkIcon,
-} from "../../components/CopyPermalink"
+} from "../../components/copy-permalink"
+
+import styles from "../blog.module.scss"
 
 const ThoughtsPage = () => {
   const data = useStaticQuery(graphql`

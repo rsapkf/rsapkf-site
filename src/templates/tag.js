@@ -1,10 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-// Components
 import { Link, graphql } from "gatsby"
-import Layout from "../components/Layout"
-import Head from "../components/Head"
+import Layout from "../components/layout"
+import Head from "../components/head"
 
 import { capitalizeString } from "../utils/capitalize-string"
 
