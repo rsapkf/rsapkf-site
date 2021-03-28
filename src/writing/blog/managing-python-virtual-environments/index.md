@@ -1,10 +1,11 @@
 ---
 title: Managing Python Virtual Environments with venv Module
-date: "2019-08-07"
-lastUpdated: "2019-09-16"
+date: 2019-08-07
+lastUpdated: 2019-09-16
 spoiler: ""
 tags: ["python", "programming"]
-type: "blog"
+type: blog
+slug: managing-python-virtual-environments
 ---
 
 <u>**Note**</u>: This article assumes you have python3.3+ and \*NIX system installed. Some commands might not work on Windows out of the box (e.g. tree).

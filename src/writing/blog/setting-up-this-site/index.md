@@ -1,10 +1,11 @@
 ---
-title: "Setting up this site"
-date: "2020-07-02"
-lastUpdated: "2020-07-10"
+title: Setting up this site
+date: 2020-07-02
+lastUpdated: 2020-07-10
 spoiler: ""
 tags: ["gatsby", "netlify", "github", "programming"]
-type: "blog"
+type: blog
+slug: setting-up-this-site
 ---
 
 → [Summary](#summary)

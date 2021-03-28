@@ -1,9 +1,10 @@
 ---
-title: "Beating 2048"
-date: "2020-06-01"
-lastUpdated: "2020-06-02"
+title: Beating 2048
+date: 2020-06-01
+lastUpdated: 2020-06-02
 tags: ["puzzles", "2048"]
-type: "hobbies"
+type: hobbies
+slug: beating-2048
 ---
 
 ### The only strategies you need to learn

@@ -1,10 +1,11 @@
 ---
-title: "Deploying mdBook Site on Netlify"
-date: "2020-07-29"
-lastUpdated: "2020-07-31"
-spoiler: "Simple enough but Rust's not JavaScript."
+title: Deploying mdBook Site on Netlify
+date: 2020-07-29
+lastUpdated: 2020-07-31
+spoiler: Simple enough but Rust's not JavaScript.
 tags: ["mdbook", "rust", "netlify"]
-type: "blog"
+type: blog
+slug: deploying-mdbook-site-netlify
 ---
 
 Now that I've got a domain, I thought of moving my project sites from GitHub Pages to Netlify so that I can serve them from subdomains right from Netlify using Netlify DNS. This is technically possible for sites hosted on GitHub Pages. You need to add a CNAME record to your DNS provider and CNAME file at the root of your project repository. Check out [GitHub's documentation](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site) for details.

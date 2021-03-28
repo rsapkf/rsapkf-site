@@ -1,9 +1,10 @@
 ---
-title: "An Overview of Speedcubing (+Awesome Learning Resources)"
-date: "2020-08-02"
-lastUpdated: "2020-08-07"
+title: An Overview of Speedcubing (+Awesome Learning Resources)
+date: 2020-08-02
+lastUpdated: 2020-08-07
 tags: ["cubing", "puzzles", "cfop", "speedsolving", "rubiks-cube", "3x3"]
-type: "hobbies"
+type: hobbies
+slug: speedcubing-overview
 ---
 
 When I first learned to solve the Rubik's cube back in 2014, it took me less than 2 hours to learn the beginner's solution. But I quickly got bored - I was pulled into the deep rabbithole of speedcubing - an exercise where people try to solve the cube in the fastest time possible. The current world record average is 5.53 seconds held by Australian speedcuber **Feliks Zemdegs** set in 2019.

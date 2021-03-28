@@ -5,6 +5,7 @@ lastUpdated: "2020-12-03"
 spoiler: ""
 tags: ["privacy"]
 type: "blog"
+slug: "beginners-guide-to-digital-privacy"
 ---
 
 The following are basic instructions for beginners on maintaining privacy on the Internet. I use most of these services myself and highly recommend using these. Most of these are open-source projects. Please contribute to the maintainers via donations/code if you find them useful.

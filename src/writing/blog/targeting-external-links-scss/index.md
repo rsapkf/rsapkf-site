@@ -1,10 +1,11 @@
 ---
-title: "Targeting External Links using SCSS"
-date: "2020-07-21"
-lastUpdated: "2020-08-17"
+title: Targeting External Links using SCSS
+date: 2020-07-21
+lastUpdated: 2020-08-17
 spoiler: ""
 tags: ["css", "scss", "programming"]
-type: "blog"
+type: blog
+slug: targeting-external-links-scss
 ---
 
 Here is part of the snippet I use to target external links on this site:
