@@ -68,8 +68,7 @@ nav {
     left: 0;
     transform: scaleX(1.1);
   }
-  }
-
+}
 
 .active-nav-item {
   &::before {
@@ -108,7 +107,7 @@ nav {
   }
 
   &:hover,
-  &:focus,
+  &:focus-within,
   &:active {
     .dropdown-content {
       display: block;
@@ -121,9 +120,9 @@ nav {
   all: unset;
 
   &:hover,
-  &:focus,
+  &:focus-within,
   &:active {
-     + .dropdown-content {
+    + .dropdown-content {
       display: block;
       z-index: 1;
     }

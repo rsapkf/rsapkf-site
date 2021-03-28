@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const GITHUB_USERNAME = "rsapkf"
+import { GITHUB_USERNAME } from "../constants"
 const baseUrl = "https://api.github.com/"
 
 export const fetchData = async project => {

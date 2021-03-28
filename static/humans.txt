@@ -8,7 +8,7 @@
     Icons: Font Awesome
     Fonts: Google Fonts, https://github.com/majodev/google-webfonts-helper
     Loading SVG: https://github.com/SamHerbert/SVG-Loaders
-    API: GitHub REST API, Mastodon REST API
+    APIs: GitHub REST API, Mastodon REST API
 
 /* Inspired By */
     Dan Abramov (github.com/gearson) - (https://overreacted.io)

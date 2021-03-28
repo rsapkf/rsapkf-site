@@ -123,7 +123,7 @@ EOF
 
 And then tell tmux to use it in `~/.tmux.conf`:
 
-```bash
+```
 set -g default-terminal "tmux"
 # OR
 set -g default-terminal "tmux-256color"

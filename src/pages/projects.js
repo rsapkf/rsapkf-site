@@ -23,8 +23,8 @@ const ProjectsPage = () => {
         <li>
           <h4>Personal:</h4>
           <ul>
-            {personalProjects.map((project, idx) => (
-              <li key={`personal-${idx}`}>
+            {personalProjects.map(project => (
+              <li key={project.name}>
                 <GitHubProjectData project={project} />
               </li>
             ))}
@@ -35,8 +35,8 @@ const ProjectsPage = () => {
         <li>
           <h4>Software:</h4>
           <ul>
-            {softwareProjects.map((project, idx) => (
-              <li key={`software-${idx}`}>
+            {softwareProjects.map(project => (
+              <li key={project.name}>
                 <GitHubProjectData project={project} />
               </li>
             ))}
@@ -47,8 +47,8 @@ const ProjectsPage = () => {
         <li>
           <h4>Miscellaneous:</h4>
           <ul>
-            {miscProjects.map((project, idx) => (
-              <li key={`misc-${idx}`}>
+            {miscProjects.map(project => (
+              <li key={project.name}>
                 <GitHubProjectData project={project} />
               </li>
             ))}

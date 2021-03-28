@@ -7,6 +7,10 @@ form {
   border-radius: 5px;
   transition: all 0.6s;
 
+  &:focus-within {
+    background-color: rgba(195, 199, 202, 0.06);
+  }
+
   @media (max-width: 800px) {
     padding: 0.9rem;
   }
@@ -72,7 +76,6 @@ button[type="submit"] {
 
 label,
 button {
-  font-style: bold;
   font-size: 1rem;
   letter-spacing: 2px;
 }

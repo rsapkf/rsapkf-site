@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import styles from "./github-project-data.module.scss"
 import { fetchData } from "../services/github-api"
 
-const GITHUB_USERNAME = "rsapkf"
+import { GITHUB_USERNAME } from "../constants"
 
 const GitHubProjectData = ({ project }) => {
   const [starsCount, setStarsCount] = useState(0)

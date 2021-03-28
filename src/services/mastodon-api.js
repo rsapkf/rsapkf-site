@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const MASTODON_ID = "942182"
+import { MASTODON_ID } from "../constants"
 const baseUrl = "https://mastodon.social/api/v1/"
 
 export const fetchData = async () => {
