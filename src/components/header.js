@@ -16,7 +16,11 @@ const Header = () => {
           <Link className={styles.title} to="/">
             ~rsapkf
           </Link>
-          <button className={styles.darkSwitcher} onClick={theme.toggleDark}>
+          <button
+            aria-label="Toggle Theme"
+            className={styles.darkSwitcher}
+            onClick={theme.toggleDark}
+          >
             {theme.dark ? (
               // <img src={sun} alt="Sun" />
               <FontAwesomeIcon
