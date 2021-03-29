@@ -4,8 +4,8 @@
   font-style: normal;
   font-weight: 400;
   src: local("Yeon Sung"),
-    url("../fonts/yeon-sung-v8-latin-regular.woff2") format("woff2"),
-    url("../fonts/yeon-sung-v8-latin-regular.woff") format("woff");
+    url("../fonts/yeon-sung/yeon-sung-v8-latin-regular.woff2") format("woff2"),
+    url("../fonts/yeon-sung/yeon-sung-v8-latin-regular.woff") format("woff");
   font-display: swap;
 }
 
@@ -15,8 +15,8 @@
   font-style: normal;
   font-weight: 400;
   src: local("Open Sans"),
-    url("../fonts/open-sans-v18-latin-regular.woff2") format("woff2"),
-    url("../fonts/open-sans-v18-latin-regular.woff") format("woff");
+    url("../fonts/open-sans/open-sans-v18-latin-regular.woff2") format("woff2"),
+    url("../fonts/open-sans/open-sans-v18-latin-regular.woff") format("woff");
   font-display: swap;
 }
 
@@ -26,8 +26,8 @@
   font-style: italic;
   font-weight: 400;
   src: local("Open Sans"),
-    url("../fonts/open-sans-v18-latin-italic.woff2") format("woff2"),
-    url("../fonts/open-sans-v18-latin-italic.woff") format("woff");
+    url("../fonts/open-sans/open-sans-v18-latin-italic.woff2") format("woff2"),
+    url("../fonts/open-sans/open-sans-v18-latin-italic.woff") format("woff");
   font-display: swap;
 }
 
@@ -37,8 +37,8 @@
   font-style: normal;
   font-weight: 700;
   src: local("Open Sans"),
-    url("../fonts/open-sans-v18-latin-700.woff2") format("woff2"),
-    url("../fonts/open-sans-v18-latin-700.woff") format("woff");
+    url("../fonts/open-sans/open-sans-v18-latin-700.woff2") format("woff2"),
+    url("../fonts/open-sans/open-sans-v18-latin-700.woff") format("woff");
   font-display: swap;
 }
 
@@ -48,7 +48,8 @@
   font-style: italic;
   font-weight: 700;
   src: local("Open Sans"),
-    url("../fonts/open-sans-v18-latin-700italic.woff2") format("woff2"),
-    url("../fonts/open-sans-v18-latin-700italic.woff") format("woff");
+    url("../fonts/open-sans/open-sans-v18-latin-700italic.woff2")
+      format("woff2"),
+    url("../fonts/open-sans/open-sans-v18-latin-700italic.woff") format("woff");
   font-display: swap;
 }

@@ -1,5 +1,8 @@
-@import url("https://use.fontawesome.com/releases/v5.7.0/css/all.css");
 @import "./fonts.scss";
+@import "./fontawesome/fontawesome.scss";
+@import "./fontawesome/fa-solid.scss";
+@import "./fontawesome/fa-regular.scss";
+@import "./fontawesome/fa-brands.scss";
 
 html {
   font-family: sans-serif;
@@ -58,7 +61,7 @@ a {
   }
 
   // target external links
-  // TODO: Find a way to do this using FontAwesome Library without importing all.css
+  // TODO: Find a way to do this using FontAwesome Library without importing fontawesome.css
   &:not([href*="rsapkf.xyz"]):not([href^="/"]):not([href^="#"]):not([href$=".pdf"]):not([href*="mozilla.org"]):not([href*="github.com"]):not([href*="gitlab.com"]):not([href*="mastodon.social"]):not([href*="wikipedia.org"]):not([href*="google.com"]):not([href*="ycombinator.com"]):not([href*="twitter.com"]):not([href*="youtube.com"]):not([href*="stackoverflow.com"]):not([href*="reddit.com"]):not([href*="goodreads.com"]):not([href*="apple.com"]):not([href*="microsoft.com"]):not([href*="amazon.com"]):not([href*="imdb.com"]):not([href*="facebook.com"]):not([href*="instagram.com"])::after {
     content: "\f35d"; // external-link-alt
     font-family: "Font Awesome 5 Free";
