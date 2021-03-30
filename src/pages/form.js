@@ -1,7 +1,7 @@
 import React from "react"
 import { navigate } from "gatsby-link"
 import Layout from "../components/layout"
-import Head from "../components/head"
+import SEO from "../components/seo"
 
 import "./form.module.scss"
 
@@ -35,7 +35,7 @@ export default function Contact() {
 
   return (
     <Layout>
-      <Head title="Contact Form" />
+      <SEO title="Contact Form" />
       <h3>Contact Form</h3>
       <form
         name="contact"

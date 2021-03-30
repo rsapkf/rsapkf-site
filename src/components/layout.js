@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
-import Head from "./head"
+import SEO from "./seo"
 import LastUpdatedPages from "./last-updated-pages"
 
 import "../styles/global.scss"
@@ -13,7 +13,7 @@ import ThemeContext from "../context/theme-context"
 import { MDXProvider } from "@mdx-js/react"
 import "./font-awesome"
 
-const shortcodes = { Link, Head, LastUpdatedPages }
+const shortcodes = { Link, SEO, LastUpdatedPages }
 
 const Layout = ({ children }) => {
   return (

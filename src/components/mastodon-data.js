@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 
 import Layout from "./layout"
-import Head from "./head"
+import SEO from "./seo"
 import Spinner from "./spinner"
 
 import { fetchData } from "../services/mastodon-api"
@@ -27,7 +27,7 @@ const MastodonData = ({ tag }) => {
 
   return (
     <Layout>
-      <Head title={capitalizedTag} />
+      <SEO title={capitalizedTag} />
       <h3>{capitalizedTag}</h3>
       <p
         style={{

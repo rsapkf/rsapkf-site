@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Head from "../components/head"
+import SEO from "../components/seo"
 import GitHubProjectData from "../components/github-project-data"
 
 import {
@@ -13,7 +13,7 @@ import {
 const ProjectsPage = () => {
   return (
     <Layout>
-      <Head title="Projects" />
+      <SEO title="Projects" />
       <h3>Projects</h3>
       <div style={{ marginBottom: "25px" }}>
         <a href="https://github.com/rsapkf">GitHub</a> &bull;{" "}

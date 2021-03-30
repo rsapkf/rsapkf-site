@@ -1,11 +1,15 @@
 module.exports = {
   siteMetadata: {
     title: "rsapkf",
+    titleTemplate: "%s :: rsapkf.xyz",
+    // titleTemplate: "%s • rsapkf.xyz",
     author: "rsapkf",
-    description: "rsapkf",
+    description:
+      "Developer, Autodidact, Open Source Advocate & GNU/Linux Aficionado.",
     siteUrl: "https://rsapkf.xyz",
+    image: "/favicon.png",
     social: {
-      mastodon: "@rsapkf",
+      twitter: "@rsapkf",
     },
   },
   pathPrefix: "/",
@@ -217,6 +221,7 @@ module.exports = {
     {
       resolve: "gatsby-transformer-remark",
       options: {
+        excerpt_separator: `<!-- truncate -->`,
         plugins: [
           "gatsby-remark-relative-images",
           {

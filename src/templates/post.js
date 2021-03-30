@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import Head from "../components/head"
+import SEO from "../components/seo"
 import PostNav from "../components/post-nav"
 
 import { CopyPermalink } from "../components/copy-permalink"
@@ -20,6 +20,7 @@ export const query = graphql`
         tags
       }
       html
+      # excerpt(truncate: true)
       timeToRead
       fields {
         slug
@@ -45,7 +46,11 @@ const Posts = props => {
 
   return (
     <Layout>
-      <Head title={`${title} • ${capitalizeString(postType)}`} />
+      <SEO
+        title={`${title} • ${capitalizeString(postType)}`}
+        // description={props.data.markdownRemark.excerpt}
+        article
+      />
       <h2 className={postStyles.title}>{title}</h2>
       <small>
         {date} &bull; {props.data.markdownRemark.timeToRead} min read &bull;{" "}

@@ -5,7 +5,7 @@ import kebabCase from "lodash/kebabCase"
 
 import { Link, graphql } from "gatsby"
 import Layout from "../../components/layout"
-import Head from "../../components/head"
+import SEO from "../../components/seo"
 
 import styles from "../tags.module.scss"
 
@@ -15,7 +15,7 @@ const HobbiesTagsPage = ({
   },
 }) => (
   <Layout>
-    <Head title="Tags • Hobbies" />
+    <SEO title="Tags • Hobbies" />
     <div>
       <h3>Hobbies &gt;&gt; Tags</h3>
       <span className={styles.container}>

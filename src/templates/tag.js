@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import Head from "../components/head"
+import SEO from "../components/seo"
 
 import { capitalizeString } from "../utils/capitalize-string"
 
@@ -16,7 +16,7 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <Layout>
-      <Head title={`#${tag} • Tags • ${capitalizeString(postType)}`} />
+      <SEO title={`#${tag} • Tags • ${capitalizeString(postType)}`} />
       <div>
         <h3>{tagHeader}</h3>
         <ul>

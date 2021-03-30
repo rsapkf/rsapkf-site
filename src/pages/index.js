@@ -2,13 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Head from "../components/head"
+import SEO from "../components/seo"
 import styles from "./index.module.scss"
 
 const IndexPage = () => {
   return (
     <Layout>
-      <Head title="Home" />
+      <SEO title="Home" />
       <h3 className={styles.intro}>
         Developer, Autodidact, Open Source Advocate & GNU/Linux Aficionado.
       </h3>

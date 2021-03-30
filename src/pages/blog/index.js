@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../../components/layout"
-import Head from "../../components/head"
+import SEO from "../../components/seo"
 
 import {
   CopyPermalink,
@@ -42,7 +42,7 @@ const BlogPage = () => {
 
   return (
     <Layout>
-      <Head title="Blog" />
+      <SEO title="Blog" />
       <h3>Articles</h3>
       <span style={{ marginBottom: "0.5rem" }}>
         <Link to="/blog/tags">Tags</Link> | <Link to="/blog/rss.xml">RSS</Link>{" "}
