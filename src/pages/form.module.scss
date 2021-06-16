@@ -29,6 +29,11 @@ textarea {
   &:focus {
     outline: 1px solid rgb(179, 172, 172);
   }
+
+  option {
+    color: rgb(196, 188, 188);
+    background: rgba(17, 17, 17, 0.959);
+  }
 }
 
 input[type="text"],

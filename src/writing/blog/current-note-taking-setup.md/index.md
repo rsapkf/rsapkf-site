@@ -72,7 +72,9 @@ Secondly, here are the features I'm looking for in my workflow:
 
   I also use Pocket as an alternative to YouTube's "Watch Later" and IMDb's "Watchlist" features.
 
-  **Aside**: I do use Twitter, not for microblogging but to follow interesting accounts. Their recommendation system is pretty good for this sort of thing. As for Spotify, I hate the fact that they log your streaming history with no easy way to delete it and is so closely tied to Facebook ([this](https://youtube.com/watch?v=eAagtcAup0o&t=1072) just proves it). I have deleted all my Spotify Playlists and exported the data to Firefox (using [Exportify](https://github.com/watsonbox/exportify)). I need to find a better solution for Music (I'm trying out [this service](https://audiomack.com/).).
+  _Update: I have deleted Pocket and moved to Firefox for temporary links as well._
+
+  **Aside**: I do use Twitter, not for microblogging but to follow interesting accounts. Their recommendation system is pretty good for this sort of thing. As for Spotify, I hate the fact that they log your streaming history with no easy way to delete it and is so closely tied to Facebook[\*](https://youtube.com/watch?v=eAagtcAup0o&t=1072). I have deleted all my Spotify Playlists and exported the data to Firefox (using [Exportify](https://github.com/watsonbox/exportify)). I need to find a better solution for Music.
 
 ---
 
@@ -114,4 +116,4 @@ This is something I'd like to do in the future (my apologies) but I am currently
 
 ### <a href="#summary" id="summary">#</a> Summary
 
-In a nutshell, most of my notes are stored in [Markdown](https://daringfireball.net/projects/markdown/syntax) files inside folders on my hard drive. I use [Neovim](https://github.com/neovim/neovim) and [Gedit](https://gitlab.gnome.org/GNOME/gedit) to edit these notes and [Git](https://git-scm.com/) for version control and sync. I share [some](https://github.com/rsapkf/42/) [of](https://github.com/rsapkf/dotfiles) [them](https://github.com/rsapkf/notes) with the world, and for private notes, I use end-to-end encrypted services: [Firefox Sync](https://support.mozilla.org/en-US/products/firefox/sync), [Standard Notes](https://github.com/standardnotes/) and [Bitwarden](https://github.com/bitwarden). I use [Pocket](https://getpocket.com) to save and sync links that I want to read later.
+In a nutshell, most of my notes are stored in [Markdown](https://daringfireball.net/projects/markdown/syntax) files inside folders on my hard drive. I use [Neovim](https://github.com/neovim/neovim) and [Gedit](https://gitlab.gnome.org/GNOME/gedit) to edit these notes and [Git](https://git-scm.com/) for version control and sync. I share [some](https://github.com/rsapkf/42/) [of](https://github.com/rsapkf/dotfiles) [them](https://github.com/rsapkf/notes) with the world, and for private notes, I use end-to-end encrypted services: [Firefox](https://www.mozilla.org/en-US/firefox/), [Standard Notes](https://github.com/standardnotes/) and [Bitwarden](https://github.com/bitwarden). I use [Firefox Sync](https://support.mozilla.org/en-US/products/firefox/sync) to save and sync links that I want to read later.

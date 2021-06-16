@@ -71,7 +71,7 @@ const GitHubStats = ({ project }) => {
     }
 
     fetchGitHubData(project)
-  })
+  }, [project])
 
   return (
     <>

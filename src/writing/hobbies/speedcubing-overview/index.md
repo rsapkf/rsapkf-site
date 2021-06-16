@@ -159,7 +159,7 @@ After solving the F2L minus one corner-edge pair, ZBLS (a.k.a. ZBF2L) can be use
 - [Why We Cube - A Speedcubing Documentary](https://www.youtube.com/watch?v=1oZY2e25VUw)
 - [Cracking the Cube: Going Slow to Go Fast and Other Unexpected Turns in the World of Competitive Rubik's Cube Solving](https://www.goodreads.com/book/show/29430754-cracking-the-cube) - Ian Scheffler
 - [r/Cubers Wiki](https://www.reddit.com/r/Cubers/wiki/index)
-- [csTimer - Professional Rubik's Cube Speedsolving/Training Timer](https://cstimer.net/) [Source](https://github.com/cs0x7f/cstimer))
+- [csTimer - Professional Rubik's Cube Speedsolving/Training Timer](https://cstimer.net/) ([Source](https://github.com/cs0x7f/cstimer))
 
 I have compiled my favorite **_YouCubers_** and resources for algorithms, walkthroughs and tutorials on Rubik's Cube and other puzzles [here](https://links.rsapkf.xyz/docs/cubing-puzzles-and-magic.html).
 

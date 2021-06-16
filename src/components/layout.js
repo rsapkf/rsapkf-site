@@ -7,6 +7,7 @@ import SEO from "./seo"
 import LastUpdatedPages from "./last-updated-pages"
 
 import "../styles/global.scss"
+import "../styles/typography.scss"
 import styles from "./layout.module.scss"
 
 import ThemeContext from "../context/theme-context"
